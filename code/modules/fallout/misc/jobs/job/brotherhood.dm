@@ -68,7 +68,134 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
+	
+	//Brotherhood Head Paladin
 
+/datum/job/paladin
+	title = "Head Paladin"
+	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it.<br>
+	flag = PALADIN
+	department_head = list("elder")
+	department_flag = ENGSEC
+	faction = "bs"
+	status = "headpaladin"
+	total_positions = 6
+	spawn_positions = 2
+	supervisors = "the Elder"
+	selection_color = "#ec9d9d"
+	minimal_player_age = 7
+
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+
+	outfit = /datum/outfit/job/paladin
+
+	required_items = list(
+	/obj/item/clothing/under/f13/recon,
+	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/weapon/gun/energy/laser/pistol,
+	/obj/item/weapon/gun/energy/laser/rifle/aer13,
+	/obj/item/weapon/gun/energy/laser/gaussrifle,
+	/obj/item/weapon/twohanded/superhammer,
+	/obj/item/weapon/lighter/engraved
+	)
+
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/pants/f13/cloth,
+	/obj/item/clothing/under/pants/f13/caravan,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/female/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/female/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+
+	access = list(access_brotherhood)
+	minimal_access = list()
+
+/datum/outfit/job/paladin
+	name = "Head Paladin"
+	backpack = null
+	satchel = null
+	gloves = /obj/item/clothing/gloves/f13/military
+	uniform = /obj/item/clothing/under/f13/combat
+	shoes = /obj/item/clothing/shoes/f13/military
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	head = /obj/item/clothing/head/helmet/power_armor/t51b
+	belt = /obj/item/weapon/storage/belt/military/army
+	weapon = /obj/item/weapon/gun/energy/laser/rcw
+	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	id = /obj/item/weapon/card/id/bos
+	
+//Head Scribe
+
+/datum/job/scribe
+	title = "Head Scribe"
+	desc = "The studious..<br>Guide the Scribes and show the Knights and Paladins that knowledge is your best weapon."
+	flag = HEADSCRIBE
+	department_head = list("elder")
+	department_flag = ENGSEC
+	faction = "bs"
+	status = "headscribe"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Elder"
+	selection_color = "#ec9d9d"
+	minimal_player_age = 7
+
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+
+	outfit = /datum/outfit/job/scribe
+
+	required_items = list(
+	/obj/item/clothing/under/f13/recon,
+	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/weapon/gun/energy/laser/pistol,
+	/obj/item/weapon/lighter/engraved
+	)
+
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/pants/f13/cloth,
+	/obj/item/clothing/under/pants/f13/caravan,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/female/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/female/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+
+	access = list(access_brotherhood)
+	minimal_access = list()
+
+/datum/outfit/job/scribe
+	name = "Head Scribe"
+	backpack = null
+	satchel = null
+	gloves = null
+	uniform = /obj/item/clothing/under/f13/combat
+	suit = /obj/item/clothing/suit/scribe
+	shoes = /obj/item/clothing/shoes/f13/military
+	head = null
+	belt = /obj/item/weapon/storage/belt/military/army
+	weapon = /obj/item/weapon/gun/energy/laser/pistol
+	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	id = /obj/item/weapon/card/id/bos
+	
 //Brotherhood Paladin
 
 /datum/job/paladin
