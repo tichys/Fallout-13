@@ -228,12 +228,12 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	outfit = /datum/outfit/job/trooper
+	outfit = /datum/outfit/job/ncrf
 
 	access = list(71)
 	minimal_access = list()
 
-/datum/outfit/job/trooper
+/datum/outfit/job/ncrf
 	name = "NCR First Recon"
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr

@@ -28,11 +28,11 @@ var/const/ENCLAVE_SCIENTIST		=(1<<3)
 var/const/ENCLAVE_PRIVATE		=(1<<4)
 var/const/ENCLAVE_RECRUIT		=(1<<5)
 
-var/const/MERCENARY			=(1<<5)
-var/const/GANGLEAD			=(1<<6)
-var/const/GHOUL_MASTER		=(1<<7)
-var/const/GHOUL_HAND		=(1<<8)
-var/const/GHOUL_PRIEST		=(1<<9)
+var/const/MERCENARY			=(1<<6)
+var/const/GANGLEAD			=(1<<7)
+var/const/GHOUL_MASTER		=(1<<8)
+var/const/GHOUL_HAND		=(1<<9)
+var/const/GHOUL_PRIEST		=(1<<10)
 
 
 //engsec
