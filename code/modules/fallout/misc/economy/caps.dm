@@ -24,5 +24,5 @@
 		icon_state = "[amount]"
 
 /obj/item/stack/caps/random/New()
-	amount = rand(50,300)
+	amount = rand(5,30)
 	..()
