@@ -212,7 +212,7 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/head/soft/f13/utility/olive,
+	/obj/item/clothing/head/bio_hood/science,
 	/obj/item/clothing/suit/bio_suit/sciencesuit,
 	/obj/item/weapon/gun/energy/plasma/pistol
 	)
@@ -264,8 +264,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "recruit"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 7
+	spawn_positions = 7
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
