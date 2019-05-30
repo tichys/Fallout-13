@@ -63,7 +63,7 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
-	
+
 //NCR Sergeant
 
 /datum/job/ncr_sergeant
@@ -170,7 +170,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	
+
 /datum/outfit/job/vranger
 	name = "NCR Veteran Ranger"
 	gloves = /obj/item/clothing/gloves/f13/military
@@ -187,31 +187,30 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/ammo_box/magazine/sniper_rounds = 1)
 	id = /obj/item/weapon/card/id/ncr
-	
+
 	//NCR First Recon
 
 /datum/job/ncr_firstrecon
-title = "NCR First Recon"
-desc = "I have the weight of lives on my rifle, that's why i never miss."
-flag = NCR_FIRSTRECON
-department_head = list("ncr_sergeant,ncr_captain")
-department_flag = WASTELAND
-faction = "ncr"
-status = "ncr_firstrecon"
-total_positions = 4
-spawn_positions = 4
-supervisors = "the Captain"
-selection_color = #9d9fec
-minimal_player_age = 5
+	title = "NCR First Recon"
+	desc = "I have the weight of lives on my rifle, that's why i never miss."
+	flag = NCR_FIRSTRECON
+	department_head = list("ncr_sergeant,ncr_captain")
+	department_flag = WASTELAND
+	faction = "ncr"
+	status = "ncr_firstrecon"
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Captain"
+	minimal_player_age = 5
 
-allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
 
-required_items = lists(
-/obj/item/clothing/head/helmet/space/beret
-/obj/item/clothing/suit/armor/f13/ncr/facewrap,
-	/obj/item/weapon/kitchen/knife/combat
+	required_items = list(
+	/obj/item/clothing/head/helmet/space/beret,
+	/obj/item/clothing/suit/armor/f13/ncr/facewrap,
+	/obj/item/weapon/kitchen/knife/combat,
 	)
-	
+
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
 	/obj/item/clothing/head/f13/headscarf,
@@ -228,13 +227,13 @@ required_items = lists(
 	/obj/item/clothing/under/f13/worn,
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
-	
-		outfit = /datum/outfit/job/trooper
+
+	outfit = /datum/outfit/job/trooper
 
 	access = list(71)
 	minimal_access = list()
-	
-	/datum/outfit/job/trooper
+
+/datum/outfit/job/trooper
 	name = "NCR First Recon"
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr
@@ -245,7 +244,7 @@ required_items = lists(
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/automatic/garand
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1, /obj/item/ammo_box/internal/shot/garand = 3)
+	/obj/item/device/radio = 1)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/trooper

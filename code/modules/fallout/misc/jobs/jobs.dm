@@ -1,9 +1,10 @@
 var/const/WASTELAND			=(1<<3)
 
 var/const/GENERAL			=(1<<0)
-var/const/NCR_SERGEANT		=(1<<1)
-var/const/RANGER			=(1<<2)
-var/const/TROOPER			=(1<<3)
+var/const/NCR_FIRSTRECON	=(1<<1)
+var/const/NCR_SERGEANT		=(1<<2)
+var/const/RANGER			=(1<<3)
+var/const/TROOPER			=(1<<4)
 //var/const/CCO				=(1<<4)
 
 var/const/RECRUIT			=(1<<4)
@@ -24,6 +25,7 @@ var/const/MAYOR				=(1<<14)
 var/const/COLONEL				=(1<<1)
 var/const/ENCLAVE_LIEUTENANT	=(1<<2)
 var/const/ENCLAVE_PRIVATE		=(1<<3)
+var/const/ENCLAVE_RECRUIT		=(1<<4)
 
 var/const/MERCENARY			=(1<<5)
 var/const/GANGLEAD			=(1<<6)
