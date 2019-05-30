@@ -63,7 +63,7 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
-
+	
 //NCR Sergeant
 
 /datum/job/ncr_sergeant
@@ -170,9 +170,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(71)
-	minimal_access = list()
-
+	
 /datum/outfit/job/vranger
 	name = "NCR Veteran Ranger"
 	gloves = /obj/item/clothing/gloves/f13/military
@@ -188,6 +186,66 @@
 		/obj/item/ammo_box/m44 = 3, \
 		/obj/item/device/radio = 1, \
 		/obj/item/ammo_box/magazine/sniper_rounds = 1)
+	id = /obj/item/weapon/card/id/ncr
+	
+	//NCR First Recon
+
+/datum/job/ncr_firstrecon
+title = "NCR First Recon"
+desc = "I have the weight of lives on my rifle, that's why i never miss."
+flag = NCR_FIRSTRECON
+department_head = list("ncr_sergeant,ncr_captain")
+department_flag = WASTELAND
+faction = "ncr"
+status = "ncr_firstrecon"
+total_positions = 4
+spawn_positions = 4
+supervisors = "the Captain"
+selection_color = #9d9fec
+minimal_player_age = 5
+
+allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+
+required_items = lists(
+/obj/item/clothing/head/helmet/space/beret
+/obj/item/clothing/suit/armor/f13/ncr/facewrap,
+	/obj/item/weapon/kitchen/knife/combat
+	)
+	
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/pants/f13/cloth,
+	/obj/item/clothing/under/pants/f13/caravan,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/female/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/female/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+	
+		outfit = /datum/outfit/job/trooper
+
+	access = list(71)
+	minimal_access = list()
+	
+	/datum/outfit/job/trooper
+	name = "NCR First Recon"
+	gloves = /obj/item/clothing/gloves/f13/ncr
+	uniform = /obj/item/clothing/under/f13/ncr
+	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
+	head = /obj/item/clothing/head/helmet/space/beret
+	glasses = /obj/item/clothing/glasses/f13/biker
+	belt = /obj/item/weapon/storage/belt/military/army
+	weapon = /obj/item/weapon/gun/ballistic/automatic/garand
+	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
+	/obj/item/device/radio = 1, /obj/item/ammo_box/internal/shot/garand = 3)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/trooper
