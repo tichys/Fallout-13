@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1559248395
+LAST_COMPILE_TIME: 1559248750
 DIR: code code\modules code\modules\fallout code\modules\fallout\misc code\modules\fallout\misc\jobs code\modules\fallout\misc\jobs\job icons icons\fallout icons\fallout\clothing 
 AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 512.1470
-WINDOW: icons\fallout\clothing\hats.dmi;icons\fallout\clothing\glasses.dmi;code\modules\fallout\misc\jobs\job\ncr.dm;code\modules\fallout\misc\jobs\job\enclave.dm;code\modules\fallout\misc\jobs\jobs.dm
-FILE: code\modules\fallout\misc\jobs\job\enclave.dm
+WINDOW: icons\fallout\clothing\hats.dmi;icons\fallout\clothing\glasses.dmi;code\modules\fallout\misc\jobs\job\ncr.dm;code\modules\fallout\misc\jobs\job\enclave.dm;code\modules\fallout\misc\jobs\jobs.dm;code\modules\fallout\misc\jobs\job\ghouls.dm;code\modules\fallout\misc\jobs\job\job.dm
+FILE: code\modules\fallout\misc\jobs\job\ghouls.dm
 */
 // END_INTERNALS

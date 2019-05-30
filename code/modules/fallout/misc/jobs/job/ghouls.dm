@@ -1,6 +1,6 @@
 //Fallout 13 Acolytes of Atom faction roles
-
-/* /datum/job/ac_master
+/*
+ /datum/job/ac_master
 	title = "Master of the Atom"
 	flag = GHOUL_MASTER
 	department_flag = MEDSCI
@@ -13,7 +13,7 @@
 	access = list()
 	minimal_access = list()
 	outfit = /datum/outfit/job/ac_master
-
+*/
 /datum/outfit/job/ac_master
 	name = "Master of the Atom"
 	id = null
@@ -70,4 +70,3 @@
 	backpack = null
 	satchel = null
 
-*/
