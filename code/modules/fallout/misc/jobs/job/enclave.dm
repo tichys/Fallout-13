@@ -191,7 +191,7 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/enclave
-	
+
 	//Enclave Scientist
 
 /datum/job/enclave_scientist
@@ -214,7 +214,6 @@
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/suit/bio_suit/sciencesuit,
-	/obj/item/clothing/head/bio_suit/science,
 	/obj/item/weapon/gun/energy/plasma/pistol
 	)
 
@@ -253,7 +252,7 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/enclave
-	
+
 
 	//Enclave Recruit
 
@@ -314,4 +313,4 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/enclave
-	
+

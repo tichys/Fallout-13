@@ -24,8 +24,9 @@ var/const/MAYOR				=(1<<14)
 
 var/const/COLONEL				=(1<<1)
 var/const/ENCLAVE_LIEUTENANT	=(1<<2)
-var/const/ENCLAVE_PRIVATE		=(1<<3)
-var/const/ENCLAVE_RECRUIT		=(1<<4)
+var/const/ENCLAVE_SCIENTIST		=(1<<3)
+var/const/ENCLAVE_PRIVATE		=(1<<4)
+var/const/ENCLAVE_RECRUIT		=(1<<5)
 
 var/const/MERCENARY			=(1<<5)
 var/const/GANGLEAD			=(1<<6)
