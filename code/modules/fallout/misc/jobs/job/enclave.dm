@@ -191,3 +191,64 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/enclave
+	
+	//Enclave Recruit
+
+/datum/job/enclave_recruit
+	title = "Recruit"
+	desc = "In Training!."
+	flag = ENCLAVE_RECRUIT
+	department_head = list("colonel", "lieutenant")
+	department_flag = MEDSCI
+	faction = "enclave"
+	status = "recrui"
+	total_positions = 10
+	spawn_positions = 10
+	supervisors = "The Colonel"
+	selection_color = "#ec9d9d"
+	minimal_player_age = 7
+
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+
+	required_items = list(
+	/obj/item/clothing/under/f13/bdu,
+	/obj/item/clothing/head/soft/f13/utility/olive,
+	/obj/item/weapon/gun/energy/plasma/pistol
+	)
+
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/pants/f13/cloth,
+	/obj/item/clothing/under/pants/f13/caravan,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/female/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/female/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+
+	outfit = /datum/outfit/job/enclave_private
+
+	access = list(70)
+	minimal_access = list()
+
+/datum/outfit/job/enclave_recruit
+	name = "Enclave Recruit"
+	backpack = null
+	satchel = null
+	gloves = /obj/item/clothing/gloves/f13/military
+	uniform = /obj/item/clothing/under/f13/dbdu
+	shoes = /obj/item/clothing/shoes/f13/military
+	head = /obj/item/clothing/head/soft/f13/utility/tan
+	belt = /obj/item/weapon/storage/belt/military/army
+	weapon = /obj/item/weapon/gun/energy/plasma
+	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	id = /obj/item/weapon/card/id/enclave
+	
