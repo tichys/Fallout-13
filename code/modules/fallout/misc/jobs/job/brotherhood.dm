@@ -79,7 +79,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "headpaladin"
-	total_positions = 6
+	total_positions = 1
 	spawn_positions = 2
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"

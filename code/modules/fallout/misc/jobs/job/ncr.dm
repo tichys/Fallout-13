@@ -137,8 +137,8 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "vranger"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the NCR Command HQ"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7

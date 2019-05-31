@@ -44,7 +44,7 @@
 
 	toggle_reel_spin(0)
 
-	for(var/cointype in typesof(/obj/item/weapon/coin))
+	for(var/cointype in typesof(/obj/item/stack/caps))
 		var/obj/item/weapon/coin/C = new cointype(src)
 		coinvalues["[cointype]"] = C.value
 		qdel(C)
@@ -79,7 +79,7 @@
 	update_icon()
 
 /obj/machinery/computer/slot_machine/attackby(obj/item/I, mob/living/user, params)
-	if(istype(I, /obj/item/weapon/coin))
+	if(istype(I, /obj/item/stack/caps))
 		var/obj/item/weapon/coin/C = I
 		if(prob(2))
 			if(!user.drop_item())

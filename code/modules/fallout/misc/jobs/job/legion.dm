@@ -72,8 +72,8 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "centurion"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Legate"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
