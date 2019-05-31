@@ -60,6 +60,9 @@ macro "default"
 		name = "CTRL+4"
 		command = "a-intent harm"
 	elem 
+		name = "CTRL+A"
+		command = "lock-direction"
+	elem 
 		name = "CTRL+A+REP"
 		command = ".moveleft"
 	elem 
