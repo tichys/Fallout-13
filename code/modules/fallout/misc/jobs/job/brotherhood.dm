@@ -71,7 +71,7 @@
 
 	//Brotherhood Head Paladin
 
-/datum/job/paladin
+/datum/job/hpaladin
 	title = "Head Paladin"
 	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it."
 	flag = PALADIN
@@ -136,7 +136,7 @@
 
 //Head Scribe
 
-/datum/job/scribe
+/datum/job/hscribe
 	title = "Head Scribe"
 	desc = "The studious..<br>Guide the Scribes and show the Knights and Paladins that knowledge is your best weapon."
 	flag = HEADSCRIBE
