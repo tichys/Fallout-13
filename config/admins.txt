@@ -7,21 +7,8 @@
 # NOTE: if the rank-name cannot be found in admin_ranks.txt, they will not be adminned! ~Carn #
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
-LiquidRecluse = Elder
-Verhulst = Elder
-ComradeSully = Elder
-Harcourt = Elder
-Dmaster90 = President
-Lanceprater12 = Knight
-BeeGee0904 = Paladin
-UbrPzMaus = Elder
-bigfoun = Elder
-birchmaster = Knight
-MaeIsBae = Overseer
-Bobalobdob = Knight
+Kramperino = Knight
+dragonforcefive = Knight 
 Den Falne Kognen = Elder
-Big Dick Bean = Overseer
-The duke of time = Knight
-Compano = Knight
-DeusMort1s = Knight
-Sansaur = Elder
+Lestatanderson = President
+Lionfire1234 = Knight
