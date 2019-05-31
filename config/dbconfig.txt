@@ -30,4 +30,4 @@ FEEDBACK_TABLEPREFIX
 FEEDBACK_LOGIN root
 
 ## Password used to access the database.
-FEEDBACK_PASSWORD Codered1!
+FEEDBACK_PASSWORD 
