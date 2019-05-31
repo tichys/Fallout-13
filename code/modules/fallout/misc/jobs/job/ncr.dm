@@ -145,6 +145,9 @@
 
 	outfit = /datum/outfit/job/vranger
 
+	access = list(71)
+	minimal_access = list()
+
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(

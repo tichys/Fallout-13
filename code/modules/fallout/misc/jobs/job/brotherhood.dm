@@ -68,12 +68,12 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
-	
+
 	//Brotherhood Head Paladin
 
 /datum/job/paladin
 	title = "Head Paladin"
-	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it.<br>
+	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it."
 	flag = PALADIN
 	department_head = list("elder")
 	department_flag = ENGSEC
@@ -133,7 +133,7 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
-	
+
 //Head Scribe
 
 /datum/job/scribe
@@ -195,7 +195,7 @@
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
-	
+
 //Brotherhood Paladin
 
 /datum/job/paladin
