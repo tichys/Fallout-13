@@ -13,12 +13,13 @@ var/const/LEGDECAN			=(1<<7)
 var/const/LEGVEX			=(1<<8)
 var/const/LEGCENTURION		=(1<<9)
 var/const/LEGLEGAT			=(1<<10)
+var/const/CAMPFOLLOWER		=(1<<11)
 
-var/const/SHERIFF			=(1<<11)
-var/const/SETTLER			=(1<<12)
-var/const/ADVENTURER		=(1<<13)
-var/const/RAIDER        	=(1<<14)
-var/const/MAYOR				=(1<<15)
+var/const/SHERIFF			=(1<<12)
+var/const/SETTLER			=(1<<13)
+var/const/ADVENTURER		=(1<<14)
+var/const/RAIDER        	=(1<<15)
+var/const/MAYOR				=(1<<16)
 
 //This jobs using medsci flag, cause me too lazy.
 

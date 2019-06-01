@@ -367,3 +367,47 @@
 	backpack_contents = list(/obj/item/weapon/restraints/handcuffs=1, \
 	/obj/item/weapon/reagent_containers/food/drinks/flask/survival=1, \
 	/obj/item/weapon/storage/wallet=1,/obj/item/weapon/reagent_containers/pill/patch/healingpowder)
+
+/datum/job/camp
+	title = "Camp Follower"
+	desc = "Victory favors the bold."
+	flag = CAMPFOLLOWER
+	department_head = list("Centurion")
+	department_flag = WASTELAND
+	faction = "legion"
+	status = "follower"
+	total_positions = 25
+	spawn_positions = 25
+	supervisors = "the Legion"
+	selection_color = "#ec9d9d"
+	minimal_player_age = 0
+	disallowed_gender = MALE
+
+	required_items = list(
+	/obj/item/weapon/kitchen/knife/combat,
+	/obj/item/weapon/reagent_containers/pill/patch/healingpowder
+	)
+
+	denied_items = list(
+	/obj/item/clothing/shoes/f13/rag,
+	/obj/item/clothing/head/f13/headscarf,
+	/obj/item/clothing/head/f13/pot,
+	/obj/item/clothing/under/pants/f13/ghoul,
+	/obj/item/clothing/under/f13/rag,
+	/obj/item/clothing/under/f13/tribal,
+	/obj/item/clothing/under/f13/settler,
+	/obj/item/clothing/under/f13/brahmin,
+	/obj/item/clothing/under/f13/worn,
+	/obj/item/clothing/suit/f13/mantle_liz
+	)
+
+	outfit = /datum/outfit/job/campfollower
+
+	access = list()
+	minimal_access = list()
+
+/datum/outfit/job/campfollower
+	name = "Camp Follower"
+	uniform = /obj/item/clothing/under/f13/female/tribal
+	shoes = /obj/item/clothing/shoes/f13/military/legionleather
+	gloves = /obj/item/clothing/gloves/f13/leather
