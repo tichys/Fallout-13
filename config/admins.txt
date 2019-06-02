@@ -7,8 +7,8 @@
 # NOTE: if the rank-name cannot be found in admin_ranks.txt, they will not be adminned! ~Carn #
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
-Kramperino = Knight
+Kramperino = Paladin
 dragonforcefive = Knight 
 Den Falne Kognen = Elder
 Lestatanderson = President
-Lionfire1234 = Knight
+Lionfire1234 = Sentinel
