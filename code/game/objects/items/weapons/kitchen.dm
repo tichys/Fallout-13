@@ -144,10 +144,10 @@
 	icon_state = "cosmicknife"
 	item_state = "cosmicknife"
 	desc = "Made from a ''space age'' Saturnite alloy in the Big Mountain Research and Development Center, cosmic knives were advertised to be super-sharp, all-purpose kitchen knives that would not chip or dull. They proved to be too sharp for their own good, with a majority of them winding up on backorder for casinos in Texas years later."
-	force = 50
+	force = 45
 	throwforce = 35
 	embed_chance = 100
-	armour_penetration = 100
+	armour_penetration = 25
 	origin_tech = "materials=3;combat=4"
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cut")
 

@@ -227,7 +227,7 @@
 	icon_state = "combat_mk1"
 	item_state = "combat_mk1"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 40, bullet = 40, laser = 20, energy = 20, bomb = 30, bio = 0, rad = 10, fire = 20, acid = 20)
+	armor = list(melee = 60, bullet = 60, laser = 23, energy = 20, bomb = 30, bio = 0, rad = 10, fire = 60, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF
@@ -239,7 +239,7 @@
 	icon_state = "combat_mk2"
 	item_state = "combat_mk2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 50, bullet = 55, laser = 35, energy = 30, bomb = 40, bio = 0, rad = 20, fire = 40, acid = 50)
+	armor = list(melee = 70, bullet = 55, laser = 35, energy = 30, bomb = 40, bio = 0, rad = 20, fire = 50, acid = 50)
 	put_on_delay = 60
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF
@@ -406,7 +406,7 @@
 	desc = "Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio =100, rad = 40, fire = 50, acid = 50)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 70, bomb = 70, bio =100, rad = 40, fire = 70, acid = 50)
 	self_weight = 30
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
