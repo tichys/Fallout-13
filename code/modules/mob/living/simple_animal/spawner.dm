@@ -81,7 +81,7 @@
 	maxHealth = 1000
 	max_mobs = 5
 	spawn_time = 150
-	mob_type = list(/mob/living/simple_animal/hostile/ghoul, /mob/living/simple_animal/hostile/ghoul/glowing)
+	mob_type = /mob/living/simple_animal/hostile/ghoul
 	faction = list("ghoul")
 
 /mob/living/simple_animal/hostile/spawner/deathclaw
@@ -94,7 +94,7 @@
 	maxHealth = 1000
 	max_mobs = 5
 	spawn_time = 150
-	mob_type = list(/mob/living/simple_animal/hostile/deathclaw)
+	mob_type = /mob/living/simple_animal/hostile/deathclaw
 	faction = list("deathclaw")
 
 /mob/living/simple_animal/hostile/spawner/scorpion
@@ -107,8 +107,8 @@
 	maxHealth = 1000
 	max_mobs = 5
 	spawn_time = 150
-	mob_type = list(/mob/living/simple_animal/hostile/rad_scorpion)
-	faction = list("radscorpion")
+	mob_type = /mob/living/simple_animal/hostile/rad_scorpion
+	faction = list("scorpion")
 
 /mob/living/simple_animal/hostile/spawner/radroach
 	name = "radroach nest"
@@ -120,8 +120,8 @@
 	maxHealth = 1000
 	max_mobs = 8
 	spawn_time = 150
-	mob_type = list(/mob/living/simple_animal/hostile/radroach)
-	faction = list("gecko")
+	mob_type = /mob/living/simple_animal/hostile/radroach
+	faction = list("radroach")
 
 
 /mob/living/simple_animal/hostile/spawner/mining
