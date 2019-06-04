@@ -3570,7 +3570,7 @@
 "bqH" = (/obj/structure/fence,/obj/structure/barricade/sandbags,/obj/structure/barricade/sandbags,/turf/open/indestructible/ground/road{icon_state = "horizontalbottombordertop0"},/area/f13/wasteland)
 "bqI" = (/mob/living/simple_animal/hostile/rad_scorpion/black,/turf/open/indestructible/ground/desert,/area/f13/caves)
 "bqJ" = (/obj/item/weapon/pickaxe,/turf/open/indestructible/ground/desert,/area/f13/caves)
-"bqK" = (/obj/structure/barricade/sandbags,/obj/structure/barricade/sandbags{tag = "icon-sandbags (WEST)"; icon_state = "sandbags"; dir = 8; step_x = 31},/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
+"bqK" = (/obj/structure/barricade/sandbags,/obj/structure/barricade/sandbags{tag = "icon-sandbags (WEST)"; icon_state = "sandbags"; dir = 8},/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
 "bqL" = (/obj/structure/fence,/obj/structure/barricade/sandbags,/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
 "bqM" = (/obj/structure/barricade/sandbags{tag = "icon-sandbags (WEST)"; icon_state = "sandbags"; dir = 8},/turf/open/indestructible/ground/sidewalk{tag = "icon-horizontalbottomborderbottom0"; icon_state = "horizontalbottomborderbottom0"},/area/f13/wasteland)
 "bqN" = (/obj/effect/decal/remains/human,/obj/effect/decal/cleanable/blood/old,/turf/open/indestructible/ground/desert,/area/f13/wasteland)
