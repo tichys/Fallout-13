@@ -76,7 +76,7 @@
 	var/wikiurl = "http://fallout-13.wikia.com/wiki/Fallout_13_Wikia" // default wiki
 	var/forumurl = "https://www.reddit.com/r/Fallout13/" //default forums
 	var/rulesurl = "https://goo.gl/IsvOqU" // default rules
-	var/discord = "https://discord.gg/gwZTD4H" //default chat
+	var/discord = "https://discord.gg/FGka7hd" //default chat
 	var/bitbucket = "https://github.com/ZimZam0/Unofficial-Fallout-13-Roleplay" //default code
 
 	var/forbid_singulo_possession = 0
