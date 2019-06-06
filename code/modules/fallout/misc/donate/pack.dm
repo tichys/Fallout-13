@@ -437,3 +437,19 @@
 		)
 	price = -0
 */
+/datum/content_pack/deadman
+	name = "Wastland Ranger"
+	id = "deshoveledRanger"
+	desc = "<b>Available to: Neutral faction only! This old gear belonged to a former ranger of the wastes long before the NCR and Ranger Accord. A mysterious man approached you giving you said gear saying use it well."
+	items = list(
+		/obj/item/clothing/head/johncowboyhat,
+		/obj/item/clothing/suit/johncowboycoat,
+		/obj/item/clothing/under/johncowboyclothes,
+		/obj/item/clothing/under/pants/f13/johnclothes,
+		/obj/item/clothing/shoes/johncowboyboots,
+		/obj/item/weapon/gun/ballistic/revolver/johnpython,
+        /obj/item/weapon/gun/ballistic/revolver/johnshotgun,
+        /obj/item/clothing/head/helmet/f13/johnhelmet,
+        /obj/item/clothing/suit/f13/mfp/johnjacket
+		)
+	price = -0
