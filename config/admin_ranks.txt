@@ -29,7 +29,7 @@
 
 Apprentice
 Initiate		= +ADMIN
-Knight	                = +@ +BAN
+Knight	        = +@ +BAN +VAREDIT +REJUVINATE
 Overseer		= +@ +SPAWN +BAN
 Paladin			= +@ +POSSESS +BUILDMODE +SERVER +FUN
 Sentinel        = +@ +STEALTH +SOUNDS +DEBUG
