@@ -15,7 +15,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/settler
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "starwars", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate")
+	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "starwars", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate","deadman")
 
 /datum/outfit/job/settler
 	name = "Settler"
@@ -163,7 +163,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/adventurer
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "starwars", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate")
+	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "starwars", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate", "deadman")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/brownie,
@@ -216,7 +216,7 @@
 	minimal_access = list()
 	outfit = /datum/outfit/job/mercenary
 
-	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "starwars", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate")
+	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "starwars", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre", "karate", "deadman")
 
 	required_items = list(
 	/obj/item/clothing/shoes/f13/tan,
