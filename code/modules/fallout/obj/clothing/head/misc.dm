@@ -42,7 +42,7 @@
 	item_state = "rolandhatthree"
 
 /obj/item/clothing/head/johncowboyhat
-	name = "cowboy hat"
+	name = "ranger cowboy hat"
 	desc = "A snazzy cowboy hat made from an olive shade of suede material, looking particularly classy if it's paired with the right clothing."
 	icon_state = "johncowboyhat"
 	item_state = "johncowboyhat"

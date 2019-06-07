@@ -8,9 +8,9 @@
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
 Kramperino = Paladin
-dragonforcefive = Knight 
+dragonforcefive = Sentinel
 Den Falne Kognen = Elder
 Lestatanderson = President
 Lionfire1234 = Sentinel
-Comrade Sully = Knight
-bonerman1488 = Knight
+Comrade Sully = Sentinel
+bonerman1488 = Sentinel

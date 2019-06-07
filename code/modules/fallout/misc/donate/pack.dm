@@ -450,6 +450,7 @@
 		/obj/item/weapon/gun/ballistic/revolver/johnpython,
         /obj/item/weapon/gun/ballistic/revolver/johnshotgun,
         /obj/item/clothing/head/helmet/f13/johnhelmet,
-        /obj/item/clothing/suit/f13/mfp/johnjacket
+        /obj/item/clothing/suit/f13/mfp/johnjacket,
+        /obj/item/clothing/suit/johncoat
 		)
 	price = -0
