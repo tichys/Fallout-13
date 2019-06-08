@@ -3,7 +3,7 @@
 	icon_state = "bullet"
 	damage = 50
 	damage_type = BRUTE
-	dismemberment = 25
+	dismemberment = 2
 	nodamage = 0
 	flag = "bullet"
 	hitsound_wall = "ricochet"
@@ -36,29 +36,29 @@
 /obj/item/projectile/bullet/sniper/haemorrhage/deagle
 	name = "bullet"
 	damage = 60
-	dismemberment = 10
+	dismemberment = 5
 
 /obj/item/projectile/bullet/deagle
 	name = "bullet"
 	damage = 55
-	dismemberment = 14
+	dismemberment = 7
 
 /obj/item/projectile/bullet/deagle/two
 	name = "bullet"
 	damage = 70
-	dismemberment = 14
+	dismemberment = 7
 
 /obj/item/projectile/bullet/webley
 	name = "bullet"
 	damage = 65
-	dismemberment = 18
+	dismemberment = 4
 
 /obj/item/projectile/bullet/bulldog
 	name = "bullet"
 	damage = 68
 	weaken = 3
 	stamina = 50
-	dismemberment = 18
+	dismemberment = 4
 
 /obj/item/projectile/bullet/bulldog/on_hit(atom/target, blocked = 0)
 	if((blocked != 100) && iscarbon(target))
@@ -79,21 +79,21 @@
 /obj/item/projectile/bullet/pellet/decimator
 	name = "pellet"
 	damage = 25
-	dismemberment = 10
+	dismemberment = 2
 
 /obj/item/projectile/bullet/magnum
 	name = "magnum round"
 	damage = 80
 	weaken = 3
 	stamina = 50
-	dismemberment = 25
+	dismemberment = 5
 
 /obj/item/projectile/bullet/roland
 	name = ".45 round"
 	damage = 90
 	stun = 100
 	weaken = 100
-	dismemberment = 25
+	dismemberment = 5
 	armour_penetration = 100
 
 /obj/item/projectile/bullet/winchester
@@ -101,7 +101,7 @@
 	damage = 80
 	stun = 50
 	weaken = 30
-	dismemberment = 25
+	dismemberment = 5
 
 /obj/item/projectile/bullet/pellet/weak/New()
 	damage = 5
@@ -132,16 +132,16 @@
 /obj/item/projectile/bullet/midbullet
 	damage = 35
 	stamina = 65 //two round bursts from the c20r knocks people down
-	dismemberment = 10
+	dismemberment = 2
 
 
 /obj/item/projectile/bullet/midbullet2
 	damage = 26
-	dismemberment = 12
+	dismemberment = 2
 
 /obj/item/projectile/bullet/midbullet3
 	damage = 30
-	dismemberment = 14
+	dismemberment = 3
 
 /obj/item/projectile/bullet/midbullet3/hp
 	damage = 40
@@ -320,7 +320,7 @@
 	damage = 70
 	stun = 30
 	weaken = 5
-	dismemberment = 40
+	dismemberment = 15
 	armour_penetration = 50
 	var/breakthings = FALSE
 
@@ -349,7 +349,7 @@
 	armour_penetration = 15
 	damage = 75
 	stun = 5
-	dismemberment = 20
+	dismemberment = 10
 	weaken = 3
 	breakthings = FALSE
 

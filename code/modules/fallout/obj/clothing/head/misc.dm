@@ -125,14 +125,14 @@
 	desc = "A soft round cap, usually made of wool, with a flat crown that tilts to one side. Used to identify officers of the New California Republic Army.<br>The beret is camouflaged in various shades of green and brown, and has a badge of the NCR's two-headed bear roaring up at a gold star."
 	icon_state = "officer"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/ncr_captain
 	name = "NCR captain beret"
 	desc = "A cotton, neatly shaved and formed beret. Theres a two headed bear with two silver bars on its side on the front of the beret. It smells vaguely of cigars and whiskey. There also appears to be a liner of amrid weave, how exotic."
 	icon_state = "officer"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 40, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 20)
 
 /obj/item/clothing/head/f13/sergeant
@@ -140,7 +140,7 @@
 	desc = "A brown broad-brimmed felt hat, with a high crown, pinched symmetrically at the four corners.<br>It has the insignia plate of the New California Republic Rangers."
 	icon_state = "sergeant"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 10, bullet = 10, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 
 /obj/item/clothing/head/f13/general
@@ -148,7 +148,7 @@
 	desc = "A military peaked cap of dark green in color with a golden colored badge on the frontside.<br>The badge is inscripted with the words New California Republic."
 	icon_state = "general"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 20, bullet = 20, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 
 //Fluff

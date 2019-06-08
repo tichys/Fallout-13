@@ -659,7 +659,7 @@
 	icon_state = "trooper"
 	item_state = "trooper"
 	armor = list(melee = 30, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 10)
-	flags_inv = HIDEEARS|HIDEHAIR
+	flags_inv = HIDEEARS
 	put_on_delay = 10
 	strip_delay = 30
 	resistance_flags = FIRE_PROOF
