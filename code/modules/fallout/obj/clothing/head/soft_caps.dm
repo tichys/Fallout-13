@@ -16,14 +16,14 @@
 	desc = "A standard-issue Enclave officer's cap."
 	icon_state = "enclave"
 	item_color = "enclave_flipped"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/soft/f13/utility
 	name = "grey utility cover"
 	desc = "An eight-pointed hat, with a visor similar to a baseball cap, known as utility cover, also called the utility cap or eight-pointed cover."
 	icon_state = "utility_g"
 	item_color = "utility_g_flipped"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/soft/f13/utility/navy
 	name = "navy utility cover"

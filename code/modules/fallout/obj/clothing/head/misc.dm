@@ -9,7 +9,7 @@
 	desc = "A police peaked cap of dark blue in color with a silver-colored badge on the frontside.<br>The badge is inscribed with the words SPECIAL and POLICE."
 	icon_state = "retropolice"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/johnberet
 	name = "pre-War Beret"
@@ -60,21 +60,21 @@
 	desc = "A foldable military cap with straight sides, with insignia of People's Liberation Army, that was supposedly worn by regular troops."
 	icon_state = "chinese_s"
 	item_state = "secsoft"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/chinese_officer
 	name = "chinese side cap"
 	desc = "A foldable military cap with straight sides, with insignia of People's Liberation Army, that was supposedly worn by low rank officers."
 	icon_state = "chinese_o"
 	item_state = "secsoft"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/chinese_commander
 	name = "chinese peaked cap"
 	desc = "A peaked cap of dark green in color with a red star on the frontside.<br>It obviously belonged to a high rank officer of People's Liberation Army."
 	icon_state = "chinese_c"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/stormchaser
 	name = "stormchaser hat"
@@ -97,28 +97,28 @@
 	item_state = "fedora"
 	force = 10
 	hitsound = 'sound/items/trayhit1.ogg'
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/cowboy
 	name = "cowboy hat"
 	desc = "A high-crowned, wide-brimmed hat best known as the defining piece of attire for the North American cowboy."
 	icon_state = "cowboy"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
 	desc = "A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
 	icon_state = "bandit"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/gambler
 	name = "gambler hat"
 	desc = "A perfect hat for a ramblin' gamblin' man." //But I got to ramble (ramblin' man) //Oh I got to gamble (gamblin' man) //Got to got to ramble (ramblin' man) //I was born a ramblin' gamblin' man
 	icon_state = "gambler"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/ncr_officer
 	name = "officer beret"
@@ -185,7 +185,7 @@
 	desc = "There's only one man who can sniff out the dirty stench of crime, and he's likely wearing this black hat."
 	icon_state = "detectivealt"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 30, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
 	self_weight = 1
 
