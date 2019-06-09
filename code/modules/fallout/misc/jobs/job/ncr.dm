@@ -193,25 +193,27 @@
 
 	//NCR First Recon
 
-/datum/job/ncr_firstrecon
-	title = "NCR First Recon"
-	desc = "I have the weight of lives on my rifle, that's why i never miss."
-	flag = NCR_FIRSTRECON
-	department_head = list("ncr_sergeant,ncr_captain")
+/datum/job/ncr_ranger
+	title = "NCR Patrol Ranger"
+	desc = "We rangers chew nails and spit napalm. The toughest of the NCR."
+	flag = NCR_RANGER
+	department_head = list("vranger")
 	department_flag = WASTELAND
 	faction = "ncr"
-	status = "ncr_firstrecon"
-	total_positions = 4
-	spawn_positions = 4
-	supervisors = "the Captain"
+	status = "ncr_ranger"
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "Veteran Ranger"
 	minimal_player_age = 5
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/head/helmet/space/beret,
-	/obj/item/clothing/suit/armor/f13/ncr/facewrap,
+	/obj/item/clothing/head/f13/ncr_officer,
+	/obj/item/clothing/under/f13/ncr,
+	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/kitchen/knife/combat,
+	/obj/item/weapon/lighter/engraved
 	)
 
 	denied_items = list(
@@ -231,23 +233,26 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	outfit = /datum/outfit/job/ncrf
+	outfit = /datum/outfit/job/ncr_ranger
 
 	access = list(71)
 	minimal_access = list()
 
-/datum/outfit/job/ncrf
-	name = "NCR First Recon"
-	gloves = /obj/item/clothing/gloves/f13/ncr
-	uniform = /obj/item/clothing/under/f13/ncr
-	shoes = /obj/item/clothing/shoes/f13/military/ncr
-	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
-	head = /obj/item/clothing/head/helmet/space/beret
-	glasses = /obj/item/clothing/glasses/f13/biker
+/datum/outfit/job/ncr_ranger
+	name = "Staff Sergeant"
+	id = null
+	gloves = /obj/item/clothing/gloves/f13/military
+	uniform = /obj/item/clothing/under/f13/ncr_officer
+	shoes = /obj/item/clothing/shoes/f13/military
+	suit = /obj/item/clothing/suit/armor/f13/sergeant
+	head = /obj/item/clothing/head/f13/sergeant
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/ballistic/automatic/garand
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1)
+	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
+	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \
+		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
+		/obj/item/device/radio = 1, \
+		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/trooper
