@@ -3,7 +3,7 @@
 /datum/job/general
 	title = "NCR Captain"
 	desc = "The fate of civilization rests on your shoulders.<br>You were chosen to write history anew.<br>Make the two headed bear proud."
-	flag = GENERAL
+	flag = CAPTAIN
 	department_head = list("NCR Command HQ")
 	department_flag = WASTELAND
 	faction = "ncr"

@@ -868,6 +868,24 @@
 	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
 	recoil = 2
 
+/obj/item/weapon/gun/ballistic/automatic/mp40
+	name = "MP-40"
+	icon_state = "mp-40"
+	item_state = "mp-40"
+	wielded_icon = "mp-40_weild"
+	desc = "An smg manufactured greatly in ww2. Chambered in 9x19 parabellum."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	origin_tech = "combat=3;materials=2"
+	mag_type = /obj/item/ammo_box/magazine/mp40
+	can_suppress = 1
+	casing_ejector = 1
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_NORMAL
+	mag_load_sound = 'sound/effects/wep_magazines/ar_load.ogg'
+	mag_unload_sound = 'sound/effects/wep_magazines/ar_unload.ogg'
+	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
+	recoil = 2
+
 /obj/item/weapon/gun/ballistic/automatic/garand
 	name = "M1 Garand"
 	icon_state = "garand"

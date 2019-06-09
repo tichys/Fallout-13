@@ -1,6 +1,6 @@
 var/const/WASTELAND			=(1<<3)
 
-var/const/GENERAL			=(1<<0)
+var/const/CAPTAIN			=(1<<0)
 var/const/NCR_SERGEANT		=(1<<1)
 var/const/NCR_RANGER		=(1<<2)
 var/const/RANGER			=(1<<3)

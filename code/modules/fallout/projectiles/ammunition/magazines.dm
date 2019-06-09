@@ -36,6 +36,15 @@
 	max_ammo = 8
 	multiple_sprites = 2
 
+/obj/item/ammo_box/magazine/mp40
+	name = "smg magazine (9mm)"
+	icon_state = "mp40"
+	origin_tech = "combat=2"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	caliber = "9mm"
+	max_ammo = 32
+	multiple_sprites = 2
+
 /obj/item/ammo_box/magazine/silverghostmag
 	name = "pistol magazine (9mm)"
 	icon_state = "silverghostmag"

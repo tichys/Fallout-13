@@ -1,7 +1,7 @@
 
 var/const/ENGSEC			=(1<<0)
 
-var/const/CAPTAIN			=(1<<0)
+var/const/CAPTAIN1			=(1<<0)
 var/const/HOS				=(1<<1)
 var/const/WARDEN			=(1<<2)
 var/const/DETECTIVE			=(1<<3)
