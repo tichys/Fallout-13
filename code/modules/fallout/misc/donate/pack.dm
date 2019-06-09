@@ -454,3 +454,17 @@
         /obj/item/clothing/suit/johncoat
 		)
 	price = -0
+
+/datum/content_pack/obersturmfuhrer
+	name = "obersturmfuhrer"
+	id = "obersturmfuhrer"
+	desc = "<b>Available to: Neutral faction only! This old gear belonged to a former schutzstaffel obersturmfuhrer from ww2."
+	items = list(
+		/obj/item/clothing/head/f13/bonescap,
+		/obj/item/clothing/suit/johncowboycoat,
+		/obj/item/clothing/under/f13/bonesuni,
+		/obj/item/clothing/shoes/f13/military/light,
+		/obj/item/weapon/gun/ballistic/automatic/pistol/luger,
+        /obj/item/weapon/gun/ballistic/automatic/mp40,
+		)
+	price = -0

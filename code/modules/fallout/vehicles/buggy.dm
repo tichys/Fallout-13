@@ -107,3 +107,12 @@
 /obj/vehicle/fuel/motorcycle/buggy/vertibird/Move(NewLoc,Dir=0,step_x=0,step_y=0)
 	forceMove(NewLoc)
 	..()
+
+/obj/vehicle/fuel/motorcycle/buggy/vertibird/NCR
+	name = "NCR vertibird"
+	desc = "A vertibird belonging to the NCR."
+	icon = 'icons/fallout/vehicles/vertibird.dmi'
+	icon_state = "vb-fast_ncr"
+	engine_on_sound = 'sound/f13machines/vertibird_start.ogg'
+	engine_loop_sound = 'sound/f13machines/vertibird_loop.ogg'
+	layer = RIPPLE_LAYER+0.5
