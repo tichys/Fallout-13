@@ -9,7 +9,7 @@
 	desc = "A police peaked cap of dark blue in color with a silver-colored badge on the frontside.<br>The badge is inscribed with the words SPECIAL and POLICE."
 	icon_state = "retropolice"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/johnberet
 	name = "pre-War Beret"
@@ -60,21 +60,21 @@
 	desc = "A foldable military cap with straight sides, with insignia of People's Liberation Army, that was supposedly worn by regular troops."
 	icon_state = "chinese_s"
 	item_state = "secsoft"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/chinese_officer
 	name = "chinese side cap"
 	desc = "A foldable military cap with straight sides, with insignia of People's Liberation Army, that was supposedly worn by low rank officers."
 	icon_state = "chinese_o"
 	item_state = "secsoft"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/chinese_commander
 	name = "chinese peaked cap"
 	desc = "A peaked cap of dark green in color with a red star on the frontside.<br>It obviously belonged to a high rank officer of People's Liberation Army."
 	icon_state = "chinese_c"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/stormchaser
 	name = "stormchaser hat"
@@ -97,42 +97,42 @@
 	item_state = "fedora"
 	force = 10
 	hitsound = 'sound/items/trayhit1.ogg'
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/cowboy
 	name = "cowboy hat"
 	desc = "A high-crowned, wide-brimmed hat best known as the defining piece of attire for the North American cowboy."
 	icon_state = "cowboy"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/bandit
 	name = "bandit hat"
 	desc = "A black cowboy hat with a large brim that's curved to the sides.<br>A silver eagle pin is attached to the front."
 	icon_state = "bandit"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/gambler
 	name = "gambler hat"
 	desc = "A perfect hat for a ramblin' gamblin' man." //But I got to ramble (ramblin' man) //Oh I got to gamble (gamblin' man) //Got to got to ramble (ramblin' man) //I was born a ramblin' gamblin' man
 	icon_state = "gambler"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/ncr_officer
 	name = "officer beret"
 	desc = "A soft round cap, usually made of wool, with a flat crown that tilts to one side. Used to identify officers of the New California Republic Army.<br>The beret is camouflaged in various shades of green and brown, and has a badge of the NCR's two-headed bear roaring up at a gold star."
 	icon_state = "officer"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 
 /obj/item/clothing/head/f13/ncr_captain
 	name = "NCR captain beret"
 	desc = "A cotton, neatly shaved and formed beret. Theres a two headed bear with two silver bars on its side on the front of the beret. It smells vaguely of cigars and whiskey. There also appears to be a liner of amrid weave, how exotic."
 	icon_state = "officer"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 40, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 20)
 
 /obj/item/clothing/head/f13/sergeant
@@ -140,7 +140,7 @@
 	desc = "A brown broad-brimmed felt hat, with a high crown, pinched symmetrically at the four corners.<br>It has the insignia plate of the New California Republic Rangers."
 	icon_state = "sergeant"
 	item_state = "dethat"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 10, bullet = 10, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 
 /obj/item/clothing/head/f13/general
@@ -148,7 +148,7 @@
 	desc = "A military peaked cap of dark green in color with a golden colored badge on the frontside.<br>The badge is inscripted with the words New California Republic."
 	icon_state = "general"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 20, bullet = 20, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 
 //Fluff
@@ -185,7 +185,7 @@
 	desc = "There's only one man who can sniff out the dirty stench of crime, and he's likely wearing this black hat."
 	icon_state = "detectivealt"
 	item_state = "fedora"
-	flags_inv = HIDEHAIR
+	flags_inv = null
 	armor = list(melee = 30, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
 	self_weight = 1
 

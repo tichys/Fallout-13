@@ -1,8 +1,8 @@
 var/const/WASTELAND			=(1<<3)
 
 var/const/GENERAL			=(1<<0)
-var/const/NCR_FIRSTRECON	=(1<<1)
-var/const/NCR_SERGEANT		=(1<<2)
+var/const/NCR_SERGEANT		=(1<<1)
+var/const/NCR_RANGER		=(1<<2)
 var/const/RANGER			=(1<<3)
 var/const/TROOPER			=(1<<4)
 //var/const/CCO				=(1<<4)
