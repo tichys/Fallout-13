@@ -34,10 +34,10 @@
 	if(user.canmove && !user.stat && !user.restrained())
 		src.flipped = !src.flipped
 		if(src.flipped)
-			icon_state = "[item_color]soft_flipped"
+			icon_state = "[item_color]_flipped"
 			to_chat(user, "<span class='notice'>You flip the hat backwards.</span>")
 		else
-			icon_state = "[item_color]soft"
+			icon_state = "[item_color]"
 			to_chat(user, "<span class='notice'>You flip the hat back in normal position.</span>")
 		usr.update_inv_head()	//so our mob-overlays update
 
