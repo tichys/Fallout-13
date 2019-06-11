@@ -886,11 +886,6 @@
 	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
 	recoil = 2
 
-/obj/item/weapon/gun/ballistic/automatic/mp40/update_icon()
-	..()
-	icon_state = "[initial(icon_state)][magazine && magazine.max_ammo == 32 ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
-	return
-
 /obj/item/weapon/gun/ballistic/automatic/garand
 	name = "M1 Garand"
 	icon_state = "garand"
