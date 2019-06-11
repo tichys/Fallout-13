@@ -10,7 +10,7 @@
 	var/flipped = 0
 
 /obj/item/clothing/head/soft/dropped()
-	src.icon_state = "[item_color]soft"
+	src.icon_state = "[item_color]"
 	src.flipped=0
 	..()
 

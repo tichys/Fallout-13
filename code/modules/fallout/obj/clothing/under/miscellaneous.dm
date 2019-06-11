@@ -18,7 +18,7 @@
 	name = "obersturmfuhrer uniform"
 	desc = "Pre-War standard SS officer uniform. Oddly able to withstand reichiation."
 	icon_state = "sturmfuhrer"
-	item_state = "bl_suit"
+	item_state = "sturmfuhrer"
 	item_color = "sturmfuhrer"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 100, fire = 20, acid = 0)
