@@ -1,13 +1,13 @@
 //Fallout 13 New California Republic faction directory
 
-/datum/job/general
+/datum/job/captain
 	title = "NCR Captain"
 	desc = "The fate of civilization rests on your shoulders.<br>You were chosen to write history anew.<br>Make the two headed bear proud."
 	flag = CAPTAIN
 	department_head = list("NCR Command HQ")
 	department_flag = WASTELAND
 	faction = "ncr"
-	status = "ncr_general"
+	status = "ncr_captain"
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the NCR Command HQ"
@@ -43,12 +43,12 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	outfit = /datum/outfit/job/general
+	outfit = /datum/outfit/job/captain
 
 	access = list(access_ncr)
 	minimal_access = list()
 
-/datum/outfit/job/general
+/datum/outfit/job/captain
 	name = "NCR Captain"
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/general
@@ -70,7 +70,7 @@
 	title = "NCR Sergeant"
 	desc = "You have to remind Troopers to speak only when spoken to, and that the first and last words out of their filthy sewers will be \"Sir\"."
 	flag = NCR_SERGEANT
-	department_head = list("general")
+	department_head = list("captain")
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "ncr_sergeant"
@@ -104,7 +104,8 @@
 	/obj/item/clothing/under/f13/brahmin,
 	/obj/item/clothing/under/f13/female/brahmin,
 	/obj/item/clothing/under/f13/worn,
-	/obj/item/clothing/suit/f13/mantle_liz
+	/obj/item/clothing/suit/f13/mantle_liz,
+	/obj/item/weapon/gun/ballistic/automatic/rifle
 	)
 
 	outfit = /datum/outfit/job/ncr_sergeant
@@ -115,11 +116,11 @@
 /datum/outfit/job/ncr_sergeant
 	name = "Sergeant"
 	id = null
-	gloves = /obj/item/clothing/gloves/f13/military
+	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr_officer
-	shoes = /obj/item/clothing/shoes/f13/military
-	suit = /obj/item/clothing/suit/armor/f13/sergeant
-	head = /obj/item/clothing/head/f13/sergeant
+	shoes = /obj/item/clothing/shoes/f13/military/ncr
+	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
+	head = /obj/item/clothing/head/f13/ncr_officer
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
 	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \

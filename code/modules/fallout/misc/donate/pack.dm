@@ -337,7 +337,7 @@
 	roles = list(
 		/datum/job/gangleader,
 		/datum/job/mayor,
-		/datum/job/general,
+		/datum/job/captain,
 		/datum/job/legate,
 		/datum/job/elder,
 		/datum/job/colonel

@@ -314,9 +314,10 @@
 	item_state = "ncr_armor9"
 	self_weight = 6
 	armor = list(melee = 40, bullet = 40, laser = 20, energy = 20, bomb = 10, bio = 0, rad = 50, fire = 20, acid = 20) //Better radiation protection, thank the facewrap bro!
-	flags_inv = HIDEFACIALHAIR
+	flags_inv = HIDEFACE|HIDEFACIALHAIR
+
 /obj/item/clothing/suit/armor/f13/sergeant
-	name = "NCR patrol sergeant armor"
+	name = "NCR patrol ranger armor"
 	desc = "Military-grade combat armor designed to protect key sections of the human body from ballistic trauma with hard armored plates made from complex polymers and ceramics, with a flexible body suit interwoven with thermal-dissipative membranes and bulletproof material.<br>It has a matte-finish olive drab coloring by default, making it suitable for woodland and/or urban camouflage."
 	icon_state = "sergeant"
 	item_state = "sergeant"
