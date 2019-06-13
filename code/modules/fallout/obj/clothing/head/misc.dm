@@ -17,6 +17,12 @@
 	icon_state = "johnberet"
 	item_state = "johnberet"
 
+/obj/item/clothing/head/f13/bonescap
+	name = "pre-War Cap"
+	desc = "What appears to be a pre-War cap of some kind, belonging to the schutzstaffel."
+	icon_state = "sturmcap"
+	item_state = "sturmcap"
+
 /obj/item/clothing/head/rolandhat
 	name = "sun hat"
 	desc = "An old and frayed leather farm hand's hat, with a single length of sisal rope wrapped around it loosely."
