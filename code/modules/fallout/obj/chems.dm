@@ -57,7 +57,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/psycho
 	name = "psycho"
 	desc = "Psycho will increase damage resistance, allowing subjects to survive hits more easily."
-	list_reagents = list("methamphetamine" = 9, "epinephrine" = 20, "inacusiate" = 5, "oculine" = 5)
+	list_reagents = list("epinephrine" = 20, "inacusiate" = 5, "oculine" = 5)
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 	icon_state = "psycho"
 	item_state = "syringe_15"
@@ -75,7 +75,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/turbo
 	name = "turbo"
 	desc = "Turbo appears to be an inhaler of Jet hastily duct-taped to an aerosol can of HairStylez-brand hair spray. Turbo causes brief slowdown of the user's surroundings (time goes at about 35% of its original speed), including everything from enemy movements to projectile speeds (the user's own projectile speed included) to the duration of the drug itself. However, the user does not experience the slowdown - their own movement speed and fire rate will remain the same."
-	list_reagents = list("stimulants" = 10, "methamphetamine" = 9, "crank" = 9)
+	list_reagents = list("stimulants" = 10, "methamphetamine" = 9)
 	icon = 'icons/fallout/objects/medicine/chemical.dmi'
 	icon_state = "turbo"
 	item_state = "turbo"

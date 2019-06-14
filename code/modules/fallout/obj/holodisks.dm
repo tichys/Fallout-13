@@ -46,9 +46,34 @@
 	soundFile =  'sound/f13items/holodisk_abducted.ogg'
 	soundLength = 430
 
+/obj/item/weapon/holodisk/enclave_montezuma
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Enclave Radio broadcast..<br>An inscription on the side reads \"montezuma\""
+	soundFile =  'sound/f13music/enclave_montezuma.ogg'
+	soundLength = 410
+
+/obj/item/weapon/holodisk/enclave_gorygory
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Enclave Radio broadcast..<br>An inscription on the side reads \"Gory Gory Hymn\""
+	soundFile =  'sound/f13music/enclave_hymn.ogg'
+	soundLength = 300
+
+/obj/item/weapon/holodisk/enclave_stars
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Enclave Radio broadcast.<br>An inscription on the side reads \"Stars\""
+	soundFile =  'sound/f13music/enclave_stars.ogg'
+	soundLength = 732
+
 /obj/item/weapon/holodisk/runninggun
 	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Radio New Vegas broadcast.<br>An inscription on the side reads \"Running Gun\""
 	soundFile =  'sound/f13music/new_vegas_show_bonus_1.ogg'
+	soundLength = 1836
+
+/obj/item/weapon/holodisk/jet_rimshot
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Radio broadcast... god doesn't know what from.<br>An inscription on the side reads \"Jet Rimshot\""
+	soundFile =  'sound/f13music/Jet_rimshot.ogg'
+	soundLength = 2400
+
+/obj/item/weapon/holodisk/jet_mama
+	desc = "A durable laser-readable storage device produced by Wattz Electronics.<br>Based on tape holography technology, it can store information safely for extended periods of time.<br>This particular holodisk contains a rare Radio broadcast... god doesn't know what from.<br>An inscription on the side reads \"Jet Mama\""
+	soundFile =  'sound/f13music/Jet_mama.ogg'
 	soundLength = 1836
 
 /obj/item/weapon/holodisk/bigiron

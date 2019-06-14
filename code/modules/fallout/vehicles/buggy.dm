@@ -116,3 +116,24 @@
 	engine_on_sound = 'sound/f13machines/vertibird_start.ogg'
 	engine_loop_sound = 'sound/f13machines/vertibird_loop.ogg'
 	layer = RIPPLE_LAYER+0.5
+	bound_height = 64
+	bound_width = 64
+
+/datum/riding/motorcycle/buggy/vertibird/handle_vehicle_offsets()
+	..()
+	if(ridden.has_buckled_mobs())
+		for(var/m in ridden.buckled_mobs)
+			var/mob/living/buckled_mob = m
+			switch(buckled_mob.dir)
+				if(NORTH)
+					buckled_mob.pixel_x = 128
+					buckled_mob.pixel_y = 220
+				if(EAST)
+					buckled_mob.pixel_x = 210
+					buckled_mob.pixel_y = 128
+				if(SOUTH)
+					buckled_mob.pixel_x = 128
+					buckled_mob.pixel_y = 64
+				if(WEST)
+					buckled_mob.pixel_x = 64
+					buckled_mob.pixel_y = 128

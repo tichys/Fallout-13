@@ -32,7 +32,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -93,7 +92,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -154,7 +152,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -214,7 +211,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -273,7 +269,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -335,7 +330,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,
@@ -390,7 +384,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/f13/rag,

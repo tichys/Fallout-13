@@ -172,9 +172,9 @@ mob/proc/set_status(var/status)
 	change_faction = 1
 	color = "#020070"
 
-/datum/status/ncr_general
-	name = "General"
-	id = "ncr_general"
+/datum/status/ncr_captain
+	name = "Captain"
+	id = "ncr_captain"
 	change_faction = 1
 	can_invite_to = list("recruit", "trooper", "ncr_sergeant")
 	color = "#02005C"
