@@ -28,7 +28,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/pants/f13/cloth,
@@ -92,7 +91,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/pants/f13/cloth,
@@ -105,7 +103,8 @@
 	/obj/item/clothing/under/f13/female/brahmin,
 	/obj/item/clothing/under/f13/worn,
 	/obj/item/clothing/suit/f13/mantle_liz,
-	/obj/item/weapon/gun/ballistic/automatic/rifle
+	/obj/item/weapon/gun/ballistic/automatic/rifle,
+	/obj/item/ammo_box/magazine/m308
 	)
 
 	outfit = /datum/outfit/job/ncr_sergeant
@@ -159,7 +158,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/pants/f13/cloth,
@@ -171,7 +169,7 @@
 	/obj/item/clothing/under/f13/brahmin,
 	/obj/item/clothing/under/f13/female/brahmin,
 	/obj/item/clothing/under/f13/worn,
-	/obj/item/clothing/suit/f13/mantle_liz
+	/obj/item/clothing/suit/f13/mantle_liz,
 	)
 
 
@@ -219,7 +217,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/pants/f13/cloth,
@@ -231,7 +228,9 @@
 	/obj/item/clothing/under/f13/brahmin,
 	/obj/item/clothing/under/f13/female/brahmin,
 	/obj/item/clothing/under/f13/worn,
-	/obj/item/clothing/suit/f13/mantle_liz
+	/obj/item/clothing/suit/f13/mantle_liz,
+	/obj/item/weapon/gun/ballistic/automatic/rifle,
+	/obj/item/ammo_box/magazine/m308
 	)
 
 	outfit = /datum/outfit/job/ncr_ranger
@@ -279,7 +278,6 @@
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
-	/obj/item/clothing/head/f13/headscarf,
 	/obj/item/clothing/head/f13/pot,
 	/obj/item/clothing/under/pants/f13/ghoul,
 	/obj/item/clothing/under/pants/f13/cloth,
