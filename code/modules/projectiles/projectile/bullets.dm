@@ -4,6 +4,7 @@
 	damage = 50
 	damage_type = BRUTE
 	dismemberment = 1
+	armour_penetration = 0
 	nodamage = 0
 	flag = "bullet"
 	hitsound_wall = "ricochet"
@@ -94,7 +95,7 @@
 	stun = 100
 	weaken = 100
 	dismemberment = 1
-	armour_penetration = 100
+	armour_penetration = 30
 
 /obj/item/projectile/bullet/winchester
 	name = ".30-30 round"
@@ -150,7 +151,7 @@
 
 /obj/item/projectile/bullet/midbullet3/ap
 	damage = 45
-	armour_penetration = 40
+	armour_penetration = 10
 	dismemberment = 1
 
 /obj/item/projectile/bullet/midbullet3/fire/on_hit(atom/target, blocked = 0)
@@ -321,7 +322,7 @@
 	stun = 30
 	weaken = 5
 	dismemberment = 2
-	armour_penetration = 50
+	armour_penetration = 40
 	var/breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/on_hit(atom/target, blocked = 0)

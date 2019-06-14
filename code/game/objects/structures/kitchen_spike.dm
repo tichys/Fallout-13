@@ -157,3 +157,39 @@
 	buckle_lying = 0
 	can_buckle = 1
 	bound_height = 64
+
+/obj/structure/kitchenspike/cross/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
+	if(buckled_mob)
+		var/mob/living/M = buckled_mob
+		if(M != user)
+			M.visible_message(\
+				"[user.name] tries to pull [M.name] free of the [src]!",\
+				"<span class='notice'>[user.name] is trying to pull you off the [src], opening up fresh wounds!</span>",\
+				"<span class='italics'>You hear a dry sticky noise.</span>")
+			if(!do_after(user, 300, target = src))
+				if(M && M.buckled)
+					M.visible_message(\
+					"[user.name] fails to free [M.name]!",\
+					"<span class='notice'>[user.name] fails to pull you off of the [src].</span>")
+				return
+
+		else
+			M.visible_message(\
+			"<span class='warning'>[M.name] struggles to break free from the [src]!</span>",\
+			"<span class='notice'>You struggle to break free from the [src], exacerbating your wounds! (Stay still for two minutes.)</span>",\
+			"<span class='italics'>You hear a dry sticky noise..</span>")
+			M.adjustBruteLoss(20)
+			if(!do_after(M, 1200, target = src))
+				if(M && M.buckled)
+					to_chat(M, "<span class='warning'>You fail to free yourself!</span>")
+				return
+		if(!M.buckled)
+			return
+		var/matrix/m180 = matrix(M.transform)
+		animate(M, transform = m180, time = 3)
+		M.pixel_y = M.get_standard_pixel_y_offset(32)
+		M.adjustBruteLoss(20)
+		src.visible_message(text("<span class='danger'>[M] falls free of the [src]!</span>"))
+		unbuckle_mob(M,force=1)
+		M.emote("scream")
+		M.AdjustWeakened(10)
