@@ -277,7 +277,7 @@ mob/proc/set_faction(var/faction)
 	full_name = "New California Republic"
 	description = "<b>Alignment: Lawful Good</b><br>The New California Republic, or simply the NCR - A large, democratic federation with a massive population based in California, with holdings in other States.<br>The NCR emphasizes and claims to support a myriad of old world values, such as democracy, personal liberty, and the rule of law.<br>It also strives to restore general order to the wasteland through improvements to and development of infrastructure and economic systems, as well as basic common peace between people."
 	preview_image = 'html/factions/ncr.png'
-	head_status = "ncr_general"
+	head_status = "ncr_captain"
 	verbs = list(/mob/proc/begin_head_voting)
 	area = /area/f13/ncr
 	welcome_text = "Your current objectives are:<br>\
