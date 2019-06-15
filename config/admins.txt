@@ -15,3 +15,4 @@ Lionfire1234 = Sentinel
 Comrade Sully = Sentinel
 bonerman1488 = Sentinel
 Kanoha Shinobi = Scribe
+Andrewciprioni = Scribe
