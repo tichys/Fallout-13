@@ -101,3 +101,54 @@
 		. = ..()
 	else
 		return QDEL_HINT_LETMELIVE
+
+/obj/structure/ladder/cactus
+	name = "odd cactus"
+	desc = "An old cactus. this one seems weird."
+	icon = 'icons/fallout/flora/trees.dmi'
+obj/structure/ladder/cactus/update_icon()
+	if(up && down)
+		icon_state = "cactus"
+
+	else if(up)
+		icon_state = "cactus"
+
+	else if(down)
+		icon_state = "cactus"
+
+	else	//wtf make your ladders properly assholes
+		icon_state = "cactus"
+
+/obj/structure/ladder/tree
+	name = "dead tree"
+	desc = "An old dead tree."
+	icon = 'icons/fallout/flora/talltrees.dmi'
+obj/structure/ladder/tree/update_icon()
+	if(up && down)
+		icon_state = "tree_2"
+
+	else if(up)
+		icon_state = "tree_2"
+
+	else if(down)
+		icon_state = "tree_2"
+
+	else	//wtf make your ladders properly assholes
+		icon_state = "tree_2"
+
+/obj/structure/ladder/vent
+	name = "vent"
+	desc = "A blue vent good for air circulation."
+	icon = 'icons/fallout/objects/decals.dmi'
+obj/structure/ladder/vent/update_icon()
+	if(up && down)
+		icon_state = "ventblue"
+
+	else if(up)
+		icon_state = "ventblue"
+
+	else if(down)
+		icon_state = "ventblue"
+
+	else	//wtf make your ladders properly assholes
+		icon_state = "ventblue"

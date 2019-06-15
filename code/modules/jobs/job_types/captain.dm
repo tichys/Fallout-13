@@ -1,8 +1,8 @@
 /*
 Captain
 */
-/datum/job/captain
-	title = "Captain"
+/datum/job/captain1
+	title = "Captain1"
 	flag = CAPTAIN1
 	department_head = list("Centcom")
 	department_flag = ENGSEC
@@ -14,21 +14,21 @@ Captain
 	req_admin_notify = 1
 	minimal_player_age = 14
 
-	outfit = /datum/outfit/job/captain
+	outfit = /datum/outfit/job/captain1
 
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
 
-/datum/job/captain/get_access()
+/datum/job/captain1/get_access()
 	return get_all_accesses()
 
-/datum/job/captain/announce(mob/living/carbon/human/H)
+/datum/job/captain1/announce(mob/living/carbon/human/H)
 	..()
-	minor_announce("Captain [H.real_name] on deck!")
+	minor_announce("Captain1 [H.real_name] on deck!")
 
-/datum/outfit/job/captain
-	name = "Captain"
-	jobtype = /datum/job/captain
+/datum/outfit/job/captain1
+	name = "Captain1"
+	jobtype = /datum/job/captain1
 
 	id = /obj/item/weapon/card/id/gold
 	belt = /obj/item/device/pda/captain
