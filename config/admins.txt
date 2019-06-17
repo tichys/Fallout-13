@@ -14,4 +14,5 @@ Lestatanderson = President
 Lionfire1234 = Sentinel
 Comrade Sully = Sentinel
 bonerman1488 = Sentinel
-Kanoha Shinobi = Scribe
+Kanoha Shinobi = Sentinel
+Andrewciprioni = Sentinel
