@@ -175,7 +175,7 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	var/mineralChance = 13
 	var/display_icon_state = "rock"
 
-/*/turf/closed/mineral/random/New()
+/turf/closed/mineral/random/New()
 	..()
 	if (prob(mineralChance))
 		mineralSpawnChanceList = list(
@@ -224,7 +224,7 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 				src = M
 				M.levelupdate()
 	return
-*/
+
 
 /turf/closed/mineral/random/New()
 	if (!mineralSpawnChanceList)
