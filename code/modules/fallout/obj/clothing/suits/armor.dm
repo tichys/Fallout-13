@@ -348,7 +348,7 @@
 	icon_state = "sierra"
 	item_state = "sierra"
 	armor = list(melee = 55, bullet = 55, laser = 20, energy = 15, bomb = 25, bio = 100, rad = 100, fire = 100, acid = 100)
-	self_weight = 25 //weight adjusted and general behaviour put more in line with regular power armour since sierra power armour is meant to have its servomotors still installed and used by captains that have been trained to use power armour
+	self_weight = 18 //weight adjusted and general behaviour put more in line with regular power armour since sierra power armour is meant to have its servomotors still installed and used by captains that have been trained to use power armour
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	
 // ncr armor end
