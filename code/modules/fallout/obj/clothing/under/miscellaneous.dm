@@ -443,7 +443,7 @@
 	item_state = "bl_suit"
 	item_color = "enclave_o"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 25, bullet = 20, laser = 20, energy = 20, bomb = 10, bio = 10, rad = 20, fire = 15, acid = 15)
+	armor = list(melee = 15, bullet = 25, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
 	can_adjust = 0
 	self_weight = 3
 
@@ -454,7 +454,7 @@
 	item_state = "lb_suit"
 	item_color = "ncr_o"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 10, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 10, bullet = 15, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
 	can_adjust = 0
 	self_weight = 3
 
@@ -496,7 +496,7 @@
 	item_color = "recon"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS|HEAD
 	flags_inv = HIDEHAIR
-	armor = list(melee = 25, bullet = 20, laser = 15, energy = 15, bomb = 15, bio = 20, rad = 20, fire = 20, acid = 10)
+	armor = list(melee = 15, bullet = 15, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HEAD
 	can_adjust = 0
