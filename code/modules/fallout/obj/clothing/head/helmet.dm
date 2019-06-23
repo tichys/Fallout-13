@@ -358,6 +358,7 @@
 	var/on = 0
 	light_color = LIGHT_COLOR_YELLOW
 	icon = 'icons/fallout/clothing/hats.dmi'
+	flash_protect = 2
 
 /obj/item/clothing/head/helmet/power_armor/proc/toogle_light(mob/user)
 	on = !on
@@ -377,7 +378,7 @@
 		toogle_light(user)
 		return 1
 	return ..()
-
+	
 /obj/item/clothing/head/helmet/power_armor/badmin
 	name = "advanced mark III power helmet"
 	desc = "A group of Enclave mad scientists lead by Administrator Badmin, have spent a decade working on the incredible creation you see in front of you."
@@ -392,8 +393,13 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 3
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/badmin/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -423,7 +429,7 @@
 	icon_state = "shocktrooper"
 	item_state = "shocktrooper"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 90, bullet = 80, laser = 75, energy = 80, bomb = 80, bio = 100, rad = 100, fire = 90, acid = 90)
+	armor = list(melee = 90, bullet = 90, laser = 80, energy = 65, bomb = 65, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -431,8 +437,13 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 3
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/shocktrooper/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -462,7 +473,7 @@
 	icon_state = "superadvanced"
 	item_state = "superadvanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 80, bullet = 75, laser = 60, energy = 60, bomb = 70, bio = 100, rad = 80, fire = 90, acid = 90)
+	armor = list(melee = 90, bullet = 85, laser = 70, energy = 60, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -470,8 +481,13 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 4
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/superadvanced/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -501,7 +517,7 @@
 	icon_state = "tesla"
 	item_state = "tesla"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 60, bullet = 50, laser = 90, energy = 90, bomb = 50, bio = 100, rad = 80, fire = 80, acid = 80)
+	armor = list(melee = 55, bullet = 55, laser = 90, energy = 70, bomb = 30, bio = 100, rad = 100, fire = 50, acid = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -509,8 +525,13 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 4
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/tesla/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -540,7 +561,7 @@
 	icon_state = "advanced"
 	item_state = "advanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 75, bullet = 70, laser = 60, energy = 60, bomb = 75, bio = 100, rad = 80, fire = 80, acid = 80)
+	armor = list(melee = 70, bullet = 70, laser = 60, energy = 50, bomb = 60, bio = 100, rad = 100, fire = 80, acid = 80)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -548,8 +569,13 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 4
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/advanced/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -579,7 +605,7 @@
 	icon_state = "t60helmet"
 	item_state = "t60helmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 80, bullet = 70, laser = 60, energy = 60, bomb = 70, bio = 100, rad = 70, fire = 70, acid = 70)
+	armor = list(melee = 70, bullet = 70, laser = 45, energy = 40, bomb = 40, bio = 70, rad = 70, fire = 70, acid = 70)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -587,9 +613,14 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 5
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/t60/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/clothing/head/helmet/power_armor/t51b
 	name = "T-51b power helmet"
@@ -597,7 +628,7 @@
 	icon_state = "t51bhelmet"
 	item_state = "t51bhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 75, bullet = 60, laser = 50, energy = 50, bomb = 60, bio = 100, rad = 70, fire = 70, acid = 70)
+	armor = list(melee = 70, bullet = 70, laser = 30, energy = 25, bomb = 25, bio = 45, rad = 45, fire = 50, acid = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -605,9 +636,14 @@
 	max_heat_protection_temperature = SPACE_HELM_MAX_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 5
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/t51b/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/clothing/head/helmet/power_armor/t45d
 	name = "T-45d power helmet"
@@ -615,15 +651,20 @@
 	icon_state = "t45dhelmet"
 	item_state = "t45dhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
-	armor = list(melee = 70, bullet = 55, laser = 40, energy = 40, bomb = 50, bio = 100, rad = 60, fire = 60, acid = 60)
+	armor = list(melee = 55, bullet = 55, laser = 20, energy = 15, bomb = 15, bio = 15, rad = 15, fire = 50, acid = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 5
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/t45d/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 //NCR
 
@@ -633,13 +674,18 @@
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list(melee = 40, bullet = 35, laser = 20, energy = 20, bomb = 20, bio = 20, rad = 30, fire = 30, acid = 30)
+	armor = list(melee = 55, bullet = 55, laser = 20, energy = 15, bomb = 15, bio = 15, rad = 15, fire = 50, acid = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	put_on_delay = 50
 	strip_delay = 100
-	resistance_flags = FIRE_PROOF | UNACIDABLE
+	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 5
+	flash_protect = 2
+	
+/obj/item/clothing/head/helmet/power_armor/ncr/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/clothing/head/helmet/ncr/trooper
 	name = "trooper helmet"
