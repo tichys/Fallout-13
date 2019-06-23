@@ -393,7 +393,7 @@
 	strip_delay = 600 //strip and equip timers increased, should discourage messing around with power armour bodies honestly, power armour generally requires a team of technicians to outfit the wearer into the suit, rather than just being an easily deployed suit of combat armor.
 	special_defence = PREVENTDISMEMBER
 
-/obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, slot)
+/obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, slot) //THIS PART NEEDS FIXING. CODE CURRENTLY DOES NOT WORK NOR DO FACTIONS HAVE MARTIAL ART APPLIED TO THEM TO PASS THIS CHECK ONCE IT DOES WORK.
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(!H.martial_art && H.martial_art.name != "Power Armor Training" && slot == slot_wear_suit)
