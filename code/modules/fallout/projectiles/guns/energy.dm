@@ -35,9 +35,9 @@
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	fire_sound = 'sound/f13weapons/plasmarifle.ogg'
-	burst_size = 2
+	burst_size = 1
 	shaded_charge = 1
-	fire_delay = 3
+	fire_delay = 2 //burst size decreased and fire delay increased slightly, should even out. the idea is basically just to make firefightsd more controllable, right now plasma/laser weapons and burst weapons in general are a pain in the ass because you end up missing half your burst rather than being able to predict per shot.
 
 /obj/item/weapon/gun/energy/plasma/glock
 	name ="glock 86"
@@ -85,9 +85,9 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/f13plasma/turbo)
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_HUGE
-	fire_delay = 0
+	fire_delay = 1
 	w_class = 4
-	burst_size = 3
+	burst_size = 1 // fire delay increasd slightly and burst size decreased to 1, this weapon is basically just a harder hitting plasma rifle but comes with the downside of requiring you to use it with both hands, this means it is next to impossible to use flexibly in order to quickly reload from a belt short of some serious TG keybind memorisation and practice.
 
 ///////LASERS//////
 
@@ -99,7 +99,7 @@
 	desc = "Rapid capacitor weapon."
 	origin_tech = "combat=6;magnets=6"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
-	burst_size = 5 //Fuck yeah
+	burst_size = 5 //leaving this as a burst fire weapon since its meant to be a spammable weapon previous note here read: (Fuck yeah.)
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -126,7 +126,7 @@
 	desc = "A prototype laser rifle, meant to fire much faster and longer without overheating"
 	origin_tech = "combat=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rifle)
-	burst_size = 5
+	burst_size = 1 // to make the energy weapons more responsive.
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -137,7 +137,7 @@
 	icon_state = "laser-rifle13"
 	item_state = "laser-rifle13"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rifle/aer13)
-	burst_size = 5
+	burst_size = 1 // to make the energy weapons more responsive.
 
 /obj/item/weapon/gun/energy/laser/rifle/tri
 	name ="tribeam laser rifle"
@@ -151,12 +151,12 @@
 
 /obj/item/weapon/gun/energy/laser/laer
 	name = "LAER"
-	desc = "The Laser Assisted Electric Rifle is a prototype weapon developed at the Big Mountain Research Facility."
+	desc = "The Laser Assisted Electric Rifle is a prototype weapon developed at the Big Mountain Research Facility." // if you figure out how to make power armor vulnerable to electricity while further boosting durability, pulse weapons/electricity is the hardcounter to power armor.
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "laer"
 	item_state = "laer"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer)
-	burst_size = 2
+	burst_size = 1 // to make the energy weapons more responsive.
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
