@@ -339,7 +339,7 @@
 	strip_delay = 100
 	self_weight = 40
 	slowdown = 1
-	armor = list(melee = 70, bullet = 70, laser = 5, energy = 5, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100) //These changes aren't necessarily realistic as no servomotors = less effective at disappating oncoming force but should serve to give NCR heavy troopers an actual role in combat. Should be far better suited towards a defensive playstyle against ballistic weapons.
+	armor = list(melee = 70, bullet = 70, laser = 30, energy = 30, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100) //These changes aren't necessarily realistic as no servomotors = less effective at disappating oncoming force but should serve to give NCR heavy troopers an actual role in combat. Should be far better suited towards a defensive playstyle against ballistic weapons.
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 /obj/item/clothing/suit/armor/f13/power_armor/sierra
