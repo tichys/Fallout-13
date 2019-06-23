@@ -463,7 +463,7 @@
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/badmin
-	name = "advanced power armor Mk IV 'Hellfire'"
+	name = "advanced power armor Mk. IV 'Hellfire'"
 	desc = "Enclave Hellfire armor is a heat-resistant power armor worn by high level Enclave soldiers and the specialized, elite Enclave Hellfire troopers."
 	icon_state = "badmin"
 	item_state = "badmin"
