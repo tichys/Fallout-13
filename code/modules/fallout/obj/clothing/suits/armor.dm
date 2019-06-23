@@ -431,7 +431,7 @@
 // enclave armors
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
-	name = "advanced power armor Mk. I 'Bugeye'"
+	name = "advanced power armor Mk. I 'Bugman'"
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "advanced"
 	item_state = "advanced"
@@ -439,7 +439,7 @@
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
-	name = "advanced power armor Mk. II 'Bugeye'"
+	name = "advanced power armor Mk. II 'Bugman'"
 	desc = "An improved model of advanced power armor used exclusively by the Enclave military forces, developed after the Great War.<br>Like its older brother, the standard advanced power armor, it's matte black with a menacing appearance, but with a few significant differences - it appears to be composed entirely of lightweight ceramic composites rather than the usual combination of metal and ceramic plates.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "superadvanced"
 	item_state = "superadvanced"
@@ -455,7 +455,7 @@
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
-	name = "advanced tesla power armor Mk. I 'Bugeye'"
+	name = "advanced tesla power armor Mk. I 'Bugman'"
 	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably weaker against kinetic impacts."
 	icon_state = "tesla"
 	item_state = "tesla"
