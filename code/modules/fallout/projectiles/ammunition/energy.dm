@@ -12,7 +12,7 @@
 /obj/item/ammo_casing/energy/f13plasma/turbo
 	projectile_type = /obj/item/projectile/beam/plasma/turbo
 	delay = 5
-	e_cost = 50 //75 is far too punishing on the plasma caster, it reduces it to literally like 7 shots.
+	e_cost = 50 //75 is far too punishing on the plasma caster, it reduces it to literally like 9 shots.
 
 /obj/item/ammo_casing/energy/f13plasma/tri
 	delay = 0
