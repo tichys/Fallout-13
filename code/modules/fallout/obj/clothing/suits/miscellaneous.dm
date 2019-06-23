@@ -42,7 +42,7 @@
 	item_state = "hostrench"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 15
-	armor = list(melee = 20, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 0)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun/energy,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/cowboybvest //Originally cowboy stuff by Nienhaus
@@ -66,14 +66,14 @@
 	item_state = "hostrench"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 30, fire = 20, acid = 25)
+	armor = list(melee = 15, bullet = 20, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 5, fire = 10, acid = 15)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/mfp/raider //"Offbeat" is actually a quote from Mad Max said by Max himself.
 	name = "offbeat jacket"
 	desc = "A black leather jacket with a single metal shoulder pad on the right side.<br>The right sleeve was obviously ripped or cut away.<br>It looks like it was originally a piece of a Main Force Patrol uniform."
 	icon_state = "mfp_raider"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 35, bomb = 35, bio = 20, rad = 40, fire = 40, acid = 30)
+	armor = list(melee = 30, bullet = 20, laser = 10, energy = 25, bomb = 25, bio = 20, rad = 40, fire = 40, acid = 30)
 
 /obj/item/clothing/suit/f13/rolandcoat
 	name = "gaucho duster"
@@ -82,7 +82,7 @@
 	item_state = "rolandcoat"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/rolandcoatremake
@@ -92,7 +92,7 @@
 	item_state = "rolandcoatremake"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/loomiscoat
@@ -103,7 +103,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/stokercoat
@@ -114,7 +114,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/communitycoat
@@ -125,7 +125,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/belmontcoat
@@ -136,7 +136,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/communitycoatalt
@@ -147,7 +147,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 10, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/belmontcoatalt
@@ -158,7 +158,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/juliuscoat
@@ -169,7 +169,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/cruzcoat
@@ -180,7 +180,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/vampirecoat
@@ -191,7 +191,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/wolfjacket
@@ -202,7 +202,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/harryjacket
@@ -213,7 +213,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/gatjacket
@@ -224,7 +224,7 @@
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
 	pockets = /obj/item/weapon/storage/internal/pocket/big/coat
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 15, bio = 25, rad = 25, fire = 25, acid = 25)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes)
 
 /obj/item/clothing/suit/rolandcoatthree
@@ -234,7 +234,7 @@
 	item_state = "rolandcoatthree"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/gunslingercoat
@@ -244,7 +244,7 @@
 	item_state = "gunslingercoat"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/johncowboycoat
@@ -254,7 +254,7 @@
 	item_state = "johncowboycoat"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/rolandcloak
@@ -264,7 +264,7 @@
 	item_state = "rolandcloak"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 50, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight)
 
 /obj/item/clothing/suit/rolandponcho
@@ -274,7 +274,7 @@
 	item_state = "rolandponcho"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/terminatorjacket
@@ -284,7 +284,7 @@
 	item_state = "terminatorjacket"
 	body_parts_covered = CHEST|ARMS
 	self_weight = 2
-	armor = list(melee = 25, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/mfp/johnjacket
@@ -300,7 +300,7 @@
 	item_state = "suit-command"
 	body_parts_covered = CHEST|GROIN
 	self_weight = 5
-	armor = list(melee = 20, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 10, acid = 0)
+	armor = list(melee = 25, bullet = 15, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/veteran
@@ -310,7 +310,7 @@
 	item_state = "suit-command"
 	body_parts_covered = CHEST|GROIN
 	self_weight = 6
-	armor = list(melee = 20, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 10, acid = 0)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/duster
@@ -320,7 +320,7 @@
 	item_state = "det_suit"
 	body_parts_covered = CHEST|LEGS|FEET|ARMS
 	self_weight = 7
-	armor = list(melee = 30, bullet = 25, laser = 20, energy = 20, bomb = 20, bio = 10, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 25, bio = 35, rad = 35, fire = 35, acid = 35)
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/sheriff
@@ -340,7 +340,7 @@
 	item_state = "autumn"
 	self_weight = 10
 	body_parts_covered = CHEST|LEGS|FEET|ARMS
-	armor = list(melee = 50, bullet = 45, laser = 40, energy = 40, bomb = 20, bio = 20, rad = 50, fire = 30, acid = 30) //Reference to colonel not dying from radiation where anyone else dies.
+	armor = list(melee = 40, bullet = 35, laser = 40, energy = 40, bomb = 20, bio = 20, rad = 50, fire = 30, acid = 30) //Reference to colonel not dying from radiation where anyone else dies.
 	allowed = list(/obj/item/weapon/pen,/obj/item/weapon/paper,/obj/item/weapon/stamp,/obj/item/weapon/reagent_containers/food/drinks/flask,/obj/item/weapon/melee,/obj/item/weapon/storage/box/matches,/obj/item/weapon/lighter,/obj/item/clothing/mask/cigarette,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/device/flashlight,/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
 
 /obj/item/clothing/suit/f13/hubologist
