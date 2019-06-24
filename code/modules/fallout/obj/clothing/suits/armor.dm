@@ -433,16 +433,16 @@
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
 	name = "advanced power armor Mk. I 'Bugman'"
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "badmin"
+	item_state = "badmin"
 	armor = list(melee = 70, bullet = 70, laser = 50, energy = 45, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
 	name = "advanced power armor Mk. II 'Bugman'"
 	desc = "An improved model of advanced power armor used exclusively by the Enclave military forces, developed after the Great War.<br>Like its older brother, the standard advanced power armor, it's matte black with a menacing appearance, but with a few significant differences - it appears to be composed entirely of lightweight ceramic composites rather than the usual combination of metal and ceramic plates.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
-	icon_state = "superadvanced"
-	item_state = "superadvanced"
+	icon_state = "badmin"
+	item_state = "badmin"
 	armor = list(melee = 75, bullet = 75, laser = 55, energy = 55, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 12
 
@@ -455,18 +455,18 @@
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
-	name = "advanced tesla power armor Mk. I 'Bugman'"
+	name = "advanced tesla power armor Mk. I 'Glow Worm'"
 	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably weaker against kinetic impacts."
-	icon_state = "tesla"
-	item_state = "tesla"
+	icon_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
+	item_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
 	armor = list(melee = 55, bullet = 55, laser = 95, energy = 95, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/badmin
 	name = "advanced power armor Mk. IV 'Hellfire'"
 	desc = "Enclave Hellfire armor is a heat-resistant power armor worn by high level Enclave soldiers and the specialized, elite Enclave Hellfire troopers."
-	icon_state = "badmin"
-	item_state = "badmin"
+	icon_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
+	item_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
 	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100) //Burn baby, burn!
 	self_weight = 18
 
