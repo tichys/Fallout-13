@@ -449,8 +449,8 @@
 /obj/item/clothing/suit/armor/f13/power_armor/shocktrooper
 	name = "advanced power armor Mk. III 'Black Devil'" //for the sake of lore consistency, taking both bethesda and black isle/interplays versions and just saying the one in fo3 is the mark 3, with mark 2 being last of the first apa iterations. also fixed the name because hellfire is the one from broken steel, this one is the black devil/standard apa from fo3. Nicknames have also been added to the armors.
 	desc = "A \"Black Devil\" power armor - a high-end model used exclusively by the Enclave's Department of the Army and developed after the Great War and the destruction of the Enclave Oil Rig in 2241.<br>It is composed entirely of lightweight composites rather than the usual combination of metal and composite plates found on the previous designations of advanced power armor, the mark I and II."
-	icon_state = "shocktrooper"
-	item_state = "shocktrooper"
+	icon_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
+	item_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
 	armor = list(melee = 95, bullet = 95, laser = 65, energy = 60, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 15
 
