@@ -178,6 +178,14 @@
 	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
 	build_path = /obj/item/clothing/ears/earmuffs
 	category = list("initial", "Misc")
+	
+/datum/design/sunglassespaop
+	name = "Combat Shades"
+	id = "sunglassespaop"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 1500)
+	build_path = /obj/item/clothing/glasses/sunglassespaop
+	category = list("initial", "Misc")
 
 /datum/design/pipe_painter
 	name = "Pipe painter"

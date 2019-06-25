@@ -23,9 +23,7 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
 	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/rifle/tri,
-	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/device/radio,
@@ -64,8 +62,12 @@
 	back = /obj/item/weapon/twohanded/eldersword
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
@@ -73,28 +75,27 @@
 /datum/job/hpaladin
 	title = "Head Paladin"
 	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it."
-	flag = PALADIN
+	flag = HEADPALADIN
 	department_head = list("elder")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "headpaladin"
 	total_positions = 1
-	spawn_positions = 2
+	spawn_positions = 1
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
-	outfit = /datum/outfit/job/paladin
+	outfit = /datum/outfit/job/hpaladin
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/gun/energy/laser/rifle/aer13,
 	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
+	/obj/item/weapon/gun/energy/laser/rcw,
 	/obj/item/weapon/lighter/engraved
 	)
 
@@ -117,7 +118,7 @@
 	access = list(access_brotherhood)
 	minimal_access = list()
 
-/datum/outfit/job/paladin
+/datum/outfit/job/hpaladin
 	name = "Head Paladin"
 	backpack = null
 	satchel = null
@@ -127,9 +128,13 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/laser/rcw
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	weapon = null
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Head Scribe
@@ -154,7 +159,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -178,7 +182,7 @@
 	access = list(access_brotherhood)
 	minimal_access = list()
 
-/datum/outfit/job/scribe
+/datum/outfit/job/hscribe
 	name = "Head Scribe"
 	backpack = null
 	satchel = null
@@ -203,7 +207,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "paladin"
-	total_positions = 6
+	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
@@ -215,10 +219,8 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13,
-	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -252,9 +254,13 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/laser/rcw
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	weapon = null
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Knight
@@ -263,13 +269,13 @@
 	title = "Knight"
 	desc = "A warrior, the keeper of peace.<br>You are the one who shall bring justice."
 	flag = KNIGHT
-	department_head = list("elder", "paladin")
+	department_head = list("elder", "headpaladin", "paladin")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "knight"
-	total_positions = 7
-	spawn_positions = 7
-	supervisors = "Elder, Paladin"
+	total_positions = 6
+	spawn_positions = 2
+	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
@@ -314,8 +320,12 @@
 	head = /obj/item/clothing/head/helmet/power_armor/t45d
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Scribes!!
@@ -324,11 +334,11 @@
 	title = "Scribe"
 	desc = "The studious..<br>Your knowledge and expertise guide your brothers to glory."
 	flag = SCRIBE
-	department_head = list("elder", "paladin")
+	department_head = list("elder", "headpaladin", "paladin")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "scribe"
-	total_positions = 7
+	total_positions = 5
 	spawn_positions = 3
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
@@ -340,7 +350,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/lighter/engraved
 	)

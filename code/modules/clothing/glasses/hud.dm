@@ -34,6 +34,7 @@
 	icon_state = "healthhud"
 	origin_tech = "magnets=3;biotech=2"
 	hud_type = DATA_HUD_MEDICAL_ADVANCED
+	flash_protect = 1 //so people with medhud scanners dont have to run for cover when a teammate throws a flash.
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
 
 /obj/item/clothing/glasses/hud/health/night
