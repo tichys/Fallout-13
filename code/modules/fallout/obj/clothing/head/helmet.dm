@@ -382,8 +382,8 @@
 /obj/item/clothing/head/helmet/power_armor/badmin
 	name = "advanced power armor Mk. IV helmet"
 	desc = "Enclave Hellfire armor is a heat-resistant power armor worn by high level Enclave soldiers and the specialized, elite Enclave Hellfire troopers."
-	icon_state = "badmin"
-	item_state = "badmin"
+	icon_state = "PLACEHOLDERFORHELLFIREHELMETSPRITE!!!"
+	item_state = "PLACEHOLDERFORHELLFIREHELMETSPRITE!!!"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
 	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
@@ -462,8 +462,8 @@
 /obj/item/clothing/head/helmet/power_armor/superadvanced
 	name = "advanced power armor Mk. II helmet"
 	desc = "An improved model of the standard advanced power armor helmet used exclusively by Enclave military forces, developed after the Great War.<br>It looks rather threatening."
-	icon_state = "superadvanced"
-	item_state = "superadvanced"
+	icon_state = "advanced"
+	item_state = "advanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE
 	armor = list(melee = 95, bullet = 95, laser = 55, energy = 55, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
