@@ -156,7 +156,8 @@
 	anchored = 1
 	buckle_lying = 0
 	can_buckle = 1
-	bound_height = 64
+	bound_height = 180
+	bound_width´= 1
 
 /obj/structure/kitchenspike/cross/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
 	if(buckled_mob)
