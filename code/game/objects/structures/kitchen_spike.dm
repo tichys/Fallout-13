@@ -185,8 +185,6 @@
 				return
 		if(!M.buckled)
 			return
-		var/matrix/m180 = matrix(M.transform)
-		animate(M, transform = m180, time = 3)
 		M.pixel_y = M.get_standard_pixel_y_offset(-32)
 		M.adjustBruteLoss(20)
 		src.visible_message(text("<span class='danger'>[M] falls free of the [src]!</span>"))
