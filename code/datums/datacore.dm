@@ -83,6 +83,14 @@
 	var/list/sup = list()
 	var/list/civ = list()
 	var/list/bot = list()
+	var/list/vault = list()
+	var/list/brotherhood = list()
+	var/list/enclave = list()
+	var/list/legion = list()
+	var/list/ncr = list()
+	var/list/city = list()
+	var/list/freelance = list()
+	var/list/raider = list()
 	var/list/misc = list()
 	var/dat = {"
 	<head><style>
@@ -126,6 +134,30 @@
 		if(rank in nonhuman_positions)
 			bot[name] = rank
 			department = 1
+		if(rank in vault_occupations)
+			vault[name] = rank
+			department = 1
+		if(rank in brotherhood_occupations)
+			brotherhood[name] = rank
+			department = 1
+		if(rank in enclave_occupations)
+			enclave[name] = rank
+			department = 1
+		if(rank in legion_occupations)
+			legion[name] = rank
+			department = 1
+		if(rank in ncr_occupations)
+			ncr[name] = rank
+			department = 1
+		if(rank in city_occupations)
+			city[name] = rank
+			department = 1
+		if(rank in freelance_occupations)
+			freelance[name] = rank
+			department = 1
+		if(rank in raider_occupations)
+			raider[name] = rank
+			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank
 	if(heads.len > 0)
@@ -137,6 +169,46 @@
 		dat += "<tr><th colspan=3>Security</th></tr>"
 		for(var/name in sec)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sec[name]]</td></tr>"
+			even = !even
+	if(vault.len > 0)
+		dat += "<tr><th colspan=3>Vault 113</th></tr>"
+		for(var/name in vault)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
+			even = !even
+	if(city.len > 0)
+		dat += "<tr><th colspan=3>New Alamo</th></tr>"
+		for(var/name in city)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[city[name]]</td></tr>"
+			even = !even
+	if(freelance.len > 0)
+		dat += "<tr><th colspan=3>Freelancers</th></tr>"
+		for(var/name in freelance)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[freelance[name]]</td></tr>"
+			even = !even
+	if(raider.len > 0)
+		dat += "<tr><th colspan=3>Raiders</th></tr>"
+		for(var/name in raider)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[raider[name]]</td></tr>"
+			even = !even
+	if(ncr.len > 0)
+		dat += "<tr><th colspan=3>New California Republic</th></tr>"
+		for(var/name in ncr)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[ncr[name]]</td></tr>"
+			even = !even
+	if(legion.len > 0)
+		dat += "<tr><th colspan=3>Caesar's Legion</th></tr>"
+		for(var/name in legion)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[legion[name]]</td></tr>"
+			even = !even
+	if(brotherhood.len > 0)
+		dat += "<tr><th colspan=3>Texas Chapter</th></tr>"
+		for(var/name in brotherhood)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[brotherhood[name]]</td></tr>"
+			even = !even
+	if(enclave.len > 0)
+		dat += "<tr><th colspan=3>105th Special Defense Battalion</th></tr>"
+		for(var/name in enclave)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[enclave[name]]</td></tr>"
 			even = !even
 	if(eng.len > 0)
 		dat += "<tr><th colspan=3>Engineering</th></tr>"
