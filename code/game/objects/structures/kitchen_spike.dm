@@ -156,9 +156,8 @@
 	anchored = 1
 	buckle_lying = 0
 	can_buckle = 1
-	bound_height = 180
-	bound_width´= 1
-
+	bound_height = 64
+	
 /obj/structure/kitchenspike/cross/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
 	if(buckled_mob)
 		var/mob/living/M = buckled_mob
@@ -188,7 +187,7 @@
 			return
 		var/matrix/m180 = matrix(M.transform)
 		animate(M, transform = m180, time = 3)
-		M.pixel_y = M.get_standard_pixel_y_offset(32)
+		M.pixel_y = M.get_standard_pixel_y_offset(-32)
 		M.adjustBruteLoss(20)
 		src.visible_message(text("<span class='danger'>[M] falls free of the [src]!</span>"))
 		unbuckle_mob(M,force=1)
