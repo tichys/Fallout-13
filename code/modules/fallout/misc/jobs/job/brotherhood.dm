@@ -193,8 +193,10 @@
 	head = null
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Paladin
@@ -384,6 +386,8 @@
 	head = null
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
