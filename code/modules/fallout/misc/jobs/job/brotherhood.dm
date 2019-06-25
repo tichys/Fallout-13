@@ -275,7 +275,7 @@
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/twohanded/sunglassespaop,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/twohanded/largehammer
 	)
 
