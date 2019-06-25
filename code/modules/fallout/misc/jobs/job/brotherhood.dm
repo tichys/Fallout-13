@@ -62,8 +62,12 @@
 	back = /obj/item/weapon/twohanded/eldersword
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
@@ -125,8 +129,12 @@
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Head Scribe
@@ -247,8 +255,12 @@
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Knight
@@ -308,8 +320,12 @@
 	head = /obj/item/clothing/head/helmet/power_armor/t45d
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
+	belt_contents = list(
+	/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
+	/obj/item/device/radio = 1,
+	/obj/item/weapon/kitchen/knife/combat = 1,
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Scribes!!
