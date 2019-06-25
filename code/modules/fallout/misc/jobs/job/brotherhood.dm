@@ -23,9 +23,8 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
 	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/rifle/tri,
-	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/device/radio,
@@ -86,13 +85,12 @@
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
-	outfit = /datum/outfit/job/paladin
+	outfit = /datum/outfit/job/hpaladin
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/gun/energy/laser/rifle/aer13,
 	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/lighter/engraved
@@ -117,7 +115,7 @@
 	access = list(access_brotherhood)
 	minimal_access = list()
 
-/datum/outfit/job/paladin
+/datum/outfit/job/hpaladin
 	name = "Head Paladin"
 	backpack = null
 	satchel = null
@@ -178,7 +176,7 @@
 	access = list(access_brotherhood)
 	minimal_access = list()
 
-/datum/outfit/job/scribe
+/datum/outfit/job/hscribe
 	name = "Head Scribe"
 	backpack = null
 	satchel = null
@@ -215,10 +213,9 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13,
-	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -278,6 +275,7 @@
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/pistol,
+	/obj/item/weapon/twohanded/sunglassespaop,
 	/obj/item/weapon/twohanded/largehammer
 	)
 
