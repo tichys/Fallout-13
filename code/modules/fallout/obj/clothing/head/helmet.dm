@@ -396,10 +396,6 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 2
 	flash_protect = 2
-	
-/obj/item/clothing/head/helmet/power_armor/badmin/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -440,10 +436,6 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 2
 	flash_protect = 2
-	
-/obj/item/clothing/head/helmet/power_armor/shocktrooper/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
@@ -485,10 +477,6 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/power_armor/superadvanced/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
-
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -529,10 +517,6 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/power_armor/tesla/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
-
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -573,10 +557,6 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/power_armor/advanced/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
-
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -617,10 +597,6 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 2
 	flash_protect = 2
-	
-/obj/item/clothing/head/helmet/power_armor/t60/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/clothing/head/helmet/power_armor/t51b
 	name = "T-51b power helmet"
@@ -640,10 +616,6 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 2
 	flash_protect = 2
-	
-/obj/item/clothing/head/helmet/power_armor/t51b/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/clothing/head/helmet/power_armor/t45d
 	name = "T-45d power helmet"
@@ -662,10 +634,6 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/power_armor/t45d/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
-
 //NCR
 
 /obj/item/clothing/head/helmet/power_armor/ncr
@@ -683,10 +651,6 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/power_armor/ncr/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
-
 /obj/item/clothing/head/helmet/ncr/trooper
 	name = "trooper helmet"
 	desc = "A dully-colored helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
