@@ -335,11 +335,11 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
 	flags = STOPSPRESSUREDMAGE
 	flags_inv = HIDEJUMPSUIT
-	put_on_delay = 50
-	strip_delay = 100
-	self_weight = 40
-	slowdown = 1
-	armor = list(melee = 70, bullet = 70, laser = 30, energy = 30, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100) //These changes aren't necessarily realistic as no servomotors = less effective at disappating oncoming force but should serve to give NCR heavy troopers an actual role in combat. Should be far better suited towards a defensive playstyle against ballistic weapons.
+	put_on_delay = 150
+	strip_delay = 150
+	self_weight = 30
+	slowdown = 2
+	armor = list(melee = 90, bullet = 90, laser = 35, energy = 35, bomb = 5, bio = 100, rad = 100, fire = 100, acid = 100) //These changes aren't necessarily realistic as no servomotors = less effective at disappating oncoming force but should serve to give NCR heavy troopers an actual role in combat. Should be far better suited towards a defensive playstyle against ballistic weapons.
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 /obj/item/clothing/suit/armor/f13/power_armor/sierra
@@ -347,7 +347,7 @@
 	desc = "A set of repurposed T-45d Power Armor, with a bears head mounted onto the shoulder and secured with a strap with a large gold medallion clip holding it snug. It holds a rack of cooling fans and a stream lined set of hydraulic actuators. It appears to have once been lined with a gold trim. It also appears to have a scorched layer of soot burned into it."
 	icon_state = "sierra"
 	item_state = "sierra"
-	armor = list(melee = 55, bullet = 55, laser = 20, energy = 15, bomb = 25, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 85, bullet = 85, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18 //weight adjusted and general behaviour put more in line with regular power armour since sierra power armour is meant to have its servomotors still installed and used by captains that have been trained to use power armour
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	
@@ -409,7 +409,7 @@
 	desc = "Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
-	armor = list(melee = 55, bullet = 55, laser = 20, energy = 15, bomb = 40, bio =100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 85, bullet = 85, laser = 45, energy = 45, bomb = 55, bio =100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
@@ -417,7 +417,7 @@
 	desc = "A mass-produced pinnacle of pre-War engineering.<br>Developed in the laboratories of the West Tek Research Facility, the T-51b was deployed at the end of the Anchorage Reclamation, and by January 2077, the armor had become standard issue for American soldiers in the Army's Mechanized Cavalry Regiments."
 	icon_state = "t51bpowerarmor"
 	item_state = "t51bpowerarmor"
-	armor = list(melee = 65, bullet = 65, laser = 25, energy = 20, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 85, bullet = 90, laser = 50, energy = 50, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
@@ -425,7 +425,7 @@
 	desc = "Developed in early 2077 after the Anchorage Reclamation, the T-60 series of power armor was designed to eventually replace the T-51b power armor as the pinnacle of powered armor technology in the U.S. military arsenal.<br>Incorporating design elements from the earlier T-45, the T-60 was deployed domestically among U.S. Army units just prior to the dropping of the bombs."
 	icon_state = "t60powerarmor"
 	item_state = "t60powerarmor"
-	armor = list(melee = 65, bullet = 65, laser = 35, energy = 25, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 85, bullet = 95, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 // enclave armors
@@ -435,7 +435,7 @@
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "advanced"
 	item_state = "advanced"
-	armor = list(melee = 70, bullet = 70, laser = 50, energy = 45, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
@@ -443,7 +443,7 @@
 	desc = "An improved model of advanced power armor used exclusively by the Enclave military forces, developed after the Great War.<br>Like its older brother, the standard advanced power armor, it's matte black with a menacing appearance, but with a few significant differences - it appears to be composed entirely of lightweight ceramic composites rather than the usual combination of metal and ceramic plates.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "advanced"
 	item_state = "advanced"
-	armor = list(melee = 75, bullet = 75, laser = 55, energy = 55, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 98, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 12
 
 /obj/item/clothing/suit/armor/f13/power_armor/shocktrooper
@@ -451,7 +451,7 @@
 	desc = "A \"Black Devil\" power armor - a high-end model used exclusively by the Enclave's Department of the Army and developed after the Great War and the destruction of the Enclave Oil Rig in 2241.<br>It is composed entirely of lightweight composites rather than the usual combination of metal and composite plates found on the previous designations of advanced power armor, the mark I and II."
 	icon_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
 	item_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
-	armor = list(melee = 95, bullet = 95, laser = 65, energy = 60, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 105, bullet = 105, laser = 85, energy = 85, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
@@ -459,7 +459,7 @@
 	desc = "A variant of the Enclave's advanced power armor Mk I, jury-rigged with a Tesla device that is capable of dispersing a large percentage of the damage done by directed-energy attacks.<br>As it's made of complex composite materials designed to block most of energy damage - it's notably weaker against kinetic impacts."
 	icon_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
 	item_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
-	armor = list(melee = 55, bullet = 55, laser = 95, energy = 95, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 65, bullet = 65, laser = 98, energy = 98, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 15
 
 /obj/item/clothing/suit/armor/f13/power_armor/badmin
@@ -467,7 +467,7 @@
 	desc = "Enclave Hellfire armor is a heat-resistant power armor worn by high level Enclave soldiers and the specialized, elite Enclave Hellfire troopers."
 	icon_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
 	item_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
-	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100) //Burn baby, burn!
+	armor = list(melee = 105, bullet = 105, laser = 200, energy = 200, bomb = 75, bio = 100, rad = 100, fire = 100, acid = 100) //Burn baby, burn!
 	self_weight = 18
 
 //Knights of the Apocalypse

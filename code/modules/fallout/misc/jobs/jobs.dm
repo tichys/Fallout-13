@@ -52,3 +52,68 @@ var/const/VAULTENGINEER		=(1<<9)
 var/const/VAULTOFFICER		=(1<<10)
 var/const/VAULTDOCTOR		=(1<<11)
 var/const/VAULTDWELLER		=(1<<12)
+
+
+
+
+var/list/vault_occupations = list(
+	"Vault Dweller",
+	"Vault Medical Doctor",
+	"Vault Security Officer",
+	"Vault Engineer",
+	"Overseer"
+)
+
+var/list/brotherhood_occupations = list(
+	"Elder",
+	"Head Paladin",
+	"Head Scribe",
+	"Paladin",
+	"Knight",
+	"Scribe"
+)
+
+var/list/enclave_occupations = list(
+	"Colonel",
+	"Lieutenant",
+	"Private",
+	"Scientist",
+	"Recruit"
+)
+
+var/list/legion_occupations = list(
+	"Legion Legatus",
+	"Legion Centurion",
+	"Legion Vexillarius",
+	"Legion Decanus",
+	"Prime Legionary",
+	"Recruit Legionary",
+	"Camp Follower"
+)
+
+var/list/ncr_occupations = list(
+	"NCR Captain",
+	"NCR Sergeant",
+	"NCR Patrol Ranger",
+	"NCR Veteran Ranger",
+	"NCR Trooper"
+)
+
+var/list/city_occupations = list(
+	"Mayor",
+	"Sheriff",
+	"Citizen"
+)
+
+var/list/freelance_occupations = list(
+	"Mercenary",
+	"Adventurer",
+	"Wastelander",
+	"Settler"
+)
+
+var/list/raider_occupations = list(
+	"Gang Leader",
+	"Raider",
+	"Wastelander"
+)
