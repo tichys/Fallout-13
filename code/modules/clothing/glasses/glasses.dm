@@ -157,7 +157,7 @@
 	
 /obj/item/clothing/glasses/sunglassespaop
 	desc = "Mil-spec combat shades, capable of blocking out extremely bright flashes of light without impacting general visiblity."
-	name = "sunglasses"
+	name = "combat shades"
 	icon_state = "sun"
 	item_state = "sunglasses"
 	flash_protect = 2
