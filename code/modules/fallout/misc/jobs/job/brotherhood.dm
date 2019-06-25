@@ -72,7 +72,7 @@
 /datum/job/hpaladin
 	title = "Head Paladin"
 	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it."
-	flag = PALADIN
+	flag = HEADPALADIN
 	department_head = list("elder")
 	department_flag = ENGSEC
 	faction = "bs"
@@ -93,6 +93,7 @@
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
+	/obj/item/weapon/gun/energy/laser/rcw,
 	/obj/item/weapon/lighter/engraved
 	)
 
@@ -125,7 +126,7 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/laser/rcw
+	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
@@ -249,7 +250,7 @@
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/laser/rcw
+	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
@@ -260,13 +261,13 @@
 	title = "Knight"
 	desc = "A warrior, the keeper of peace.<br>You are the one who shall bring justice."
 	flag = KNIGHT
-	department_head = list("elder", "paladin")
+	department_head = list("elder", "headpaladin", "paladin")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "knight"
 	total_positions = 7
 	spawn_positions = 7
-	supervisors = "Elder, Paladin"
+	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
@@ -322,7 +323,7 @@
 	title = "Scribe"
 	desc = "The studious..<br>Your knowledge and expertise guide your brothers to glory."
 	flag = SCRIBE
-	department_head = list("elder", "paladin")
+	department_head = list("elder", "headpaladin", "paladin")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "scribe"
