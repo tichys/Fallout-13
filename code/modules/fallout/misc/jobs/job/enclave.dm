@@ -21,6 +21,7 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
 	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
 	/obj/item/clothing/glasses/sunglassespaop,
+	/obj/item/clothing/ears/earmuffs,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -70,8 +71,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "enclave_lieutenant"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -87,6 +88,7 @@
 	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma,
+	/obj/item/clothing/ears/earmuffs,
 	/obj/item/weapon/lighter/engraved
 	)
 
@@ -136,8 +138,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "private"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 3
+	spawn_positions = 4
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -149,6 +151,8 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
 	/obj/item/clothing/head/helmet/power_armor/advanced,
 	/obj/item/clothing/head/soft/f13/utility/olive,
+	/obj/item/clothing/ears/earmuffs,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma/pistol
 	)
 
@@ -197,7 +201,7 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "scientist"
-	total_positions = 4
+	total_positions = 2
 	spawn_positions = 4
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
@@ -258,7 +262,7 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "recruit"
-	total_positions = 7
+	total_positions = 2
 	spawn_positions = 7
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
@@ -269,6 +273,8 @@
 	required_items = list(
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/head/soft/f13/utility/olive,
+	/obj/item/clothing/suit/armor/f13/combat_mk1,
+	/obj/item/clothing/head/helmet/f13/combat_mk1,
 	/obj/item/weapon/gun/energy/plasma/pistol
 	)
 
