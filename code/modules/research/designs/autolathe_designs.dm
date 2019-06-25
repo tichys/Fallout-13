@@ -179,9 +179,9 @@
 	build_path = /obj/item/clothing/ears/earmuffs
 	category = list("initial", "Misc")
 	
-/datum/design/combatshades
+/datum/design/sunglassespaop
 	name = "Combat Shades"
-	id = "combatshades"
+	id = "sunglassespaop"
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 500, MAT_GLASS = 1500)
 	build_path = /obj/item/clothing/glasses/sunglassespaop
