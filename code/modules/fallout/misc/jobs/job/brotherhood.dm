@@ -23,7 +23,6 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
 	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/rifle/tri,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -64,7 +63,7 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
@@ -89,7 +88,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
@@ -128,7 +126,7 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Head Scribe
@@ -153,7 +151,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -214,7 +211,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13,
 	/obj/item/weapon/twohanded/superhammer,
@@ -252,7 +248,7 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Knight
@@ -265,7 +261,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "knight"
-	total_positions = 3
+	total_positions = 6
 	spawn_positions = 2
 	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
@@ -276,7 +272,6 @@
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/twohanded/largehammer
 	)
 
@@ -313,8 +308,8 @@
 	head = /obj/item/clothing/head/helmet/power_armor/t45d
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
+	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
+	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1,/obj/item/clothing/ears/earmuffs = 1,/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Scribes!!
@@ -327,7 +322,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "scribe"
-	total_positions = 2
+	total_positions = 5
 	spawn_positions = 3
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
@@ -339,7 +334,6 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/lighter/engraved
 	)
