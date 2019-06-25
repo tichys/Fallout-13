@@ -161,8 +161,6 @@
 	icon_state = "sun"
 	item_state = "sunglasses"
 	flash_protect = 2
-	glass_colour_type = /datum/client_colour/glass_colour/gray
-	dog_fashion = /datum/dog_fashion/head
 
 /obj/item/clothing/glasses/sunglasses/reagent
 	name = "beer goggles"
