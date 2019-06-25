@@ -435,7 +435,7 @@
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "advanced"
 	item_state = "advanced"
-	armor = list(melee = 95, bullet = 95, laser = 75, energy = 75, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 18
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
