@@ -20,7 +20,7 @@
 	required_items = list(
 	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
 	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
-	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
 	)
@@ -55,7 +55,7 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/autumn
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/plasma/glock
+	weapon = /obj/item/weapon/gun/energy/plasma/pistol
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 	/obj/item/device/radio = 1,/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/enclave
@@ -85,9 +85,7 @@
 	/obj/item/clothing/under/f13/dbdu,
 	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
 	/obj/item/clothing/head/helmet/power_armor/superadvanced,
-	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
-    /obj/item/clothing/head/helmet/power_armor/advanced,
-	/obj/item/clothing/glasses/sunglasses,
+	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
 	)
