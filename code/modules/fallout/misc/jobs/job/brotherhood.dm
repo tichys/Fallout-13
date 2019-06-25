@@ -265,7 +265,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "knight"
-	total_positions = 6
+	total_positions = 5
 	spawn_positions = 2
 	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
@@ -327,7 +327,7 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "scribe"
-	total_positions = 5
+	total_positions = 2
 	spawn_positions = 3
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
