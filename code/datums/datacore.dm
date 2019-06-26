@@ -75,14 +75,6 @@
 		foundrecord.fields["rank"] = assignment
 
 /datum/datacore/proc/get_manifest(monochrome, OOC)
-	var/list/heads = list()
-	var/list/sec = list()
-	var/list/eng = list()
-	var/list/med = list()
-	var/list/sci = list()
-	var/list/sup = list()
-	var/list/civ = list()
-	var/list/bot = list()
 	var/list/vault = list()
 	var/list/brotherhood = list()
 	var/list/enclave = list()
@@ -110,30 +102,6 @@
 		var/name = t.fields["name"]
 		var/rank = t.fields["rank"]
 		var/department = 0
-		if(rank in command_positions)
-			heads[name] = rank
-			department = 1
-		if(rank in security_positions)
-			sec[name] = rank
-			department = 1
-		if(rank in engineering_positions)
-			eng[name] = rank
-			department = 1
-		if(rank in medical_positions)
-			med[name] = rank
-			department = 1
-		if(rank in science_positions)
-			sci[name] = rank
-			department = 1
-		if(rank in supply_positions)
-			sup[name] = rank
-			department = 1
-		if(rank in civilian_positions)
-			civ[name] = rank
-			department = 1
-		if(rank in nonhuman_positions)
-			bot[name] = rank
-			department = 1
 		if(rank in vault_occupations)
 			vault[name] = rank
 			department = 1
@@ -160,16 +128,6 @@
 			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank
-	if(heads.len > 0)
-		dat += "<tr><th colspan=3>Heads</th></tr>"
-		for(var/name in heads)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[heads[name]]</td></tr>"
-			even = !even
-	if(sec.len > 0)
-		dat += "<tr><th colspan=3>Security</th></tr>"
-		for(var/name in sec)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sec[name]]</td></tr>"
-			even = !even
 	if(vault.len > 0)
 		dat += "<tr><th colspan=3>Vault 113</th></tr>"
 		for(var/name in vault)
@@ -209,37 +167,6 @@
 		dat += "<tr><th colspan=3>105th Special Defense Battalion</th></tr>"
 		for(var/name in enclave)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[enclave[name]]</td></tr>"
-			even = !even
-	if(eng.len > 0)
-		dat += "<tr><th colspan=3>Engineering</th></tr>"
-		for(var/name in eng)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[eng[name]]</td></tr>"
-			even = !even
-	if(med.len > 0)
-		dat += "<tr><th colspan=3>Medical</th></tr>"
-		for(var/name in med)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[med[name]]</td></tr>"
-			even = !even
-	if(sci.len > 0)
-		dat += "<tr><th colspan=3>Science</th></tr>"
-		for(var/name in sci)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sci[name]]</td></tr>"
-			even = !even
-	if(sup.len > 0)
-		dat += "<tr><th colspan=3>Supply</th></tr>"
-		for(var/name in sup)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sup[name]]</td></tr>"
-			even = !even
-	if(civ.len > 0)
-		dat += "<tr><th colspan=3>Civilian</th></tr>"
-		for(var/name in civ)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[civ[name]]</td></tr>"
-			even = !even
-	// in case somebody is insane and added them to the manifest, why not
-	if(bot.len > 0)
-		dat += "<tr><th colspan=3>Silicon</th></tr>"
-		for(var/name in bot)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bot[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(misc.len > 0)
