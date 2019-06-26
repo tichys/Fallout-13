@@ -162,9 +162,7 @@
 	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/ears/earmuffs,
 	/obj/item/clothing/glasses/sunglassespaop,
-	/obj/item/weapon/gun/energy/plasma/pistol
-	/obj/item/weapon/cqc_manual
-	)
+	/obj/item/weapon/gun/energy/plasma/pistol)
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
