@@ -8,9 +8,9 @@
 	species = "broc"
 	plantname = "Broc Bush"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/broc
-	lifespan = 25
-	endurance = 10
-	yield = 2
+	lifespan = 45
+	endurance = 60
+	yield = 4
 	growthstages = 3
 	production = 4
 	maturation = 4
@@ -30,9 +30,9 @@
 	species = "xander"
 	plantname = "Xander Root"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/xander
-	lifespan = 25
-	endurance = 10
-	yield = 1
+	lifespan = 45
+	endurance = 60
+	yield = 4
 	growthstages = 3
 	production = 1
 	maturation = 1
@@ -50,8 +50,8 @@
 	species = "mutfruit"
 	plantname = "Mutfruit"
 	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mutfruit
-	lifespan = 30
-	endurance = 20
+	lifespan = 45
+	endurance = 80
 	yield = 3
 	growthstages = 3
 	production = 5
