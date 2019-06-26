@@ -474,32 +474,51 @@
 
 /obj/item/clothing/suit/armor/riot/knight
 	name = "plate armour"
-	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
 	icon_state = "knight_green"
 	item_state = "knight_green"
+	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
 	self_weight = 40
 
 /obj/item/clothing/suit/armor/riot/knight/yellow
 	icon_state = "knight_yellow"
 	item_state = "knight_yellow"
+	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	self_weight = 40
 
 /obj/item/clothing/suit/armor/riot/knight/blue
 	icon_state = "knight_blue"
 	item_state = "knight_blue"
+	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	self_weight = 40
 
 /obj/item/clothing/suit/armor/riot/knight/red
 	icon_state = "knight_red"
 	item_state = "knight_red"
+	desc = "A classic suit of plate armour, highly effective at stopping melee attacks."
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	self_weight = 40
 
 /obj/item/clothing/suit/armor/riot/knight/templar
 	name = "crusader armour"
 	desc = "God wills it!"
 	icon_state = "knight_templar"
 	item_state = "knight_templar"
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	self_weight = 40
 
 /obj/item/clothing/suit/armor/riot/knight/tabard
 	name = "tabard plate armor"
 	desc = "A set of plate armor with tabard for the user's high-visibility during combat."
 	icon_state = "knight_tabard"
 	item_state = "knight_tabard"
-
+	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
+	armor = list(melee = 99.5, bullet = 5, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 0, acid = 0)
+	self_weight = 40
