@@ -1096,7 +1096,32 @@
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
+	
+/obj/item/weapon/storage/belt/military/enclavearmy
+	name = "Infantry Belt"
+	desc = "A well-used belt with numerous pouches, designed for experienced soldiers."
+	icon_state = "grenadebeltold"
+	item_state = "military"
+	storage_slots = 14
+	w_class = WEIGHT_CLASS_BULKY
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 50
+	can_hold = list(
+		/obj/item/weapon/reagent_containers/hypospray/combat,
+		/obj/item/device/radio,
+		/obj/item/weapon/reknife,
+		/obj/item/clothing/glasses/sunglassespaop,
+		/obj/item/clothing/ears/earmuffs,
+		)
 
+/obj/item/weapon/storage/belt/military/enclavearmy/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/hypospray/combat(src)
+	new /obj/item/device/radio(src)
+	new /obj/item/weapon/reknife(src)
+	new /obj/item/clothing/glasses/sunglassespaop(src)
+	new /obj/item/clothing/ears/earmuffs(src)
+	
 /obj/item/weapon/storage/belt/jakeholster
 	name = "Makeshift holster"
 	desc = "A very raggedy looking holster presumably created from scraps of leather and sisal rope, and crafted to accommodate a large revolver. Seems to have speedloader pouches attached to the belt, for quick access."
