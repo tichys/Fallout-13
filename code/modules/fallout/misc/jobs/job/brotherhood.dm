@@ -4,13 +4,13 @@
 	title = "Elder"
 	desc = "A mentor, the source of wisdom.<br>You are the one who shall fulfill destiny."
 	flag = ELDER
-	department_head = list("Brotherhood of Steel command HQ")
+	department_head = list("Brotherhood of Steel High Command")
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "elder"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Brotherhood of Steel command HQ"
+	supervisors = "the Brotherhood of Steel High Command"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	whitelist_on = 0
