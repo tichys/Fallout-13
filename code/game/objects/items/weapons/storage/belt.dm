@@ -1096,10 +1096,10 @@
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
-	
+
 /obj/item/weapon/storage/belt/military/enclavearmy
 	name = "Infantry Belt"
-	desc = "A well-used belt with numerous pouches, designed for experienced soldiers."
+	desc = "A well-used belt with numerous small pouches designed specifically for the storage of microfusion cells. Clearly a belt used by an individual who expects to be reloading an energy weapon frequently."
 	icon_state = "grenadebeltold"
 	item_state = "military"
 	storage_slots = 14
@@ -1112,6 +1112,8 @@
 		/obj/item/weapon/reknife,
 		/obj/item/clothing/glasses/sunglassespaop,
 		/obj/item/clothing/ears/earmuffs,
+		/obj/item/weapon/stock_parts/cell,
+		/obj/item/weapon/stock_parts/cell/high,
 		)
 
 /obj/item/weapon/storage/belt/military/enclavearmy/full/New()
@@ -1121,10 +1123,10 @@
 	new /obj/item/weapon/reknife(src)
 	new /obj/item/clothing/glasses/sunglassespaop(src)
 	new /obj/item/clothing/ears/earmuffs(src)
-	
+
 /obj/item/weapon/storage/belt/military/brotherhoodbelt
 	name = "Combat Belt"
-	desc = "A well-used belt with numerous pouches, designed for experienced soldiers."
+	desc = "A well-used belt with numerous small pouches designed specifically for the storage of microfusion cells. Clearly a belt used by an individual who expects to be reloading an energy weapon frequently."
 	icon_state = "grenadebeltold"
 	item_state = "military"
 	storage_slots = 14
@@ -1137,6 +1139,8 @@
 		/obj/item/weapon/kitchen/knife/combat,
 		/obj/item/clothing/glasses/sunglassespaop,
 		/obj/item/clothing/ears/earmuffs,
+		/obj/item/weapon/stock_parts/cell,
+		/obj/item/weapon/stock_parts/cell/high,
 		)
 
 /obj/item/weapon/storage/belt/military/brotherhoodbelt/full/New()
@@ -1146,7 +1150,7 @@
 	new /obj/item/weapon/kitchen/knife/combat(src)
 	new /obj/item/clothing/glasses/sunglassespaop(src)
 	new /obj/item/clothing/ears/earmuffs(src)
-	
+
 /obj/item/weapon/storage/belt/jakeholster
 	name = "Makeshift holster"
 	desc = "A very raggedy looking holster presumably created from scraps of leather and sisal rope, and crafted to accommodate a large revolver. Seems to have speedloader pouches attached to the belt, for quick access."
