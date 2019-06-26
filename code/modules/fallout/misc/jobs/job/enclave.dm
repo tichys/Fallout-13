@@ -4,13 +4,13 @@
 	title = "Colonel"
 	desc = "An actual American patriot.<br>You live by the principle that the Main Goal is more important than the means of achieving it."
 	flag = COLONEL
-	department_head = list("Enclave command HQ")
+	department_head = list("Enclave Central Command")
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "colonel"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Enclave command HQ"
+	supervisors = "the Enclave Central Command"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	whitelist_on = 0
@@ -54,7 +54,7 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/autumn
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/plasma/pistol
+	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
 	/obj/item/device/radio = 1,
@@ -124,7 +124,7 @@
 	suit = null
 	head = /obj/item/clothing/head/soft/f13/enclave
 	belt = /obj/item/weapon/storage/belt/military/army
-	weapon = /obj/item/weapon/gun/energy/plasma/pistol
+	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
 	/obj/item/device/radio = 1,
