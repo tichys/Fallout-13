@@ -22,6 +22,7 @@
 	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/cqc_manual
 	)
 
 	denied_items = list(
@@ -91,6 +92,7 @@
 	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/cqc_manual
 	)
 
 	denied_items = list(
