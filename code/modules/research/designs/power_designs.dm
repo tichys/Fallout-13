@@ -3,26 +3,26 @@
 ////////////////////////////////////////
 
 /datum/design/basic_cell
-	name = "Basic Power Cell"
-	desc = "A basic power cell that holds 1000 units of energy."
+	name = "Standard Microfusion Cell"
+	desc = "A microfusion power cell that holds 1000 units of energy."
 	id = "basic_cell"
 	req_tech = list("powerstorage" = 1)
 	build_type = PROTOLATHE | AUTOLATHE |MECHFAB
 	materials = list(MAT_METAL = 700, MAT_GLASS = 50)
-	construction_time=100
+	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
 	category = list("Misc","Power Designs","Machinery","initial")
 
 /datum/design/high_cell
-	name = "High-Capacity Power Cell"
-	desc = "A power cell that holds 10000 units of energy."
+	name = "Improved Microfusion Cell"
+	desc = "A microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
-	req_tech = list("powerstorage" = 2)
+	req_tech = list("powerstorage" = 1)
 	build_type = PROTOLATHE | AUTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 700, MAT_GLASS = 60)
-	construction_time=100
+	materials = list(MAT_METAL = 4500, MAT_GLASS = 500)
+	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
-	category = list("Misc","Power Designs")
+	category = list("Misc","Power Designs","Machinery","initial")
 
 /datum/design/super_cell
 	name = "Super-Capacity Power Cell"
