@@ -60,7 +60,8 @@
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
-	/obj/item/clothing/ears/earmuffs = 1)
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/weapon/implant/cqc = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Lieutenant
@@ -129,7 +130,8 @@
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
-	/obj/item/clothing/ears/earmuffs = 1)
+	/obj/item/clothing/ears/earmuffs = 1,
+	/obj/item/weapon/implant/cqc = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Private
