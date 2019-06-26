@@ -21,8 +21,9 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
 	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
 	/obj/item/weapon/gun/energy/plasma,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/lighter/engraved,
 	/obj/item/weapon/cqc_manual
+	
 	)
 
 	denied_items = list(
@@ -91,7 +92,7 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
 	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/weapon/gun/energy/plasma,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/lighter/engraved,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -162,6 +163,7 @@
 	/obj/item/clothing/ears/earmuffs,
 	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma/pistol
+	/obj/item/weapon/cqc_manual
 	)
 
 	denied_items = list(
