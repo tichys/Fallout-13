@@ -57,11 +57,11 @@
 	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
+	/obj/item/weapon/implanter/cqc = 1,
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
-	/obj/item/clothing/ears/earmuffs = 1,
-	/obj/item/weapon/implanter/cqc = 1)
+	/obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Lieutenant
@@ -127,11 +127,11 @@
 	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
+	/obj/item/weapon/implanter/cqc = 1,
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
-	/obj/item/clothing/ears/earmuffs = 1,
-	/obj/item/weapon/implanter/cqc = 1)
+	/obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Private
