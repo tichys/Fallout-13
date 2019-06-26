@@ -12,15 +12,15 @@
 			if(0)
 				self_weight = 0
 			if(1)
-				self_weight = 3.500
+				self_weight = 0.500
 			if(2)
-				self_weight = 9.500
+				self_weight = 3.500
 			if(3)
-				self_weight = 18.000
+				self_weight = 6.000
 			if(4)
-				self_weight = 22.000
+				self_weight = 8.000
 			if(5)
-				self_weight = 26.000
+				self_weight = 20.000
 			if(6)
 				self_weight = 30.000
 	if(istype(loc, /atom/movable))
