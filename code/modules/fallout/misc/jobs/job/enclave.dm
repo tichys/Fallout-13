@@ -58,10 +58,10 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-		/obj/item/device/radio = 1,
-		/obj/item/weapon/reknife = 1,
-		/obj/item/clothing/glasses/sunglassespaop = 1,
-		/obj/item/clothing/ears/earmuffs = 1)
+		  /obj/item/device/radio = 1,
+		  /obj/item/weapon/reknife = 1,
+		  /obj/item/clothing/glasses/sunglassespaop = 1,
+		  /obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Lieutenant
@@ -127,10 +127,10 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = null
 	belt_contents = list(/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-		/obj/item/device/radio = 1,
-		/obj/item/weapon/reknife = 1,
-		/obj/item/clothing/glasses/sunglassespaop = 1,
-		/obj/item/clothing/ears/earmuffs = 1)
+		  /obj/item/device/radio = 1,
+		  /obj/item/weapon/reknife = 1,
+		  /obj/item/clothing/glasses/sunglassespaop = 1,
+		  /obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 //Enclave Private
@@ -192,10 +192,10 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma
 	belt_contents = list(/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-		/obj/item/device/radio = 1,
-		/obj/item/weapon/reknife = 1,
-		/obj/item/clothing/glasses/sunglassespaop = 1,
-		/obj/item/clothing/ears/earmuffs = 1)
+	  	/obj/item/device/radio = 1,
+		  /obj/item/weapon/reknife = 1,
+		  /obj/item/clothing/glasses/sunglassespaop = 1,
+		  /obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 	//Enclave Scientist
@@ -255,10 +255,10 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma
 	belt_contents = list(/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-		/obj/item/device/radio = 1,
-		/obj/item/weapon/reknife = 1,
-		/obj/item/clothing/glasses/sunglassespaop = 1,
-		/obj/item/clothing/ears/earmuffs = 1)
+		  /obj/item/device/radio = 1,
+		  /obj/item/weapon/reknife = 1,
+		  /obj/item/clothing/glasses/sunglassespaop = 1,
+		  /obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
 
 
@@ -320,8 +320,8 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/plasma
 	belt_contents = list(/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-		/obj/item/device/radio = 1,
-		/obj/item/weapon/reknife = 1,
-		/obj/item/clothing/glasses/sunglassespaop = 1,
-		/obj/item/clothing/ears/earmuffs = 1)
+		  /obj/item/device/radio = 1,
+		  /obj/item/weapon/reknife = 1,
+	  	/obj/item/clothing/glasses/sunglassespaop = 1,
+		  /obj/item/clothing/ears/earmuffs = 1)
 	id = /obj/item/weapon/card/id/enclave
