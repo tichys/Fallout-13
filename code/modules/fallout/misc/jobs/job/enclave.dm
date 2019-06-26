@@ -23,7 +23,7 @@
 	/obj/item/weapon/gun/energy/plasma,
 	/obj/item/weapon/lighter/engraved,
 	/obj/item/weapon/cqc_manual
-	
+
 	)
 
 	denied_items = list(
@@ -59,7 +59,6 @@
 	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-	/obj/item/weapon/cqc_manual = 1,
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
@@ -130,7 +129,6 @@
 	weapon = null
 	belt_contents = list(
 	/obj/item/weapon/reagent_containers/hypospray/combat = 1,
-	/obj/item/weapon/cqc_manual = 1,
 	/obj/item/device/radio = 1,
 	/obj/item/weapon/reknife = 1,
 	/obj/item/clothing/glasses/sunglassespaop = 1,
