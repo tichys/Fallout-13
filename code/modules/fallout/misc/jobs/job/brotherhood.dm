@@ -66,7 +66,7 @@
 		  /obj/item/device/radio = 1,
 		  /obj/item/weapon/kitchen/knife/combat = 1,
 		  /obj/item/clothing/ears/earmuffs = 1,
-	    /obj/item/clothing/glasses/sunglassespaop = 1)
+	   	 /obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
