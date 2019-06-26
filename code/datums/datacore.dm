@@ -75,6 +75,7 @@
 		foundrecord.fields["rank"] = assignment
 
 /datum/datacore/proc/get_manifest(monochrome, OOC)
+	var/list/heads = list()
 	var/list/vault = list()
 	var/list/brotherhood = list()
 	var/list/enclave = list()
@@ -102,6 +103,9 @@
 		var/name = t.fields["name"]
 		var/rank = t.fields["rank"]
 		var/department = 0
+		if(rank in command_positions)
+			heads[name] = rank
+			department = 1
 		if(rank in vault_occupations)
 			vault[name] = rank
 			department = 1
@@ -128,6 +132,11 @@
 			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank
+	if(heads.len > 0)
+		dat += "<tr><th colspan=3>Heads</th></tr>"
+		for(var/name in heads)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[heads[name]]</td></tr>"
+			even = !even
 	if(vault.len > 0)
 		dat += "<tr><th colspan=3>Vault 113</th></tr>"
 		for(var/name in vault)
