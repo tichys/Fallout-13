@@ -86,10 +86,6 @@
 			L.adjustBruteLoss(30)
 			L.setDir(2)
 			buckle_mob(L, force=1)
-			var/matrix/m180 = matrix(L.transform)
-			m180.Turn(180)
-			animate(L, transform = m180, time = 3)
-			L.pixel_y = L.get_standard_pixel_y_offset(180)
 	else if (has_buckled_mobs())
 		for(var/mob/living/L in buckled_mobs)
 			user_unbuckle_mob(L, user)
@@ -128,10 +124,6 @@
 				return
 		if(!M.buckled)
 			return
-		var/matrix/m180 = matrix(M.transform)
-		m180.Turn(180)
-		animate(M, transform = m180, time = 3)
-		M.pixel_y = M.get_standard_pixel_y_offset(180)
 		M.adjustBruteLoss(30)
 		src.visible_message(text("<span class='danger'>[M] falls free of the [src]!</span>"))
 		unbuckle_mob(M,force=1)
@@ -154,10 +146,10 @@
 	desc = "A cross fashioned from an old telephone pole and some rope."
 	density = 1
 	anchored = 1
-	buckle_lying = 0
 	can_buckle = 1
-	bound_height = 64
-	
+	obj_integrity = 250
+	max_integrity = 250
+
 /obj/structure/kitchenspike/cross/user_unbuckle_mob(mob/living/buckled_mob, mob/living/carbon/human/user)
 	if(buckled_mob)
 		var/mob/living/M = buckled_mob
@@ -178,15 +170,18 @@
 			"<span class='warning'>[M.name] struggles to break free from the [src]!</span>",\
 			"<span class='notice'>You struggle to break free from the [src], exacerbating your wounds! (Stay still for two minutes.)</span>",\
 			"<span class='italics'>You hear a dry sticky noise..</span>")
-			M.adjustBruteLoss(20)
+			M.adjustBruteLoss(45)
 			if(!do_after(M, 1200, target = src))
 				if(M && M.buckled)
 					to_chat(M, "<span class='warning'>You fail to free yourself!</span>")
 				return
 		if(!M.buckled)
 			return
-		M.pixel_y = M.get_standard_pixel_y_offset(-32)
-		M.adjustBruteLoss(20)
+		var/matrix/minvert = matrix(M.transform)
+		minvert.Turn(1)
+		animate(M, transform = minvert)
+		M.pixel_y = M.get_standard_pixel_y_offset(35)
+		M.adjustBruteLoss(45)
 		src.visible_message(text("<span class='danger'>[M] falls free of the [src]!</span>"))
 		unbuckle_mob(M,force=1)
 		M.emote("scream")
