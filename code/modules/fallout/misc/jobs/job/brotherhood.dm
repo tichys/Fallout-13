@@ -66,7 +66,7 @@
 		  /obj/item/device/radio = 1,
 		  /obj/item/weapon/kitchen/knife/combat = 1,
 		  /obj/item/clothing/ears/earmuffs = 1,
-	   	 /obj/item/clothing/glasses/sunglassespaop = 1)
+	   	  /obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
@@ -192,8 +192,8 @@
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-	  /obj/item/device/radio = 1,
-	  /obj/item/weapon/kitchen/knife/combat = 1)
+	  	/obj/item/device/radio = 1,
+	  	/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Paladin
