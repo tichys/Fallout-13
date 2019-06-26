@@ -60,13 +60,8 @@
 	suit = /obj/item/clothing/suit/f13/elder
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	back = /obj/item/weapon/twohanded/eldersword
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-		  /obj/item/device/radio = 1,
-		  /obj/item/weapon/kitchen/knife/combat = 1,
-		  /obj/item/clothing/ears/earmuffs = 1,
-	   	  /obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 	//Brotherhood Head Paladin
@@ -126,13 +121,8 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-		  /obj/item/device/radio = 1,
-		  /obj/item/weapon/kitchen/knife/combat = 1,
-		  /obj/item/clothing/ears/earmuffs = 1,
-		  /obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Head Scribe
@@ -189,11 +179,8 @@
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = null
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-	  	/obj/item/device/radio = 1,
-	  	/obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Paladin
@@ -252,13 +239,8 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	head = /obj/item/clothing/head/helmet/power_armor/t51b
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-	  	/obj/item/device/radio = 1,
-	  	/obj/item/weapon/kitchen/knife/combat = 1,
-	  	/obj/item/clothing/ears/earmuffs = 1,
-	  	/obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Brotherhood Knight
@@ -316,13 +298,8 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d
 	head = /obj/item/clothing/head/helmet/power_armor/t45d
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-		  /obj/item/device/radio = 1,
-		  /obj/item/weapon/kitchen/knife/combat = 1,
-		  /obj/item/clothing/ears/earmuffs = 1,
-		  /obj/item/clothing/glasses/sunglassespaop = 1)
 	id = /obj/item/weapon/card/id/bos
 
 //Scribes!!
@@ -379,9 +356,6 @@
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = null
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2,
-		  /obj/item/device/radio = 1,
-		  /obj/item/weapon/kitchen/knife/combat = 1)
 	id = /obj/item/weapon/card/id/bos

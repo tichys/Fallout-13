@@ -15,7 +15,7 @@
 	materials = list(MAT_METAL=700, MAT_GLASS=50)
 	var/rigged = 0		// true if rigged to explode
 	var/chargerate = 100 //how much power is given every tick in a recharger
-	var/self_recharge = 0 //does it self recharge, over time, or not?
+	var/self_recharge = 1 //does it self recharge, over time, or not?
 	var/ratingdesc = TRUE
 	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
 
@@ -200,7 +200,7 @@
 	name = "high-capacity power cell"
 	origin_tech = "powerstorage=2"
 	icon_state = "hcell"
-	maxcharge = 10000
+	maxcharge = 2250
 	materials = list(MAT_GLASS=60)
 	rating = 3
 	chargerate = 1500
