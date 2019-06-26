@@ -14,15 +14,15 @@
 			if(1)
 				self_weight = 0.500
 			if(2)
-				self_weight = 1.500
+				self_weight = 3.500
 			if(3)
-				self_weight = 3.000
+				self_weight = 6.000
 			if(4)
 				self_weight = 8.000
 			if(5)
-				self_weight = 14.000
+				self_weight = 20.000
 			if(6)
-				self_weight = 25.000
+				self_weight = 30.000
 	if(istype(loc, /atom/movable))
 		var/atom/movable/L = loc
 		L.update_weight(self_weight)
