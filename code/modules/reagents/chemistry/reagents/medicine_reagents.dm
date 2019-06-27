@@ -1143,7 +1143,7 @@
 
 /datum/reagent/medicine/hyperepinephrine/on_mob_life(mob/living/M as mob)
 	M.status_flags |= GOTTAGOFAST
-	M.adjustToxLoss(2, 0)
+	M.adjustToxLoss(0.7, 0)
 	. = 1
 	..()
 	
