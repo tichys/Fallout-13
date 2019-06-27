@@ -219,7 +219,7 @@
 	icon_state = "blshell"
 	caliber = "shotgun"
 	projectile_type = /obj/item/projectile/bullet
-	materials = list(MAT_METAL=4000)
+	materials = list(MAT_METAL=250)
 
 
 /obj/item/ammo_casing/shotgun/buckshot
@@ -245,7 +245,7 @@
 	projectile_type = /obj/item/projectile/bullet/rpellet
 	pellets = 6
 	variance = 25
-	materials = list(MAT_METAL=4000)
+	materials = list(MAT_METAL=250)
 
 
 /obj/item/ammo_casing/shotgun/beanbag

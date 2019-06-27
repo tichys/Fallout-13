@@ -1,5 +1,5 @@
 /obj/item/weapon/stock_parts/cell
-	name = "power cell"
+	name = "Microfusion cell"
 	desc = "A rechargable electrochemical power cell."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
@@ -14,8 +14,8 @@
 	var/maxcharge = 1000
 	materials = list(MAT_METAL=700, MAT_GLASS=50)
 	var/rigged = 0		// true if rigged to explode
-	var/chargerate = 100 //how much power is given every tick in a recharger
-	var/self_recharge = 1 //does it self recharge, over time, or not?
+	var/chargerate = 250 //how much power is given every tick in a recharger
+	var/self_recharge = 0 //does it self recharge, over time, or not?
 	var/ratingdesc = TRUE
 	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
 
@@ -197,13 +197,14 @@
 	maxcharge = 2000
 
 /obj/item/weapon/stock_parts/cell/high
-	name = "high-capacity power cell"
-	origin_tech = "powerstorage=2"
+	name = "high-capacity Microfusion cell"
+	origin_tech = "powerstorage=1"
 	icon_state = "hcell"
 	maxcharge = 2250
-	materials = list(MAT_GLASS=60)
+	materials = list(MAT_METAL = 25000, MAT_GLASS = 25000)
 	rating = 3
-	chargerate = 1500
+	chargerate = 250
+	self_recharge = 1
 
 /obj/item/weapon/stock_parts/cell/high/plus
 	name = "high-capacity power cell+"
