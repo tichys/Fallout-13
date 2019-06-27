@@ -74,7 +74,7 @@
 
 /obj/item/weapon/reagent_containers/pill/patch/turbo
 	name = "turbo"
-	desc = "Turbo provides a speed boost to the user, though mixing this many chems can't be good for your health."
+	desc = "Turbo provides a speed boost to the user, though mixing volatile chems like this can't be good for your health."
 	list_reagents = list("hyperepinephrine" = 16, "crank" = 9)
 	icon = 'icons/fallout/objects/medicine/chemical.dmi'
 	icon_state = "turbo"
