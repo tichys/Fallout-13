@@ -51,7 +51,7 @@
 
 /obj/item/weapon/reagent_containers/hypospray/combat
 	name = "combat stimulant injector"
-	desc = "A modified air-needle autoinjector, cutting edge Enclave technology designed for the rapid application of a chemical cocktail designed to keep a soldier on his feet and in the fight through horrific injuries. The label on the side says not to inject more than once every ten minutes to avoid overdose."
+	desc = "A modified air-needle autoinjector, cutting edge Enclave technology for the rapid application of a chemical cocktail designed to keep a soldier on his feet and in the fight despite horrific injuries. The label on the side says not to inject more than once every ten minutes to avoid overdose."
 	amount_per_transfer_from_this = 100
 	icon_state = "combat_hypo"
 	volume = 600
