@@ -1029,7 +1029,7 @@
 	description = "The active chemical in psycho, significantly boosts the user's tolerance for pain and overall endurance."
 	reagent_state = SOLID
 	color = "#555555"
-	metabolization_rate = 0.325
+	metabolization_rate = 0.6
 
 /datum/reagent/medicine/psychocorazine/on_mob_life(mob/living/M)
 	M.adjustBruteLoss(-0.5*REM, 0)
@@ -1153,7 +1153,7 @@
 	description = "A cocktail of stimulants targeted at the cardiovascular system, allowing for significantly improved pain endurance and recovery from fatigue."
 	reagent_state = LIQUID
 	color = "#A9FBFB"
-	metabolization_rate = 0.175
+	metabolization_rate = 0.18
 
 /datum/reagent/medicine/musclestimulant/on_mob_life(mob/living/M)
 	M.status_flags |= IGNORESLOWDOWN
