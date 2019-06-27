@@ -30,7 +30,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/medx
 	name = "med-x"
 	desc = "Med-X is a potent opiate analgesic that binds to opioid receptors in the brain and central nervous system, reducing the perception of pain as well as the emotional response to pain.<br>Essentially, it is a painkiller delivered via hypodermic needle."
-	list_reagents = list("muscle stimulant" = 40, "morphine" = 5)
+	list_reagents = list("morphine" = 5)
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 	icon_state = "medx_15"
 	item_state = "syringe_15"
@@ -57,7 +57,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/psycho
 	name = "psycho"
 	desc = "Psycho will increase damage resistance, allowing subjects to survive hits more easily."
-	list_reagents = list("epinephrine" = 15, "inacusiate" = 10, "oculine" = 10, "muscle stimulant" = 10) //increasing this just slightly to make psycho more worth using.
+	list_reagents = list("epinephrine" = 15, "inacusiate" = 10, "oculine" = 10) //increasing this just slightly to make psycho more worth using.
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 	icon_state = "psycho"
 	item_state = "syringe_15"
