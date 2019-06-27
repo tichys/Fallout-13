@@ -20,8 +20,8 @@
 
 /obj/item/weapon/reagent_containers/pill/patch/supstimpak
 	name = "super stimpak"
-	desc = "The super version of the Stimpak has an additional vial containing more powerful drugs than the basic model. Deals minor toxin damage due to contaminants from exposure to the elements."
-	list_reagents = list("styptic_powder" = 15, "silver_sulfadiazine" = 15, "salglu_solution" = 10, "omnizine" = 5, "mine_salve" = 4, "aranesp" = 1) // miners salve causes some hud distortion, and at higher units increases this exponetnially, should add a drawback so people dont just pop superstimms constantly
+	desc = "The super version of the Stimpak has an additional vial containing more powerful drugs than the basic model."
+	list_reagents = list("styptic_powder" = 15, "silver_sulfadiazine" = 15, "salglu_solution" = 10, "omnizine" = 5, "mine_salve" = 5) // miners salve causes some hud distortion, and at higher units increases this exponetnially, should add a drawback so people dont just pop superstimms constantly
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 	icon_state = "superstim_15"
 	item_state = "syringe_15"
