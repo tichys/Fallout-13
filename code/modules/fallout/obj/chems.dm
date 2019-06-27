@@ -48,7 +48,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/jet
 	name = "jet"
 	desc = "Jet is an extremely addictive chem, a single hit is enough to form an addiction in most people. It significantly boosts a user's metabolism, allowing for bursts of increased speed and a quicker recovery time from both fatigue and stuns."
-	list_reagents = list("hyperepinephrine" = 12, "crank" = 12)
+	list_reagents = list("hyperepinephrine" = 9, "crank" = 12)
 	icon = 'icons/fallout/objects/medicine/chemical.dmi'
 	icon_state = "jet"
 	item_state = "bandaid"
