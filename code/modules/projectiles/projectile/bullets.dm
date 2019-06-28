@@ -316,11 +316,11 @@
 
 /obj/item/projectile/bullet/sniper
 	speed = 0		//360 alwaysscope.
-	damage = 70
-	stun = 30
-	weaken = 5
+	damage = 60
+	stun = 8 //stun time reduced, 30 was too much.
+	weaken = 2
 	dismemberment = 2
-	armour_penetration = 40
+	armour_penetration = 55 //higher ap value
 	var/breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/on_hit(atom/target, blocked = 0)
