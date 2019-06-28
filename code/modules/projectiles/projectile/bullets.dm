@@ -70,11 +70,6 @@
 	armour_penetration = 40
 	dismemberment = 0
 
-/obj/item/projectile/bullet/armourpiercing556 //5.56 armour piercing round. designed for piercing heavy armour but wont necessarily do much damage
-	damage = 8.4
-	armour_penetration = 90
-	dismemberment = 0
-
 /obj/item/projectile/bullet/pellet
 	name = "pellet"
 	damage = 15
