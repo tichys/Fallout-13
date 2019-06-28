@@ -746,5 +746,29 @@
 		return ..()
 	return 0
 
+
+
+
+
+
+
+
 /datum/martial_art/patraining
 	name = "Power Armor Training"
+
+/obj/item/weapon/pa_manual
+	name = "power armour manual"
+	desc = "A small, black notebook with a warning sign printed on the front. The notebook itself describes how to safely operate power armour without suffering serious injury or death."
+	icon = 'icons/obj/library.dmi'
+	icon_state ="notebook_warning"
+
+/obj/item/weapon/pa_manual/attack_self(mob/living/carbon/human/user)
+	if(!istype(user) || !user)
+		return
+	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour.</span>")
+	var/datum/martial_art/patraining/D = new(null)
+	D.teach(user)
+	user.drop_item()
+	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
+	new /obj/effect/decal/cleanable/ash(get_turf(src))
+	qdel(src)
