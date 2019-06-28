@@ -313,7 +313,7 @@
 /obj/item/projectile/bullet/sniper
 	speed = 0		//360 alwaysscope.
 	damage = 60
-	stamina = 60
+	stamina = 60 //will now cause a stun after 2 hits on the same target, lasts for roughly 7 seconds if they dont have stamina regenerating chems in hte bloodstream
 	dismemberment = 2
 	armour_penetration = 55 //higher ap value
 	var/breakthings = FALSE
