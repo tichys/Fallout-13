@@ -4,7 +4,7 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 
 /obj/item/clothing/head/helmet/f13/broken
-	name = "broken t-41d power helmet"
+	name = "broken t-45d power helmet"
 	desc = "This power armor helmet is so decrepit and battle-worn that it has ceased its primary function of protecting the wearer from harm.<br>It can still provide some very basic protection."
 	icon_state = "broken"
 	item_state = "broken"
@@ -651,25 +651,13 @@
 	self_weight = 2
 	flash_protect = 2
 	
-/obj/item/clothing/head/helmet/ncr/trooper
-	name = "trooper helmet"
-	desc = "A dully-colored helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
-	icon_state = "trooper"
-	item_state = "trooper"
-	armor = list(melee = 30, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 10)
-	flags_inv = HIDEEARS|HIDEHAIR
-	put_on_delay = 10
-	strip_delay = 45
-	resistance_flags = FIRE_PROOF
-	self_weight = 1
-
 /obj/item/clothing/head/helmet/f13/trooper
 	name = "trooper helmet"
 	desc = "A dully-colored helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
 	icon_state = "trooper"
 	item_state = "trooper"
 	armor = list(melee = 30, bullet = 20, laser = 10, energy = 10, bomb = 20, bio = 0, rad = 0, fire = 20, acid = 10)
-	flags_inv = HIDEEARS
+	flags_inv = HIDEEARS|HIDEHAIR
 	put_on_delay = 10
 	strip_delay = 30
 	resistance_flags = FIRE_PROOF

@@ -12,7 +12,7 @@
 	spawn_positions = 1
 	supervisors = "the Enclave Central Command"
 	selection_color = "#ec9d9d"
-	minimal_player_age = 7
+	minimal_player_age = 14
 	whitelist_on = 0
 
 	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
@@ -44,7 +44,7 @@
 
 	outfit = /datum/outfit/job/colonel
 
-	access = list(70)
+	access = list(12, 20, 63, 70) //adding vault access perms given that the Enclave has pre-war vault control codes, since the faction is being moved off-map and whitelisted, means they dont have to search for vault stuff to get into the vault if an event calls for it.
 	minimal_access = list()
 
 /datum/outfit/job/colonel
@@ -74,6 +74,7 @@
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	whitelist_on = 0
 
 	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
@@ -107,7 +108,7 @@
 
 	outfit = /datum/outfit/job/enclave_lieutenant
 
-	access = list(70)
+	access = list(12, 20, 63, 70) //adding vault access perms given that the Enclave has pre-war vault control codes, since the faction is being moved off-map and whitelisted, means they dont have to search for vault stuff to get into the vault if an event calls for it.
 	minimal_access = list()
 
 /datum/outfit/job/enclave_lieutenant
@@ -138,6 +139,7 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	whitelist_on = 0
 
 	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
@@ -168,7 +170,7 @@
 
 	outfit = /datum/outfit/job/enclave_private
 
-	access = list(70)
+	access = list(12, 20, 63, 70) //adding vault access perms given that the Enclave has pre-war vault control codes, since the faction is being moved off-map and whitelisted, means they dont have to search for vault stuff to get into the vault if an event calls for it.
 	minimal_access = list()
 
 /datum/outfit/job/enclave_private
@@ -198,6 +200,7 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	whitelist_on = 0
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -226,7 +229,7 @@
 
 	outfit = /datum/outfit/job/enclave_private
 
-	access = list(70)
+	access = list(12, 20, 63, 70) //adding vault access perms given that the Enclave has pre-war vault control codes, since the faction is being moved off-map and whitelisted, means they dont have to search for vault stuff to get into the vault if an event calls for it.
 	minimal_access = list()
 
 /datum/outfit/job/enclave_recruit
@@ -257,6 +260,7 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	whitelist_on = 0
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -285,8 +289,7 @@
 	)
 
 	outfit = /datum/outfit/job/enclave_private
-
-	access = list(70)
+	access = list(12, 20, 63, 70) //adding vault access perms given that the Enclave has pre-war vault control codes, since the faction is being moved off-map and whitelisted, means they dont have to search for vault stuff to get into the vault if an event calls for it.
 	minimal_access = list()
 
 /datum/outfit/job/enclave_recruit

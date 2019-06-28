@@ -17,7 +17,7 @@
 	name = "Improved Capacity Microfusion Cell"
 	desc = "An improved capacity Microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
-	req_tech = list("powerstorage" = 1)
+	req_tech = list("powerstorage" = 2) // stay at 2, requires research once added then can be made at proto, auto or mechfab.
 	build_type = PROTOLATHE | AUTOLATHE | MECHFAB
 	materials = list(MAT_METAL = 25000, MAT_GLASS = 25000)
 	construction_time=30

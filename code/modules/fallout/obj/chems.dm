@@ -3,7 +3,7 @@
 /obj/item/weapon/reagent_containers/pill/patch/healingpowder
 	name = "healing powder"
 	desc = "A foul-smelling primitive healing medicine.<br>It is widespread in the wasteland due to easy production - all kinds of Wastelanders from Settlers to Mercenaries use it to heal minor injuries.<br>Soldiers of the Legion use healing powder as their primary source of medicine and healing, since the Legion bans the use of other chems, such as stimpaks."
-	list_reagents = list("omnizine" = 15, "salglu_solution" = 10, "morphine" = 4.5, "musclestimulant" = 2) // added morphine to the mix to prevent stacking a bunch of healing powders together, and to add the drowsiness drawback from FO2.
+	list_reagents = list("omnizine" = 15, "salglu_solution" = 10, "morphine" = 2.6, "musclestimulant" = 8) // added morphine to the mix to prevent stacking a bunch of healing powders together, and to add the drowsiness drawback from FO2.
 	icon = 'icons/fallout/objects/medicine/chemical.dmi'
 	icon_state = "heal_powder"
 	item_state = "bandaid"

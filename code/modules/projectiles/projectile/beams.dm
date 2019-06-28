@@ -28,7 +28,7 @@
 	name = "2mm bolt"
 	damage = 100
 	armour_penetration = 200
-	dismemberment = 100
+	dismemberment = 60 //reduced instant decap on headshot, should result in less 1shot kills while still insta critting
 	icon_state = "2mm"
 	pass_flags = PASSTABLE
 	light_color = LIGHT_COLOR_BLUE
