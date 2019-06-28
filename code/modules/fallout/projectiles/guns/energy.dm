@@ -170,9 +170,9 @@
 	icon_state = "gaussrifle"
 	item_state = "gaussrifle"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gauss2mm)
-	w_class = 3
+	w_class = 4
 	zoomable = TRUE
 	zoom_amt = 22
 	slot_flags = SLOT_BACK
-	weapon_weight = WEAPON_MEDIUM
-	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	w_class = WEIGHT_CLASS_HUGE
