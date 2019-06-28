@@ -1,6 +1,6 @@
 /obj/item/weapon/stock_parts/cell
 	name = "Microfusion cell"
-	desc = "A rechargable miniature fusion reaction contained in a power cell."
+	desc = "A rechargable miniature fusion reaction contained in a compact power cell, roughly the size of a golf ball."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
 	item_state = "cell"
