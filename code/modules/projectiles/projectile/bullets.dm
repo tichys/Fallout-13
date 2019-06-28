@@ -90,16 +90,12 @@
 /obj/item/projectile/bullet/roland
 	name = ".45 round"
 	damage = 90
-	stun = 100
-	weaken = 100
 	dismemberment = 1
 	armour_penetration = 30
 
 /obj/item/projectile/bullet/winchester
 	name = ".30-30 round"
 	damage = 80
-	stun = 50
-	weaken = 30
 	dismemberment = 1
 
 /obj/item/projectile/bullet/pellet/weak/New()
@@ -317,8 +313,7 @@
 /obj/item/projectile/bullet/sniper
 	speed = 0		//360 alwaysscope.
 	damage = 60
-	stun = 8 //stun time reduced, 30 was too much.
-	weaken = 2
+	stamina = 60
 	dismemberment = 2
 	armour_penetration = 55 //higher ap value
 	var/breakthings = FALSE
@@ -332,9 +327,7 @@
 /obj/item/projectile/bullet/sniper/soporific
 	armour_penetration = 0
 	nodamage = 1
-	stun = 0
 	dismemberment = 0
-	weaken = 0
 	breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/soporific/on_hit(atom/target, blocked = 0)
@@ -347,9 +340,7 @@
 /obj/item/projectile/bullet/sniper/haemorrhage
 	armour_penetration = 15
 	damage = 75
-	stun = 5
 	dismemberment = 1
-	weaken = 3
 	breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/haemorrhage/on_hit(atom/target, blocked = 0)
@@ -365,8 +356,6 @@
 	damage = 50 // slightly reduced damage
 	forcedodge = 1
 	dismemberment = 0.8
-	stun = 3 //reduced stun duration
-	weaken = 5
 	breakthings = FALSE
 
 
