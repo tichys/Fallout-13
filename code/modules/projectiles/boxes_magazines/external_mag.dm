@@ -232,6 +232,14 @@
 	caliber = "a556"
 	max_ammo = 20
 	multiple_sprites = 2
+	
+/obj/item/ammo_box/magazine/m556ap
+	name = "rifle magazine (5.56mm armour piercing)"
+	icon_state = "5.56m"
+	ammo_type = /obj/item/ammo_casing/a556AP
+	caliber = "a556"
+	max_ammo = 20
+	multiple_sprites = 2
 
 /obj/item/ammo_box/magazine/falmag
 	name = "rifle magazine (.308 Winchester)"
