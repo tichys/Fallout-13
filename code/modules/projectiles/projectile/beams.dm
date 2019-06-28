@@ -26,9 +26,9 @@
 
 /obj/item/projectile/beam/laser/gauss2mm
 	name = "2mm bolt"
-	damage = 80 //slightly reduced damage, will still 1shot most things though.
+	damage = 100
 	armour_penetration = 200
-	dismemberment = 100
+	dismemberment = 60 //reduced instant decap on headshot rather than just crit
 	icon_state = "2mm"
 	pass_flags = PASSTABLE
 	light_color = LIGHT_COLOR_BLUE
