@@ -145,11 +145,6 @@
 	desc = "A 5.56mm bullet casing."
 	caliber = "a556"
 	projectile_type = /obj/item/projectile/bullet/weakbullet3
-	
-/obj/item/ammo_casing/a556AP
-	desc = "A 5.56mm armour piercing bullet casing."
-	caliber = "a556"
-	projectile_type = /obj/item/projectile/bullet/armourpiercing556
 
 /obj/item/ammo_casing/a40mm
 	name = "40mm HE shell"
