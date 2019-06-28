@@ -57,7 +57,7 @@
 
 /obj/item/ammo_casing/energy/laser/gauss2mm
 	delay = 2
-	e_cost = 1000
+	e_cost = 2250
 	randomspread = 0
 	projectile_type = /obj/item/projectile/beam/laser/gauss2mm
 	variance = 4
