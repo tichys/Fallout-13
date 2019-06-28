@@ -1,5 +1,5 @@
 /obj/item/projectile/bullet
-	name = "bullet"
+	name = "bullet" //this projectile is used by .357s, 7.62s and even .50 AE, so current statline fits rather well.
 	icon_state = "bullet"
 	damage = 50
 	damage_type = BRUTE
@@ -15,15 +15,14 @@
 	stamina = 80
 	dismemberment = 0
 
-/obj/item/projectile/bullet/weakbullet2 //detective revolver instastuns, but multiple shots are better for keeping punks down
+/obj/item/projectile/bullet/weakbullet2 //removing weaken from this as bullets causing instant knockdown is pretty heinous.
 	damage = 26
-	weaken = 3
 	stamina = 50
-	dismemberment = 0.3
+	dismemberment = 0
 
-/obj/item/projectile/bullet/weakbullet3
-	damage = 28
-	dismemberment = 0.3
+/obj/item/projectile/bullet/weakbullet3 // lowering damage on tihs one slightly, used by 9mms.
+	damage = 22
+	dismemberment = 0
 
 /obj/item/projectile/bullet/toxinbullet
 	damage = 10
@@ -32,32 +31,31 @@
 
 /obj/item/projectile/bullet/incendiary/firebullet
 	damage = 10
-	dismemberment = 0.3
+	dismemberment = 0
 
 /obj/item/projectile/bullet/sniper/haemorrhage/deagle
 	name = "bullet"
 	damage = 60
-	dismemberment = 0.5
+	dismemberment = 0.25
 
 /obj/item/projectile/bullet/deagle
 	name = "bullet"
-	damage = 55
-	dismemberment = 0.7
+	damage = 40 //lowering damage slightly to offset haemmorhage rounds.
+	dismemberment = 0.25
 
 /obj/item/projectile/bullet/deagle/two
 	name = "bullet"
-	damage = 70
-	dismemberment = 0.7
+	damage = 55 //lowering damage as used by deagle skins, really shouldnt be doing like 15 extra damage.
+	dismemberment = 0.25
 
-/obj/item/projectile/bullet/webley
+/obj/item/projectile/bullet/webley //low velocity weapon, webley was reliable not necessarily known for its deadliness
 	name = "bullet"
-	damage = 65
+	damage = 35
 	dismemberment = 0.4
 
-/obj/item/projectile/bullet/bulldog
+/obj/item/projectile/bullet/bulldog //stripping weaken again, not a fan of guns causing stuns and think it drastically messes with combat.
 	name = "bullet"
 	damage = 68
-	weaken = 3
 	stamina = 50
 	dismemberment = 0.4
 
@@ -67,15 +65,20 @@
 		C.bleed(100)
 	return ..()
 
-/obj/item/projectile/bullet/armourpiercing
-	damage = 20
-	armour_penetration = 10
-	dismemberment = 0.5
+/obj/item/projectile/bullet/armourpiercing //9mm armour piercing round. designed for piercing heavy armour but wont necessarily do much damage
+	damage = 6.8
+	armour_penetration = 40
+	dismemberment = 0
+
+/obj/item/projectile/bullet/armourpiercing556 //5.56 armour piercing round. designed for piercing heavy armour but wont necessarily do much damage
+	damage = 8.4
+	armour_penetration = 90
+	dismemberment = 0
 
 /obj/item/projectile/bullet/pellet
 	name = "pellet"
 	damage = 15
-	dismemberment = 1
+	dismemberment = 0.4
 
 /obj/item/projectile/bullet/pellet/decimator
 	name = "pellet"
@@ -364,10 +367,10 @@
 /obj/item/projectile/bullet/sniper/penetrator
 	icon_state = "gauss"
 	name = "penetrator round"
-	damage = 60
+	damage = 50 // slightly reduced damage
 	forcedodge = 1
 	dismemberment = 0.8
-	stun = 10
+	stun = 3 //reduced stun duration
 	weaken = 5
 	breakthings = FALSE
 
