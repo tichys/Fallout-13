@@ -204,7 +204,7 @@
 	materials = list(MAT_METAL = 30000, MAT_GLASS = 30000)
 	rating = 3
 	chargerate = 450
-	self_recharge = 0 / works better without self charging in my view, gave it a faster recharge in ports so it can be recharged faster rather than just being self charging.
+	self_recharge = 0 //works better without self charging in my view, gave it a faster recharge in ports so it can be recharged faster rather than just being self charging.
 
 /obj/item/weapon/stock_parts/cell/high/plus
 	name = "high-capacity power cell+"
