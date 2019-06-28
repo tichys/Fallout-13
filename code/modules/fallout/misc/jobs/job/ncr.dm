@@ -44,7 +44,7 @@
 
 	outfit = /datum/outfit/job/captain
 
-	access = list(71)
+	access = list(access_ncr)
 	minimal_access = list()
 
 /datum/outfit/job/captain
@@ -303,7 +303,7 @@
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
-	head = /obj/item/clothing/head/helmet/ncr/trooper
+	head = /obj/item/clothing/head/helmet/f13/trooper
 	glasses = /obj/item/clothing/glasses/f13/biker
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
