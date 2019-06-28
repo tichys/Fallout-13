@@ -44,7 +44,7 @@
 
 	outfit = /datum/outfit/job/captain
 
-	access = list(access_ncr)
+	access = list(71)
 	minimal_access = list()
 
 /datum/outfit/job/captain
