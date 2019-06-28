@@ -26,7 +26,7 @@
 
 /obj/item/projectile/beam/laser/gauss2mm
 	name = "2mm bolt"
-	damage = 100
+	damage = 80 //slightly reduced damage, will still 1shot most things though.
 	armour_penetration = 200
 	dismemberment = 100
 	icon_state = "2mm"
