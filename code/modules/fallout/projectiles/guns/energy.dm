@@ -165,7 +165,7 @@
 
 /obj/item/weapon/gun/energy/laser/gaussrifle
 	name = "gauss rifle"
-	desc = "The Gauss Rifle comes loaded with a magazine filled with slivers of inert metal allowing for thousands of shots before requiring a new magazine. Using a substantial amount of charge, a power cell activates magnetic coils to hurtle these slugs at incredible speeds. It seems standard microfusion cells however will not do the job, this weapon requires a more advanced power cell which must be researched."
+	desc = "The Gauss Rifle comes loaded with a magazine filled with slivers of inert metal allowing for hundreds of shots before requiring a new magazine. Using a substantial amount of charge, a power cell activates magnetic coils to hurtle these slugs at incredible speeds. It seems standard microfusion cells however will not do the job, this weapon requires a more advanced power cell which must be researched."
 	icon = 'icons/fallout/objects/guns/energy.dmi'
 	icon_state = "gaussrifle"
 	item_state = "gaussrifle"
