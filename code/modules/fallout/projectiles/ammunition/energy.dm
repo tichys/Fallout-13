@@ -23,7 +23,7 @@
 
 /obj/item/ammo_casing/energy/laser/rcw
 	delay = 1
-	e_cost = 40 //cost increased because its super spammable with only 10pts, literally like 30 clicks to empty magazine and like 90 projectiles total.
+	e_cost = 50 //20 shots per mag.
 	projectile_type = /obj/item/projectile/beam/laser/rcw
 	randomspread = 1
 	variance = 8
