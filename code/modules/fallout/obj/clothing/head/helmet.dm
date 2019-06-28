@@ -4,7 +4,7 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 
 /obj/item/clothing/head/helmet/f13/broken
-	name = "broken t-41d power helmet"
+	name = "broken t-45d power helmet"
 	desc = "This power armor helmet is so decrepit and battle-worn that it has ceased its primary function of protecting the wearer from harm.<br>It can still provide some very basic protection."
 	icon_state = "broken"
 	item_state = "broken"
