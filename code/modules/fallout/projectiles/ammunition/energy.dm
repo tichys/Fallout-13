@@ -23,7 +23,7 @@
 
 /obj/item/ammo_casing/energy/laser/rcw
 	delay = 1
-	e_cost = 50 //20 shots per mag.
+	e_cost = 40 //5 shots per burst and each shot uses 40 e_cost. at 200 energy per burst and 1000 energy per power cell this results in total mag size of 5 bursts/25 shots before requiring a new cell
 	projectile_type = /obj/item/projectile/beam/laser/rcw
 	randomspread = 1
 	variance = 8
