@@ -334,7 +334,7 @@ var/powerarmor = 0
 	item_state = "t45bpowerarmor"
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	flags_inv = HIDEJUMPSUIT
 	put_on_delay = 150
 	strip_delay = 150
@@ -382,16 +382,15 @@ var/powerarmor = 0
 /obj/item/clothing/suit/armor/f13/power_armor
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL 
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	self_weight = 18 //power armour uses servomotors to support its own weight, this still causes slowdown but not as ridiculous as before. means a power armour trooper can carry a backpack without reaching lowest speed possible.
-	put_on_delay = 600
-	strip_delay = 600 //strip and equip timers increased, should discourage messing around with power armour bodies honestly, power armour generally requires a team of technicians to outfit the wearer into the suit, rather than just being an easily deployed suit of combat armor.
+	put_on_delay = 300
+	strip_delay = 300
 	special_defence = PREVENTDISMEMBER
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, slot) //THIS PART NEEDS FIXING. CODE CURRENTLY DOES NOT WORK NOR DO FACTIONS HAVE MARTIAL ART APPLIED TO THEM TO PASS THIS CHECK ONCE IT DOES WORK.
