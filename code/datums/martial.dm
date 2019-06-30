@@ -751,10 +751,7 @@
 
 
 
-
-
-/datum/martial_art/patraining
-	name = "Power Armor Training"
+var/powerarmor = 0
 
 /obj/item/weapon/pa_manual
 	name = "power armour manual"
@@ -766,8 +763,7 @@
 	if(!istype(user) || !user)
 		return
 	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour.</span>")
-	var/datum/martial_art/patraining/D = new(null)
-	D.teach(user)
+	var/powerarmor = 1
 	user.drop_item()
 	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
