@@ -93,6 +93,16 @@
 	/obj/item/clothing/suit/f13/cowboybvest,
 	/obj/item/clothing/suit/f13/duster,
 	/obj/item/clothing/glasses/eyepatch,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/leonjacket,
+	/obj/item/clothing/suit/poncho,
+	/obj/item/clothing/under/leonclothes,
+	/obj/item/clothing/under/liquidsuit,
+	/obj/item/clothing/suit/poncho/green,
+	/obj/item/clothing/suit/poncho/red,
+	/obj/item/clothing/head/sombrero,
+	/obj/item/clothing/head/sombrero/green,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/ammo_box/magazine/internal/cylinder/m44
 	)
@@ -132,7 +142,7 @@
 	desc = "A City dweller.<br>You live a better life than most Wastelanders will ever have."
 	faction = "city"
 	status = "member"
-	total_positions = 10
+	total_positions = 16
 	spawn_positions = 10
 	supervisors = "none"
 	selection_color = "#ece19d"
@@ -149,6 +159,9 @@
 	/obj/item/clothing/under/f13/cowboyb,
 	/obj/item/clothing/suit/f13/cowboygvest,
 	/obj/item/clothing/suit/f13/cowboybvest,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/leonjacket,
 	/obj/item/clothing/under/f13/female/flapper
 	)
 
