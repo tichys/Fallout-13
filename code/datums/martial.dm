@@ -657,7 +657,7 @@
 
 /obj/item/weapon/sleeping_carp_scroll
 	name = "Chinese Special Operations Handbook"
-	desc = "A scroll filled with strange markings. It seems to be drawings of some sort of martial art."
+	desc = "A handbook covered in worn confidential markings, an odd looking helmet with an organse visor is on the front and beneath the book's title is in Chinese."
 	icon = 'icons/obj/library.dmi'
 	icon_state = "borgbook"
 
