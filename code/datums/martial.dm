@@ -402,7 +402,7 @@
 /datum/martial_art/cqc
 	name = "CQC"
 	help_verb = /mob/living/carbon/human/proc/CQC_help
-	block_chance = 90
+	block_chance = 80
 
 /datum/martial_art/cqc/proc/drop_restraining()
 	restraining = 0
