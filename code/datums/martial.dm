@@ -457,7 +457,7 @@
 	return 1
 
 /datum/martial_art/cqc/proc/Pressure(mob/living/carbon/human/A, mob/living/carbon/human/D)
-	D.visible_message("<span class='warning'>[A] forces their arm on [D]'s neck!</span>")
+	D.visible_message("<span class='warning'>[A] forces their arm on [D]'s neck, applying pressure!</span>")
 	D.adjustStaminaLoss(60)
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 	return 1
@@ -569,11 +569,11 @@
 
 	to_chat(usr, "<b><i>You try to remember some of the basics of CQC.</i></b>")
 
-	to_chat(usr, "<span class='notice'>Slam</span>: Grab Harm. Slam opponent into the ground, weakens and knocks down.")
-	to_chat(usr, "<span class='notice'>CQC Kick</span>: Harm Disarm Harm Harm. Knocks opponent away. Knocks out stunned or weakened opponents.")
-	to_chat(usr, "<span class='notice'>Restrain</span>: Grab Grab. Locks opponents into a restraining position, disarm to knock them out with a choke hold.")
-	to_chat(usr, "<span class='notice'>Pressure</span>: Disarm Grab. Decent stamina damage.")
-	to_chat(usr, "<span class='notice'>Consecutive CQC</span>: Harm Harm Disarm. Mainly offensive move, huge damage and decent stamina damage.")
+	to_chat(usr, "<span class='notice'>Slam</span>: Grab Harm. Deals 10 brute damage and applies a 12 sec paralyze.")
+	to_chat(usr, "<span class='notice'>CQC Kick</span>: Harm Harm. Knocks back and deals 10 brute damage. If the target was paralyzed, applies a 30 sec sleep and 15 brain damage.")
+	to_chat(usr, "<span class='notice'>Restrain</span>: Grab Grab. Applies a 10 sec stun and deals 20 stamina damage. Disarm while restraining to knock them out with a choke hold. Applies a 40 sec sleep.")
+	to_chat(usr, "<span class='notice'>Pressure</span>: Disarm Grab. Deals 60 stamina damage.")
+	to_chat(usr, "<span class='notice'>Consecutive CQC</span>: Disarm Disarm Harm. Deals 25 brute and 50 stamina damage.")
 
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 
