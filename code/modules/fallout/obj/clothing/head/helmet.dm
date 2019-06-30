@@ -347,7 +347,7 @@
 /obj/item/clothing/head/helmet/power_armor/f13/mob_can_equip(mob/user, slot)
 	if (ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if (!H.martial_art && H.martial_art.name != "Power Armor Training" && slot == slot_head)
+		if (powerarmor == 0 && slot == slot_head)
 			H << "<span class='warning'>You don't have the proper training to operate the power armor!</span>"
 			return 0
 			..()
@@ -378,7 +378,7 @@
 		toogle_light(user)
 		return 1
 	return ..()
-	
+
 /obj/item/clothing/head/helmet/power_armor/badmin
 	name = "advanced power armor Mk. IV helmet"
 	desc = "Enclave Hellfire armor is a heat-resistant power armor worn by high level Enclave soldiers and the specialized, elite Enclave Hellfire troopers."
@@ -476,7 +476,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 2
 	flash_protect = 2
-	
+
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -516,7 +516,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 2
 	flash_protect = 2
-	
+
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -556,7 +556,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	self_weight = 2
 	flash_protect = 2
-	
+
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
 	glass_colour_type = /datum/client_colour/glass_colour/yellow
@@ -633,7 +633,7 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 2
 	flash_protect = 2
-	
+
 //NCR
 
 /obj/item/clothing/head/helmet/power_armor/ncr
@@ -650,7 +650,7 @@
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	self_weight = 2
 	flash_protect = 2
-	
+
 /obj/item/clothing/head/helmet/ncr/trooper
 	name = "trooper helmet"
 	desc = "A dully-colored helmet designed to provide troopers a basic head protection.<br>It has a very rough \"mass-produced\" look to it, as it is issued to all NCR soldiers and MPs."
