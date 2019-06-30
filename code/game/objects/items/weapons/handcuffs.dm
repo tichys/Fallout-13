@@ -348,11 +348,10 @@
 		C.update_inv_legcuffed()
 		feedback_add_details("handcuffs","B")
 		to_chat(C, "<span class='userdanger'>\The [src] ensnares you!</span>")
-		C.Weaken(weaken)
 
 /obj/item/weapon/restraints/legcuffs/bola/raider
 	name = "raiding bola"
-	desc = "A classic bola used by raiders to weaken and capture their victims."
+	desc = "A classic bola used by raiders to snare and eventually capture their victims."
 	icon_state = "bola_r"
 	breakouttime = 50 //Slightly harder to break out of
 
@@ -362,7 +361,6 @@
 	icon_state = "bola_t"
 	breakouttime = 100 //Way harder to break out of
 	throwforce = 10
-	weaken = 1
 
 /obj/item/weapon/restraints/legcuffs/bola/energy //For Security
 	name = "energy bola"

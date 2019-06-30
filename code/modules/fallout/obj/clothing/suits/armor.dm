@@ -159,7 +159,7 @@ var/powerarmor = 0
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 35, bullet = 25, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 35, bullet = 30, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -170,7 +170,7 @@ var/powerarmor = 0
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 45, bullet = 30, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 45, bullet = 35, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -181,7 +181,7 @@ var/powerarmor = 0
 	icon_state = "legvexil"
 	item_state = "legvexil"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 60, bullet = 30, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 60, bullet = 35, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -192,7 +192,7 @@ var/powerarmor = 0
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 40, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 75, bullet = 45, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 8
@@ -203,7 +203,7 @@ var/powerarmor = 0
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 50, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 75, bullet = 55, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 10
@@ -214,7 +214,7 @@ var/powerarmor = 0
 	icon_state = "leglegate"
 	item_state = "leglegate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 95, bullet = 55, laser = 25, energy = 25, bomb = 35, bio = 35, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 95, bullet = 65, laser = 25, energy = 25, bomb = 35, bio = 35, rad = 20, fire = 20, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -228,7 +228,7 @@ var/powerarmor = 0
 	icon_state = "combat_mk1"
 	item_state = "combat_mk1"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 55, bullet = 55, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 55, bullet = 60, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -239,7 +239,7 @@ var/powerarmor = 0
 	icon_state = "combat_mk2"
 	item_state = "combat_mk2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 70, bullet = 60, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 70, bullet = 70, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 2
@@ -252,7 +252,7 @@ var/powerarmor = 0
 	icon_state = "ncr_armor1"
 	item_state = "ncr_armor1"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 10, bullet = 30, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 10, acid = 0)
+	armor = list(melee = 15, bullet = 45, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 10, acid = 0)
 	put_on_delay = 50
 	strip_delay = 50
 	resistance_flags = FIRE_PROOF

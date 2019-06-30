@@ -48,7 +48,7 @@
 
 	outfit = /datum/outfit/job/elder
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/elder
@@ -109,7 +109,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/hpaladin
@@ -167,7 +167,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/hscribe
@@ -227,7 +227,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/paladin
@@ -286,7 +286,7 @@
 
 	outfit = /datum/outfit/job/knight
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/knight
@@ -344,7 +344,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/scribe
