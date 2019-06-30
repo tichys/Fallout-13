@@ -33,6 +33,14 @@
 	materials = list(MAT_METAL = 90)
 	build_path = /obj/item/weapon/extinguisher
 	category = list("initial","Tools")
+	
+/datum/design/pocketextinguisher
+	name = "Pocket fire extinguisher"
+	id = "pocketextinguisher"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 45)
+	build_path = /obj/item/weapon/extinguisher/mini
+	category = list("initial","Tools")
 
 /datum/design/multitool
 	name = "Multitool"

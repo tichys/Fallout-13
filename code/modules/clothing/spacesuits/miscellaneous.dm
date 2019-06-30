@@ -82,16 +82,16 @@ Contains:
 
 	//NASA Voidsuit
 /obj/item/clothing/head/helmet/space/nasavoid
-	name = "NASA Void Helmet"
-	desc = "An old, NASA Centcom branch designed, dark red space suit helmet."
+	name = "USSA Space Helmet"
+	desc = "An old, USSA dark red space suit helmet."
 	icon_state = "void"
 	item_state = "void"
 
 /obj/item/clothing/suit/space/nasavoid
-	name = "NASA Voidsuit"
+	name = "USSA Space Suit"
 	icon_state = "void"
 	item_state = "void"
-	desc = "An old, NASA Centcom branch designed, dark red space suit."
+	desc = "An old, USSA dark red space suit."
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/internals,/obj/item/device/multitool)
 
 

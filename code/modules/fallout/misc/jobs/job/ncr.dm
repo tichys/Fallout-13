@@ -153,7 +153,9 @@
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/kitchen/knife/combat,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/lighter/engraved,
+	/obj/item/clothing/suit/armor/ranger/eliteriotgear, //adding this here so vet rangers have a choice between light weight, low protective gear or high weight, high protective gear.
+	/obj/item/clothing/head/helmet/ranger/eliteriot,
 	)
 
 	denied_items = list(
@@ -179,10 +181,11 @@
 	uniform = /obj/item/clothing/under/f13/mechanic
 	shoes = /obj/item/clothing/shoes/f13/military/light
 	suit = /obj/item/clothing/suit/armor/ranger
+	suit_store = /obj/item/weapon/gun/ballistic/revolver/sequoia
 	head = /obj/item/clothing/head/helmet/ranger
 	belt = /obj/item/weapon/storage/belt/military/assault
 	back = /obj/item/weapon/gun/ballistic/automatic/sniper_rifle
-	weapon = /obj/item/weapon/gun/ballistic/revolver/sequoia
+	weapon = /obj/item/weapon/cqc_manual //adding this to NCR vet rangers, given their hand 2 hand proficiency.
 	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1, \
 		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 		/obj/item/ammo_box/m44 = 3, \

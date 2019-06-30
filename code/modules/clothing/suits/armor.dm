@@ -497,7 +497,7 @@
 	icon_state = "vet_ranger"
 	item_state = "vet_ranger"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 50, bullet = 55, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 50, fire = 30, acid = 30)
+	armor = list(melee = 45, bullet = 45, laser = 10, energy = 10, bomb = 10, bio = 15, rad = 25, fire = 30, acid = 10)
 	put_on_delay = 20
 	strip_delay = 20
 	self_weight = 2
@@ -508,19 +508,20 @@
 	desc = "A unique armor, that has been in countless battles and caused much bloodshed."
 	icon_state = "old_ranger"
 	item_state = "old_ranger"
-	armor = list(melee = 30, bullet = 60, laser = 15, energy = 10, bomb = 25, bio = 0, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 20, bullet = 35, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 15, fire = 25, acid = 0)
 	self_weight = 2
 
 /obj/item/clothing/suit/armor/ranger/eliteriotgear
-	name = "Elite Riot Gear"
-	desc = "An armored leather trenchcoat that has been heavily modified for the purposes of advanced riot control. It has been reinforced with shoulder plates and knee pads as well as features an enhanced gas filtration system."
+	name = "Heavy Veteran Ranger Trenchcoat"
+	desc = "A heavily armored leather trenchcoat, significantly weightier than the standard veteran ranger garbs. This suit offers far superior protection than the standard, at a cost of mobility."
 	icon_state = "elite_riot_gear"
 	item_state = "elite_riot_gear"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 65, bullet = 65, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 50, fire = 30, acid = 30)
-	put_on_delay = 20
-	strip_delay = 20
-	self_weight = 2
+	self_weight = 24
+	slowdown = 3
+	armor = list(melee = 90, bullet = 90, laser = 35, energy = 15, bomb = 25, bio = 45, rad = 60, fire = 75, acid = 25)
+	put_on_delay = 60
+	strip_delay = 60
 
 /obj/item/clothing/suit/armor/sullyvest
 	name = "Militia Vest"

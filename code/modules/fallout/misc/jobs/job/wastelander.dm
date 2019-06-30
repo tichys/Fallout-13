@@ -173,9 +173,20 @@
 	/obj/item/clothing/under/f13/female/merccharm,
 	/obj/item/clothing/under/f13/doctor,
 	/obj/item/clothing/under/f13/female/doctor,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/leonjacket,
+	/obj/item/clothing/under/leonclothes,
+	/obj/item/clothing/under/liquidsuit,
+	/obj/item/clothing/suit/poncho,
+	/obj/item/clothing/suit/poncho/green,
+	/obj/item/clothing/suit/poncho/red,
+	/obj/item/clothing/suit/jacket/leather/overcoat,
+	/obj/item/clothing/head/sombrero,
+	/obj/item/clothing/head/sombrero/green,
 	/obj/item/clothing/suit/armor/f13/kit,
 	/obj/item/clothing/glasses/sunglasses,
-	/obj/item/clothing/glasses/eyepatch
+	/obj/item/clothing/glasses/eyepatch,
 	)
 
 	denied_items = list(
@@ -208,7 +219,7 @@
 	department_flag = MEDSCI
 	faction = "none"
 	status = "none"
-	total_positions = 10
+	total_positions = 20
 	spawn_positions = 10
 	supervisors = "nobody"
 	selection_color = "#ece19d"
@@ -229,6 +240,18 @@
 	/obj/item/clothing/under/f13/female/doctor,
 	/obj/item/clothing/under/f13/bodyguard,
 	/obj/item/clothing/suit/f13/duster,
+	/obj/item/clothing/suit/leonjacket,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/poncho,
+	/obj/item/clothing/suit/poncho/green,
+	/obj/item/clothing/suit/poncho/red,
+	/obj/item/clothing/head/sombrero,
+	/obj/item/clothing/under/leonclothes,
+	/obj/item/clothing/under/liquidsuit,
+	/obj/item/clothing/head/sombrero/green,
+	/obj/item/clothing/under/leonclothes,
+	/obj/item/clothing/suit/jacket/leather/overcoat,
 	/obj/item/clothing/suit/armor/f13/kit,
 	/obj/item/clothing/suit/armor/f13/leatherarmor,
 	/obj/item/clothing/suit/armor/f13/metalarmor,
