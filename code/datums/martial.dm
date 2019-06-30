@@ -246,7 +246,7 @@
 #define HEAD_KICK_COMBO "DHH"
 #define ELBOW_DROP_COMBO "HDHDH"
 /datum/martial_art/the_sleeping_carp
-	name = "The Sleeping Carp"
+	name = "Hei Gui Jutsu"
 	deflection_chance = 100
 	help_verb = /mob/living/carbon/human/proc/sleeping_carp_help
 
@@ -284,7 +284,7 @@
 		D.apply_damage(5, BRUTE, pick("l_arm", "r_arm"))
 		D.Stun(3)
 		return 1
-	add_logs(A, D, "wrist wrenched (Sleeping Carp)")
+	add_logs(A, D, "wrist wrenched (Hei Gui Jutsu)")
 	return basic_hit(A,D)
 
 /datum/martial_art/the_sleeping_carp/proc/backKick(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -296,7 +296,7 @@
 		D.Weaken(4)
 		playsound(get_turf(D), 'sound/weapons/punch1.ogg', 50, 1, -1)
 		return 1
-	add_logs(A, D, "back-kicked (Sleeping Carp)")
+	add_logs(A, D, "back-kicked (Hei Gui Jutsu)")
 	return basic_hit(A,D)
 
 /datum/martial_art/the_sleeping_carp/proc/kneeStomach(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -309,7 +309,7 @@
 		D.Stun(2)
 		playsound(get_turf(D), 'sound/weapons/punch1.ogg', 50, 1, -1)
 		return 1
-	add_logs(A, D, "stomach kneed (Sleeping Carp)")
+	add_logs(A, D, "stomach kneed (Hei Gui Jutsu)")
 	return basic_hit(A,D)
 
 /datum/martial_art/the_sleeping_carp/proc/headKick(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -322,7 +322,7 @@
 		playsound(get_turf(D), 'sound/weapons/punch1.ogg', 50, 1, -1)
 		D.Stun(4)
 		return 1
-	add_logs(A, D, "head kicked (Sleeping Carp)")
+	add_logs(A, D, "head kicked (Hei Gui Jutsu)")
 	return basic_hit(A,D)
 
 /datum/martial_art/the_sleeping_carp/proc/elbowDrop(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -335,7 +335,7 @@
 		D.apply_damage(50, BRUTE, "chest")
 		playsound(get_turf(D), 'sound/weapons/punch1.ogg', 75, 1, -1)
 		return 1
-	add_logs(A, D, "elbow dropped (Sleeping Carp)")
+	add_logs(A, D, "elbow dropped (Hei Gui Jutsu)")
 	return basic_hit(A,D)
 
 /datum/martial_art/the_sleeping_carp/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
@@ -370,7 +370,7 @@
 	if(prob(D.getBruteLoss()) && !D.lying)
 		D.visible_message("<span class='warning'>[D] stumbles and falls!</span>", "<span class='userdanger'>The blow sends you to the ground!</span>")
 		D.Weaken(4)
-	add_logs(A, D, "[atk_verb] (Sleeping Carp)")
+	add_logs(A, D, "[atk_verb] (Hei Gui Jutsu)")
 	return 1
 
 
@@ -382,10 +382,10 @@
 
 /mob/living/carbon/human/proc/sleeping_carp_help()
 	set name = "Recall Teachings"
-	set desc = "Remember the martial techniques of the Sleeping Carp clan."
-	set category = "Sleeping Carp"
+	set desc = "Remember the martial techniques of the Hei Gui - China's elite dragoons."
+	set category = "Hei Gui Jutsu"
 
-	to_chat(usr, "<b><i>You retreat inward and recall the teachings of the Sleeping Carp...</i></b>")
+	to_chat(usr, "<b><i>You retreat inward and recall the teachings of Hei Gui Jutsu...</i></b>")
 
 	to_chat(usr, "<span class='notice'>Wrist Wrench</span>: Disarm Disarm. Forces opponent to drop item in hand.")
 	to_chat(usr, "<span class='notice'>Back Kick</span>: Harm Grab. Opponent must be facing away. Knocks down.")
@@ -402,7 +402,7 @@
 /datum/martial_art/cqc
 	name = "CQC"
 	help_verb = /mob/living/carbon/human/proc/CQC_help
-	block_chance = 75
+	block_chance = 80
 
 /datum/martial_art/cqc/proc/drop_restraining()
 	restraining = 0
@@ -457,7 +457,7 @@
 	return 1
 
 /datum/martial_art/cqc/proc/Pressure(mob/living/carbon/human/A, mob/living/carbon/human/D)
-	D.visible_message("<span class='warning'>[A] forces their arm on [D]'s neck!</span>")
+	D.visible_message("<span class='warning'>[A] forces their arm on [D]'s neck, applying pressure!</span>")
 	D.adjustStaminaLoss(60)
 	playsound(get_turf(A), 'sound/weapons/cqchit1.ogg', 50, 1, -1)
 	return 1
@@ -508,7 +508,7 @@
 		return 1
 	add_logs(A, D, "CQC'd")
 	A.do_attack_animation(D)
-	var/picked_hit_type = pick("CQC'd", "Big Bossed")
+	var/picked_hit_type = pick("strikes", "kicks")
 	var/bonus_damage = 13
 	if(D.weakened || D.resting || D.lying)
 		bonus_damage += 5
@@ -569,11 +569,11 @@
 
 	to_chat(usr, "<b><i>You try to remember some of the basics of CQC.</i></b>")
 
-	to_chat(usr, "<span class='notice'>Slam</span>: Grab Harm. Slam opponent into the ground, weakens and knocks down.")
-	to_chat(usr, "<span class='notice'>CQC Kick</span>: Harm Disarm Harm. Knocks opponent away. Knocks out stunned or weakened opponents.")
-	to_chat(usr, "<span class='notice'>Restrain</span>: Grab Grab. Locks opponents into a restraining position, disarm to knock them out with a choke hold.")
-	to_chat(usr, "<span class='notice'>Pressure</span>: Disarm Grab. Decent stamina damage.")
-	to_chat(usr, "<span class='notice'>Consecutive CQC</span>: Harm Harm Disarm. Mainly offensive move, huge damage and decent stamina damage.")
+	to_chat(usr, "<span class='notice'>Slam</span>: Grab Harm. Deals 10 brute damage and applies a 12 sec paralyze.")
+	to_chat(usr, "<span class='notice'>CQC Kick</span>: Harm Harm. Knocks back and deals 10 brute damage. If the target was paralyzed, applies a 30 sec sleep and 15 brain damage.")
+	to_chat(usr, "<span class='notice'>Restrain</span>: Grab Grab. Applies a 10 sec stun and deals 20 stamina damage. Disarm while restraining to knock them out with a choke hold. Applies a 40 sec sleep.")
+	to_chat(usr, "<span class='notice'>Pressure</span>: Disarm Grab. Deals 60 stamina damage.")
+	to_chat(usr, "<span class='notice'>Consecutive CQC</span>: Disarm Disarm Harm. Deals 25 brute and 50 stamina damage.")
 
 	to_chat(usr, "<b><i>In addition, by having your throw mode on when being attacked, you enter an active defense mode where you have a chance to block and sometimes even counter attacks done to you.</i></b>")
 
@@ -656,20 +656,20 @@
 	qdel(src)
 
 /obj/item/weapon/sleeping_carp_scroll
-	name = "mysterious scroll"
-	desc = "A scroll filled with strange markings. It seems to be drawings of some sort of martial art."
-	icon = 'icons/obj/wizard.dmi'
-	icon_state = "scroll2"
+	name = "Chinese Special Operations Handbook"
+	desc = "A handbook covered in worn confidential markings, an odd looking helmet with an organse visor is on the front and beneath the book's title is in Chinese."
+	icon = 'icons/obj/library.dmi'
+	icon_state = "borgbook"
 
 /obj/item/weapon/sleeping_carp_scroll/attack_self(mob/living/carbon/human/user)
 	if(!istype(user) || !user)
 		return
-	to_chat(user, "<span class='sciradio'>You have learned the ancient martial art of the Sleeping Carp! Your hand-to-hand combat has become much more effective, and you are now able to deflect any projectiles \
-	directed toward you. However, you are also unable to use any ranged weaponry. You can learn more about your newfound art by using the Recall Teachings verb in the Sleeping Carp tab.</span>")
+	to_chat(user, "<span class='sciradio'>You have learned the martial art of the Chinese Special Forces, Hei Gui Jutsu! Your hand-to-hand combat has become much more effective, and you are now able to deflect any projectiles \
+	directed toward you. However, you are also unable to use any ranged weaponry due to a newfound sense of honor. You can learn more about your newfound art by using the Recall Teachings verb in the Hei Gui Jutsu tab.</span>")
 	var/datum/martial_art/the_sleeping_carp/theSleepingCarp = new(null)
 	theSleepingCarp.teach(user)
 	user.drop_item()
-	visible_message("<span class='warning'>[src] lights up in fire and quickly burns to ash.</span>")
+	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
 	qdel(src)
 
@@ -751,11 +751,6 @@
 
 
 
-
-
-/datum/martial_art/patraining
-	name = "Power Armor Training"
-
 /obj/item/weapon/pa_manual
 	name = "power armour manual"
 	desc = "A small, black notebook with a warning sign printed on the front. The notebook itself describes how to safely operate power armour without suffering serious injury or death."
@@ -765,9 +760,8 @@
 /obj/item/weapon/pa_manual/attack_self(mob/living/carbon/human/user)
 	if(!istype(user) || !user)
 		return
-	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour.</span>")
-	var/datum/martial_art/patraining/D = new(null)
-	D.teach(user)
+	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour!</span>")
+	//deleting this line for now until power armor training variable is fixed or it is defined as a flag or whatever, right now the powerarmor var does not work.
 	user.drop_item()
 	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
