@@ -387,7 +387,7 @@
 
 obj/item/clothing/head/helmet/ranger/eliteriot
 	name = "heavy ranger helmet"
-	desc = "An advanced, heavy helmet designed for urban combat, it is rather heavy."
+	desc = "An advanced riot helmet designed for urban combat, it is rather heavy."
 	icon_state = "elite_riothelmet"
 	item_state = "elite_riothelmet"
 	flags = BLOCK_GAS_SMOKE_EFFECT | HEADCOVERSEYES | HEADCOVERSMOUTH
