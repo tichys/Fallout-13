@@ -346,7 +346,7 @@
 	desc = "An old military helmet with a built-in night vision device, commonly worn by Veteran Rangers."
 	icon_state = "vet_rangerhelmet"
 	item_state = "vet_rangerhelmet"
-	armor = list(melee = 40, bullet = 40, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 40, fire = 40, acid = 30)
+	armor = list(melee = 45, bullet = 45, laser = 10, energy = 10, bomb = 10, bio = 15, rad = 25, fire = 30, acid = 10)
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	put_on_delay = 10
@@ -381,18 +381,18 @@
 	desc = "An old military helmet, commonly worn by Desert Rangers, that went through the fire and the flames, saving a single life amongst heavy bloodshed.<br>This particular helmet has a \"Forgive me mama\" inscription on the side."
 	icon_state = "old_rangerhelmet"
 	item_state = "old_rangerhelmet"
-	armor = list(melee = 40, bullet = 40, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 40, fire = 30, acid = 10)
+	armor = list(melee = 20, bullet = 35, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 15, fire = 65, acid = 65)
 	self_weight = 1
 	glass_colour_type = /datum/client_colour/glass_colour/lightgreen
 
 obj/item/clothing/head/helmet/ranger/eliteriot
-	name = "Elte Riot Helmet"
-	desc = "An old military helmet worn by the Las Vegas Police Department Riot division, this one has an advanced gas filtration system built into the helmet."
+	name = "heavy ranger helmet"
+	desc = "An advanced, heavy helmet designed for urban combat, it is rather heavy."
 	icon_state = "elite_riothelmet"
 	item_state = "elite_riothelmet"
 	flags = BLOCK_GAS_SMOKE_EFFECT | HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list(melee = 40, bullet = 50, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 40, fire = 30, acid = 10)
-	self_weight = 1
+	armor = list(melee = 96, bullet = 90, laser = 35, energy = 15, bomb = 25, bio = 45, rad = 60, fire = 75, acid = 25)
+	self_weight = 6
 
 /obj/item/clothing/head/bio_hood/advsciencehood
 	name = "Advanced Science Hood"
