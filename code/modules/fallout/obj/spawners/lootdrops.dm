@@ -51,7 +51,12 @@
 	color = "#FF0000"
 	loot = list(
 	/obj/item/weapon/gun/ballistic/revolver/magnum = 1,
-	/obj/item/weapon/gun/energy/laser/rifle/aer13 = 1)
+	/obj/item/weapon/gun/energy/laser/rifle/aer13 = 1,
+	/obj/item/weapon/gun/energy/laser/gatling = 1,
+	/obj/item/weapon/gun/energy/laser/rcw = 1,
+	/obj/item/weapon/gun/energy/laser/rifle/tri = 1,
+	/obj/item/weapon/gun/energy/laser/laer = 1,
+	)
 
 /obj/effect/spawner/lootdrop/ammo
 	color = "#FF00FF"
