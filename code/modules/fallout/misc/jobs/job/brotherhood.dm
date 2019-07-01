@@ -23,11 +23,8 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
 	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/weapon/gun/energy/laser/rifle/tri,
-	/obj/item/weapon/twohanded/superhammer,
-	/obj/item/weapon/kitchen/knife/combat,
-	/obj/item/device/radio,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/gun/energy/laser/gatling,
+	/obj/item/device/radio
 	)
 
 	denied_items = list(
@@ -86,10 +83,8 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/weapon/gun/energy/laser/pistol,
 	/obj/item/weapon/twohanded/superhammer,
-	/obj/item/weapon/gun/energy/laser/rcw,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/gun/energy/laser/rcw
 	)
 
 	denied_items = list(
@@ -146,8 +141,7 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/gun/energy/laser/pistol
 	)
 
 	denied_items = list(
@@ -204,10 +198,7 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/gun/energy/laser/rifle/aer13,
-	/obj/item/weapon/twohanded/superhammer,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/gun/energy/laser/rifle/aer13
 	)
 
 	denied_items = list(
@@ -261,9 +252,7 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/recon,
-	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/twohanded/largehammer
+	/obj/item/clothing/under/f13/recon
 	)
 
 	denied_items = list(
@@ -323,8 +312,7 @@
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/gun/energy/laser/pistol
 	)
 
 	denied_items = list(
