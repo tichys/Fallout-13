@@ -16,7 +16,7 @@
 	
 /obj/item/projectile/beam/laser/gatling
 	name = "gatling laser"
-	damage = 7.5
+	damage = 9
 	armour_penetration = 20
 
 /obj/item/projectile/beam/laser
