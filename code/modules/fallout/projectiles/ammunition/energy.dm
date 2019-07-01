@@ -26,13 +26,13 @@
 /obj/item/ammo_casing/energy/laser/gatling
 	projectile_type = /obj/item/projectile/beam/laser/gatling
 	delay = 1
-	e_cost = 12.5 // 12.5 per shot, 10 per burst, 125 per full burst, 8 total bursts with cell that has 1000 energy max.
+	e_cost = 12.5 // 12.5 per shot, 10 per burst, 125 per full burst, 8 total bursts/80 shots with cell that has 1k energy.
 	randomspread = 1
 	variance = 5
 
 /obj/item/ammo_casing/energy/laser/rcw
 	delay = 1
-	e_cost = 20 //5 shots per burst and each shot uses 20 e_cost. at 100 energy per burst and 1000 energy per power cell this results in total mag size of 10 bursts/50 shots before requiring a new cell
+	e_cost = 20 //20 per shot, 5 per burst, 100 per full burst, 10 total bursts/50 shots with cell that has 1k energy.
 	projectile_type = /obj/item/projectile/beam/laser/rcw
 	randomspread = 1
 	variance = 8
