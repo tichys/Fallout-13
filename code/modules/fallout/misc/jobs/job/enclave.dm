@@ -47,7 +47,7 @@
 
 /datum/outfit/job/colonel
 	name = "Colonel"
-	backpack = null
+	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/enclave_officer
@@ -105,7 +105,7 @@
 
 /datum/outfit/job/enclave_lieutenant
 	name = "Enclave Lieutenant"
-	backpack = null
+	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/enclave_officer
@@ -167,7 +167,7 @@
 
 /datum/outfit/job/enclave_private
 	name = "Enclave Private"
-	backpack = null
+	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/dbdu
@@ -226,7 +226,7 @@
 
 /datum/outfit/job/enclave_recruit
 	name = "Enclave Recruit"
-	backpack = null
+	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/dbdu
@@ -285,7 +285,7 @@
 
 /datum/outfit/job/enclave_recruit
 	name = "Enclave Recruit"
-	backpack = null
+	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/dbdu
