@@ -30,7 +30,7 @@
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser
 
 /obj/item/projectile/beam/laser/gauss2mm
-	name = "2mm EC sliver"
+	name = "2mm bolt"
 	damage = 100
 	armour_penetration = 200
 	dismemberment = 30 //reduced instant decap on headshot, should result in less 1shot kills while still insta critting
