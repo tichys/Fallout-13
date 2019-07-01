@@ -113,7 +113,7 @@
 
 /datum/outfit/job/hpaladin
 	name = "Head Paladin"
-	backpack = /obj/item/weapon/gun/energy/laser/gaussrifle //requires upgraded power cell to use so didnt feel right to leave this as a choice, its now something head paladin gets by default but needs to wait for research before he can use.
+	back = /obj/item/weapon/gun/energy/laser/gaussrifle //requires upgraded power cell to use so didnt feel right to leave this as a choice, its now something head paladin gets by default but needs to wait for research before he can use.
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
