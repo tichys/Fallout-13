@@ -271,3 +271,19 @@
 	origin_tech = "combat=2"
 	ammo_type = /obj/item/ammo_casing/m223
 	max_ammo = 50
+	
+/obj/item/ammo_box/magazine/m72mag
+	name = "20-rnd 2mm EC magazine"
+	ammo_type = /obj/item/ammo_casing/caseless/m72casing
+	caliber = "2mmEC"
+	icon = 'icons/fallout/objects/guns/ammo.dmi'
+	icon_state = "2mm-20"
+	max_ammo = 20
+	
+/obj/item/ammo_casing/caseless/m72casing
+	desc = "A 2mm EC slug."
+	caliber = "2mmEC"
+	firing_effect_type = null
+	projectile_type = /obj/item/projectile/bullet/midbullet3/apm72gauss
+	randomspread = 0
+	variance = 0

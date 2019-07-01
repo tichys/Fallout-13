@@ -144,9 +144,14 @@
 	dismemberment = 0
 
 /obj/item/projectile/bullet/midbullet3/ap
-	damage = 45
-	armour_penetration = 10
+	damage = 40
+	armour_penetration = 15
 	dismemberment = 1
+	
+/obj/item/projectile/bullet/midbullet3/apm72gauss
+	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE //velocity of proj means nothing can really stop it, should be firing through glass.
+	damage = 27.5
+	armour_penetration = 75
 
 /obj/item/projectile/bullet/midbullet3/fire/on_hit(atom/target, blocked = 0)
 	if(..(target, blocked))

@@ -1032,7 +1032,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 
 
 
-obj/machinery/vending/trader/guntrader
+/obj/machinery/vending/trader/guntrader
 	desc = "A security equipment vendor"
 	product_ads = "Crack capitalist skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
 	icon = 'icons/WVM/machines.dmi'
@@ -1044,6 +1044,27 @@ obj/machinery/vending/trader/guntrader
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 0, bio = 0, rad = 0, fire = 100, acid = 50)
 	resistance_flags = FIRE_PROOF
 
+/obj/machinery/vending/trader/brotherhoodsupplies
+	name = "Brotherhood Automated Quartermaster & Secure Storage System"
+	desc = "An advanced pre-war storage system for military equipment, designed around a conveyor to bring items up from underground storage containers, to ensure the safety of the equipment contained within."
+	req_access_txt = "69"
+	icon = 'icons/obj/machines/heavy_lathe.dmi'
+	icon_state = "h_lathe"
+	icon_deny = "h_lathe_leave"
+	products = list(/obj/item/weapon/gun/energy/laser/rifle/tri = 1,/obj/item/weapon/gun/energy/laser/laer = 1,/obj/item/weapon/gun/energy/plasma = 2,/obj/item/weapon/gun/energy/plasma/pistol = 3,/obj/item/weapon/gun/energy/laser/gatling = 1,/obj/item/weapon/gun/energy/laser/rcw = 2,/obj/item/weapon/gun/energy/laser/pistol = 8,/obj/item/weapon/gun/energy/laser/rifle = 8,/obj/item/weapon/gun/energy/laser/rifle/aer13 = 2,/obj/item/weapon/grenade/syndieminibomb/concussion/frag = 12,/obj/item/weapon/grenade/syndieminibomb/concussion = 12,/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 20,/obj/item/weapon/reagent_containers/pill/patch/medx = 20,/obj/item/weapon/reagent_containers/pill/patch/radaway = 20,/obj/item/weapon/reagent_containers/pill/patch/radx = 20,/obj/item/weapon/reagent_containers/pill/patch/psycho = 10,/obj/item/stack/sheet/metal/fifty = 50,/obj/item/stack/sheet/glass/fifty = 50,/obj/item/weapon/storage/box = 50,/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 100)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
+	resistance_flags = INDESTRUCTIBLE
+	
+/obj/machinery/vending/trader/enclavesupplies
+	name = "Enclave Automated Quartermaster & Secure Storage System"
+	desc = "An advanced pre-war storage system for military equipment, designed around a conveyor to bring items up from underground storage containers, to ensure the safety of the equipment contained within."
+	req_access_txt = "70"
+	icon = 'icons/obj/machines/heavy_lathe.dmi'
+	icon_state = "h_lathe"
+	icon_deny = "h_lathe_leave"
+	products = list(/obj/item/weapon/gun/energy/plasma = 8,/obj/item/weapon/gun/energy/plasma/pistol = 8, /obj/item/weapon/gun/energy/laser/gatling = 2,/obj/item/weapon/gun/energy/plasma/turbo = 2,/obj/item/weapon/gun/energy/plasma/tri = 1,/obj/item/weapon/gun/ballistic/semiauto/m72gauss = 2,/obj/item/ammo_box/magazine/m72mag = 30,/obj/item/weapon/grenade/syndieminibomb/concussion/frag = 12,/obj/item/weapon/grenade/syndieminibomb/concussion = 12,/obj/item/weapon/reagent_containers/hypospray/combat = 4,/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 20,/obj/item/weapon/reagent_containers/pill/patch/medx = 20,/obj/item/weapon/reagent_containers/pill/patch/radaway = 20,/obj/item/weapon/reagent_containers/pill/patch/radx = 20,/obj/item/weapon/reagent_containers/pill/patch/psycho = 10,/obj/item/stack/sheet/metal/fifty = 50,/obj/item/stack/sheet/glass/fifty = 50,/obj/item/weapon/storage/box = 50,/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 100)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
+	resistance_flags = INDESTRUCTIBLE
 
 #undef STANDARD_CHARGE
 #undef CONTRABAND_CHARGE

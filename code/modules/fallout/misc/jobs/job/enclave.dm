@@ -21,10 +21,7 @@
 	required_items = list(
 	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
 	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
-	/obj/item/weapon/gun/energy/plasma,
-	/obj/item/weapon/lighter/engraved,
 	/obj/item/weapon/cqc_manual
-
 	)
 
 	denied_items = list(
@@ -80,14 +77,8 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/head/soft/f13/utility/olive,
-	/obj/item/clothing/head/soft/f13/utility/tan,
-	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/under/f13/dbdu,
 	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
 	/obj/item/clothing/head/helmet/power_armor/superadvanced,
-	/obj/item/weapon/gun/energy/plasma,
-	/obj/item/weapon/lighter/engraved,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -148,10 +139,10 @@
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
 	/obj/item/clothing/head/helmet/power_armor/advanced,
-	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/ears/earmuffs,
 	/obj/item/clothing/glasses/sunglassespaop,
-	/obj/item/weapon/gun/energy/plasma/pistol)
+	/obj/item/weapon/gun/energy/plasma
+	)
 
 	denied_items = list(
 	/obj/item/clothing/shoes/f13/rag,
@@ -266,11 +257,9 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/head/soft/f13/utility/olive,
-	/obj/item/clothing/suit/armor/f13/combat_mk1,
-	/obj/item/clothing/head/helmet/f13/combat_mk1,
-	/obj/item/weapon/gun/energy/plasma/pistol
+	/obj/item/clothing/suit/armor/f13/combat_mk2,
+	/obj/item/clothing/head/helmet/f13/combat_mk2,
+	/obj/item/weapon/gun/energy/plasma
 	)
 
 	denied_items = list(
