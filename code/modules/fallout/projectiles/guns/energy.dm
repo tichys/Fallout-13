@@ -37,7 +37,7 @@
 	fire_sound = 'sound/f13weapons/plasmarifle.ogg'
 	burst_size = 1
 	shaded_charge = 1
-	fire_delay = 2 //burst size decreased and fire delay increased slightly, should even out. the idea is basically just to make firefightsd more controllable, right now plasma/laser weapons and burst weapons in general are a pain in the ass because you end up missing half your burst rather than being able to predict per shot.
+	fire_delay = 5
 
 /obj/item/weapon/gun/energy/plasma/glock
 	name ="glock 86"
@@ -49,9 +49,7 @@
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	burst_size = 1
-	zoomable = TRUE
-	zoom_amt = 3
-	scopetype = /obj/screen/fullscreen/scope/tech
+	fire_delay = 5
 
 /obj/item/weapon/gun/energy/plasma/pistol
 	name ="plasma pistol"
@@ -63,15 +61,17 @@
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	burst_size = 1
+	fire_delay = 5
 
 /obj/item/weapon/gun/energy/plasma/tri
 	name ="multiplas"
 	icon_state = "multiplas"
 	item_state = "multiplas"
+	desc = "A plasma weapon designed for urban combat, firing three projectiles per trigger pull, it is one of the deadliest firearms for urban pacification ever invented."
 	origin_tech = "combat=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/f13plasma/tri)
 	w_class = WEIGHT_CLASS_BULKY
-	fire_delay = 5
+	fire_delay = 10
 	burst_size = 1
 	w_class = 3
 
@@ -80,16 +80,30 @@
 	icon_state = "turbo-plasma-rifle"
 	item_state = "turbo-plasma-rifle"
 	icon = 'icons/fallout/objects/guns/energy.dmi'
-	desc = "A heavy plasma weapon, built around the frame of a industrial cutting laser, but refurbished to emit focused bolts of plasma at a high speed without overheating."
+	desc = "A heavy plasma weapon, built around the frame of an industrial cutting laser. This weapon is able to emit focused bolts of plasma at high speeds without overheating."
 	origin_tech = "combat=6;magnets=6"
 	ammo_type = list(/obj/item/ammo_casing/energy/f13plasma/turbo)
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_HUGE
-	fire_delay = 1
+	fire_delay = 0.65
 	w_class = 4
-	burst_size = 1 // fire delay increasd slightly and burst size decreased to 1, this weapon is basically just a harder hitting plasma rifle but comes with the downside of requiring you to use it with both hands, this means it is next to impossible to use flexibly in order to quickly reload from a belt short of some serious TG keybind memorisation and practice.
+	burst_size = 1
 
 ///////LASERS//////
+
+/obj/item/weapon/gun/energy/laser/gatling
+	name ="gatling laser"
+	icon_state = "gatling"
+	item_state = "gatling"
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	desc = "A heavy laser weapon designed to unleash a rapid barrage of laser fire, a favourite of shock troops everywhere."
+	origin_tech = "combat=6;magnets=6"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/gatling)
+	weapon_weight = WEAPON_HEAVY
+	w_class = WEIGHT_CLASS_HUGE
+	fire_delay = 0.5
+	w_class = 4
+	burst_size = 10
 
 /obj/item/weapon/gun/energy/laser/rcw
 	name ="laser RCW"
@@ -99,7 +113,8 @@
 	desc = "Rapid capacitor weapon."
 	origin_tech = "combat=6;magnets=6"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rcw)
-	burst_size = 5 //leaving this as a burst fire weapon since its meant to be a spammable weapon previous note here read: (Fuck yeah.)
+	burst_size = 5
+	fire_delay = 0.75
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -113,7 +128,7 @@
 	origin_tech = "combat=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser)
 	burst_size = 1
-	fire_delay = 2
+	fire_delay = 3.25
 	w_class = 2
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
@@ -126,7 +141,8 @@
 	desc = "A prototype laser rifle, meant to fire much faster and longer without overheating"
 	origin_tech = "combat=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rifle)
-	burst_size = 1 // to make the energy weapons more responsive.
+	burst_size = 1
+	fire_delay = 3.25
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -137,7 +153,8 @@
 	icon_state = "laser-rifle13"
 	item_state = "laser-rifle13"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rifle/aer13)
-	burst_size = 1 // to make the energy weapons more responsive.
+	burst_size = 1
+	fire_delay = 3.25
 
 /obj/item/weapon/gun/energy/laser/rifle/tri
 	name ="tribeam laser rifle"
@@ -146,7 +163,7 @@
 	origin_tech = "combat=3;magnets=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/rifle/tri)
 	burst_size = 1
-	fire_delay = 3
+	fire_delay = 8
 	w_class = 3
 
 /obj/item/weapon/gun/energy/laser/laer
@@ -156,7 +173,8 @@
 	icon_state = "laer"
 	item_state = "laer"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer)
-	burst_size = 1 // to make the energy weapons more responsive.
+	burst_size = 1
+	fire_delay = 5.5
 	w_class = 3
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -170,9 +188,10 @@
 	icon_state = "gaussrifle"
 	item_state = "gaussrifle"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gauss2mm)
-	w_class = 4
 	zoomable = TRUE
 	zoom_amt = 22
+	fire_delay = 60
 	slot_flags = SLOT_BACK
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_HUGE
+	w_class = 4
