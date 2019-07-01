@@ -1,4 +1,5 @@
 //Fallout 13 general armor directory
+var/powerarmor = 0
 
 /obj/item/clothing/suit/armor/f13
 	icon = 'icons/fallout/clothing/suits.dmi'
@@ -158,7 +159,7 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 35, bullet = 25, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 35, bullet = 30, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -169,7 +170,7 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 45, bullet = 30, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 45, bullet = 35, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -180,7 +181,7 @@
 	icon_state = "legvexil"
 	item_state = "legvexil"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 60, bullet = 30, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 60, bullet = 35, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -191,7 +192,7 @@
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 40, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 75, bullet = 45, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 8
@@ -202,7 +203,7 @@
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 50, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 75, bullet = 55, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 10
@@ -213,7 +214,7 @@
 	icon_state = "leglegate"
 	item_state = "leglegate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 95, bullet = 55, laser = 25, energy = 25, bomb = 35, bio = 35, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 95, bullet = 65, laser = 25, energy = 25, bomb = 35, bio = 35, rad = 20, fire = 20, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -227,7 +228,7 @@
 	icon_state = "combat_mk1"
 	item_state = "combat_mk1"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 55, bullet = 55, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 55, bullet = 60, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -238,7 +239,7 @@
 	icon_state = "combat_mk2"
 	item_state = "combat_mk2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 70, bullet = 60, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 70, bullet = 70, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 2
@@ -251,7 +252,7 @@
 	icon_state = "ncr_armor1"
 	item_state = "ncr_armor1"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 10, bullet = 30, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 10, acid = 0)
+	armor = list(melee = 15, bullet = 45, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 10, acid = 0)
 	put_on_delay = 50
 	strip_delay = 50
 	resistance_flags = FIRE_PROOF
@@ -333,7 +334,7 @@
 	item_state = "t45bpowerarmor"
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	flags_inv = HIDEJUMPSUIT
 	put_on_delay = 150
 	strip_delay = 150
@@ -350,7 +351,7 @@
 	armor = list(melee = 85, bullet = 85, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26 //weight adjusted and general behaviour put more in line with regular power armour since sierra power armour is meant to have its servomotors still installed and used by captains that have been trained to use power armour
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	
+
 // ncr armor end
 
 
@@ -381,22 +382,21 @@
 /obj/item/clothing/suit/armor/f13/power_armor
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL 
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	self_weight = 18 //power armour uses servomotors to support its own weight, this still causes slowdown but not as ridiculous as before. means a power armour trooper can carry a backpack without reaching lowest speed possible.
-	put_on_delay = 600
-	strip_delay = 600 //strip and equip timers increased, should discourage messing around with power armour bodies honestly, power armour generally requires a team of technicians to outfit the wearer into the suit, rather than just being an easily deployed suit of combat armor.
+	put_on_delay = 300
+	strip_delay = 300
 	special_defence = PREVENTDISMEMBER
 
 /obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, slot) //THIS PART NEEDS FIXING. CODE CURRENTLY DOES NOT WORK NOR DO FACTIONS HAVE MARTIAL ART APPLIED TO THEM TO PASS THIS CHECK ONCE IT DOES WORK.
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(!H.martial_art && H.martial_art.name != "Power Armor Training" && slot == slot_wear_suit)
+		if(powerarmor == 0 && slot == slot_wear_suit)
 			H << "<span class='warning'>You don't have the proper training to operate the power armor!</span>"
 			return 0
 			..()

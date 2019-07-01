@@ -51,12 +51,12 @@
 
 /obj/item/weapon/reagent_containers/hypospray/combat
 	name = "combat stimulant injector"
-	desc = "A modified air-needle autoinjector, used by support operatives to quickly heal injuries in combat."
-	amount_per_transfer_from_this = 10
+	desc = "A modified air-needle autoinjector, cutting edge Enclave technology for the rapid application of a chemical cocktail designed to keep a soldier on his feet and in the fight despite horrific injuries. The label on the side says not to inject more than once every ten minutes to avoid overdose."
+	amount_per_transfer_from_this = 100
 	icon_state = "combat_hypo"
-	volume = 150
+	volume = 600
 	ignore_flags = 1 // So they can heal their comrades.
-	list_reagents = list("epinephrine" = 30, "omnizine" = 30, "leporazine" = 30, "atropine" = 30)
+	list_reagents = list("musclestimulant" = 140, "psychocorazine" = 140, "epinephrine" = 140, "mannitol" = 60, "oculine" = 60, "inacusiate" = 60)
 
 /obj/item/weapon/reagent_containers/hypospray/combat/nanites
 	desc = "A modified air-needle autoinjector for use in combat situations. Prefilled with expensive medical nanites for rapid healing."

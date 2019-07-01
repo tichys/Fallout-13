@@ -48,13 +48,14 @@
 	. = 1
 
 /datum/reagent/drug/crank
-	name = "Crank"
+	name = "Jet Fumes"
 	id = "crank"
 	description = "Reduces stun times by about 200%. If overdosed or addicted it will deal significant Toxin, Brute and Brain damage."
 	reagent_state = LIQUID
 	color = "#FA00C8"
-	overdose_threshold = 20
-	addiction_threshold = 10
+	overdose_threshold = 15 // decreased slightly so you you shouldn't take more than one hit of jet every so often.
+	addiction_threshold = 12
+	metabolization_rate = 0.4
 
 /datum/reagent/drug/crank/on_mob_life(mob/living/M)
 	var/high_message = pick("You feel jittery.", "You feel like you gotta go fast.", "You feel like you need to step it up.")
@@ -153,7 +154,7 @@
 	color = "#FAFAFA"
 	overdose_threshold = 20
 	addiction_threshold = 10
-	metabolization_rate = 0.75 * REAGENTS_METABOLISM
+	metabolization_rate = 1.25 * REAGENTS_METABOLISM
 
 /datum/reagent/drug/methamphetamine/on_mob_life(mob/living/M)
 	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
@@ -163,7 +164,7 @@
 	M.AdjustStunned(-2, 0)
 	M.AdjustWeakened(-2, 0)
 	M.adjustStaminaLoss(-2, 0)
-	M.status_flags |= GOTTAGOREALLYFAST
+	M.status_flags |= GOTTAGOFAST
 	M.Jitter(2)
 	M.adjustBrainLoss(0.25)
 	if(prob(5))
@@ -317,15 +318,12 @@
 	description = "Amps you up and gets you going, fixes all stamina damage you might have but can cause toxin and oxygen damage.."
 	reagent_state = LIQUID
 	color = "#78FFF0"
+	metabolization_rate = 0.6
 
 /datum/reagent/drug/aranesp/on_mob_life(mob/living/M)
 	var/high_message = pick("You feel amped up.", "You feel ready.", "You feel like you can push it to the limit.")
-	if(prob(5))
-		to_chat(M, "<span class='notice'>[high_message]</span>")
-	M.adjustStaminaLoss(-18, 0)
-	M.adjustToxLoss(0.5, 0)
 	if(prob(50))
-		M.losebreath++
-		M.adjustOxyLoss(1, 0)
+		to_chat(M, "<span class='notice'>[high_message]</span>")
+	M.adjustToxLoss(2, 0)
 	..()
 	. = 1

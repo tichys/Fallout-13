@@ -48,7 +48,7 @@
 
 	outfit = /datum/outfit/job/elder
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/elder
@@ -87,7 +87,6 @@
 	required_items = list(
 	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/pistol,
-	/obj/item/weapon/gun/energy/laser/gaussrifle,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/gun/energy/laser/rcw,
 	/obj/item/weapon/lighter/engraved
@@ -109,12 +108,12 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/hpaladin
 	name = "Head Paladin"
-	backpack = null
+	back = /obj/item/weapon/gun/energy/laser/gaussrifle //requires upgraded power cell to use so didnt feel right to leave this as a choice, its now something head paladin gets by default but needs to wait for research before he can use.
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
@@ -167,7 +166,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/hscribe
@@ -227,7 +226,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/paladin
@@ -286,7 +285,7 @@
 
 	outfit = /datum/outfit/job/knight
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/knight
@@ -344,7 +343,7 @@
 	/obj/item/clothing/suit/f13/mantle_liz
 	)
 
-	access = list(access_brotherhood)
+	access = list(69)
 	minimal_access = list()
 
 /datum/outfit/job/scribe

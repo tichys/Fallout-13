@@ -40,8 +40,6 @@ var/list/map_transition_config = MAP_TRANSITION_CONFIG
 	load_mode()
 	load_motd()
 	load_admins()
-	if(config.usewhitelist)
-		load_whitelist()
 	LoadBans()
 	investigate_reset()
 

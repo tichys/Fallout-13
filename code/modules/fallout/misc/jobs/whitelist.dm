@@ -1,5 +1,7 @@
-#define WHITELISTFILE 'data/whitelist.txt'
-var/list/whitelist
+#define WHITELISTFILE "data/whitelist.txt"
+
+var/list/whitelist = list()
+
 mob/proc/loadwhitelist()
 	whitelist = file2list(WHITELISTFILE)
 	if(!whitelist.len)	whitelist = null
@@ -9,21 +11,20 @@ mob/proc/loadwhitelist()
 		return 1
 	if(!config.usewhitelist)
 		return 1
-	if(M.in_whitelist != -1 && rank == null)
-		return M.in_whitelist
+	if(M.ckey in whitelist != -1 && rank == null)
+		return M.ckey in whitelist
 	if(check_whitelist_db(M, rank))
-		M.in_whitelist = 1
-		return M.in_whitelist
+		M.ckey in whitelist = 1
+		return M.ckey in whitelist
 	if(check_rights(0, 0))
-		M.in_whitelist = 1
+		M.ckey in whitelist = 1
 		return 1
 	if(!whitelist)
-		M.in_whitelist = 0
+		M.ckey in whitelist = 0
 		return 0
 	if(rank != null)
 		return 0
-	M.in_whitelist = ("[M.ckey]" in whitelist)
-	return M.in_whitelist
+	return ("[M.ckey]" in whitelist)
 
 /proc/check_whitelist_db(mob/M, var/rank = null)
 	establish_db_connection()

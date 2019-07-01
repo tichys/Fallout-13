@@ -220,11 +220,11 @@
 	density = 1
 
 	price_list = list(
-					/obj/item/weapon/reagent_containers/pill/patch/stimpak = 150,
-					/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 300,
-					/obj/item/weapon/reagent_containers/pill/patch/medx = 550,
-					/obj/item/weapon/reagent_containers/pill/patch/radaway = 500,
-					/obj/item/weapon/reagent_containers/pill/patch/radx = 600,
+					/obj/item/weapon/reagent_containers/pill/patch/stimpak = 120,
+					/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 250,
+					/obj/item/weapon/reagent_containers/pill/patch/medx = 150,
+					/obj/item/weapon/reagent_containers/pill/patch/radaway = 250,
+					/obj/item/weapon/reagent_containers/pill/patch/radx = 300,
 					)
 
 /* CHEM TRADER */
@@ -239,10 +239,10 @@
 	density = 1
 
 	price_list = list(
-					/obj/item/weapon/reagent_containers/pill/patch/jet = 300,
-					/obj/item/weapon/reagent_containers/pill/patch/psycho = 900,
-					/obj/item/weapon/reagent_containers/pill/patch/turbo = 400,
-					/obj/item/weapon/reagent_containers/pill/patch/medx = 500,
+					/obj/item/weapon/reagent_containers/pill/patch/jet = 250,
+					/obj/item/weapon/reagent_containers/pill/patch/psycho = 400,
+					/obj/item/weapon/reagent_containers/pill/patch/turbo = 350,
+					/obj/item/weapon/reagent_containers/pill/patch/medx = 125,
 					)
 
 
