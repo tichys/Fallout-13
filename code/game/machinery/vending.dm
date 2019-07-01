@@ -1047,6 +1047,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 /obj/machinery/vending/trader/brotherhoodsupplies
 	name = "Brotherhood Automated Quartermaster & Secure Storage System"
 	desc = "An advanced pre-war storage system for military equipment, designed around a conveyor to bring items up from underground storage containers, to ensure the safety of the equipment contained within."
+	req_access_txt = "69"
 	icon = 'icons/obj/machines/heavy_lathe.dmi'
 	icon_state = "h_lathe"
 	icon_deny = "h_lathe_leave"
@@ -1057,6 +1058,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 /obj/machinery/vending/trader/enclavesupplies
 	name = "Enclave Automated Quartermaster & Secure Storage System"
 	desc = "An advanced pre-war storage system for military equipment, designed around a conveyor to bring items up from underground storage containers, to ensure the safety of the equipment contained within."
+	req_access_txt = "70"
 	icon = 'icons/obj/machines/heavy_lathe.dmi'
 	icon_state = "h_lathe"
 	icon_deny = "h_lathe_leave"
