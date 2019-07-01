@@ -31,7 +31,7 @@
 
 /obj/item/projectile/beam/laser/gauss2mm
 	name = "2mm bolt"
-	damage = 100
+	damage = 85
 	armour_penetration = 200
 	dismemberment = 30 //reduced instant decap on headshot, should result in less 1shot kills while still insta critting
 	icon_state = "2mm"
