@@ -360,7 +360,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/sm1912
 	name = "Steyr Model 1912"
-	desc = "The Steyr M1912, also known as the Steyr-Hahn, is a semi-automatic pistol developed in 1911 by the Austrian firm Steyr Mannlicher and designed by Karel Krnka, based on the mechanism of the Roth–Steyr M1907. The M1912 was originally chambered for the 9mm Steyr round, but after the annexation of Austria by Germany in 1938 the M1912 was taken into Wehrmacht service and about 60,000 were rechambered in 9mm Parabellum and remained in service until the end of the war. This seems to be one of those models, dipshit"
+	desc = "The Steyr M1912, also known as the Steyr-Hahn, is a semi-automatic pistol developed in 1911 by the Austrian firm Steyr Mannlicher and designed by Karel Krnka, based on the mechanism of the Rothâ€“Steyr M1907. The M1912 was originally chambered for the 9mm Steyr round, but after the annexation of Austria by Germany in 1938 the M1912 was taken into Wehrmacht service and about 60,000 were rechambered in 9mm Parabellum and remained in service until the end of the war. This seems to be one of those models, dipshit"
 	icon_state = "sm1912"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "sm1912"
@@ -737,7 +737,7 @@
 /obj/item/weapon/gun/ballistic/automatic/pistol/p220
 	name = "SIG Sauer P220"
 	icon_state = "p220"
-	desc = "The SIG Sauer P220 is a semi-automatic pistol designed in 1975 by the SIG Arms AG division of Schweizerische Industrie Gesellschaft (now SIG Holding AG), and produced by J. P. Sauer & Sohn  in Eckernförde. Chambered in .45 ACP."
+	desc = "The SIG Sauer P220 is a semi-automatic pistol designed in 1975 by the SIG Arms AG division of Schweizerische Industrie Gesellschaft (now SIG Holding AG), and produced by J. P. Sauer & Sohn  in EckernfÃ¶rde. Chambered in .45 ACP."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "p220"
 	origin_tech = "combat=2;materials=2"
@@ -930,7 +930,7 @@
 	name = "FN FAL"
 	icon_state = "fnfal"
 	item_state = "fnfal"
-	desc = "The FN FAL is a battle rifle designed by Belgian small arms designers Dieudonné Saive and Ernest Vervier and manufactured by FN Herstal. During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. This particular model sports wooden furniture and an aftermarket conversion that allows it to fire more readily available .308 Winchester ammunition, which is very similar in size to the 7.62×51mm NATO it was originally chambered in."
+	desc = "The FN FAL is a battle rifle designed by Belgian small arms designers DieudonnÃ© Saive and Ernest Vervier and manufactured by FN Herstal. During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. This particular model sports wooden furniture and an aftermarket conversion that allows it to fire more readily available .308 Winchester ammunition, which is very similar in size to the 7.62Ã—51mm NATO it was originally chambered in."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	origin_tech = "combat=3;materials=2"
 	mag_type = /obj/item/ammo_box/magazine/falmag
@@ -1117,7 +1117,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
 	icon_state = "ak74"
 	item_state = "ak74"
 	slot_flags = SLOT_BACK
@@ -1147,7 +1147,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74green
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
 	icon_state = "ak74green"
 	item_state = "ak74green"
 	slot_flags = SLOT_BACK
@@ -1162,7 +1162,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74m
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features black synthetic furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features black synthetic furniture."
 	icon_state = "ak74m"
 	item_state = "ak74m"
 	slot_flags = SLOT_BACK
@@ -1177,7 +1177,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/aksu74
 	name = "AKS-74U"
-	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
+	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
 	icon_state = "aksu74"
 	item_state = "aksu74"
 	slot_flags = SLOT_BACK
@@ -1192,7 +1192,7 @@
 
 /obj/item/weapon/gun/ballistic/automatic/aksu74green
 	name = "AKS-74U"
-	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
+	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
 	icon_state = "aksu74green"
 	item_state = "aksu74green"
 	slot_flags = SLOT_BACK
@@ -1374,3 +1374,23 @@
 	w_class = WEIGHT_CLASS_HUGE
 	recoil = 3
 	scopetype = /obj/screen/fullscreen/scope/long
+
+
+/obj/item/weapon/gun/ballistic/semiauto/m72gauss
+	name = "M72 Gauss Rifle"
+	icon_state = "gaussf2"
+	item_state = "m72gaussrifle"
+	wielded_icon = "m72gaussrifle2h"
+	desc = "A Gauss Rifle of German design, a favourite of Enclave Secret Service agents. It accelerates 2mm ferromagnetic slugs to just shy of mach 4 before firing them at a target. There's pretty much no suit of armour that will give this weapon much trouble, though it has low stopping power so multiple shots are almost always required."
+	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	origin_tech = "combat=3;materials=2"
+	mag_type = /obj/item/ammo_box/magazine/m72mag
+	weapon_weight = WEAPON_MEDIUM
+	w_class = WEIGHT_CLASS_NORMAL
+	fire_sound = 'sound/weapons/m72gaussshot.ogg'
+	mag_load_sound = 'sound/effects/wep_magazines/ar_load.ogg'
+	mag_unload_sound = 'sound/effects/wep_magazines/ar_unload.ogg'
+	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
+	fire_delay = 5.5
+	burst_size = 1
+	casing_ejector = 0
