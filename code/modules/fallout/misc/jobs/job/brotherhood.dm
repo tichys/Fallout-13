@@ -23,7 +23,6 @@
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
 	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/weapon/gun/energy/laser/gatling,
 	/obj/item/device/radio
 	)
 
