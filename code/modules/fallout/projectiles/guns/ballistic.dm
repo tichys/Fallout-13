@@ -1391,6 +1391,6 @@
 	mag_load_sound = 'sound/effects/wep_magazines/ar_load.ogg'
 	mag_unload_sound = 'sound/effects/wep_magazines/ar_unload.ogg'
 	chamber_sound = 'sound/effects/wep_magazines/ar_chamber.ogg'
-	fire_delay = 5.5
+	fire_delay = 6.5
 	burst_size = 1
 	casing_ejector = 0
