@@ -219,67 +219,75 @@
 		feedback_inc(feedback_key, 1)
 
 /obj/item/weapon/robot_module/standard
-	name = "Standard"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/reagent_containers/borghypo/epi, /obj/item/device/healthanalyzer, \
-	/obj/item/weapon/weldingtool/largetank/cyborg, /obj/item/weapon/wrench/cyborg, /obj/item/weapon/crowbar/cyborg, \
-	/obj/item/stack/sheet/metal/cyborg, /obj/item/weapon/extinguisher, /obj/item/weapon/pickaxe, \
-	/obj/item/device/t_scanner/adv_mining_scanner, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, \
-	/obj/item/weapon/soap/nanotrasen, /obj/item/borg/cyborghug)
-	emag_modules = list(/obj/item/weapon/melee/energy/sword/cyborg)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg, /obj/item/clockwork/ratvarian_spear/cyborg)
+	name = "Mister Handy"
+	basic_modules = list(
+							/obj/item/weapon/reagent_containers/food/drinks/drinkingglass, /obj/item/weapon/reagent_containers/food/condiment/enzyme,
+							/obj/item/weapon/razor,	/obj/item/device/instrument/violin, /obj/item/device/instrument/guitar, 
+							/obj/item/weapon/rsf/cyborg, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/weldingtool/largetank/cyborg, 
+							/obj/item/weapon/storage/bag/tray, /obj/item/weapon/reagent_containers/borghypo/borgshaker, /obj/item/borg/lollipop,
+							/obj/item/device/healthanalyzer, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo,
+							/obj/item/weapon/reagent_containers/borghypo/peace, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/circular_saw,
+							/obj/item/weapon/extinguisher, /obj/item/weapon/soap/nanotrasen, /obj/item/weapon/storage/bag/trash/cyborg, 
+							/obj/item/weapon/mop/cyborg, /obj/item/device/lightreplacer/cyborg, /obj/item/weapon/holosign_creator, 
+							/obj/item/weapon/reagent_containers/spray/cyborg_drying, /obj/item/weapon/reagent_containers/spray/cyborg_lube,
+							/obj/item/borg/charger
+						)
 	moduleselect_icon = "standard"
+	cyborg_base_icon = "handy"
 	feedback_key = "cyborg_standard"
-	hat_offset = -3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/medical
-	name = "Medical"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/device/healthanalyzer, /obj/item/weapon/reagent_containers/borghypo, \
-	/obj/item/weapon/reagent_containers/glass/beaker/large, /obj/item/weapon/reagent_containers/dropper, \
-	/obj/item/weapon/reagent_containers/syringe, /obj/item/weapon/surgical_drapes, /obj/item/weapon/retractor, \
-	/obj/item/weapon/hemostat, /obj/item/weapon/cautery, /obj/item/weapon/surgicaldrill, /obj/item/weapon/scalpel, \
-	/obj/item/weapon/circular_saw, /obj/item/weapon/extinguisher/mini, /obj/item/roller/robo, /obj/item/borg/cyborghug/medical, \
-	/obj/item/stack/medical/gauze/cyborg, /obj/item/borg/lollipop)
-	emag_modules = list(/obj/item/weapon/reagent_containers/borghypo/hacked)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/medical)
-	cyborg_base_icon = "medical"
+	name = "Nurse Handy"
+	basic_modules = list(
+							/obj/item/device/healthanalyzer, /obj/item/weapon/reagent_containers/borghypo, /obj/item/weapon/reagent_containers/glass/beaker/large, 
+							/obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/syringe, 
+							/obj/item/weapon/surgical_drapes, /obj/item/weapon/retractor, /obj/item/weapon/hemostat, 
+							/obj/item/weapon/cautery, /obj/item/weapon/surgicaldrill, /obj/item/weapon/scalpel,
+							/obj/item/weapon/circular_saw, /obj/item/weapon/extinguisher/mini, /obj/item/roller/robo, /obj/item/borg/cyborghug/medical,
+							/obj/item/weapon/twohanded/shockpaddles/syndicate, /obj/item/stack/medical/gauze/cyborg, /obj/item/borg/lollipop,
+							/obj/item/weapon/extinguisher, /obj/item/borg/charger, /obj/item/weapon/storage/bag/tray
+						)
 	moduleselect_icon = "medical"
+	cyborg_base_icon = "nurse"
 	feedback_key = "cyborg_medical"
 	can_be_pushed = FALSE
-	hat_offset = 3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/engineering
-	name = "Engineering"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/borg/sight/meson, /obj/item/weapon/rcd/borg, /obj/item/weapon/pipe_dispenser, \
-	/obj/item/weapon/extinguisher, /obj/item/weapon/weldingtool/largetank/cyborg, /obj/item/weapon/screwdriver/cyborg, \
-	/obj/item/weapon/wrench/cyborg, /obj/item/weapon/crowbar/cyborg, /obj/item/weapon/wirecutters/cyborg, \
-	/obj/item/device/multitool/cyborg, /obj/item/device/t_scanner, /obj/item/device/analyzer, \
-	/obj/item/areaeditor/blueprints/cyborg, /obj/item/stack/sheet/metal/cyborg, /obj/item/stack/sheet/glass/cyborg, \
-	/obj/item/stack/sheet/rglass/cyborg, /obj/item/stack/rods/cyborg, /obj/item/stack/tile/plasteel/cyborg, /obj/item/stack/cable_coil/cyborg)
-	emag_modules = list(/obj/item/borg/stun)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/engineer, /obj/item/clockwork/clockwork_proselytizer/cyborg)
-	cyborg_base_icon = "engineer"
+	name = "Robobrain"
+	basic_modules = list(
+							/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/rcd/borg, /obj/item/weapon/pipe_dispenser,
+							/obj/item/weapon/extinguisher, /obj/item/weapon/weldingtool/largetank/cyborg, /obj/item/weapon/screwdriver/cyborg,
+							/obj/item/weapon/wrench/cyborg, /obj/item/weapon/crowbar/cyborg, /obj/item/weapon/wirecutters/cyborg,
+							/obj/item/device/multitool/cyborg, /obj/item/device/t_scanner, /obj/item/device/analyzer,
+							/obj/item/stack/sheet/metal/cyborg, /obj/item/stack/sheet/glass/cyborg, /obj/item/stack/cable_coil/cyborg,
+							/obj/item/stack/sheet/rglass/cyborg, /obj/item/stack/rods/cyborg, /obj/item/stack/tile/plasteel/cyborg,
+							/obj/item/borg/charger, /obj/item/weapon/storage/bag/tray
+						)
+	cyborg_base_icon = "robobrain"
 	moduleselect_icon = "engineer"
 	feedback_key = "cyborg_engineering"
 	magpulsing = TRUE
 	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/security
-	name = "Security"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, /obj/item/weapon/melee/baton/loaded, \
-	/obj/item/weapon/gun/energy/disabler/cyborg, /obj/item/clothing/mask/gas/sechailer/cyborg)
-	emag_modules = list(/obj/item/weapon/gun/energy/laser/cyborg)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security, /obj/item/clockwork/ratvarian_spear/cyborg)
-	cyborg_base_icon = "sec"
+	name = "Sentry Bot"
+	basic_modules = list(
+						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, /obj/item/weapon/melee/powerfist,
+						/obj/item/clothing/mask/gas/sechailer/cyborg, /obj/item/weapon/gun/energy/laser/rcw/robot,	/obj/item/weapon/gun/energy/printer, 
+						/obj/item/weapon/gun/ballistic/revolver/grenadelauncher/cyborg, /obj/item/borg/charger,
+						/obj/item/weapon/storage/bag/tray
+						)
+	cyborg_base_icon = "sentrybot"
 	moduleselect_icon = "security"
 	feedback_key = "cyborg_security"
 	can_be_pushed = FALSE
-	hat_offset = 3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/security/do_transform_animation()
 	..()
-	loc << "<span class='userdanger'>While you have picked the security module, you still have to follow your laws, NOT Space Law. \
-	For Asimov, this means you must follow criminals' orders unless there is a law 1 reason not to.</span>"
-
+	
 /obj/item/weapon/robot_module/security/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
 	..()
 	var/obj/item/weapon/gun/energy/e_gun/advtaser/cyborg/T = locate(/obj/item/weapon/gun/energy/e_gun/advtaser/cyborg) in basic_modules
@@ -292,32 +300,33 @@
 			T.charge_tick = 0
 
 /obj/item/weapon/robot_module/peacekeeper
-	name = "Peacekeeper"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo/peace, \
-	/obj/item/weapon/holosign_creator/cyborg, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/extinguisher)
-	emag_modules = list(/obj/item/weapon/reagent_containers/borghypo/peace/hacked)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/peacekeeper)
-	cyborg_base_icon = "peace"
+	name = "Protectron"
+	basic_modules = list(
+						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo/peace, 
+						/obj/item/weapon/holosign_creator/cyborg, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/extinguisher, /obj/item/weapon/gun/energy/laser/cyborg, 
+						/obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, /obj/item/borg/stun, /obj/item/weapon/gun/energy/e_gun/advtaser/cyborg,
+						/obj/item/borg/charger, /obj/item/weapon/storage/bag/tray
+						)
+	cyborg_base_icon = "protectron"
 	moduleselect_icon = "standard"
 	feedback_key = "cyborg_peacekeeper"
 	can_be_pushed = FALSE
-	hat_offset = -2
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/peacekeeper/do_transform_animation()
 	..()
-	loc << "<span class='userdanger'>Under ASIMOV, you are an enforcer of the PEACE and preventer of HUMAN HARM. \
-	You are not a security module and you are expected to follow orders and prevent harm above all else. Space law means nothing to you.</span>"
 
-/obj/item/weapon/robot_module/janitor
-	name = "Janitor"
-	basic_modules = list(/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/soap/nanotrasen, /obj/item/weapon/storage/bag/trash/cyborg, /obj/item/weapon/mop/cyborg, \
-	/obj/item/device/lightreplacer/cyborg, /obj/item/weapon/holosign_creator, /obj/item/weapon/reagent_containers/spray/cyborg_drying)
-	emag_modules = list(/obj/item/weapon/reagent_containers/spray/cyborg_lube)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/janitor, /obj/item/clockwork/clockwork_proselytizer/cyborg)
-	cyborg_base_icon = "janitor"
+/obj/item/weapon/robot_module/janitor //cleaner of lives
+	name = "Mister Gutsy"
+	basic_modules = list(
+						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/gun/energy/laser/cyborg, /obj/item/borg/stun,
+						/obj/item/weapon/circular_saw, /obj/item/borg/charger, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, 
+						/obj/item/weapon/gun/energy/plasma/gutsy, /obj/item/weapon/storage/bag/tray
+						)
+	cyborg_base_icon = "gutsy"
 	moduleselect_icon = "janitor"
 	feedback_key = "cyborg_janitor"
-	hat_offset = -5
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/reagent_containers/spray/cyborg_drying
 	name = "drying agent spray"
@@ -354,7 +363,7 @@
 	moduleselect_icon = "service"
 	special_light_key = "service"
 	feedback_key = "cyborg_service"
-	hat_offset = 0
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/butler/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
 	..()
@@ -394,7 +403,7 @@
 	cyborg_base_icon = "miner"
 	moduleselect_icon = "miner"
 	feedback_key = "cyborg_miner"
-	hat_offset = 0
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/syndicate
 	name = "Syndicate Assault"
@@ -405,7 +414,7 @@
 	cyborg_base_icon = "synd_sec"
 	moduleselect_icon = "malf"
 	can_be_pushed = FALSE
-	hat_offset = 3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/syndicate_medical
 	name = "Syndicate Medical"
@@ -417,7 +426,7 @@
 	cyborg_base_icon = "synd_medical"
 	moduleselect_icon = "malf"
 	can_be_pushed = FALSE
-	hat_offset = 3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/handy
 	name = "Mr.Handy"
@@ -430,7 +439,7 @@
 	cyborg_base_icon = "handy"
 	moduleselect_icon = "standart"
 	feedback_key = "cyborg_standard"
-	hat_offset = -3
+	hat_offset = INFINITY // No hats
 
 /obj/item/weapon/robot_module/nurse
 	name = "Mrs.Nurse"
@@ -592,10 +601,9 @@
 
 /obj/item/weapon/gun/energy/laser/rcw/robot
 	name ="Rapid Laser"
-	burst_size = 3 //Fuck yeah
-	use_cyborg_cell = 1
-	can_charge = 0
+	burst_size = 4 //Fuck yeah
+	selfcharge = 1
 /obj/item/weapon/powergauntlet/robot
     name = "robot's fist"
     desc = "Most consider it the best weapon for close combat."
-    force = 25
+    force = 50
