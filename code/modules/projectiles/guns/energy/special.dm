@@ -212,20 +212,73 @@
 /* 3d printer 'pseudo guns' for borgs */
 
 /obj/item/weapon/gun/energy/printer
-	name = "cyborg lmg"
-	desc = "A machinegun that fires 3d-printed flachettes slowly regenerated using a cyborg's internal power source."
+	name = "light ballistic weapon"
+	desc = "An integrated ballistic arm attachment, firing 5mm rounds from a large internal supply pool, allowing for virtually unlimited ammunition in standard combat environments."
 	icon_state = "l6closed0"
 	icon = 'icons/obj/guns/projectile.dmi'
 	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
 	ammo_type = list(/obj/item/ammo_casing/energy/c3dbullet)
 	can_charge = 0
 	use_cyborg_cell = 1
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 2
 
 /obj/item/weapon/gun/energy/printer/update_icon()
 	return
 
 /obj/item/weapon/gun/energy/printer/emp_act()
 	return
+
+
+/* 3d printer 'pseudo nadelauncher' for borgs */
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/
+	name = "integrated grenade launcher"
+	desc = "An integrated grenade launcher. Loaded from an internal supply of several dozen. Reloading additional shots is done via an internal autoloader."
+	icon = 'icons/mecha/mecha_equipment.dmi'
+	icon_state = "mecha_grenadelnchr"
+	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
+	ammo_type = list(/obj/item/ammo_casing/energy/c3dgrenade)
+	can_charge = 0
+	use_cyborg_cell = 1
+	burst_size = 1
+	fire_delay = 150
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/attack_self()
+	return
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/update_icon()
+	return
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/emp_act()
+	return
+
+/* 3d printer 'gatling laser' for borgs */
+/obj/item/weapon/gun/energy/laser/gatlingrobot
+	name ="gatling laser"
+	desc = "An integrated miniature gatling laser, for when you truly want to kill every organic in the room."
+	icon_state = "gatling"
+	item_state = "gatling"
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
+	ammo_type = list(/obj/item/ammo_casing/energy/c3dgatlinglaser)
+	can_charge = 0
+	use_cyborg_cell = 1
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 3
+
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/attack_self()
+	return
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/update_icon()
+	return
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/emp_act()
+	return
+
 
 /obj/item/weapon/gun/energy/temperature
 	name = "temperature gun"
