@@ -1,8 +1,8 @@
 //Love me some robots in Fallout 13 - Sarumyn
 
 /mob/living/silicon/robot
-	name = "Unit"
-	real_name = "Unit"
+	name = "Cyborg"
+	real_name = "Cyborg"
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
 	maxHealth = 200
@@ -212,7 +212,7 @@
 	if(custom_name)
 		changed_name = custom_name
 	if(changed_name == "" && client)
-		changed_name = client.prefs.custom_names["serial"]
+		changed_name = client.prefs.custom_names["cyborg"]
 	if(!changed_name)
 		changed_name = get_standard_name()
 
