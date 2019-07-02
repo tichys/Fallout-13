@@ -204,14 +204,16 @@
 	materials = list(MAT_METAL = 30000, MAT_GLASS = 30000)
 	rating = 3
 	chargerate = 450
-	self_recharge = 0 //works better without self charging in my view, gave it a faster recharge in ports so it can be recharged faster rather than just being self charging.
 
 /obj/item/weapon/stock_parts/cell/high/plus
-	name = "high-capacity power cell+"
-	desc = "Where did these come from?"
+	name = "quantum Microfusion cell"
+	origin_tech = "materials=5;engineering=5;powerstorage=4" //need to research all 3 to create, tweak this when we get to adding research, this should be a very lategame research. ALSO needs to be added to protolathe, i don't think it's in the list yet, will do when research is in.
+	desc = "A microfusion cell straight out of Big MT. The technology behind how it works isn't really known by anyone outside of Big MT, but it can recharge itself without need of a charging station. Functionally this is an unlimited power source for all but the most energy intensive purposes. The future, today."
 	icon_state = "h+cell"
-	maxcharge = 15000
-	chargerate = 2250
+	materials = list(MAT_METAL = 90000, MAT_GLASS = 90000)
+	maxcharge = 5000
+	chargerate = 200
+	self_recharge = 1
 
 /obj/item/weapon/stock_parts/cell/high/empty/New()
 	..()
