@@ -36,11 +36,11 @@
 	name ="40mm grenade"
 	desc = "USE A WEEL GUN"
 	icon_state= "bolter"
-	damage = 25
+	damage = 10
 
 /obj/item/projectile/bullet/a40mm/on_hit(atom/target, blocked = 0)
 	..()
-	explosion(target, -1, 0, 2, 1, 0, flame_range = 2)
+	explosion(target, -2, 0, 2, 2, 0, flame_range = 2)
 	return 1
 
 /obj/item/projectile/bullet/a84mm
