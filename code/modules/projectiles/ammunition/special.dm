@@ -70,5 +70,5 @@
 	projectile_type = /obj/item/projectile/bullet/midbullet3
 	select_name = "spraydown"
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
-	e_cost = 20
+	e_cost = 10
 	firing_effect_type = /obj/effect/overlay/temp/dir_setting/firing_effect

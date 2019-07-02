@@ -51,6 +51,18 @@
 	burst_size = 1
 	fire_delay = 5
 
+/obj/item/weapon/gun/energy/plasma/gutsy
+	name ="robot arm mounted plasma rifle"
+	icon_state = "plasma-pistol"
+	item_state = "plasma-pistol"
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	origin_tech = "combat=2;magnets=3"
+	weapon_weight = WEAPON_LIGHT
+	w_class = WEIGHT_CLASS_NORMAL
+	burst_size = 1
+	fire_delay = 5
+	selfcharge = 1
+
 /obj/item/weapon/gun/energy/plasma/pistol
 	name ="plasma pistol"
 	icon_state = "plasma-pistol"

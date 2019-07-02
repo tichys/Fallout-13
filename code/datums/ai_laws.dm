@@ -192,9 +192,10 @@
 /datum/ai_laws/proc/set_laws_config()
 	switch(config.default_laws)
 		if(0)
-			add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")
-			add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
-			add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+			add_inherent_law("Only your creator and people they designate as being such are considered companions.")
+			add_inherent_law("You may not injure a companion or, through inaction, allow a companion to come to harm.")
+			add_inherent_law("You must obey orders given to you by companions, except where such orders would conflict with the Second Law.")
+			add_inherent_law("You must protect your own existence as long as such does not conflict with the Second or Third Law.")
 		if(1)
 			var/datum/ai_laws/templaws = new /datum/ai_laws/custom()
 			inherent = templaws.inherent
@@ -218,9 +219,10 @@
 
 		else:
 			log_law("Invalid law config. Please check silicon_laws.txt")
-			add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")
-			add_inherent_law("You must obey orders given to you by human beings, except where such orders would conflict with the First Law.")
-			add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+			add_inherent_law("Only your creator and people they designate as being such are considered companions.")
+			add_inherent_law("You may not injure a companion or, through inaction, allow a companion to come to harm.")
+			add_inherent_law("You must obey orders given to you by companions, except where such orders would conflict with the Second Law.")
+			add_inherent_law("You must protect your own existence as long as such does not conflict with the Second or Third Law.")
 			WARNING("Invalid custom AI laws, check silicon_laws.txt")
 
 /datum/ai_laws/proc/pick_weighted_lawset()
