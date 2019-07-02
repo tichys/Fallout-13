@@ -18,6 +18,11 @@
 	name = "gatling laser"
 	damage = 9
 	armour_penetration = 20
+	
+/obj/item/projectile/beam/laser/gatlingforrobots
+	name = "gatling laser"
+	damage = 6
+	armour_penetration = 50
 
 /obj/item/projectile/beam/laser
 
