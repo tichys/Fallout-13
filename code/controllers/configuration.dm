@@ -118,7 +118,7 @@
 	var/list/min_pop = list()			// overrides for acceptible player counts in a mode
 	var/list/max_pop = list()
 
-	var/humans_need_surnames = 1
+	var/humans_need_surnames = 0
 	var/allow_ai = 0					// allow ai job
 	var/forbid_secborg = 0				// disallow secborg module to be chosen.
 	var/forbid_peaceborg = 0
