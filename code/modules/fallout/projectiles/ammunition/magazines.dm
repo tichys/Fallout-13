@@ -283,7 +283,7 @@
 /obj/item/ammo_casing/caseless/m72casing
 	desc = "A 2mm EC slug."
 	caliber = "2mmEC"
-	firing_effect_type = null
+	firing_effect_type = /obj/effect/overlay/temp/dir_setting/firing_effect/energy
 	projectile_type = /obj/item/projectile/bullet/midbullet3/apm72gauss
 	randomspread = 0
 	variance = 0
