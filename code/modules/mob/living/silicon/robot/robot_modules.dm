@@ -222,13 +222,13 @@
 	name = "Mister Handy"
 	basic_modules = list(
 							/obj/item/weapon/reagent_containers/food/drinks/drinkingglass, /obj/item/weapon/reagent_containers/food/condiment/enzyme,
-							/obj/item/weapon/razor,	/obj/item/device/instrument/violin, /obj/item/device/instrument/guitar, 
-							/obj/item/weapon/rsf/cyborg, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/weldingtool/largetank/cyborg, 
+							/obj/item/weapon/razor,	/obj/item/device/instrument/violin, /obj/item/device/instrument/guitar,
+							/obj/item/weapon/rsf/cyborg, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/weldingtool/largetank/cyborg,
 							/obj/item/weapon/storage/bag/tray, /obj/item/weapon/reagent_containers/borghypo/borgshaker, /obj/item/borg/lollipop,
 							/obj/item/device/healthanalyzer, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo,
 							/obj/item/weapon/reagent_containers/borghypo/peace, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/circular_saw,
-							/obj/item/weapon/extinguisher, /obj/item/weapon/soap/nanotrasen, /obj/item/weapon/storage/bag/trash/cyborg, 
-							/obj/item/weapon/mop/cyborg, /obj/item/device/lightreplacer/cyborg, /obj/item/weapon/holosign_creator, 
+							/obj/item/weapon/extinguisher, /obj/item/weapon/soap/nanotrasen, /obj/item/weapon/storage/bag/trash/cyborg,
+							/obj/item/weapon/mop/cyborg, /obj/item/device/lightreplacer/cyborg, /obj/item/weapon/holosign_creator,
 							/obj/item/weapon/reagent_containers/spray/cyborg_drying, /obj/item/weapon/reagent_containers/spray/cyborg_lube,
 							/obj/item/borg/charger
 						)
@@ -240,9 +240,9 @@
 /obj/item/weapon/robot_module/medical
 	name = "Nurse Handy"
 	basic_modules = list(
-							/obj/item/device/healthanalyzer, /obj/item/weapon/reagent_containers/borghypo, /obj/item/weapon/reagent_containers/glass/beaker/large, 
-							/obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/syringe, 
-							/obj/item/weapon/surgical_drapes, /obj/item/weapon/retractor, /obj/item/weapon/hemostat, 
+							/obj/item/device/healthanalyzer, /obj/item/weapon/reagent_containers/borghypo, /obj/item/weapon/reagent_containers/glass/beaker/large,
+							/obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/syringe,
+							/obj/item/weapon/surgical_drapes, /obj/item/weapon/retractor, /obj/item/weapon/hemostat,
 							/obj/item/weapon/cautery, /obj/item/weapon/surgicaldrill, /obj/item/weapon/scalpel,
 							/obj/item/weapon/circular_saw, /obj/item/weapon/extinguisher/mini, /obj/item/roller/robo, /obj/item/borg/cyborghug/medical,
 							/obj/item/weapon/twohanded/shockpaddles/syndicate, /obj/item/stack/medical/gauze/cyborg, /obj/item/borg/lollipop,
@@ -275,9 +275,8 @@
 	name = "Sentry Bot"
 	basic_modules = list(
 						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, /obj/item/weapon/melee/powerfist,
-						/obj/item/clothing/mask/gas/sechailer/cyborg, /obj/item/weapon/gun/energy/laser/rcw/robot,	/obj/item/weapon/gun/energy/printer, 
-						/obj/item/weapon/gun/ballistic/revolver/grenadelauncher/cyborg, /obj/item/borg/charger,
-						/obj/item/weapon/storage/bag/tray
+						/obj/item/clothing/mask/gas/sechailer/cyborg, /obj/item/weapon/gun/energy/laser/gatlingrobot, /obj/item/weapon/gun/energy/printer,
+						/obj/item/weapon/gun/energy/printer/grenadelauncher/, /obj/item/borg/charger
 						)
 	cyborg_base_icon = "sentrybot"
 	moduleselect_icon = "security"
@@ -287,7 +286,7 @@
 
 /obj/item/weapon/robot_module/security/do_transform_animation()
 	..()
-	
+
 /obj/item/weapon/robot_module/security/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
 	..()
 	var/obj/item/weapon/gun/energy/e_gun/advtaser/cyborg/T = locate(/obj/item/weapon/gun/energy/e_gun/advtaser/cyborg) in basic_modules
@@ -302,10 +301,10 @@
 /obj/item/weapon/robot_module/peacekeeper
 	name = "Protectron"
 	basic_modules = list(
-						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo/peace, 
-						/obj/item/weapon/holosign_creator/cyborg, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/extinguisher, /obj/item/weapon/gun/energy/laser/cyborg, 
+						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/cookiesynth, /obj/item/device/harmalarm, /obj/item/weapon/reagent_containers/borghypo/peace,
+						/obj/item/weapon/holosign_creator/cyborg, /obj/item/borg/cyborghug/peacekeeper, /obj/item/weapon/extinguisher, /obj/item/weapon/gun/energy/laser/cyborg,
 						/obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, /obj/item/borg/stun, /obj/item/weapon/gun/energy/e_gun/advtaser/cyborg,
-						/obj/item/borg/charger, /obj/item/weapon/storage/bag/tray
+						/obj/item/borg/charger
 						)
 	cyborg_base_icon = "protectron"
 	moduleselect_icon = "standard"
@@ -320,8 +319,8 @@
 	name = "Mister Gutsy"
 	basic_modules = list(
 						/obj/item/device/assembly/flash/cyborg, /obj/item/weapon/gun/energy/laser/cyborg, /obj/item/borg/stun,
-						/obj/item/weapon/circular_saw, /obj/item/borg/charger, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg, 
-						/obj/item/weapon/gun/energy/plasma/gutsy, /obj/item/weapon/storage/bag/tray
+						/obj/item/weapon/circular_saw, /obj/item/borg/charger, /obj/item/weapon/restraints/handcuffs/cable/zipties/cyborg,
+						/obj/item/weapon/gun/energy/plasma/gutsy
 						)
 	cyborg_base_icon = "gutsy"
 	moduleselect_icon = "janitor"
