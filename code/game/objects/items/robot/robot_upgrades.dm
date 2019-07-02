@@ -82,7 +82,7 @@
 		to_chat(usr, "<span class='notice'>There's no room for another VTEC unit!</span>")
 		return
 
-	R.speed = -2 // Gotta go fast.
+	R.speed = -0.6 // Faster.
 
 	return 1
 
