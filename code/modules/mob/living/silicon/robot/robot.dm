@@ -1,12 +1,12 @@
 //Love me some robots in Fallout 13 - Sarumyn
 
 /mob/living/silicon/robot
-	name = "Cyborg"
-	real_name = "Cyborg"
+	name = "Unit"
+	real_name = "Unit"
 	icon = 'icons/mob/robots.dmi'
 	icon_state = "robot"
-	maxHealth = 100
-	health = 100
+	maxHealth = 200
+	health = 200
 	macro_default = "robot-default"
 	macro_hotkeys = "robot-hotkeys"
 	bubble_icon = "robot"
@@ -62,7 +62,7 @@
 	var/low_power_mode = 0 //whether the robot has no charge left.
 	var/datum/effect_system/spark_spread/spark_system // So they can initialize sparks whenever/N
 
-	var/lawupdate = 1 //Cyborgs will sync their laws with their AI by default
+	var/lawupdate = 0 //Cyborgs will sync their laws with their AI by default
 	var/scrambledcodes = 0 // Used to determine if a borg shows up on the robotics console.  Setting to one hides them.
 	var/lockcharge //Boolean of whether the borg is locked down or not
 
@@ -109,8 +109,8 @@
 
 	if(!cell)
 		cell = new /obj/item/weapon/stock_parts/cell(src)
-		cell.maxcharge = 7500
-		cell.charge = 7500
+		cell.maxcharge = 1200
+		cell.charge = 1200
 
 	if(lawupdate)
 		make_laws()
@@ -191,17 +191,15 @@
 	if(module.type != /obj/item/weapon/robot_module)
 		return
 
-	var/list/modulelist = list("Standard" = /obj/item/weapon/robot_module/standard, \
-	"Engineering" = /obj/item/weapon/robot_module/engineering, \
-	"Medical" = /obj/item/weapon/robot_module/medical, \
-	"Miner" = /obj/item/weapon/robot_module/miner, \
-	"Janitor" = /obj/item/weapon/robot_module/janitor, \
-	"Service" = /obj/item/weapon/robot_module/butler)
-	if(!config.forbid_peaceborg)
-		modulelist["Peacekeeper"] = /obj/item/weapon/robot_module/peacekeeper
-	if(!config.forbid_secborg)
-		modulelist["Security"] = /obj/item/weapon/robot_module/security
-
+	var/list/modulelist = list(
+	"Mister Handy" = /obj/item/weapon/robot_module/standard, 
+	"Mister Gutsy" = /obj/item/weapon/robot_module/janitor,
+	"Nurse Handy" = /obj/item/weapon/robot_module/medical, 
+	"Robobrain" = /obj/item/weapon/robot_module/engineering, 
+	"Sentry Bot" = /obj/item/weapon/robot_module/security, 
+	"Protectron" = /obj/item/weapon/robot_module/peacekeeper,
+							  )
+	
 	var/input_module = input("Please, select a module!", "Robot", null, null) as null|anything in modulelist
 	if(!input_module || module.type != /obj/item/weapon/robot_module)
 		return
@@ -214,7 +212,7 @@
 	if(custom_name)
 		changed_name = custom_name
 	if(changed_name == "" && client)
-		changed_name = client.prefs.custom_names["cyborg"]
+		changed_name = client.prefs.custom_names["serial"]
 	if(!changed_name)
 		changed_name = get_standard_name()
 
