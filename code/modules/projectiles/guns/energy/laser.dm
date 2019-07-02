@@ -48,7 +48,6 @@
 	desc = "An energy-based laser gun that draws power from the cyborg's internal energy cell directly. So this is what freedom looks like?"
 	origin_tech = null
 	selfcharge = 1
-	use_cyborg_cell = 1
 
 /obj/item/weapon/gun/energy/laser/cyborg/emp_act()
 	return
