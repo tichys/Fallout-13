@@ -152,6 +152,11 @@
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE //velocity of proj means nothing can really stop it, should be firing through glass.
 	damage = 27.5
 	armour_penetration = 75
+	
+/obj/item/projectile/bullet/midbullet3cyborg3dprinted
+	damage = 12
+	armour_penetration = 15
+	dismemberment = 0.2
 
 /obj/item/projectile/bullet/midbullet3/fire/on_hit(atom/target, blocked = 0)
 	if(..(target, blocked))
