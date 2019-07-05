@@ -14,13 +14,10 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	whitelist_on = 0
-	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
-	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -56,6 +53,11 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
+	
+
+/datum/job/colonel/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 //Enclave Lieutenant
 
@@ -72,13 +74,10 @@
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
-	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -115,6 +114,10 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
+	
+/datum/job/enclave_lieutenant/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 //Enclave Private
 
@@ -131,17 +134,14 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
-	/obj/item/clothing/head/helmet/power_armor/advanced,
-	/obj/item/clothing/ears/earmuffs,
-	/obj/item/clothing/glasses/sunglassespaop,
-	/obj/item/weapon/gun/energy/plasma
+	/obj/item/clothing/head/soft/f13/utility/olive,
+	/obj/item/clothing/head/helmet/f13/combat_mk2,
+	/obj/item/clothing/suit/armor/f13/combat_mk2
 	)
 
 	denied_items = list(
@@ -174,8 +174,12 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = /obj/item/clothing/head/soft/f13/utility/tan
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = /obj/item/weapon/gun/energy/plasma
+	weapon = null
 	id = /obj/item/weapon/card/id/enclave
+	
+/datum/job/enclave_private/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 	//Enclave Scientist
 
@@ -192,12 +196,12 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/under/f13/bdu,
+	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/head/bio_hood/science,
 	/obj/item/clothing/suit/bio_suit/sciencesuit,
 	/obj/item/weapon/gun/energy/plasma/pistol
@@ -223,18 +227,10 @@
 
 	access = list(70)
 	minimal_access = list()
-
-/datum/outfit/job/enclave_recruit
-	name = "Enclave Recruit"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
-	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/dbdu
-	shoes = /obj/item/clothing/shoes/f13/military
-	head = /obj/item/clothing/head/soft/f13/utility/tan
-	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = /obj/item/weapon/gun/energy/plasma
-	id = /obj/item/weapon/card/id/enclave
+	
+/datum/job/enclave_scientist/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 
 	//Enclave Recruit
@@ -252,14 +248,14 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/suit/armor/f13/combat_mk2,
+	/obj/item/clothing/under/f13/bdu,
+	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/head/helmet/f13/combat_mk2,
-	/obj/item/weapon/gun/energy/plasma
+	/obj/item/clothing/suit/armor/f13/combat_mk2
 	)
 
 	denied_items = list(
@@ -283,14 +279,7 @@
 	access = list(70)
 	minimal_access = list()
 
-/datum/outfit/job/enclave_recruit
-	name = "Enclave Recruit"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
-	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/dbdu
-	shoes = /obj/item/clothing/shoes/f13/military
-	head = /obj/item/clothing/head/soft/f13/utility/tan
-	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = /obj/item/weapon/gun/energy/plasma
-	id = /obj/item/weapon/card/id/enclave
+
+/datum/job/enclave_recruit/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
