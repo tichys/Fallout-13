@@ -139,8 +139,6 @@
 	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
 	/obj/item/clothing/head/helmet/power_armor/advanced,
-	/obj/item/clothing/ears/earmuffs,
-	/obj/item/clothing/glasses/sunglassespaop,
 	/obj/item/weapon/gun/energy/plasma
 	)
 
