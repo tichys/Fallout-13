@@ -4,7 +4,7 @@
 	icon = 'icons/fallout/clothing/hats.dmi'
 
 /obj/item/clothing/head/helmet/f13/broken
-	name = "broken t-41d power helmet"
+	name = "broken t-45d power helmet"
 	desc = "This power armor helmet is so decrepit and battle-worn that it has ceased its primary function of protecting the wearer from harm.<br>It can still provide some very basic protection."
 	icon_state = "broken"
 	item_state = "broken"
@@ -344,15 +344,6 @@
 
 //Power armor helmets
 
-/obj/item/clothing/head/helmet/power_armor/f13/mob_can_equip(mob/user, slot)
-	if (ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if (powerarmor == 0 && slot == slot_head)
-			H << "<span class='warning'>You don't have the proper training to operate the power armor!</span>"
-			return 0
-			..()
-	return ..()
-
 /obj/item/clothing/head/helmet/power_armor
 	var/brightness_on = 4 //luminosity when the light is on
 	var/on = 0
@@ -385,7 +376,7 @@
 	icon_state = "PLACEHOLDERFORHELLFIREHELMETSPRITE!!!"
 	item_state = "PLACEHOLDERFORHELLFIREHELMETSPRITE!!!"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 145, bullet = 105, laser = 200, energy = 200, bomb = 75, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 145, bullet = 105, laser = 200, energy = 200, bomb = 70, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -425,7 +416,7 @@
 	icon_state = "shocktrooper"
 	item_state = "shocktrooper"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 130, bullet = 105, laser = 85, energy = 85, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 130, bullet = 105, laser = 85, energy = 70, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
