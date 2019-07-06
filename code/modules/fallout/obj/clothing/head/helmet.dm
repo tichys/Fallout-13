@@ -342,17 +342,6 @@
 	resistance_flags = UNACIDABLE
 	self_weight = 0.5
 
-//Power armor helmets
-
-/obj/item/clothing/head/helmet/power_armor/f13/mob_can_equip(mob/user, slot)
-	if (ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if (powerarmor == 0 && slot == slot_head)
-			H << "<span class='warning'>You don't have the proper training to operate the power armor!</span>"
-			return 0
-			..()
-	return ..()
-
 /obj/item/clothing/head/helmet/power_armor
 	var/brightness_on = 4 //luminosity when the light is on
 	var/on = 0
@@ -425,7 +414,7 @@
 	icon_state = "shocktrooper"
 	item_state = "shocktrooper"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 130, bullet = 105, laser = 85, energy = 85, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 130, bullet = 105, laser = 85, energy = 70, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -465,7 +454,7 @@
 	icon_state = "advanced"
 	item_state = "advanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 125, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 125, bullet = 98, laser = 80, energy = 70, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -545,7 +534,7 @@
 	icon_state = "advanced"
 	item_state = "advanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 120, bullet = 95, laser = 75, energy = 75, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 120, bullet = 95, laser = 75, energy = 65, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -585,7 +574,7 @@
 	icon_state = "t60helmet"
 	item_state = "t60helmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 110, bullet = 95, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 110, bullet = 95, laser = 55, energy = 50, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -604,7 +593,7 @@
 	icon_state = "t51bhelmet"
 	item_state = "t51bhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 105, bullet = 90, laser = 50, energy = 50, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 105, bullet = 90, laser = 50, energy = 45, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -623,7 +612,7 @@
 	icon_state = "t45dhelmet"
 	item_state = "t45dhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
-	armor = list(melee = 85, bullet = 85, laser = 45, energy = 45, bomb = 55, bio =100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 85, bullet = 85, laser = 45, energy = 40, bomb = 55, bio =100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
@@ -642,7 +631,7 @@
 	icon_state = "t45bhelmet"
 	item_state = "t45bhelmet"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH
-	armor = list(melee = 90, bullet = 90, laser = 35, energy = 35, bomb = 5, bio = 100, rad = 100, fire = 100, acid = 100) //ncr power armour has not received the same durability boost as theb ase durability is already rather high for its 'availability' on a non-whitelisted, non-admin event faction like the NCR.
+	armor = list(melee = 90, bullet = 90, laser = 20, energy = 20, bomb = 5, bio = 100, rad = 100, fire = 100, acid = 100) //ncr power armour has not received the same durability boost as theb ase durability is already rather high for its 'availability' on a non-whitelisted, non-admin event faction like the NCR.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	put_on_delay = 125
 	strip_delay = 125
@@ -726,4 +715,3 @@
 	icon_state = "rider"
 	item_state = "rider"
 	self_weight = 1
-

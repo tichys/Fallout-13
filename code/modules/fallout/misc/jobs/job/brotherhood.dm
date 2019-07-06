@@ -22,8 +22,7 @@
 	/obj/item/clothing/under/f13/recon,
 	/obj/item/clothing/suit/armor/f13/power_armor/t60,
 	/obj/item/clothing/head/helmet/power_armor/t60,
-	/obj/item/clothing/head/soft/f13/utility/navy,
-	/obj/item/device/radio
+	/obj/item/clothing/head/soft/f13/utility/navy
 	)
 
 	denied_items = list(
