@@ -44,8 +44,7 @@
 
 /datum/outfit/job/colonel
 	name = "Colonel"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/enclave_officer
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -53,7 +52,7 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
-	
+
 
 /datum/job/colonel/after_spawn(mob/living/carbon/human/H)
 	. = ..()
@@ -104,8 +103,7 @@
 
 /datum/outfit/job/enclave_lieutenant
 	name = "Enclave Lieutenant"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/enclave_officer
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -114,7 +112,7 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
-	
+
 /datum/job/enclave_lieutenant/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -167,8 +165,7 @@
 
 /datum/outfit/job/enclave_private
 	name = "Enclave Private"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/dbdu
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -176,7 +173,7 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
-	
+
 /datum/job/enclave_private/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -227,7 +224,7 @@
 
 	access = list(70)
 	minimal_access = list()
-	
+
 /datum/job/enclave_scientist/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
