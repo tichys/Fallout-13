@@ -6,8 +6,8 @@
 	gender = NEUTER
 	var/list/spawned_mobs = list()
 	var/max_mobs = 5
-	var/spawn_delay = 0
-	var/spawn_time = 300 //30 seconds default
+	var/spawn_delay = 50
+	var/spawn_time = 400 //40 seconds default
 	var/mob_type = /mob/living/simple_animal/hostile/carp
 	var/spawn_text = "emerges from"
 	status_flags = 0
