@@ -53,6 +53,7 @@
 	desc = "Heat-sensitive goggles commonly worn by Enclave vertibird pilots."
 	icon_state = "enclavegoggles"
 	item_state = "enclavegoggles"
+	flash_protect = 2
 
 //Fallout 13 science goggles
 

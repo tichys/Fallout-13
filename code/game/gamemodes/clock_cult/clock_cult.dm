@@ -52,7 +52,7 @@ Credit where due:
 	if(!istype(M))
 		return FALSE
 	if(M.mind)
-		if(ishuman(M) && (M.mind.assigned_role in list("Captain", "Chaplain")))
+		if(ishuman(M) && (M.mind.assigned_role in list("Chaplain")))
 			return FALSE
 		if(M.mind.enslaved_to && !is_servant_of_ratvar(M.mind.enslaved_to))
 			return FALSE
@@ -97,8 +97,8 @@ Credit where due:
 	required_enemies = 3
 	recommended_enemies = 3
 	enemy_minimum_age = 14
-	protected_jobs = list("AI", "Cyborg", "Security Officer", "Warden", "Detective", "Head of Security", "Captain") //Silicons can eventually be converted
-	restricted_jobs = list("Chaplain", "Captain")
+	protected_jobs = list("AI", "Cyborg", "Security Officer", "Warden", "Detective", "Head of Security") //Silicons can eventually be converted
+	restricted_jobs = list("Chaplain")
 	announce_span = "brass"
 	announce_text = "Servants of Ratvar are trying to summon the Justiciar!\n\
 	<span class='brass'>Servants</span>: Take over the station and summon Ratvar.\n\
@@ -266,13 +266,3 @@ Credit where due:
 		for(var/datum/mind/M in servants_of_ratvar)
 			text += printplayer(M)
 	to_chat(world, text)
-
-/datum/game_mode/proc/update_servant_icons_added(datum/mind/M)
-	var/datum/atom_hud/antag/A = huds[ANTAG_HUD_CLOCKWORK]
-	A.join_hud(M.current)
-	set_antag_hud(M.current, "clockwork")
-
-/datum/game_mode/proc/update_servant_icons_removed(datum/mind/M)
-	var/datum/atom_hud/antag/A = huds[ANTAG_HUD_CLOCKWORK]
-	A.leave_hud(M.current)
-	set_antag_hud(M.current, null)
