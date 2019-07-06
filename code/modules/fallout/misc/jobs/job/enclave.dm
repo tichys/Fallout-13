@@ -14,7 +14,6 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	whitelist_on = 0
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -73,7 +72,6 @@
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -133,7 +131,6 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -193,7 +190,6 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -244,7 +240,6 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 

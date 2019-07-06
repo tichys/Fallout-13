@@ -117,7 +117,7 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
-  
+
 /datum/job/hpaladin/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -351,7 +351,7 @@
 /datum/outfit/job/scribe
 	name = "Scribe"
 	backpack = null
-	gloves = gloves = /obj/item/clothing/gloves/f13/military
+	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
