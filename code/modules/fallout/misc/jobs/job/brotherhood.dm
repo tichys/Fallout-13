@@ -50,7 +50,6 @@
 /datum/outfit/job/elder
 	name = "Elder"
 	backpack = null
-	satchel = null
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/elder
@@ -59,6 +58,10 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
 	id = /obj/item/weapon/card/id/bos
+
+/datum/job/elder/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 	//Brotherhood Head Paladin
 
@@ -107,7 +110,6 @@
 
 /datum/outfit/job/hpaladin
 	name = "Head Paladin"
-	satchel = null
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
@@ -118,6 +120,10 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
+  
+/datum/job/hpaladin/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 //Head Scribe
 
@@ -165,7 +171,7 @@
 
 /datum/outfit/job/hscribe
 	name = "Head Scribe"
-	backpack = /obj/item/weapon/storage/backpack/explorer
+	backpack = null
 	satchel = null
 	gloves = null
 	uniform = /obj/item/clothing/under/f13/combat
@@ -175,6 +181,10 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	id = /obj/item/weapon/card/id/bos
+
+/datum/job/hscribe/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 //Brotherhood Paladin
 
@@ -222,8 +232,7 @@
 
 /datum/outfit/job/paladin
 	name = "Paladin"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -232,6 +241,10 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
+
+/datum/job/paladin/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
 
 //Brotherhood Knight
 
@@ -279,8 +292,7 @@
 
 /datum/outfit/job/knight
 	name = "Knight"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -289,6 +301,11 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
 	id = /obj/item/weapon/card/id/bos
+
+/datum/job/knight/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
+
 
 //Scribes!!
 
@@ -336,8 +353,7 @@
 
 /datum/outfit/job/scribe
 	name = "Scribe"
-	backpack = /obj/item/weapon/storage/backpack/explorer
-	satchel = null
+	backpack = null
 	gloves = null
 	uniform = /obj/item/clothing/under/f13/combat
 	suit = /obj/item/clothing/suit/scribe
@@ -346,3 +362,7 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	id = /obj/item/weapon/card/id/bos
+
+/datum/job/scribe/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
