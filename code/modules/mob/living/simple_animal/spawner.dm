@@ -118,8 +118,8 @@
 	icon = 'icons/mob/nest.dmi'
 	health = 1000
 	maxHealth = 1000
-	max_mobs = 2
-	spawn_time = 200
+	max_mobs = 1
+	spawn_time = 80
 	mob_type = /mob/living/simple_animal/hostile/radroach
 	faction = list("radroach")
 
