@@ -30,5 +30,5 @@
 	if(owner.mind)
 		owner.mind.wipe_memory()
 		owner.mind.special_role = null
-	owner.attack_log += "\[[time_stamp()]\] <font color=#BE8700>has forgotten how to use power armor! This is likely a bug, investigate!</font>"
+	owner.attack_log += "\[[time_stamp()]\] <font color=#BE8700>has forgotten how to use power armor! This is likely a bug, please report this so we can investigate!</font>"
 	..()
