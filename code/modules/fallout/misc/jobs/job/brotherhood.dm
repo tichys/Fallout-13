@@ -351,7 +351,7 @@
 /datum/outfit/job/scribe
 	name = "Scribe"
 	backpack = null
-	gloves = gloves = /obj/item/clothing/gloves/f13/military
+	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
