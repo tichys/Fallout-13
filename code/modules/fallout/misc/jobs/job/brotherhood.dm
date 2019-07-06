@@ -20,7 +20,10 @@
 	required_items = list(
 	/obj/item/clothing/gloves/f13/military,
 	/obj/item/clothing/under/f13/recon,
-	/obj/item/clothing/head/soft/f13/utility/navy
+	/obj/item/clothing/suit/armor/f13/power_armor/t60,
+	/obj/item/clothing/head/helmet/power_armor/t60,
+	/obj/item/clothing/head/soft/f13/utility/navy,
+	/obj/item/device/radio
 	)
 
 	denied_items = list(
@@ -56,10 +59,6 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rcw
 	id = /obj/item/weapon/card/id/bos
-	
-/datum/job/elder/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
 
 	//Brotherhood Head Paladin
 
@@ -82,7 +81,7 @@
 	outfit = /datum/outfit/job/hpaladin
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
+	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/gun/energy/laser/rcw
 	)
@@ -111,18 +110,14 @@
 	satchel = null
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	back = /obj/item/weapon/gun/energy/laser/gaussrifle //requires upgraded power cell to use so didnt feel right to leave this as a choice, its now something head paladin gets by default but needs to wait for research before he can use.
-	head = null
+	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
-
-/datum/job/hpaladin/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
 
 //Head Scribe
 
@@ -180,11 +175,6 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	id = /obj/item/weapon/card/id/bos
-	
-/datum/job/hscribe/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
-
 
 //Brotherhood Paladin
 
@@ -207,7 +197,7 @@
 	outfit = /datum/outfit/job/paladin
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
+	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13
 	)
 
@@ -235,17 +225,13 @@
 	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
-	head = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
-	
-/datum/job/paladin/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
 
 //Brotherhood Knight
 
@@ -266,7 +252,7 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat
+	/obj/item/clothing/under/f13/recon
 	)
 
 	denied_items = list(
@@ -296,17 +282,13 @@
 	backpack = /obj/item/weapon/storage/backpack/explorer
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
-	head = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d
+	head = /obj/item/clothing/head/helmet/power_armor/t45d
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
 	id = /obj/item/weapon/card/id/bos
-	
-/datum/job/knight/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
 
 //Scribes!!
 
@@ -364,7 +346,3 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
 	id = /obj/item/weapon/card/id/bos
-
-/datum/job/scribe/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)

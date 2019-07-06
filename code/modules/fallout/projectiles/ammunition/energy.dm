@@ -29,7 +29,6 @@
 	e_cost = 12.5 // 12.5 per shot, 10 per burst, 125 per full burst, 8 total bursts/80 shots with cell that has 1k energy.
 	randomspread = 1
 	variance = 5
-	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 
 /obj/item/ammo_casing/energy/laser/rcw
 	delay = 1

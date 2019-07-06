@@ -760,7 +760,8 @@
 /obj/item/weapon/pa_manual/attack_self(mob/living/carbon/human/user)
 	if(!istype(user) || !user)
 		return
-	add_servant_of_ratvar(user)
+	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour!</span>")
+	//deleting this line for now until power armor training variable is fixed or it is defined as a flag or whatever, right now the powerarmor var does not work.
 	user.drop_item()
 	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
