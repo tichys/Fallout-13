@@ -5,7 +5,7 @@
 
 /obj/machinery/bounty_machine
 	name = "Wastland Bounty Machine"
-	desc = "A 'Wasteland Bounty Machine', an old RobCo internal company messaging system turned into a job hunting board for the entire wastes. Convenient."
+	desc = "A 'Wasteland Bounty Machine', an old RobCo internal company messaging system turned into a job hunting board for the entirety of the Texas wastes. Convenient."
 	icon = 'icons/fallout/machines/terminals.dmi'
 	icon_state = "advanced"
 	anchored = 1
