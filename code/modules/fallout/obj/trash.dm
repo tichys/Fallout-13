@@ -113,3 +113,24 @@
 	name = "giant tin can"
 	desc = "A giant, rusty, rotten, empty tin can with no label.<br>Oh my... It's so big!<br>Did they sell canned whales before the Great War or something?"
 	icon_state = "tin"
+	
+/obj/item/trash/f13/ghoulface
+	name = "Ghoul face skin"
+	desc = "The torn remains of what was once the face of a now deceased ghoul. It might be worth something to someone."
+	icon = 'icons/obj/clothing/hats.dmi'
+	icon_state = "lingspacehelmet"
+	w_class = 1
+	
+/obj/item/trash/f13/deathclawtalon
+	name = "Large deathclaw talon"
+	desc = "The largest talon taken from a Deathclaw's paw, not much use on its own but probably worth something to someone."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "proboscis"
+	w_class = 1
+	
+/obj/item/trash/f13/wolftail
+	name = "Wolf tail"
+	desc = "A wolf tail, a hunting trophy."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "severedtail"
+	w_class = 1
