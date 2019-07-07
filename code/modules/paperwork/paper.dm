@@ -432,7 +432,7 @@
 /obj/item/weapon/paper/crumpled/automatedvalhallaprintoutnukeslaunched
 	icon_state = "scrap_bloodied"
 	name = "What have we done."
-	info = "We just got the green light to launch. All six of our missiles are away to mainland China, the radar is showing at least fifty incoming nukes just for our small county. Good god, what have we done... We... I..."
+	info = "We just got the green light to launch. All six of our missiles are away to mainland China, the radar is showing at least fifty incoming nukes just for our small county. Good god, what have we done."
 
 
 /obj/item/weapon/paper/crumpled/re1
