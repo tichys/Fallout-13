@@ -418,6 +418,22 @@
 	icon_state = "scrap_bloodied"
 	name = "crumpled note"
 	info = "THE LAST CHAMBER IN THE SOUTHWEST HALL CONTAINS A RELIC UNIQUE TO THE CHURCH."
+	
+/obj/item/weapon/paper/crumpled/automatedvalhallaprintout
+	icon_state = "scrap_bloodied"
+	name = "crumpled note"
+	info = "WARNING. AIRBORNE CONTAMINANTS DETECTED. INTERNAL PROTECTION REQUIRED BEYOND THE LOBBY. WARNING."
+	
+/obj/item/weapon/paper/crumpled/automatedvalhallaprintoutchinesespies
+	icon_state = "scrap_bloodied"
+	name = "crumpled note"
+	info = "ALERT, VALHALLA PERSONNEL. WE HAVE CHINESE AGENTS IN THE BASE! THIS IS NOT A DRILL! REPEAT, NOT A DRILL! WEAPONS FREE!"
+
+/obj/item/weapon/paper/crumpled/automatedvalhallaprintoutnukeslaunched
+	icon_state = "scrap_bloodied"
+	name = "What have we done."
+	info = "We just got the green light to launch. All six of our missiles are away to mainland China, the radar is showing at least fifty incoming nukes just for our small county. Good god, what have we done... We... I can't live with this."
+
 
 /obj/item/weapon/paper/crumpled/re1
 	icon_state = "scrap_bloodied"
