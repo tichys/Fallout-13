@@ -15,7 +15,7 @@
 	maxHealth = 60
 	health = 60
 	self_weight = 35
-	loot = list(/obj/item/stack/caps/random)
+	loot = list(/obj/item/stack/caps/random, /obj/item/trash/f13/wolftail = 1)
 
 	faction = list("hostile", "wolf")
 
@@ -49,4 +49,4 @@
 	health = 100
 	melee_damage_lower = 30
 	melee_damage_upper = 10
-	loot = list(/obj/item/stack/caps/random)
+	loot = list(/obj/item/stack/caps/random, /obj/item/trash/f13/wolftail = 1)
