@@ -432,7 +432,7 @@
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/weapon/tank/internals,/obj/item/weapon/stock_parts/cell)
 	slowdown = 0
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
-	armor = list(melee = 75, bullet = 35, laser = 70,energy = 15, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100)
+	armor = list(melee = 75, bullet = 35, laser = 70, energy = 15, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100)
 	strip_delay = 200
 
 /obj/item/clothing/suit/stealth/stealthsuit
