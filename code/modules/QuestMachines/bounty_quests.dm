@@ -159,8 +159,8 @@
 	
 /datum/bounty_quest/faction/wasteland/qst_20
 	employer = "New California Republic, Department of Wasteland Anatomy"
-	need_message = "We've spotted some rad scorpions native to Texas, you'll spot them by their unique black colouration. Bring us one whole black radscorpion body, we'll pay five hundred caps"
-	target_items = list(/mob/living/simple_animal/hostile/rad_scorpion/black = 1)
+	need_message = "We're looking to see if there's any difference between Texan deathclaws and the deathclaws back west, we'd like to dissect a body. Bring us a deathclaw corpse intact and we'll pay you one thousand two hundred caps"
+	target_items = list(/mob/living/simple_animal/hostile/deathclaw = 1)
 	caps_reward = 500
 	
 /datum/bounty_quest/faction/wasteland/qst_21
