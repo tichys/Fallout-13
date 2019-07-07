@@ -5,7 +5,7 @@
 
 /obj/machinery/bounty_machine
 	name = "Wastland Bounty Machine"
-	desc = "This is Wastland Bounty Machine"
+	desc = "A 'Wasteland Bounty Machine', an old RobCo internal company messaging system turned into a job hunting board for the entire wastes. Convenient."
 	icon = 'icons/fallout/machines/terminals.dmi'
 	icon_state = "advanced"
 	anchored = 1
@@ -16,7 +16,7 @@
 	obj_integrity = 300
 	max_integrity = 300
 	integrity_failure = 100
-	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 50, acid = 70)
+	resistance_flags = INDESTRUCTIBLE
 
 	/* This items can be sold in this terminal */
 	var/obj/item/items_to_sell[0]
