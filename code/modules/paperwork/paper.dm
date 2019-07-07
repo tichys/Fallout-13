@@ -427,7 +427,7 @@
 /obj/item/weapon/paper/crumpled/automatedvalhallaprintoutchinesespies
 	icon_state = "scrap_bloodied"
 	name = "crumpled note"
-	info = "ALERT, VALHALLA PERSONNEL. WE HAVE CHINESE AGENTS IN THE BASE! THIS IS NOT A DRILL! REPEAT, NOT A DRILL! WEAPONS FREE!"
+	info = "ALERT, VALHALLA PERSONNEL. WE HAVE CHINESE AGENTS IN THE BASE! THIS IS NOT A DRILL! REPEAT, CHINESE COMMUNISTS IN THE BASE, THIS IS NOT A DRILL! WEAPONS FREE!"
 
 /obj/item/weapon/paper/crumpled/automatedvalhallaprintoutnukeslaunched
 	icon_state = "scrap_bloodied"
