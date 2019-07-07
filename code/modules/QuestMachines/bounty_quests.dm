@@ -161,7 +161,7 @@
 	employer = "New California Republic, Department of Wasteland Anatomy"
 	need_message = "We're looking to see if there's any difference between Texan deathclaws and the deathclaws back west, we'd like to dissect a body. Bring us a deathclaw corpse intact and we'll pay you one thousand two hundred caps"
 	target_items = list(/mob/living/simple_animal/hostile/deathclaw = 1)
-	caps_reward = 500
+	caps_reward = 1200
 	
 /datum/bounty_quest/faction/wasteland/qst_21
 	employer = "Church of Atom"
