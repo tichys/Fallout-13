@@ -20,7 +20,7 @@
 	health = 30
 	self_weight = 35
 	loot = list(
-				/obj/item/weapon/reagent_containers/food/snacks/molerattail = 1
+				/obj/item/trash/f13/molerattail = 1
 				)
 
 	faction = list("hostile", "molerat")
