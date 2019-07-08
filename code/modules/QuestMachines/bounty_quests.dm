@@ -52,7 +52,7 @@
 	employer = "George Miller, NCR Sharecropper Farming"
 	need_message = "Goddamn molerats keep eating our crops. I need you to kill five of them. Bring back their tails as proof of the deed. I'll pay you two hundred and twenty five caps"
 	end_message = "Thanks for that. Now I might be able to put some damn food on the table"
-	target_items = list(/obj/item/weapon/reagent_containers/food/snacks/molerattail = 5)
+	target_items = list(/obj/item/trash/f13/molerattail = 5)
 	caps_reward = 225
 
 /datum/bounty_quest/faction/wasteland/qst_3
