@@ -39,7 +39,7 @@
 
 	outfit = /datum/outfit/job/colonel
 
-	access = list(70)
+	access = list(70, 63, 20, 12)
 	minimal_access = list()
 
 /datum/outfit/job/colonel
@@ -97,7 +97,7 @@
 
 	outfit = /datum/outfit/job/enclave_lieutenant
 
-	access = list(70)
+	access = list(70, 63, 20, 12)
 	minimal_access = list()
 
 /datum/outfit/job/enclave_lieutenant
