@@ -8,7 +8,7 @@
 	id = "basic_cell"
 	req_tech = list("powerstorage" = 1)
 	build_type = PROTOLATHE | AUTOLATHE |MECHFAB
-	materials = list(MAT_METAL = 700, MAT_GLASS = 50)
+	materials = list(MAT_METAL = 1500, MAT_GLASS = 1500)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
 	category = list("Misc","Power Designs","Machinery","initial")
@@ -17,43 +17,43 @@
 	name = "Improved Capacity Microfusion Cell"
 	desc = "An improved capacity Microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
-	req_tech = list("powerstorage" = 2) // stay at 2, requires research once added then can be made at proto, auto or mechfab.
+	req_tech = list("powerstorage" = 2, "materials" = 2, "engineering" = 1)
 	build_type = PROTOLATHE | AUTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 25000, MAT_GLASS = 25000)
+	materials = list(MAT_METAL = 30000, MAT_GLASS = 30000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
-	category = list("Misc","Power Designs","Machinery","initial")
+	category = list("Misc","Power Designs","Machinery")
 
 /datum/design/super_cell
-	name = "Super-Capacity Power Cell"
-	desc = "A power cell that holds 20000 units of energy."
+	name = "Super-Capacity Microfusion Cell"
+	desc = "A significantly improved capacity Microfusion cell that holds 5000 units of energy."
 	id = "super_cell"
-	req_tech = list("powerstorage" = 3, "materials" = 3)
+	req_tech = list("powerstorage" = 3, "materials" = 3, "engineering" = 2)
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 700, MAT_GLASS = 70)
-	construction_time=100
+	materials = list(MAT_METAL = 15000, MAT_GLASS = 15000, MAT_GOLD = 1000, MAT_SILVER = 1000, MAT_URANIUM = 500)
+	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/super
 	category = list("Misc","Power Designs")
 
 /datum/design/hyper_cell
-	name = "Hyper-Capacity Power Cell"
-	desc = "A power cell that holds 30000 units of energy."
+	name = "Hyper-Capacity Microfusion Cell"
+	desc = "An even more improved Microfusion cell, using further miniaturization technology and improving the output of the cell through increased conductive materials."
 	id = "hyper_cell"
-	req_tech = list("powerstorage" = 5, "materials" = 5, "engineering" = 5)
+	req_tech = list("powerstorage" = 4, "materials" = 4, "engineering" = 4)
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 700, MAT_GOLD = 150, MAT_SILVER = 150, MAT_GLASS = 80)
-	construction_time=100
+	materials = list(MAT_METAL = 10000, MAT_GLASS = 10000, MAT_GOLD = 10000, MAT_SILVER = 10000, MAT_URANIUM = 4000)
+	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/hyper
 	category = list("Misc","Power Designs")
 
 /datum/design/bluespace_cell
-	name = "Bluespace Power Cell"
-	desc = "A power cell that holds 40000 units of energy."
+	name = "Bluespace Microfusion Cell"
+	desc = "A miniature fusion reaction contained within a quantum bubble known as bluespace, you don't understand how it works. It holds 12500 units of power and seems to recharge passively"
 	id = "bluespace_cell"
-	req_tech = list("powerstorage" = 6, "materials" = 5, "engineering" = 5, "bluespace" = 5)
+	req_tech = list("powerstorage" = 5, "materials" = 5, "engineering" = 5, "bluespace" = 1)
 	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 800, MAT_GOLD = 120, MAT_SILVER = 150, MAT_GLASS = 160, MAT_DIAMOND = 160, MAT_TITANIUM = 300)
-	construction_time=100
+	materials = list(MAT_METAL = 2000, MAT_GLASS = 2000, MAT_SILVER = 30000, MAT_GOLD = 30000, MAT_DIAMOND = 10000, MAT_URANIUM = 20000)
+	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/bluespace
 	category = list("Misc","Power Designs")
 
