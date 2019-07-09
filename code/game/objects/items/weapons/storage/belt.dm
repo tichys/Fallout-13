@@ -289,12 +289,11 @@
 	item_state = "security"
 
 /obj/item/weapon/storage/belt/military/assault
-	name = "assault belt"
-	desc = "A tactical assault belt."
-	icon_state = "assaultbelt"
-	item_state = "security"
-	storage_slots = 6
-	self_weight = 0.3
+	name = "ranger's chestrig"
+	desc = "A worn chestrig, there are several pouches pockets. The insignia of the NCR Rangers is embroidered into the rig."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 14
 
 /obj/item/weapon/storage/belt/grenade
 	name = "grenadier belt"
@@ -1061,7 +1060,7 @@
 	storage_slots = 14
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 50
+	max_combined_w_class = 60
 	can_hold = list(
 		/obj/item/weapon/restraints/legcuffs/bola,
 		/obj/item/weapon/restraints/handcuffs,
@@ -1098,23 +1097,15 @@
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
 
 /obj/item/weapon/storage/belt/military/enclavearmy
-	name = "Infantry Belt"
-	desc = "A well-used belt with numerous small pouches designed specifically for the storage of microfusion cells. Clearly a belt used by an individual who expects to be reloading an energy weapon frequently."
-	icon_state = "grenadebeltold"
-	item_state = "military"
-	storage_slots = 14
+	name = "power armour chestrig"
+	desc = "A military chest rig, this one was specifically designed to fit over the top of larger infantry protective gear such as power armour. This one is embroidered with an odd logo, the letter 'E' surrounded by a ring of stars. Strange."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 21
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 50
-	can_hold = list(
-		/obj/item/weapon/reagent_containers/hypospray/combat,
-		/obj/item/device/radio,
-		/obj/item/weapon/reknife,
-		/obj/item/clothing/glasses/sunglassespaop,
-		/obj/item/clothing/ears/earmuffs,
-		/obj/item/weapon/stock_parts/cell,
-		/obj/item/weapon/stock_parts/cell/high,
-		)
+	max_combined_w_class = 80
+	self_weight = 15
 
 /obj/item/weapon/storage/belt/military/enclavearmy/full/New()
 	..()
@@ -1125,27 +1116,19 @@
 	new /obj/item/clothing/ears/earmuffs(src)
 
 /obj/item/weapon/storage/belt/military/brotherhoodbelt
-	name = "Combat Belt"
-	desc = "A well-used belt with numerous small pouches designed specifically for the storage of microfusion cells. Clearly a belt used by an individual who expects to be reloading an energy weapon frequently."
-	icon_state = "grenadebeltold"
-	item_state = "military"
-	storage_slots = 14
+	name = "power armour chestrig"
+	desc = "A military chest rig, this one was specifically designed to fit over the top of larger infantry protective gear such as power armour. This one is embroidered with an odd logo. A sword surrounded by a set of wings and set of three interlocking gears in the background. Strange."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 21
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 50
-	can_hold = list(
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak,
-		/obj/item/device/radio,
-		/obj/item/weapon/kitchen/knife/combat,
-		/obj/item/clothing/glasses/sunglassespaop,
-		/obj/item/clothing/ears/earmuffs,
-		/obj/item/weapon/stock_parts/cell,
-		/obj/item/weapon/stock_parts/cell/high,
-		)
+	max_combined_w_class = 80
+	self_weight = 15
 
 /obj/item/weapon/storage/belt/military/brotherhoodbelt/full/New()
 	..()
-	new /obj/item/weapon/reagent_containers/pill/patch/stimpak(src)
+	new /obj/item/weapon/reagent_containers/pill/patch/supstimpak(src)
 	new /obj/item/device/radio(src)
 	new /obj/item/weapon/kitchen/knife/combat(src)
 	new /obj/item/clothing/glasses/sunglassespaop(src)
