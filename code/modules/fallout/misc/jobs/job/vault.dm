@@ -162,7 +162,6 @@
 	backpack_contents = list(/obj/item/weapon/melee/classic_baton/telescopic=1,\
 		/obj/item/weapon/restraints/handcuffs=1)
 	back = /obj/item/weapon/storage/backpack/security
-	box = /obj/item/weapon/storage/box/security
 
 	var/department = null
 	var/tie = null
