@@ -214,9 +214,9 @@
 
 /datum/bounty_quest/faction/LEGION/qst_01
 	employer = "The Legate: Outstanding Objective #1"
-	need_message = "The profligate heathens of the NCR have been spotted in the area. Specifically, their renowned 'Rangers' have been seen scouting across Texas. Find and capture or kill any rangers you can. Be sure to crucify them out front once you've brought them in and taken their equipment. We want their helmets as trophies. Nothing breaks the morale of NCR conscripted soldiers faster than seeing dozens of Ranger helmets decorating a Legion encampment. You will receive 1600 caps per Veteran Ranger mask you bring to the camp"
+	need_message = "The profligate heathens of the NCR have been spotted in the area. Specifically, their renowned 'Rangers' have been seen scouting across Texas. Find and capture or kill any rangers you can. Be sure to crucify them out front once you've brought them in and taken their equipment. We want their unique revolvers as trophies. Nothing breaks the morale of NCR conscripted soldiers faster than seeing dozens of Ranger sidearms decorating a Legion encampment. You will receive 1600 caps per Ranger Sequoia you bring to the camp"
 	end_message = "You serve Caesar well, Legionaire"
-	target_items = list(/obj/item/clothing/head/helmet/ranger = 1)
+	target_items = list(/obj/item/weapon/gun/ballistic/revolver/sequoia = 1)
 	caps_reward = 1600
 	
 /datum/bounty_quest/faction/LEGION/qst_02
