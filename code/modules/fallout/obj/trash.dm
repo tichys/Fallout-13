@@ -130,7 +130,14 @@
 	
 /obj/item/trash/f13/wolftail
 	name = "Wolf tail"
-	desc = "A wolf tail, a hunting trophy."
+	desc = "A wolf tail, a hunting trophy. Probably worth something to someone."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "severedtail"
+	w_class = 1
+	
+/obj/item/trash/f13/molerattail
+	name = "Molerat tail"
+	desc = "A molerat tail, a hunting trophy. Probably worth something to someone."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "severedtail"
 	w_class = 1
