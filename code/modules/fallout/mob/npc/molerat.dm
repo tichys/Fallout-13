@@ -21,7 +21,6 @@
 	self_weight = 35
 	loot = list(
 				/obj/item/trash/f13/molerattail = 1
-				)
 
 	faction = list("hostile", "molerat")
 
