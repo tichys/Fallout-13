@@ -290,7 +290,7 @@
 
 /obj/item/weapon/storage/belt/military/assault
 	name = "ranger's chestrig"
-	desc = "A worn chestrig, there are several pouches pockets. The insignia of the NCR Rangers is embroidered into the rig."
+	desc = "A worn chestrig, there are several pouches. The insignia of the NCR Rangers is embroidered into the rig."
 	icon_state = "explorer2"
 	item_state = "explorer2"
 	storage_slots = 14
