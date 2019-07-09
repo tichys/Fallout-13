@@ -1374,8 +1374,9 @@
 	w_class = WEIGHT_CLASS_HUGE
 	recoil = 3
 	scopetype = /obj/screen/fullscreen/scope/long
-	
-/obj/item/weapon/gun/ballistic/automatic/m72gauss
+
+
+/obj/item/weapon/gun/ballistic/semiauto/m72gauss
 	name = "M72 Gauss Rifle"
 	icon_state = "gaussf2"
 	item_state = "m72gaussrifle"

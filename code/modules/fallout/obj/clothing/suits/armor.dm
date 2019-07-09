@@ -1,4 +1,5 @@
 //Fallout 13 general armor directory
+var/powerarmor = 0
 
 /obj/item/clothing/suit/armor/f13
 	icon = 'icons/fallout/clothing/suits.dmi'
@@ -392,23 +393,14 @@
 	strip_delay = 300
 	special_defence = PREVENTDISMEMBER
 
-
-
-
-/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////
-
-/obj/item/clothing/suit/armor/f13/power_armor/equipped(mob/living/user, slot)
-	..()
-	if(slot == slot_wear_suit && !is_servant_of_ratvar(user))
-		if(iscarbon(user))
-			to_chat(user, "<span class='heavy_brass'>You lack the training to use power armour!</span>")
-		addtimer(CALLBACK(user, /mob/living.proc/unEquip, src, 1), 1)	
-
-/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////	
-
-
-
-
+/obj/item/clothing/suit/armor/f13/power_armor/mob_can_equip(mob/user, slot) //THIS PART NEEDS FIXING. CODE CURRENTLY DOES NOT WORK NOR DO FACTIONS HAVE MARTIAL ART APPLIED TO THEM TO PASS THIS CHECK ONCE IT DOES WORK.
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(powerarmor == 0 && slot == slot_wear_suit)
+			H << "<span class='warning'>You don't have the proper training to operate the power armor!</span>"
+			return 0
+			..()
+	return ..()
 
 // brotherhood power armors
 

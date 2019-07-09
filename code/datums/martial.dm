@@ -753,15 +753,16 @@
 
 /obj/item/weapon/pa_manual
 	name = "power armour manual"
-	desc = "A small, black notebook with a warning sign printed on the front. The notebook itself describes how to safely operate power armour without suffering serious injury or death. It has a flammable warning on the front, odd."
+	desc = "A small, black notebook with a warning sign printed on the front. The notebook itself describes how to safely operate power armour without suffering serious injury or death."
 	icon = 'icons/obj/library.dmi'
 	icon_state ="notebook_warning"
 
 /obj/item/weapon/pa_manual/attack_self(mob/living/carbon/human/user)
 	if(!istype(user) || !user)
 		return
-	add_servant_of_ratvar(user)
+	to_chat(user, "<span class='boldannounce'>You have learned how to safely operate power armour!</span>")
+	//deleting this line for now until power armor training variable is fixed or it is defined as a flag or whatever, right now the powerarmor var does not work.
 	user.drop_item()
-	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames. Guess that's what the warning label was for.</span>")
+	visible_message("<span class='warning'>[src] beeps ominously, and a moment later it bursts up in flames.</span>")
 	new /obj/effect/decal/cleanable/ash(get_turf(src))
 	qdel(src)

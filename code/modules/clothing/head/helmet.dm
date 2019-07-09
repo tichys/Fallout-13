@@ -330,19 +330,6 @@
 	actions_types = list(/datum/action/item_action/toggle_research_scanner)
 
 
-/obj/item/clothing/head/helmet/stealth/brokenstealthhelmet
-	desc = "A mask and visor, it looks very strange and oval."
-	name = "Broken Stealth Helmet"
-	icon_state = "stealthhelmet"
-	item_state = "stealthhelmet"
-	armor = list(melee = 75, bullet = 35, laser = 70,energy = 15, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100)
-	strip_delay = 200
-	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
-	blockTracking = 1//Roughly the only unique thing about this helmet.
-	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-
-
-
 /obj/item/clothing/head/helmet/stealth/stealthhelmet
 	desc = "A mask and visor meant to be worn with the Chinese Stealth Suit"
 	name = "Stealth Helmet"

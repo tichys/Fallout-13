@@ -31,7 +31,6 @@
 
 	melee_damage_lower = 5
 	melee_damage_upper = 20
-	armour_penetration = 30
 	environment_smash = 1
 	move_to_delay = 7
 	attacktext = "bites"

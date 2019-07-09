@@ -424,17 +424,6 @@
 
 /* Stealth Suits */
 
-/obj/item/clothing/suit/stealth/brokenstealthsuit
-	name = "Broken Chinese Stealth Suit"
-	desc = "A form-fitting armor suit with a bunch of Chinese text all over it. It has a button on the forearm but it does nothing, guess it's broken. Suit's cool though."
-	icon_state = "stealthsuit"
-	item_state = "stealthsuit"
-	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/restraints/handcuffs,/obj/item/weapon/tank/internals,/obj/item/weapon/stock_parts/cell)
-	slowdown = 0
-	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF
-	armor = list(melee = 75, bullet = 35, laser = 70, energy = 15, bomb = 15, bio = 100, rad = 100, fire = 100, acid = 100)
-	strip_delay = 200
-
 /obj/item/clothing/suit/stealth/stealthsuit
 	name = "Chinese Stealth Suit"
 	desc = "A form-fitting armor suit complete with an active stealth field that can be triggered at the press of a button."

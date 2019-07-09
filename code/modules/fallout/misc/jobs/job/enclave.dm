@@ -14,10 +14,13 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	whitelist_on = 0
+	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
 	required_items = list(
+	/obj/item/clothing/suit/armor/f13/power_armor/shocktrooper,
+	/obj/item/clothing/head/helmet/power_armor/shocktrooper,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -39,7 +42,7 @@
 
 	outfit = /datum/outfit/job/colonel
 
-	access = list(70, 63, 20, 12)
+	access = list(70)
 	minimal_access = list()
 
 /datum/outfit/job/colonel
@@ -72,10 +75,13 @@
 	supervisors = "the Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
 	required_items = list(
+	/obj/item/clothing/suit/armor/f13/power_armor/superadvanced,
+	/obj/item/clothing/head/helmet/power_armor/superadvanced,
 	/obj/item/weapon/cqc_manual
 	)
 
@@ -97,7 +103,7 @@
 
 	outfit = /datum/outfit/job/enclave_lieutenant
 
-	access = list(70, 63, 20, 12)
+	access = list(70)
 	minimal_access = list()
 
 /datum/outfit/job/enclave_lieutenant
@@ -131,12 +137,17 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	powerarmor = 1
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "bard", "tesla", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/head/helmet/f13/combat_mk2,
-	/obj/item/clothing/suit/armor/f13/combat_mk2
+	/obj/item/clothing/under/f13/bdu,
+	/obj/item/clothing/suit/armor/f13/power_armor/advanced,
+	/obj/item/clothing/head/helmet/power_armor/advanced,
+	/obj/item/clothing/ears/earmuffs,
+	/obj/item/clothing/glasses/sunglassespaop,
+	/obj/item/weapon/gun/energy/plasma
 	)
 
 	denied_items = list(
@@ -168,7 +179,7 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = /obj/item/clothing/head/soft/f13/utility/tan
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = null
+	weapon = /obj/item/weapon/gun/energy/plasma
 	id = /obj/item/weapon/card/id/enclave
 
 /datum/job/enclave_private/after_spawn(mob/living/carbon/human/H)
@@ -190,10 +201,12 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
+	/obj/item/clothing/under/f13/bdu,
 	/obj/item/clothing/head/bio_hood/science,
 	/obj/item/clothing/suit/bio_suit/sciencesuit,
 	/obj/item/weapon/gun/energy/plasma/pistol
@@ -240,12 +253,14 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
+	powerarmor = 1
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/suit/armor/f13/combat_mk2,
-	/obj/item/clothing/head/helmet/f13/combat_mk2
+	/obj/item/clothing/head/helmet/f13/combat_mk2,
+	/obj/item/weapon/gun/energy/plasma
 	)
 
 	denied_items = list(

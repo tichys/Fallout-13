@@ -18,8 +18,12 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
-	/obj/item/clothing/head/soft/f13/utility/navy
+	/obj/item/clothing/gloves/f13/military,
+	/obj/item/clothing/under/f13/recon,
+	/obj/item/clothing/suit/armor/f13/power_armor/t60,
+	/obj/item/clothing/head/helmet/power_armor/t60,
+	/obj/item/clothing/head/soft/f13/utility/navy,
+	/obj/item/device/radio
 	)
 
 	denied_items = list(
@@ -46,8 +50,7 @@
 /datum/outfit/job/elder
 	name = "Elder"
 	backpack = null
-	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/elder
 	weapon = /obj/item/weapon/gun/energy/laser/pistol
@@ -81,7 +84,7 @@
 	outfit = /datum/outfit/job/hpaladin
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
+	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/twohanded/superhammer,
 	/obj/item/weapon/gun/energy/laser/rcw
 	)
@@ -109,15 +112,15 @@
 	name = "Head Paladin"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	back = /obj/item/weapon/gun/energy/laser/gaussrifle //requires upgraded power cell to use so didnt feel right to leave this as a choice, its now something head paladin gets by default but needs to wait for research before he can use.
-	head = null
+	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
-
+  
 /datum/job/hpaladin/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -170,7 +173,7 @@
 	name = "Head Scribe"
 	backpack = null
 	satchel = null
-	gloves = /obj/item/clothing/gloves/f13/military
+	gloves = null
 	uniform = /obj/item/clothing/under/f13/combat
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
@@ -204,7 +207,7 @@
 	outfit = /datum/outfit/job/paladin
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
+	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13
 	)
 
@@ -231,10 +234,10 @@
 	name = "Paladin"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
-	head = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	head = /obj/item/clothing/head/helmet/power_armor/t51b
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
@@ -291,10 +294,10 @@
 	name = "Knight"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	uniform = /obj/item/clothing/under/f13/combat
 	shoes = /obj/item/clothing/shoes/f13/military
-	suit = null
-	head = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/t45d
+	head = /obj/item/clothing/head/helmet/power_armor/t45d
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = /obj/item/weapon/gun/energy/laser/rifle
 	id = /obj/item/weapon/card/id/bos
@@ -325,7 +328,7 @@
 	outfit = /datum/outfit/job/scribe
 
 	required_items = list(
-	/obj/item/clothing/under/f13/combat,
+	/obj/item/clothing/under/f13/recon,
 	/obj/item/weapon/gun/energy/laser/pistol
 	)
 
@@ -351,8 +354,8 @@
 /datum/outfit/job/scribe
 	name = "Scribe"
 	backpack = null
-	gloves = /obj/item/clothing/gloves/f13/military
-	uniform = /obj/item/clothing/under/f13/recon
+	gloves = null
+	uniform = /obj/item/clothing/under/f13/combat
 	suit = /obj/item/clothing/suit/scribe
 	shoes = /obj/item/clothing/shoes/f13/military
 	head = null

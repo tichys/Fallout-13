@@ -22,7 +22,6 @@
 	faction = list("hostile", "supermutant")
 	melee_damage_lower = 10
 	melee_damage_upper = 30
-	armour_penetration = 70
 	mob_size = MOB_SIZE_LARGE
 	attacktext = "hits"
 	attack_sound = "punch"

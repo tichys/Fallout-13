@@ -52,7 +52,7 @@
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/general
 	shoes = /obj/item/clothing/shoes/laceup
-	suit = null
+	suit = /obj/item/clothing/suit/armor/f13/power_armor/sierra
 	belt = /obj/item/weapon/storage/belt/military/army
 	head = /obj/item/clothing/head/f13/ncr_captain
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
@@ -62,11 +62,6 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
-	
-/datum/job/captain/after_spawn(mob/living/carbon/human/H)
-	. = ..()
-	add_servant_of_ratvar(H)
-
 
 //NCR Sergeant
 

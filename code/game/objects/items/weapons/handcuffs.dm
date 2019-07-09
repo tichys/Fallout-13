@@ -326,11 +326,11 @@
 	desc = "A restraining device designed to be thrown at the target. Upon connecting with said target, it will wrap around their legs, making it difficult for them to move quickly."
 	icon = 'icons/fallout/objects/melee.dmi'
 	icon_state = "bola"
-	breakouttime = 15 //easy to apply, easy to break out of
+	breakouttime = 30//easy to apply, easy to break out of
 	gender = NEUTER
 	origin_tech = "engineering=3;combat=1"
 	throwforce = 5
-	var/weaken = 1
+	var/weaken = 0
 
 /obj/item/weapon/restraints/legcuffs/bola/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first = 0, datum/callback/callback)
 	if(!..())

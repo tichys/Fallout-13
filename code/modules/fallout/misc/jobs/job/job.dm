@@ -6,6 +6,7 @@
 
 	var/disallowed_gender = 0
 
+	var/powerarmor = 0
 
 /datum/job/proc/is_gender_allowed(client/client)
 	if(!client)
