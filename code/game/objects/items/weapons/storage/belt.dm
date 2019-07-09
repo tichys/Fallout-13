@@ -290,7 +290,7 @@
 
 /obj/item/weapon/storage/belt/military/assault
 	name = "ranger's chestrig"
-	desc = "A worn chestrig, there are several pouches. The insignia of the NCR Rangers is embroidered into the rig."
+	desc = "A worn chestrig, there are several pouches pockets. The insignia of the NCR Rangers is embroidered into the rig."
 	icon_state = "explorer2"
 	item_state = "explorer2"
 	storage_slots = 14
@@ -1114,6 +1114,7 @@
 	new /obj/item/weapon/reknife(src)
 	new /obj/item/clothing/glasses/sunglassespaop(src)
 	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
 
 /obj/item/weapon/storage/belt/military/brotherhoodbelt
 	name = "power armour chestrig"
@@ -1133,6 +1134,7 @@
 	new /obj/item/weapon/kitchen/knife/combat(src)
 	new /obj/item/clothing/glasses/sunglassespaop(src)
 	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
 
 /obj/item/weapon/storage/belt/jakeholster
 	name = "Makeshift holster"
