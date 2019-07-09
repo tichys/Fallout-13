@@ -53,7 +53,6 @@
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
 
-
 /datum/job/colonel/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -136,8 +135,6 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/head/helmet/f13/combat_mk2,
 	/obj/item/clothing/suit/armor/f13/combat_mk2
 	)
@@ -197,8 +194,6 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/head/soft/f13/utility/olive,
 	/obj/item/clothing/head/bio_hood/science,
 	/obj/item/clothing/suit/bio_suit/sciencesuit,
 	/obj/item/weapon/gun/energy/plasma/pistol
@@ -249,10 +244,8 @@
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
-	/obj/item/clothing/under/f13/bdu,
-	/obj/item/clothing/head/soft/f13/utility/olive,
-	/obj/item/clothing/head/helmet/f13/combat_mk2,
-	/obj/item/clothing/suit/armor/f13/combat_mk2
+	/obj/item/clothing/suit/armor/f13/combat_mk2,
+	/obj/item/clothing/head/helmet/f13/combat_mk2
 	)
 
 	denied_items = list(
@@ -275,7 +268,6 @@
 
 	access = list(70)
 	minimal_access = list()
-
 
 /datum/job/enclave_recruit/after_spawn(mob/living/carbon/human/H)
 	. = ..()
