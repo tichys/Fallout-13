@@ -20,6 +20,7 @@
 #define FILE_DIR "html/factions"
 #define FILE_DIR "icons"
 #define FILE_DIR "icons/ass"
+#define FILE_DIR "icons/bounty_employers"
 #define FILE_DIR "icons/effects"
 #define FILE_DIR "icons/fallout"
 #define FILE_DIR "icons/fallout/clothing"
