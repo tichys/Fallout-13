@@ -5,7 +5,7 @@
 
 /obj/machinery/bounty_machine
 	name = "Wastland Bounty Machine"
-	desc = "This is Wastland Bounty Machine"
+	desc = "A 'Wasteland Bounty Machine', an old RobCo internal company messaging system turned into a job hunting board for the entirety of the Texas wastes. Convenient."
 	icon = 'icons/fallout/machines/terminals.dmi'
 	icon_state = "advanced"
 	anchored = 1
@@ -16,7 +16,7 @@
 	obj_integrity = 300
 	max_integrity = 300
 	integrity_failure = 100
-	armor = list(melee = 20, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 50, acid = 70)
+	resistance_flags = INDESTRUCTIBLE
 
 	/* This items can be sold in this terminal */
 	var/obj/item/items_to_sell[0]
@@ -210,4 +210,445 @@
  * Interaction
 */
 /obj/machinery/bounty_machine/attack_hand(mob/user)
+	ShowUI()
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////
+//////////////////NCR BOUNTY MACHINE////////////////////////
+////////////////////////////////////////////////////////////
+
+
+/obj/machinery/bounty_machine_ncr
+	name = "NCR Briefing Terminal"
+	desc = "An old RobCo messaging system turned into a briefing board for NCR troopers, keeping them up to date on outstanding objectives."
+	icon = 'icons/fallout/machines/terminals.dmi'
+	icon_state = "advanced"
+	anchored = 1
+	density = 0
+	verb_say = "beeps"
+	verb_ask = "beeps"
+	verb_exclaim = "beeps"
+	obj_integrity = 300
+	max_integrity = 300
+	integrity_failure = 100
+	resistance_flags = INDESTRUCTIBLE
+
+	/* This items can be sold in this terminal */
+	var/obj/item/items_to_sell[0]
+
+	/* Subtypes will be selected for all quest list */
+	var/quest_type = /datum/bounty_quest/faction/NCR
+
+	/* All quest */
+	var/list/all_quests = list()
+
+	/* Currently active quests */
+	var/datum/bounty_quest/active_quests[0]
+
+	/* Max active quest count */
+	var/quest_limit = 4
+
+	/* Connected bounty pod */
+	var/obj/machinery/bounty_pod/connected_pod
+
+	/* How far this machine will finde pod */
+	var/pod_distance = 1
+
+	// to debug
+	var/last_rand = -1
+	
+/* Initialization */
+/obj/machinery/bounty_machine_ncr/New()
+	InitQuestList()
+	FindPod(pod_distance)
+	UpdateActiveQuests()
+
+
+/*	---
+ *	Quest management
+ */
+
+/* Create all quests list */
+/obj/machinery/bounty_machine_ncr/proc/InitQuestList()
+	all_quests = get_all_quests()
+	all_quests.Remove(quest_type)
+
+/obj/machinery/bounty_machine_ncr/proc/get_all_quests()
+	return typesof(quest_type)
+
+/* Returns random quest from database */
+/obj/machinery/bounty_machine_ncr/proc/GetRandomQuest()
+	if(all_quests.len == 0) return null
+	var/random_index = rand(1, all_quests.len)
+	var/quest_type = all_quests[random_index]
+	var/Q = new quest_type()
+	last_rand = random_index
+	return Q
+
+/* Create new quests until its count not equal to quest limit */
+/obj/machinery/bounty_machine_ncr/proc/UpdateActiveQuests()
+	var/i
+	for(i = active_quests.len; i < quest_limit; i++)
+		active_quests += GetRandomQuest()
+
+/* Destroy all active quests. If create_new = 1, will generate new quests */
+/obj/machinery/bounty_machine_ncr/proc/ClearActiveQuests(var/create_new = 0)
+	for(var/Qst in active_quests)
+		del Qst
+	active_quests.Cut()
+	if(create_new)
+		UpdateActiveQuests()
+
+/* Check quest objectives and complete it. */
+/obj/machinery/bounty_machine_ncr/proc/ProcessQuestComplete(var/quest_index, var/mob/user)
+	quest_index = text2num(quest_index)
+	if(quest_index > active_quests.len)
+		return 0
+
+	// Check for connected pod
+	if(!connected_pod)
+		return 0
+
+	var/turf/location = get_turf(connected_pod)
+	var/quest_objects[0]
+	var/datum/bounty_quest/current_quest = active_quests[quest_index]
+
+	// Create list of all object of taget types
+	for(var/atom/Itm in location.contents)
+		if(current_quest.ItsATarget(Itm))
+			quest_objects.Add(Itm)
+
+	// If no target objects - fail to complete
+	if(quest_objects.len == 0)
+		return 0
+
+	var/list/target_items = current_quest.target_items.Copy()
+	for(var/atom/Itm in quest_objects)
+		for(var/target_type in target_items)
+			if(istype(Itm, target_type))
+				target_items[target_type] -= 1
+
+	// If objective not completed - fail
+	for(var/Itm in target_items)
+		if(target_items[Itm] > 0)
+			return 0
+
+	// Here we know - quest is complete
+	// 1. Remove quest objects. ALL QUEST OBJECTS WILL BE REMOVED! IF YOU PUT 2 GHOULS AND QUEST NEEDS ONLY ONE - ALL GHOULES ON POD TURF WILL BE DESTROYED
+	flick("tele0", connected_pod)
+	for(var/Itm in quest_objects)
+		qdel(Itm)
+
+	// 2. Spawn reward
+	var/obj/item/stack/caps/C = new /obj/item/stack/caps
+	C.add(current_quest.caps_reward - 1)
+	C.forceMove(connected_pod.loc)
+
+	// 3. Delete quest
+	to_chat(user, current_quest.end_message)
+	active_quests -= current_quest
+	qdel(current_quest)
+
+	// 4. Update active quests
+	UpdateActiveQuests()
+
+	return 1
+	// -- END
+
+/*
+ *	Pod management
+*/
+
+/* Find and assign firs pod in distance */
+/obj/machinery/bounty_machine_ncr/proc/FindPod(var/distance = 1)
+	for(var/Obj in view(distance, src))
+		if(istype(Obj, /obj/machinery/bounty_pod))
+			connected_pod = Obj
+			break
+
+/*
+ *	GUI
+*/
+/obj/machinery/bounty_machine_ncr/proc/ShowUI()
+	var/dat = ""
+	var/datum/asset/assets = get_asset_datum(/datum/asset/simple/bounty_employers)
+	assets.send(usr)
+
+	dat += "<h1>New California Republic Armed Forces Briefing System</h1>"
+	if(connected_pod)
+		dat += "<font color='green'>Pod found</font><br>"
+		dat += "<a href='?src=\ref[src];findpod=1'>Rescan</a><br>"
+	else
+		dat += "<font color='red'>Pod not found</font>"
+		dat += "<a href='?src=\ref[src];findpod=1'>Rescan</a><br>"
+
+	dat += "<style>.leftimg {float:left;margin: 7px 7px 7px 0;}</style>"
+
+	dat += "<h2>Assignments:</h2>"
+	var/item_index = 1
+	for(var/datum/bounty_quest/Q in active_quests)
+		//usr << browse_rsc(Q.GetIconWithPath(), Q.employer_icon)
+		//usr.browse_rsc_icon(Q.GetIconWithPath(), Q.employer_icon)
+		dat += "<div class='statusDisplay'>"
+		//dat += "<img src=\ref=[Q.employer_icon] class='leftimg' width = 59 height = 70></img>"
+		//dat += "<font color='green'><b>ID: </b> [Q.name]</font><br>"
+		dat += "<font color='green'><b>Assignment: </b> [Q.employer]</font><br>"
+		//dat += "<font color='green'><b>Message:</b></font>"
+		//dat += "<font color='green'>[Q.desc]</font><br><br>"
+		dat += "<font color='green'><b>Acceptable package: </b></font>"
+		dat += "<font color='green'><i>[Q.need_message]. </i></font><br>"
+		dat += "<font color='green'><b>Reward:</b></font>"
+		dat += "<font color='green'> [Q.caps_reward] caps</font> "
+		dat += "<a href='?src=\ref[src];completequest=[item_index]'>Send package</a>"
+		dat += "</div>"
+		item_index++
+
+	var/datum/browser/popup = new(usr, "payment", "NCR Briefing System", 640, 400) // Set up the popup browser window
+	popup.set_content(dat)
+	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
+	popup.open()
+
+/obj/machinery/bounty_machine_ncr/Topic(href, href_list)
+	if(href_list["completequest"])
+		if(connected_pod)
+			var/result_msg = ProcessQuestComplete(href_list["completequest"], usr)
+			to_chat(usr, result_msg)
+		else
+			to_chat(usr, "Pod not found")
+		ShowUI()
+
+	if(href_list["findpod"])
+		FindPod(pod_distance)
+		ShowUI()
+
+/*
+ * Interaction
+*/
+/obj/machinery/bounty_machine_ncr/attack_hand(mob/user)
+	ShowUI()
+	
+	
+	
+	
+////////////////////////////////////////////////////////////
+/////////////////LEGION BOUNTY MACHINE//////////////////////
+////////////////////////////////////////////////////////////
+
+
+
+/obj/machinery/bounty_machine_legion
+	name = "Caesar's Legion Briefing Terminal"
+	desc = "An old RobCo messaging system turned into a briefing board for the Legion, keeping them up to date on outstanding objectives."
+	icon = 'icons/fallout/machines/terminals.dmi'
+	icon_state = "advanced"
+	anchored = 1
+	density = 0
+	verb_say = "beeps"
+	verb_ask = "beeps"
+	verb_exclaim = "beeps"
+	obj_integrity = 300
+	max_integrity = 300
+	integrity_failure = 100
+	resistance_flags = INDESTRUCTIBLE
+
+	/* This items can be sold in this terminal */
+	var/obj/item/items_to_sell[0]
+
+	/* Subtypes will be selected for all quest list */
+	var/quest_type = /datum/bounty_quest/faction/LEGION
+
+	/* All quest */
+	var/list/all_quests = list()
+
+	/* Currently active quests */
+	var/datum/bounty_quest/active_quests[0]
+
+	/* Max active quest count */
+	var/quest_limit = 4
+
+	/* Connected bounty pod */
+	var/obj/machinery/bounty_pod/connected_pod
+
+	/* How far this machine will finde pod */
+	var/pod_distance = 1
+
+	// to debug
+	var/last_rand = -1
+	
+/* Initialization */
+/obj/machinery/bounty_machine_legion/New()
+	InitQuestList()
+	FindPod(pod_distance)
+	UpdateActiveQuests()
+
+
+/*	---
+ *	Quest management
+ */
+
+/* Create all quests list */
+/obj/machinery/bounty_machine_legion/proc/InitQuestList()
+	all_quests = get_all_quests()
+	all_quests.Remove(quest_type)
+
+/obj/machinery/bounty_machine_legion/proc/get_all_quests()
+	return typesof(quest_type)
+
+/* Returns random quest from database */
+/obj/machinery/bounty_machine_legion/proc/GetRandomQuest()
+	if(all_quests.len == 0) return null
+	var/random_index = rand(1, all_quests.len)
+	var/quest_type = all_quests[random_index]
+	var/Q = new quest_type()
+	last_rand = random_index
+	return Q
+
+/* Create new quests until its count not equal to quest limit */
+/obj/machinery/bounty_machine_legion/proc/UpdateActiveQuests()
+	var/i
+	for(i = active_quests.len; i < quest_limit; i++)
+		active_quests += GetRandomQuest()
+
+/* Destroy all active quests. If create_new = 1, will generate new quests */
+/obj/machinery/bounty_machine_legion/proc/ClearActiveQuests(var/create_new = 0)
+	for(var/Qst in active_quests)
+		del Qst
+	active_quests.Cut()
+	if(create_new)
+		UpdateActiveQuests()
+
+/* Check quest objectives and complete it. */
+/obj/machinery/bounty_machine_legion/proc/ProcessQuestComplete(var/quest_index, var/mob/user)
+	quest_index = text2num(quest_index)
+	if(quest_index > active_quests.len)
+		return 0
+
+	// Check for connected pod
+	if(!connected_pod)
+		return 0
+
+	var/turf/location = get_turf(connected_pod)
+	var/quest_objects[0]
+	var/datum/bounty_quest/current_quest = active_quests[quest_index]
+
+	// Create list of all object of taget types
+	for(var/atom/Itm in location.contents)
+		if(current_quest.ItsATarget(Itm))
+			quest_objects.Add(Itm)
+
+	// If no target objects - fail to complete
+	if(quest_objects.len == 0)
+		return 0
+
+	var/list/target_items = current_quest.target_items.Copy()
+	for(var/atom/Itm in quest_objects)
+		for(var/target_type in target_items)
+			if(istype(Itm, target_type))
+				target_items[target_type] -= 1
+
+	// If objective not completed - fail
+	for(var/Itm in target_items)
+		if(target_items[Itm] > 0)
+			return 0
+
+	// Here we know - quest is complete
+	// 1. Remove quest objects. ALL QUEST OBJECTS WILL BE REMOVED! IF YOU PUT 2 GHOULS AND QUEST NEEDS ONLY ONE - ALL GHOULES ON POD TURF WILL BE DESTROYED
+	flick("tele0", connected_pod)
+	for(var/Itm in quest_objects)
+		qdel(Itm)
+
+	// 2. Spawn reward
+	var/obj/item/stack/caps/C = new /obj/item/stack/caps
+	C.add(current_quest.caps_reward - 1)
+	C.forceMove(connected_pod.loc)
+
+	// 3. Delete quest
+	to_chat(user, current_quest.end_message)
+	active_quests -= current_quest
+	qdel(current_quest)
+
+	// 4. Update active quests
+	UpdateActiveQuests()
+
+	return 1
+	// -- END
+
+/*
+ *	Pod management
+*/
+
+/* Find and assign firs pod in distance */
+/obj/machinery/bounty_machine_legion/proc/FindPod(var/distance = 1)
+	for(var/Obj in view(distance, src))
+		if(istype(Obj, /obj/machinery/bounty_pod))
+			connected_pod = Obj
+			break
+
+/*
+ *	GUI
+*/
+/obj/machinery/bounty_machine_legion/proc/ShowUI()
+	var/dat = ""
+	var/datum/asset/assets = get_asset_datum(/datum/asset/simple/bounty_employers)
+	assets.send(usr)
+
+	dat += "<h1>Caesar's Legion Taskboard</h1>"
+	if(connected_pod)
+		dat += "<font color='green'>Pod found</font><br>"
+		dat += "<a href='?src=\ref[src];findpod=1'>Rescan</a><br>"
+	else
+		dat += "<font color='red'>Pod not found</font>"
+		dat += "<a href='?src=\ref[src];findpod=1'>Rescan</a><br>"
+
+	dat += "<style>.leftimg {float:left;margin: 7px 7px 7px 0;}</style>"
+
+	dat += "<h2>Assignments:</h2>"
+	var/item_index = 1
+	for(var/datum/bounty_quest/Q in active_quests)
+		//usr << browse_rsc(Q.GetIconWithPath(), Q.employer_icon)
+		//usr.browse_rsc_icon(Q.GetIconWithPath(), Q.employer_icon)
+		dat += "<div class='statusDisplay'>"
+		//dat += "<img src=\ref=[Q.employer_icon] class='leftimg' width = 59 height = 70></img>"
+		//dat += "<font color='green'><b>ID: </b> [Q.name]</font><br>"
+		dat += "<font color='green'><b>Assignment: </b> [Q.employer]</font><br>"
+		//dat += "<font color='green'><b>Message:</b></font>"
+		//dat += "<font color='green'>[Q.desc]</font><br><br>"
+		dat += "<font color='green'><b>Acceptable package: </b></font>"
+		dat += "<font color='green'><i>[Q.need_message]. </i></font><br>"
+		dat += "<font color='green'><b>Reward:</b></font>"
+		dat += "<font color='green'> [Q.caps_reward] caps</font> "
+		dat += "<a href='?src=\ref[src];completequest=[item_index]'>Send package</a>"
+		dat += "</div>"
+		item_index++
+
+	var/datum/browser/popup = new(usr, "payment", "The Legion's Will", 640, 400) // Set up the popup browser window
+	popup.set_content(dat)
+	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
+	popup.open()
+
+/obj/machinery/bounty_machine_legion/Topic(href, href_list)
+	if(href_list["completequest"])
+		if(connected_pod)
+			var/result_msg = ProcessQuestComplete(href_list["completequest"], usr)
+			to_chat(usr, result_msg)
+		else
+			to_chat(usr, "Pod not found")
+		ShowUI()
+
+	if(href_list["findpod"])
+		FindPod(pod_distance)
+		ShowUI()
+
+/*
+ * Interaction
+*/
+/obj/machinery/bounty_machine_legion/attack_hand(mob/user)
 	ShowUI()
