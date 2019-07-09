@@ -182,13 +182,6 @@
 	end_message = "The republic thanks you for your service"
 	target_items = list(/mob/living/simple_animal/hostile/deathclaw = 1)
 	caps_reward = 1200
-	
-/datum/bounty_quest/faction/wasteland/qst_21
-	employer = "Church of Atom"
-	need_message = "Old pre-war military maps of Texas indicate the existence of a Nuclear silo known as VALHALLA beneath the quarry to the south which was issued with additional cores for on-site replacement of warheads. We have reason to believe these cores are still present at the base, we are offering a bounty of 8000 caps to whomever can bring us a safely contained plutonium core"
-	end_message = "Atom protect you, child. You have rendered unto us a great service this day"
-	target_items = list(/obj/item/nuke_core_container = 1)
-	caps_reward = 8000
 
 //////////////////////////////////////////
 ////////////NCR QUESTS BELOW//////////////
