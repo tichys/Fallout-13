@@ -132,17 +132,6 @@
 /obj/item/weapon/stock_parts/cell/emp_act(severity)
 	return
 
-/obj/item/weapon/stock_parts/cell/ex_act(severity, target)
-	..()
-	if(!qdeleted(src))
-		switch(severity)
-			if(2)
-				if(prob(50))
-					corrupt()
-			if(3)
-				if(prob(25))
-					corrupt()
-
 
 /obj/item/weapon/stock_parts/cell/blob_act(obj/structure/blob/B)
 	ex_act(1)
