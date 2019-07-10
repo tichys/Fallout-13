@@ -21,6 +21,13 @@
 	health = 70
 	self_weight = 50
 	healable = 0
+	loot = list(	/obj/item/weapon/stock_parts/capacitor/adv = 2,
+			/obj/item/crafting/diode = 1,
+			/obj/item/crafting/transistor = 2,
+			/obj/item/crafting/resistor = 1,
+			/obj/item/stack/sheet/metal/five = 1,
+			/obj/item/weapon/stock_parts/cell = 1
+			)
 
 	faction = list("hostile", "enclave")
 
