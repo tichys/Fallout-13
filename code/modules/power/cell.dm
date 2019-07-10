@@ -127,16 +127,10 @@
 	qdel(src)
 
 /obj/item/weapon/stock_parts/cell/proc/corrupt()
-	charge /= 2
-	maxcharge = max(maxcharge/2, chargerate)
-	if (prob(10))
-		rigged = 1 //broken batterys are dangerous
+	return
 
 /obj/item/weapon/stock_parts/cell/emp_act(severity)
-	charge -= 1000 / severity
-	if (charge < 0)
-		charge = 0
-	..()
+	return
 
 /obj/item/weapon/stock_parts/cell/ex_act(severity, target)
 	..()
@@ -313,13 +307,3 @@
 	desc = "An EMP-proof cell."
 	maxcharge = 500
 	rating = 2
-
-/obj/item/weapon/stock_parts/cell/emproof/empty/New()
-	..()
-	charge = 0
-
-/obj/item/weapon/stock_parts/cell/emproof/emp_act(severity)
-	return
-
-/obj/item/weapon/stock_parts/cell/emproof/corrupt()
-	return
