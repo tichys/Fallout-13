@@ -3,13 +3,14 @@
 	id = "synth"
 	say_mod = "beep boops" //inherited from a user's real species
 	sexes = 0
-	species_traits = list(NOTRANSSTING,NOBREATH,VIRUSIMMUNE,NODISMEMBER,NOHUNGER) //all of these + whatever we inherit from the real species
+	species_traits = list(NOTRANSSTING,NOBREATH,RADIMMUNE,VIRUSIMMUNE,NODISMEMBER) //all of these + whatever we inherit from the real species
 	dangerous_existence = 1
 	blacklisted = 1
 	meat = null
+	armor = -20 //offsets ease of repair. synths are best suited to infiltration of society rather than fighting them
 	damage_overlay_type = "synth"
 	limbs_id = "synth"
-	var/list/initial_species_traits = list(NOTRANSSTING,NOBREATH,VIRUSIMMUNE,NODISMEMBER,NOHUNGER) //for getting these values back for assume_disguise()
+	var/list/initial_species_traits = list(NOTRANSSTING,NOBREATH,RADIMMUNE,VIRUSIMMUNE,NODISMEMBER) //for getting these values back for assume_disguise()
 	var/disguise_fail_health = 75 //When their health gets to this level their synthflesh partially falls off
 	var/datum/species/fake_species = null //a species to do most of our work for us, unless we're damaged
 
