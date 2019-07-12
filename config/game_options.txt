@@ -41,7 +41,7 @@ RUN_DELAY 1.5
 WALK_DELAY 5
 
 ## The variables below affect the movement of specific mob types.
-HUMAN_DELAY 0
+HUMAN_DELAY 0.35
 ROBOT_DELAY 2
 MONKEY_DELAY 0
 ALIEN_DELAY 0
@@ -410,7 +410,7 @@ ROUNDSTART_RACES human
 #ROUNDSTART_RACES silver
 #ROUNDSTART_RACES uranium
 #ROUNDSTART_RACES abductor
-#ROUNDSTART_RACES synth
+ROUNDSTART_RACES synth
 ROUNDSTART_RACES ghoul
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
