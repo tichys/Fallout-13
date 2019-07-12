@@ -20,7 +20,7 @@
 	maxHealth = 400
 	health = 400
 	self_weight = 500
-	damage_coeff = list(BRUTE = 0.25, BURN = 0.75, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
+	damage_coeff = list(BRUTE = 0.5, BURN = 0.75, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 
 	faction = list("hostile", "deathclaw")
 
@@ -37,9 +37,9 @@
 	environment_smash = 3 // YOU CAN'T HIDE FROM ME
 	force_threshold = 15
 	melee_damage_lower = 30
-	armour_penetration = 70
+	armour_penetration = 60
 	melee_damage_upper = 40
-	aggro_vision_range = 14
+	aggro_vision_range = 10
 	see_in_dark = 10
 	idle_vision_range = 10
 	pixel_w = -16
