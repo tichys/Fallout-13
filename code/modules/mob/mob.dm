@@ -669,6 +669,7 @@ var/next_mob_id = 0
 		if(layer == LYING_MOB_LAYER || layer == CRAWLING_LAYER)
 			layer = initial(layer)
 	update_transform()
+	update_vision_cone()
 	update_action_buttons_icon(status_only=TRUE)
 	if(isliving(src))
 		var/mob/living/L = src
