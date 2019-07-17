@@ -334,7 +334,6 @@
 	// If that's a wanted feature, then add that condition.
 	if( buckled || stat != CONSCIOUS || !A || !x || !y || !A.x || !A.y )
 		return
-	var/oriDir = dir
 	var/dx = A.x - x
 	var/dy = A.y - y
 	if(!dx && !dy) // Wall items are graphically shifted but on the floor
@@ -358,9 +357,6 @@
 			setDir(EAST)
 		else
 			setDir(WEST)
-	// Only update the vision cone of the direction after turning around is different than what we had before.
-	if(oriDir != dir)
-		update_vision_cone()
 
 /obj/screen/click_catcher
 	icon = 'icons/mob/screen_gen.dmi'
