@@ -522,3 +522,9 @@
 	src << browse(null, "window=preferences") //closes job selection
 	src << browse(null, "window=mob_occupation")
 	src << browse(null, "window=latechoices") //closes late job selection
+
+
+	if(data_core.get_record_by_name(client.prefs.real_name))
+		client.prefs.be_random_name = 1
+		alert(src, "This character name is already in use. Randomizing name...")
+		return
