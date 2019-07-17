@@ -310,7 +310,17 @@
 	pull_icon.update_icon(mymob)
 	pull_icon.screen_loc = ui_pull_resist
 	static_inventory += pull_icon
-	
+
+	mymob.fov = new /obj/screen()//Vision_cone
+	mymob.fov.icon = 'icons/mob/hide.dmi'
+	mymob.fov.icon_state = "combat"
+	mymob.fov.name = "FOV"
+	mymob.fov.screen_loc = "1,1"
+	mymob.fov.mouse_opacity = 0
+	mymob.fov.layer = 18
+	mymob.fov.plane = 0
+	static_inventory += mymob.fov
+
 	//Handle the gun settings buttons
 	mymob.gun_setting_icon = new /obj/screen/gun/mode(null)
 	mymob.gun_setting_icon.icon = ui_style
