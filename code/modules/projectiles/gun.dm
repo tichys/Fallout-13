@@ -536,6 +536,7 @@
 		user.client.pixel_y = 0
 		if(scopetype)
 			user.clear_fullscreen("scope", 0)
+	user.update_fov_position()
 
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
 /obj/item/weapon/gun/proc/build_zooming()
