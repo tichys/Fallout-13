@@ -316,13 +316,23 @@ update_label("John Doe", "Clowny")
 	access = list(69)
 
 /obj/item/weapon/card/id/vault
-	name = "Pip-Boy Holotape"
+	name = "Pip-Boy Holo-ID"
 	desc = "A holotape meant to be installed into a Pip-Boy 3000, this downloads all of the user's data into the device for use with access."
 	icon_state = "vaulttape"
 	access = list(52)
-	
+
 /obj/item/weapon/card/id/legion
 	name = "Mark of Caesar"
 	desc = "A mark of service within Caesar's Legion."
 	icon_state = "markofcaesar"
 	access = list(71)
+	
+/obj/item/weapon/card/id/newalamo
+	name = "New Alamo Citizenship Card"
+	desc = "A card certifying citizenship to the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
+	icon_state = "fingerprint1"
+
+/obj/item/weapon/card/id/newalamoworker
+	name = "New Alamo Worker's Permit"
+	desc = "A card certifying the right to work in the quarry beneath the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
+	icon_state = "fingerprint1"
