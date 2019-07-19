@@ -65,6 +65,7 @@
 	uniform = /obj/item/clothing/under/f13/formal
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = null
+	id = /obj/item/weapon/card/id/newalamo
 	head = /obj/item/clothing/head/f13/beaver
 
 //Sheriff
@@ -131,6 +132,7 @@
 	head = /obj/item/clothing/head/f13/cowboy
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
 	glasses = /obj/item/clothing/glasses/sunglasses
+	id = /obj/item/weapon/card/id/newalamo
 	back = /obj/item/weapon/gun/ballistic/shotgun
 
 //Citizen
@@ -179,5 +181,6 @@
 	name = "Citizen"
 	backpack = null
 	satchel = null
+	id = /obj/item/weapon/card/id/newalamo
 	uniform = /obj/item/clothing/under/f13/cowboyt
 	shoes = /obj/item/clothing/shoes/f13/brownie
