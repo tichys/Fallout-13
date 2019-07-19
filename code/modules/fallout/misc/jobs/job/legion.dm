@@ -46,8 +46,7 @@
 
 	outfit = /datum/outfit/job/leglegate
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/leglegate
 	name = "Legion Legatus"
@@ -60,6 +59,7 @@
 	back = /obj/item/weapon/bumpersword
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	weapon = /obj/item/weapon/gun/ballistic/automatic/rifle
+	id = /obj/item/weapon/card/id/legion
 
 //Legion Centurion
 
@@ -106,8 +106,7 @@
 
 	outfit = /datum/outfit/job/legcenturion
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/legcenturion
 	name = "Legion Centurion"
@@ -120,6 +119,7 @@
 	head = /obj/item/clothing/head/helmet/f13/legcenturion
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle/scope
+	id = /obj/item/weapon/card/id/legion
 
 //Legion Vexillarius
 
@@ -166,8 +166,7 @@
 
 	outfit = /datum/outfit/job/legvex
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/legvex
 	name = "Legion Vexillarius"
@@ -179,6 +178,7 @@
 	head = /obj/item/clothing/head/helmet/f13/legvexil
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle/scope
+	id = /obj/item/weapon/card/id/legion
 
 //Legion Decanus
 
@@ -225,8 +225,7 @@
 
 	outfit = /datum/outfit/job/legdecan
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/legdecan
 	name = "Legion Decanus"
@@ -239,6 +238,7 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	mask = /obj/item/clothing/mask/bandana/f13/legdecan
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle
+	id = /obj/item/weapon/card/id/legion
 
 //Legion Prime
 
@@ -283,8 +283,7 @@
 
 	outfit = /datum/outfit/job/prime
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/prime
 	name = "Prime Legionary"
@@ -296,6 +295,7 @@
 	belt = /obj/item/weapon/storage/belt/legionbelt/full
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	mask = /obj/item/clothing/mask/bandana/f13/legrecruit
+	id = /obj/item/weapon/card/id/legion
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle
 	backpack_contents = list(/obj/item/weapon/restraints/handcuffs=1, \
 	/obj/item/weapon/reagent_containers/food/drinks/flask/survival=1, \
@@ -344,8 +344,7 @@
 
 	outfit = /datum/outfit/job/recruit
 
-	access = list()
-	minimal_access = list()
+	access = list(72)
 
 /datum/outfit/job/recruit
 	name = "Recruit Legionary"
@@ -357,6 +356,7 @@
 	belt = /obj/item/weapon/storage/belt/legionbelt/full
 	glasses = /obj/item/clothing/glasses/sunglasses/f13/legion
 	mask = /obj/item/clothing/mask/bandana/f13/legrecruit
+	id = /obj/item/weapon/card/id/legion
 	weapon = /obj/item/weapon/gun/ballistic/shotgun/rifle
 	backpack_contents = list(/obj/item/weapon/restraints/handcuffs=1, \
 	/obj/item/weapon/reagent_containers/food/drinks/flask/survival=1, \
@@ -395,9 +395,6 @@
 	)
 
 	outfit = /datum/outfit/job/campfollower
-
-	access = list()
-	minimal_access = list()
 
 /datum/outfit/job/campfollower
 	name = "Camp Follower"
