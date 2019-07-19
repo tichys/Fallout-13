@@ -44,8 +44,7 @@
 
 	outfit = /datum/outfit/job/captain
 
-	access = list(access_ncr)
-	minimal_access = list()
+	access = list(71)
 
 /datum/outfit/job/captain
 	name = "NCR Captain"
@@ -62,7 +61,7 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
-	
+
 /datum/job/captain/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -115,7 +114,6 @@
 	outfit = /datum/outfit/job/ncr_sergeant
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_sergeant
 	name = "Sergeant"
@@ -151,7 +149,6 @@
 	outfit = /datum/outfit/job/vranger
 
 	access = list(71)
-	minimal_access = list()
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -244,7 +241,6 @@
 	outfit = /datum/outfit/job/ncr_ranger
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_ranger
 	name = "Staff Sergeant"
@@ -303,7 +299,6 @@
 	outfit = /datum/outfit/job/trooper
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/trooper
 	name = "Trooper"
