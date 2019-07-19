@@ -1,6 +1,6 @@
 /obj/item/weapon/stock_parts/cell
 	name = "Microfusion cell"
-	desc = "A rechargable miniature fusion reaction contained within a compact power cell, roughly the size of a golf ball."
+	desc = "A rechargable miniature fusion reaction contained within a compact power cell, roughly the size of a golf ball. Some power cells, especially advanced models with higher capacity, may be worth a lot for the research potential behind their construction, they may be valuable items to the right buyer or a critical resource to develop cutting edge technologies."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
 	item_state = "cell"
@@ -14,7 +14,7 @@
 	var/maxcharge = 1000
 	materials = list(MAT_METAL=400, MAT_GLASS=400)
 	var/rigged = 0		// true if rigged to explode
-	var/chargerate = 250 //how much power is given every tick in a recharger
+	var/chargerate = 150 //how much power is given every tick in a recharger
 	var/self_recharge = 0 //does it self recharge, over time, or not?
 	var/ratingdesc = TRUE
 	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
@@ -186,7 +186,7 @@
 	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION PULSE"
 	maxcharge = 40000
 	rating = 3
-	chargerate = 1500
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/pulse/carbine //25 pulse shots
 	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION PCARBINE"
@@ -198,12 +198,12 @@
 
 /obj/item/weapon/stock_parts/cell/high
 	name = "high-capacity Microfusion cell"
-	origin_tech = "powerstorage=2;materials=2;engineering=1"
+	origin_tech = "powerstorage=3;materials=2;engineering=2"
 	icon_state = "hcell"
 	maxcharge = 2250
 	materials = list(MAT_METAL = 17500, MAT_GLASS = 17500)
 	rating = 3
-	chargerate = 450
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/high/plus
 	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION HIGHPLUS"
@@ -212,7 +212,7 @@
 	icon_state = "h+cell"
 	maxcharge = 12500
 	materials = list(MAT_METAL = 100000, MAT_GLASS = 100000, MAT_GOLD = 200, MAT_SILVER = 200, MAT_URANIUM = 100)
-	chargerate = 300
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/high/empty/New()
 	..()
@@ -220,12 +220,12 @@
 
 /obj/item/weapon/stock_parts/cell/super
 	name = "super-capacity Microfusion cell"
-	origin_tech = "powerstorage=3;materials=3;engineering=2"
+	origin_tech = "powerstorage=5;materials=2;engineering=2"
 	icon_state = "scell"
-	maxcharge = 5000
+	maxcharge = 4000
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 5000, MAT_GOLD = 300, MAT_SILVER = 300, MAT_URANIUM = 100)
 	rating = 4
-	chargerate = 500
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/super/empty/New()
 	..()
@@ -233,21 +233,21 @@
 
 /obj/item/weapon/stock_parts/cell/hyper
 	name = "hyper-capacity Microfusion cell"
-	origin_tech = "powerstorage=4;materials=4;engineering=4"
+	origin_tech = "powerstorage=6;materials=2;engineering=2"
 	icon_state = "hpcell"
-	maxcharge = 8000
+	maxcharge = 6000
 	materials = list(MAT_METAL = 1000, MAT_GLASS = 1000, MAT_GOLD = 500, MAT_SILVER = 500, MAT_URANIUM = 200)
 	rating = 5
-	chargerate = 750
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/hyper/empty/New()
 	..()
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/bluespace
-	name = "bluespace Microfusion cell"
-	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works but it generates power equivalent to multiple 100MT nuclear detonations simultaneously. You probably shouldn't eat it."
-	origin_tech = "powerstorage=5;materials=5;engineering=5;bluespace=1"
+	name = "quantum Microfusion cell"
+	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works but it generates power equivalent to multiple 100MT nuclear detonations simultaneously."
+	origin_tech = "powerstorage=8;materials=2;engineering=2"
 	icon_state = "bscell"
 	maxcharge = 12500
 	materials = list(MAT_METAL = 100, MAT_GLASS = 100, MAT_SILVER = 2000, MAT_GOLD = 2000, MAT_DIAMOND = 500, MAT_URANIUM = 200)
