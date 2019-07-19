@@ -14,14 +14,8 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 	var/efficiency_coeff
 
 	var/list/categories = list(
-								"AI Modules",
 								"Computer Boards",
-								"Teleportation Machinery",
 								"Medical Machinery",
-								"Engineering Machinery",
-								"Exosuit Modules",
-								"Hydroponics Machinery",
-								"Subspace Telecomms",
 								"Research Machinery",
 								"Misc. Machinery",
 								"Computer Parts"
@@ -41,7 +35,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 /obj/item/weapon/circuitboard/machine/circuit_imprinter
 	name = "Circuit Imprinter (Machine Board)"
 	build_path = /obj/machinery/r_n_d/circuit_imprinter
-	origin_tech = "engineering=2;programming=2"
+	origin_tech = "engineering=2"
 	req_components = list(
 							/obj/item/weapon/stock_parts/matter_bin = 1,
 							/obj/item/weapon/stock_parts/manipulator = 1,
@@ -55,7 +49,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 
 	materials.max_amount = 0
 	for(var/obj/item/weapon/stock_parts/matter_bin/M in component_parts)
-		materials.max_amount += M.rating * 75000
+		materials.max_amount += M.rating * 120000
 
 	var/T = 0
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
