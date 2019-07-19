@@ -19,10 +19,8 @@ Note: Must be placed west/left of and R&D console to function.
 	var/list/categories = list(
 								"Power Designs",
 								"Medical Designs",
-								"Bluespace Designs",
 								"Stock Parts",
 								"Equipment",
-								"Mining Designs",
 								"Electronics",
 								"Weapons",
 								"Ammo",
@@ -59,7 +57,7 @@ Note: Must be placed west/left of and R&D console to function.
 
 	materials.max_amount = 0
 	for(var/obj/item/weapon/stock_parts/matter_bin/M in component_parts)
-		materials.max_amount += M.rating * 75000
+		materials.max_amount += M.rating * 150000
 
 	var/T = 1.2
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
