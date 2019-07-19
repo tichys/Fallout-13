@@ -9,7 +9,7 @@
 	status = "Overseer"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Vault-tec"
+	supervisors = "Vault-Tec"
 	selection_color = "#005A20"
 
 
@@ -78,7 +78,7 @@
 	status = "vaultmember"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the chief medical officer"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 
 	outfit = /datum/outfit/job/vlt_doctor
@@ -137,7 +137,7 @@
 	status = "vaultmember"
 	total_positions = 6 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 6 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 
 
@@ -177,7 +177,7 @@
 	status = "vaultmember"
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "overseer"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 	access = list(access_maint_tunnels)
 	minimal_access = list()
