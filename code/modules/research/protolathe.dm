@@ -17,22 +17,16 @@ Note: Must be placed west/left of and R&D console to function.
 	var/efficiency_coeff
 
 	var/list/categories = list(
-								"Power Designs",
-								"Medical Designs",
-								"Stock Parts",
-								"Equipment",
-								"Electronics",
-								"Weapons",
-								"Ammo",
-								"Firing Pins",
-								"Computer Parts"
+								"Microfusion Cells",
+								"Weaponry",
+								"Augmentation",
 								)
 
 
 /obj/machinery/r_n_d/protolathe/New()
 	..()
 	create_reagents(0)
-	materials = new(src, list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_TITANIUM))
+	materials = new(src, list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_TITANIUM))
 	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/protolathe(null)
 	B.apply_default_parts(src)
 
@@ -57,7 +51,7 @@ Note: Must be placed west/left of and R&D console to function.
 
 	materials.max_amount = 0
 	for(var/obj/item/weapon/stock_parts/matter_bin/M in component_parts)
-		materials.max_amount += M.rating * 150000
+		materials.max_amount += M.rating * 1200000
 
 	var/T = 1.2
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
