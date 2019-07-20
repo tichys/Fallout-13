@@ -143,6 +143,57 @@
 				/obj/item/weapon/gun/ballistic/automatic/pistol/sm1912 = 2750,
 				/obj/item/ammo_box/magazine/steyrmag = 1200,
 					)
+					
+/* NCR QUARTERMASTER BOT */
+
+/obj/machinery/bounty_machine/faction/ncrmikebot
+	name = "NCR Quartermaster 3000"
+	desc = "A heavily modified vendortron, functions as a quartermaster. This one is painted beige-brown, with NCR iconography."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/gun/ballistic/automatic/pistol/browning = 800,
+				/obj/item/weapon/gun/ballistic/automatic/assault_rifle = 2000,
+				/obj/item/ammo_box/magazine/browning = 500,
+				/obj/item/ammo_box/magazine/m556 = 900,
+				/obj/item/ammo_box/magazine/m556/ap = 1600,
+				/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 200,
+				/obj/item/weapon/reagent_containers/pill/patch/stimpak = 500,
+				/obj/item/weapon/grenade/flashbang = 2400,
+				/obj/item/weapon/grenade/syndieminibomb/concussion = 3000,
+				/obj/item/weapon/gun/ballistic/automatic/sniper_rifle = 50000,
+				/obj/item/ammo_box/magazine/sniper_rounds = 9000,
+						)
+					
+					
+/* LEGION QUARTERMASTERBOT */
+
+/obj/machinery/bounty_machine/faction/legmikebot
+	name = "Legion Quartermaster 3000"
+	desc = "A heavily modified vendortron, functions as a quartermaster. This one is painted in red and black, with Legion iconography."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/gun/ballistic/revolver/coltwalker = 1800,
+				/obj/item/weapon/gun/ballistic/shotgun/rifle = 1400,
+				/obj/item/ammo_box/magazine/internal/cylinder/walker = 1200,
+				/obj/item/ammo_box/m308 = 1100,
+				/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 200,
+				/obj/item/weapon/reagent_containers/pill/patch/healingpowder = 300,
+				/obj/item/weapon/grenade/chem_grenade/teargas = 2500,
+				/obj/item/weapon/storage/box/zipties = 1200,
+						)					
+
 
 /* AMMO TRADER */
 
@@ -383,7 +434,7 @@
 	else
 		dat = GetQuestUI()
 
-	var/datum/browser/popup = new(usr, "bounty", "Wasteland Faction Contracts Database", 640, 400) // Set up the popup browser window
+	var/datum/browser/popup = new(usr, "bounty", "Vendomat Display", 640, 400) // Set up the popup browser window
 	popup.set_content(dat)
 	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()
