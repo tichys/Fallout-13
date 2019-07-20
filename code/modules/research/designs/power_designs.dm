@@ -8,7 +8,7 @@
 	id = "basic_cell"
 	req_tech = list("powerstorage" = 1)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 100, MAT_DIAMOND = 200, MAT_URANIUM = 100)
+	materials = list(MAT_SILVER = 20000, MAT_GOLD = 30000, MAT_DIAMOND = 30000, MAT_URANIUM = 30000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
 	category = list("Misc","Power Designs","Machinery","initial")
@@ -19,7 +19,7 @@
 	id = "high_cell"
 	req_tech = list("powerstorage" = 3, "materials" = 2, "engineering" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 600, MAT_URANIUM = 300)
+	materials = list(MAT_SILVER = 20000, MAT_GOLD = 34000, MAT_DIAMOND = 32000, MAT_URANIUM = 36000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
 	category = list("Misc","Power Designs","Machinery")
@@ -30,7 +30,7 @@
 	id = "super_cell"
 	req_tech = list("powerstorage" = 5, "materials" = 2, "engineering" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 900, MAT_URANIUM = 500)
+	materials = list(MAT_SILVER = 24000, MAT_GOLD = 36000, MAT_DIAMOND = 38000, MAT_URANIUM = 40000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/super
 	category = list("Misc","Power Designs")
@@ -41,7 +41,7 @@
 	id = "hyper_cell"
 	req_tech = list("powerstorage" = 6, "materials" = 2, "engineering" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 1100, MAT_URANIUM = 600)
+	materials = list(MAT_SILVER = 28000, MAT_GOLD = 44000, MAT_DIAMOND = 46000, MAT_URANIUM = 50000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/hyper
 	category = list("Misc","Power Designs")
@@ -52,7 +52,7 @@
 	id = "bluespace_cell"
 	req_tech = list("powerstorage" = 8, "materials" = 2, "engineering" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_SILVER = 300, MAT_GOLD = 500, MAT_DIAMOND = 1800, MAT_URANIUM = 2400)
+	materials = list(MAT_SILVER = 50000, MAT_GOLD = 50000, MAT_DIAMOND = 80000, MAT_URANIUM = 100000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/bluespace
 	category = list("Misc","Power Designs")
