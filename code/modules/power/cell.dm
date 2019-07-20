@@ -262,7 +262,7 @@
 /obj/item/weapon/stock_parts/cell/infinite
 	name = "badmin infinite power cell!"
 	icon_state = "icell"
-	origin_tech =  "powerstorage=7"
+	origin_tech =  "powerstorage=1"
 	maxcharge = 30000
 	materials = list(MAT_GLASS=1000)
 	rating = 6
@@ -273,10 +273,10 @@
 
 /obj/item/weapon/stock_parts/cell/infinite/abductor
 	name = "void core"
-	desc = "An alien power core plucked from a crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
+	desc = "An alien power core plucked from the crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "cell"
-	origin_tech =  "abductor=5;powerstorage=8;engineering=6"
+	origin_tech =  "abductor=20;powerstorage=15;engineering=12"
 	maxcharge = 50000
 	rating = 12
 	ratingdesc = FALSE
