@@ -23,6 +23,11 @@
 /obj/item/projectile/bullet/weakbullet3 // lowering damage on tihs one slightly, used by 9mms.
 	damage = 22
 	dismemberment = 0
+	
+/obj/item/projectile/bullet/weakbullet3/ap // ap service rifle ammo, low damage for the benefit of AP to deal with power armor
+	damage = 9
+	dismemberment = 0
+	armour_penetration = 35
 
 /obj/item/projectile/bullet/toxinbullet
 	damage = 10
