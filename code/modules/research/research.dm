@@ -209,7 +209,7 @@ research holder datum.
 	name = "Biological Technology"
 	desc = "Research into the deeper mysteries of life and organic substances."
 	id = "biotech"
-	
+
 /datum/tech/abductor
 	name = "Extraterrestrial Research"
 	desc = "Research into the Pre-War Extraterrestrial beings known as the Zetans."
@@ -271,14 +271,14 @@ research holder datum.
 	materials = list()
 	max_tech_stored = 0
 	origin_tech = "materials=20;engineering=20;powerstorage=20;biotech=20,abductor=1"
-			
+
 /obj/item/weapon/disk/tech_disk/vaulttec
 	name = "VaultTec 2077 technology disk"
 	desc = "A pre-war technology disk. Issued to all vaults by VaultTec. This one is indicated as a burner disk, meaning that it must be integrated via destructive analyzer rather than downloading of the disk's contents."
 	materials = list()
 	max_tech_stored = 0
 	origin_tech = "materials=3;engineering=3;powerstorage=3;biotech=3"
-		
+
 /obj/item/weapon/disk/tech_disk/vaulttecold
 	name = "VaultTec 2075 technology disk"
 	desc = "An old pre-war technology disk. This one is a little out of date but is sure to fetch a decent sum from the right buyer. A label on the side indicates that this is a burner disk, meaning it must be integrated via destructive analyzer."
