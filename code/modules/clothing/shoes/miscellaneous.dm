@@ -384,7 +384,7 @@
 
 /obj/item/clothing/shoes/bhop
 	name = "jump boots"
-	desc = "A specialized pair of combat boots with a built-in propulsion system for rapid foward movement."
+	desc = "A specialized pair of combat boots with a built-in propulsion system for rapid foward movement. Innovation!"
 	icon_state = "jetboots"
 	item_state = "jetboots"
 	item_color = "hosred"
