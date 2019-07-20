@@ -276,7 +276,7 @@
 	desc = "An alien power core plucked from a crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "cell"
-	origin_tech =  "abductor=5;powerstorage=8;engineering=6"
+	origin_tech =  "abductor=20;powerstorage=20"
 	maxcharge = 50000
 	rating = 12
 	ratingdesc = FALSE
