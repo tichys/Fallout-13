@@ -40,7 +40,6 @@
 	outfit = /datum/outfit/job/colonel
 
 	access = list(70, 63, 20, 12)
-	minimal_access = list()
 
 /datum/outfit/job/colonel
 	name = "Colonel"
@@ -98,7 +97,6 @@
 	outfit = /datum/outfit/job/enclave_lieutenant
 
 	access = list(70, 63, 20, 12)
-	minimal_access = list()
 
 /datum/outfit/job/enclave_lieutenant
 	name = "Enclave Lieutenant"
@@ -126,8 +124,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "private"
-	total_positions = 3
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -158,7 +156,6 @@
 	outfit = /datum/outfit/job/enclave_private
 
 	access = list(70)
-	minimal_access = list()
 
 /datum/outfit/job/enclave_private
 	name = "Enclave Private"
@@ -186,7 +183,7 @@
 	faction = "enclave"
 	status = "scientist"
 	total_positions = 2
-	spawn_positions = 4
+	spawn_positions = 2
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -218,7 +215,6 @@
 	outfit = /datum/outfit/job/enclave_private
 
 	access = list(70)
-	minimal_access = list()
 
 /datum/job/enclave_scientist/after_spawn(mob/living/carbon/human/H)
 	. = ..()
@@ -235,8 +231,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "recruit"
-	total_positions = 2
-	spawn_positions = 7
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -267,7 +263,6 @@
 	outfit = /datum/outfit/job/enclave_private
 
 	access = list(70)
-	minimal_access = list()
 
 /datum/job/enclave_recruit/after_spawn(mob/living/carbon/human/H)
 	. = ..()
