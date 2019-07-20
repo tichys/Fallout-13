@@ -6,7 +6,7 @@
 	if(config.wikiurl)
 		if(alert("This will open the wiki in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link("https://github.com/tichys/Fallout-13/issues") //needs to be changed once website is done, can have a wiki section for new content added by us.
+		src << link("http://falloutanewdawn.ga/wiki/index.php/Main_Page") //needs to be changed once website is done, can have a wiki section for new content added by us.
 	return
 
 /client/verb/forum()
@@ -16,7 +16,7 @@
 	if(config.forumurl)
 		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link("https://github.com/tichys/Fallout-13/issues") //needs to be changed once website is done
+		src << link("https://falloutanewdawn.ga/forums/") //needs to be changed once website is done
 	return
 
 /client/verb/rules()
