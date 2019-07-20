@@ -12,7 +12,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	var/charge = 0	// note %age conveted to actual charge in New
 	var/maxcharge = 1000
-	materials = list(MAT_METAL = 500, MAT_SILVER = 50, MAT_GOLD = 50, MAT_DIAMOND = 50, MAT_URANIUM = 50)
+	materials = list(MAT_SILVER = 6000, MAT_GOLD = 8000, MAT_DIAMOND = 4000, MAT_URANIUM = 2000)
 	var/rigged = 0		// true if rigged to explode
 	var/chargerate = 150 //how much power is given every tick in a recharger
 	var/self_recharge = 0 //does it self recharge, over time, or not?
@@ -201,7 +201,7 @@
 	origin_tech = "powerstorage=3;materials=2;engineering=2"
 	icon_state = "hcell"
 	maxcharge = 2250
-	materials = list(MAT_METAL = 500, MAT_SILVER = 50, MAT_GOLD = 100, MAT_DIAMOND = 80, MAT_URANIUM = 80)
+	materials = list(MAT_SILVER = 8000, MAT_GOLD = 10000, MAT_DIAMOND = 6000, MAT_URANIUM = 4000)
 	rating = 3
 	chargerate = 150
 
@@ -223,7 +223,7 @@
 	origin_tech = "powerstorage=5;materials=2;engineering=2"
 	icon_state = "scell"
 	maxcharge = 4000
-	materials = list(MAT_METAL = 800, MAT_SILVER = 100, MAT_GOLD = 150, MAT_DIAMOND = 150, MAT_URANIUM = 100)
+	materials = list(MAT_SILVER = 10000, MAT_GOLD = 12000, MAT_DIAMOND = 8000, MAT_URANIUM = 6000)
 	rating = 4
 	chargerate = 150
 
@@ -236,7 +236,7 @@
 	origin_tech = "powerstorage=6;materials=2;engineering=2"
 	icon_state = "hpcell"
 	maxcharge = 6000
-	materials = list(MAT_METAL = 1000, MAT_SILVER = 200, MAT_GOLD = 200, MAT_DIAMOND = 400, MAT_URANIUM = 200)
+	materials = list(MAT_SILVER = 12000, MAT_GOLD = 16000, MAT_DIAMOND = 14000, MAT_URANIUM = 20000)
 	rating = 5
 	chargerate = 150
 
@@ -250,7 +250,7 @@
 	origin_tech = "powerstorage=8;materials=2;engineering=2"
 	icon_state = "bscell"
 	maxcharge = 12500
-	materials = list(MAT_METAL = 1200, MAT_SILVER = 200, MAT_GOLD = 300, MAT_DIAMOND = 600, MAT_URANIUM = 800)
+	materials = list(MAT_SILVER = 18000, MAT_GOLD = 24000, MAT_DIAMOND = 18000, MAT_URANIUM = 40000)
 	rating = 6
 	chargerate = 1250
 	self_recharge = 1
@@ -276,7 +276,7 @@
 	desc = "An alien power core plucked from a crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "cell"
-	origin_tech =  "abductor=20;powerstorage=20"
+	origin_tech =  "abductor=5;powerstorage=8;engineering=6"
 	maxcharge = 50000
 	rating = 12
 	ratingdesc = FALSE
