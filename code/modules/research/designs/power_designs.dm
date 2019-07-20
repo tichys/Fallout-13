@@ -11,7 +11,7 @@
 	materials = list(MAT_SILVER = 20000, MAT_GOLD = 30000, MAT_DIAMOND = 30000, MAT_URANIUM = 30000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
-	category = list("Misc","Power Designs","Machinery","initial")
+	category = list("Microfusion Cells","initial")
 
 /datum/design/high_cell
 	name = "Improved Capacity Microfusion Cell"
@@ -22,7 +22,7 @@
 	materials = list(MAT_SILVER = 20000, MAT_GOLD = 34000, MAT_DIAMOND = 32000, MAT_URANIUM = 36000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
-	category = list("Misc","Power Designs","Machinery")
+	category = list("Microfusion Cells")
 
 /datum/design/super_cell
 	name = "Super-Capacity Microfusion Cell"
@@ -33,7 +33,7 @@
 	materials = list(MAT_SILVER = 24000, MAT_GOLD = 36000, MAT_DIAMOND = 38000, MAT_URANIUM = 40000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/super
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 /datum/design/hyper_cell
 	name = "Hyper-Capacity Microfusion Cell"
@@ -44,7 +44,7 @@
 	materials = list(MAT_SILVER = 28000, MAT_GOLD = 44000, MAT_DIAMOND = 46000, MAT_URANIUM = 50000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/hyper
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 /datum/design/bluespace_cell
 	name = "Quantum Microfusion Cell"
@@ -55,7 +55,7 @@
 	materials = list(MAT_SILVER = 50000, MAT_GOLD = 50000, MAT_DIAMOND = 80000, MAT_URANIUM = 100000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/bluespace
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 
 /datum/design/light_replacer
