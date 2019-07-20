@@ -287,6 +287,7 @@
 	desc = "A belt used by military forces."
 	icon_state = "grenadebeltold"
 	item_state = "security"
+	storage_slots = 9
 
 /obj/item/weapon/storage/belt/military/assault
 	name = "ranger's chestrig"
