@@ -41,7 +41,6 @@
 	outfit = /datum/outfit/job/elder
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/elder
 	name = "Elder"
@@ -103,7 +102,6 @@
 	)
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/hpaladin
 	name = "Head Paladin"
@@ -117,7 +115,7 @@
 	belt = /obj/item/weapon/storage/belt/military/brotherhoodbelt/full
 	weapon = null
 	id = /obj/item/weapon/card/id/bos
-  
+
 /datum/job/hpaladin/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -164,7 +162,6 @@
 	)
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/hscribe
 	name = "Head Scribe"
@@ -225,7 +222,6 @@
 	)
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/paladin
 	name = "Paladin"
@@ -253,8 +249,8 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "knight"
-	total_positions = 6
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -285,7 +281,6 @@
 	outfit = /datum/outfit/job/knight
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/knight
 	name = "Knight"
@@ -314,8 +309,8 @@
 	department_flag = ENGSEC
 	faction = "bs"
 	status = "scribe"
-	total_positions = 5
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -346,7 +341,6 @@
 	)
 
 	access = list(69)
-	minimal_access = list()
 
 /datum/outfit/job/scribe
 	name = "Scribe"
