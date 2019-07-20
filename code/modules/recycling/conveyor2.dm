@@ -354,3 +354,10 @@
 /obj/item/weapon/paper/microfusioncellnotice
 	name = "Microfusion Cells?!?!?"
 	info = "Microfusion cells are now only available from the Protolathes! Don't go digging through the autolathe looking for the prints, it's no longer on the system."
+
+
+
+/obj/item/weapon/paper/zetanautopsy
+	name = "Zetan Dissection Report, Oct 23, 2077, 4:45AM"
+	info = "I can't believe it! They're real! We managed to catch a live subject after implementing our reverse-engineered tesla weaponry on them. The saucer crashed outside, they haven't found it yet but... my god. A live alien! The gray, thin man from the nightmares. I can't believe we found one! We'll commence dissection shortly. This day can't get any better!"
+
