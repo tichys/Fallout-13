@@ -7,8 +7,8 @@
 	desc = "A Microfusion power cell that holds 1000 units of energy."
 	id = "basic_cell"
 	req_tech = list("powerstorage" = 1)
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 1500, MAT_GLASS = 1500)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 100, MAT_DIAMOND = 200, MAT_URANIUM = 100)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
 	category = list("Misc","Power Designs","Machinery","initial")
@@ -18,8 +18,8 @@
 	desc = "An improved capacity Microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
 	req_tech = list("powerstorage" = 3, "materials" = 2, "engineering" = 2)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 30000, MAT_GLASS = 30000)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 600, MAT_URANIUM = 300)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
 	category = list("Misc","Power Designs","Machinery")
@@ -29,8 +29,8 @@
 	desc = "A significantly improved capacity Microfusion cell that holds 4000 units of energy."
 	id = "super_cell"
 	req_tech = list("powerstorage" = 5, "materials" = 2, "engineering" = 2)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 15000, MAT_GLASS = 15000, MAT_GOLD = 1000, MAT_SILVER = 1000, MAT_URANIUM = 500)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 900, MAT_URANIUM = 500)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/super
 	category = list("Misc","Power Designs")
@@ -40,8 +40,8 @@
 	desc = "An even more significantly improved capacity Microfusion cell that holds 6000 units of energy."
 	id = "hyper_cell"
 	req_tech = list("powerstorage" = 6, "materials" = 2, "engineering" = 2)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 10000, MAT_GOLD = 10000, MAT_SILVER = 10000, MAT_URANIUM = 4000)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_SILVER = 100, MAT_GOLD = 300, MAT_DIAMOND = 1100, MAT_URANIUM = 600)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/hyper
 	category = list("Misc","Power Designs")
@@ -51,8 +51,8 @@
 	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works. It holds functionally infinite energy. Shame they didn't have this back in 2077."
 	id = "bluespace_cell"
 	req_tech = list("powerstorage" = 8, "materials" = 2, "engineering" = 2)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 2000, MAT_GLASS = 2000, MAT_SILVER = 30000, MAT_GOLD = 30000, MAT_DIAMOND = 10000, MAT_URANIUM = 20000)
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 2000, MAT_SILVER = 300, MAT_GOLD = 500, MAT_DIAMOND = 1800, MAT_URANIUM = 2400)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/bluespace
 	category = list("Misc","Power Designs")
