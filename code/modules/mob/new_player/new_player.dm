@@ -37,11 +37,8 @@
 		output += "<p><a href='byond://?src=\ref[src];manifest=1'>View Manifest</A></p>"
 		output += "<p><a href='byond://?src=\ref[src];late_join=1'>Join Game!</A></p>"
 
-	output += "<p><a href='byond://?src=\ref[src];show_content=1'>Content Packs</a></p>"
-
-	output += "<p><a href='byond://?src=\ref[src];contribute=1'>Contribute</a></p>"
-
-	if(client && client.holder)
+		output += "<p><a href='byond://?src=\ref[src];contribute=1'>Contribute</a></p>"
+	
 		output += "<p><a href='byond://?src=\ref[src];observe=1'>Observe</A></p>"
 
 	if(!IsGuestKey(src.key))
@@ -351,7 +348,7 @@
 
 	if(listPossibleFactionSpawns.len >= 1)
 		D = pick(listPossibleFactionSpawns)
-	
+
 	// If there's no faction latespawn, go through "none" latespawn
 	if(!D)
 		for(var/f in character.faction)
@@ -360,7 +357,7 @@
 					// Area of the turf must be the faction's area, and it has to not have a human on it at the time of spawn.
 					if(LOCATION.loc.type == biased_spawn_assoc[f] && !(locate(/mob/living/carbon/human) in LOCATION))
 						listPossibleFactionSpawns.Add(LOCATION)
-						
+
 		D = pick(listPossibleFactionSpawns)
 
 	if(!D)
