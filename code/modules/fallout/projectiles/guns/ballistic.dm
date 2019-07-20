@@ -8,7 +8,6 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	fire_sound = "10mmfire"
 	can_suppress = 1
@@ -29,7 +28,6 @@
 	item_state = "mp443"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
 	mag_type = /obj/item/ammo_box/magazine/mp443
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -45,7 +43,6 @@
 	item_state = "pistol9mm"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
 	mag_type = /obj/item/ammo_box/magazine/browning
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -61,7 +58,7 @@
 	item_state = "luger"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/luger
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -77,7 +74,7 @@
 	item_state = "p38"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/luger
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -93,7 +90,7 @@
 	item_state = "p38snub"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/luger
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -109,7 +106,7 @@
 	item_state = "zimgun"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/luger
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -125,7 +122,7 @@
 	item_state = "silverghostscope"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/silverghostmag
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -144,7 +141,7 @@
 	item_state = "silverghost"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/silverghostmag
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -160,7 +157,7 @@
 	item_state = "killerseven"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/killersevenmag
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	can_suppress = 0
@@ -179,7 +176,7 @@
 	item_state = "mauser"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/mauser
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -195,7 +192,7 @@
 	item_state = "hkp"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -211,7 +208,7 @@
 	item_state = "vp70"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/vp70
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -225,7 +222,7 @@
 	icon_state = "vp70stock"
 	item_state = "vp70stock"
 	icon = 'icons/fallout/objects/guns/vp70stock.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/vp70
 	fire_sound = "sound/weapons/smithfire.ogg"
 	can_suppress = 0
@@ -242,7 +239,7 @@
 	item_state = "beretta"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -258,7 +255,7 @@
 	item_state = "samuraiedge"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -274,7 +271,7 @@
 	item_state = "model1934"
 	w_class = WEIGHT_CLASS_SMALL
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/c380
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -289,7 +286,7 @@
 	item_state = "model1908"
 	w_class = WEIGHT_CLASS_SMALL
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/c380
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -304,7 +301,7 @@
 	item_state = "glock42"
 	w_class = WEIGHT_CLASS_SMALL
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/c380small
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -319,7 +316,7 @@
 	item_state = "ppk"
 	w_class = WEIGHT_CLASS_SMALL
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/c380small
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -334,7 +331,7 @@
 	item_state = "taurus"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -350,7 +347,7 @@
 	item_state = "norinco"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/norinco
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -360,13 +357,13 @@
 
 /obj/item/weapon/gun/ballistic/automatic/pistol/sm1912
 	name = "Steyr Model 1912"
-	desc = "The Steyr M1912, also known as the Steyr-Hahn, is a semi-automatic pistol developed in 1911 by the Austrian firm Steyr Mannlicher and designed by Karel Krnka, based on the mechanism of the Roth–Steyr M1907. The M1912 was originally chambered for the 9mm Steyr round, but after the annexation of Austria by Germany in 1938 the M1912 was taken into Wehrmacht service and about 60,000 were rechambered in 9mm Parabellum and remained in service until the end of the war. This seems to be one of those models, dipshit"
+	desc = "The Steyr M1912, also known as the Steyr-Hahn, is a semi-automatic pistol developed in 1911 by the Austrian firm Steyr Mannlicher and designed by Karel Krnka, based on the mechanism of the Rothâ€“Steyr M1907. The M1912 was originally chambered for the 9mm Steyr round, but after the annexation of Austria by Germany in 1938 the M1912 was taken into Wehrmacht service and about 60,000 were rechambered in 9mm Parabellum and remained in service until the end of the war. This seems to be one of those models, dipshit"
 	icon_state = "sm1912"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "sm1912"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/steyrmag
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -382,7 +379,7 @@
 	item_state = "glock"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/glock
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	can_suppress = 0
@@ -398,7 +395,7 @@
 	item_state = "springfield"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/springfield
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	can_suppress = 0
@@ -414,7 +411,7 @@
 	item_state = "maria"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/browning
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -430,7 +427,7 @@
 	item_state = "stoker9mm"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/browning
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -445,7 +442,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "model1910"
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/c32
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -461,7 +458,7 @@
 	item_state = "model639"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/smith
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -477,7 +474,7 @@
 	item_state = "model6906"
 	w_class = WEIGHT_CLASS_SMALL
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/smithmagsmall
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -492,7 +489,7 @@
 	item_state = "briner639"
 	w_class = 2
 	force = 13
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/smith
 	fire_sound = 'sound/weapons/smithfire.ogg'
 	can_suppress = 0
@@ -506,7 +503,7 @@
 	desc = "What seems to be a cheap NCR made knock-off of a Smith & Wesson Model 29, chambered in .44 Remington Magnum. Quite a common firearm to be found in the wastes."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "44magnum"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -525,7 +522,7 @@
 	desc = "You're not quite sure why, but you feel like a desperado when holding this .44 Magnum revolver. Stylish pearl grips are a must!"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "mysteriousmagnum"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -544,7 +541,7 @@
 	desc = "A stainless steel Ruger Blackhawk single-action revolver chambered in .44 Remington Magnum. It looks like a rather uncommon gun for the wasteland"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "ruger"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
@@ -620,7 +617,7 @@
 	desc = "A very massive, almost unwieldable bigger brother to the Colt Model 1911A1. Still chambers .45 ACP ammunition."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "longslide"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -638,7 +635,7 @@
 	desc = "A classic Vietnam-era Colt Model 1911A1 G.I pistol, complete with ring hammer and rosewood grips for added style over more modern models."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "clonepistol"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -653,7 +650,7 @@
 	desc = "An enhanced Colt Model 1911A1 pistol built for sport shooting, complete with ring hammer and vibrant red checkered wooden grips for added style over more modern models."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "mike1911"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -668,7 +665,7 @@
 	desc = "A reinforced Colt 1911 built to withstand the conditions of intense combat. This one appears to have wooden grips shaped to the form of someones hand and appears very worn."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "mike1911"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -683,7 +680,7 @@
 	desc = "A compact Colt Officer's ACP variant of the Model 1911A1 with significant wear to it's finish, baring most of the steel. It seems to have synthetic rattlesnake-textured grips, and it's slide bears greek engraving on either side which roughly translates to 'And the light shineth in darkness and the darkness comprehended it not.' Small enough to fit into your shoes or pockets."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "shiningdarkness"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -697,7 +694,7 @@
 	desc = "A compact variant of the full-sized Model 1911A1, this firearm is unique in the fact it's been given a royal blue finish and fitted with ivory grips, hinting that it may be someone's personal weapon. Small enough to fit into your shoes or pockets."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "officer"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -711,7 +708,7 @@
 	desc = "A compact variant of the full-sized Model 1911A1, made from brushed stainless steel and fitted with mahogany grips. Small enough to fit into your shoes or pockets."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "officerstainless"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -725,7 +722,7 @@
     desc = "A classic Vietnam-era Colt Model 1911A1 G.I pistol, with the exception that it features nickel plating ivory grips and is heavily engraved. It also appears to sport 24 karat gold decorations."
     icon = 'icons/fallout/objects/guns/ballistic.dmi'
     item_state = "kf1911"
-    origin_tech = "combat=2;materials=2"
+
     mag_type = /obj/item/ammo_box/magazine/m45
     can_suppress = 0
     fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -737,10 +734,10 @@
 /obj/item/weapon/gun/ballistic/automatic/pistol/p220
 	name = "SIG Sauer P220"
 	icon_state = "p220"
-	desc = "The SIG Sauer P220 is a semi-automatic pistol designed in 1975 by the SIG Arms AG division of Schweizerische Industrie Gesellschaft (now SIG Holding AG), and produced by J. P. Sauer & Sohn  in Eckernförde. Chambered in .45 ACP."
+	desc = "The SIG Sauer P220 is a semi-automatic pistol designed in 1975 by the SIG Arms AG division of Schweizerische Industrie Gesellschaft (now SIG Holding AG), and produced by J. P. Sauer & Sohn  in EckernfÃ¶rde. Chambered in .45 ACP."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "p220"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -755,7 +752,7 @@
 	desc = "The SIG Sauer P226 is a full sized semi-automatic pistol designed by SIG Sauer in 1980 and produced in 1983. It is essentially the same basic design of the SIG Sauer P220, but developed to use higher capacity double stack magazines in place of the single stack magazines of the P220. This particular model sports a light olive drab frame alongside a parkerized slide and barrel to protect against corrosion. Chambered in 9x19mm."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "p226olive"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	can_suppress = 0
 	fire_sound = 'sound/weapons/smithfire.ogg'
@@ -770,7 +767,7 @@
 	desc = "The SIG Sauer P226 is a full sized semi-automatic pistol designed by SIG Sauer in 1980 and produced in 1983. It is essentially the same basic design of the SIG Sauer P220, but developed to use higher capacity double stack magazines in place of the single stack magazines of the P220. Chambered in 9x19mm."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "p226"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	can_suppress = 0
 	fire_sound = 'sound/weapons/smithfire.ogg'
@@ -785,7 +782,7 @@
 	desc = "The SIG Sauer P226 is a full sized semi-automatic pistol designed by SIG Sauer in 1980 and produced in 1983. It is essentially the same basic design of the SIG Sauer P220, but developed to use higher capacity double stack magazines in place of the single stack magazines of the P220. This model is more or less identical to the standard factory variant apart from the solid ivory grips and latin engraving on the slide that roughly translates to '' Deus in manibus'' or ''My life is in god's hands '' in english. Chambered in 9x19mm."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "churchp226"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/ninepistol
 	can_suppress = 0
 	fire_sound = 'sound/weapons/smithfire.ogg'
@@ -800,7 +797,7 @@
 	desc = "A unique off-brand Model 1911A1 that has the unique feature of being chambered with one hand, thanks to the cocking lever acting as a trigger guard. Chambers .45 ACP ammunition."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "grader"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m45
 	can_suppress = 0
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
@@ -818,7 +815,7 @@
 	desc = "The Ranger Sequoia is a popular model of double action revolver in the wasteland, albeit with expensive decorations compared to other guns. Chambered in .44 Magnum"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "sequoia"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
 	can_suppress = 0
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
@@ -837,7 +834,7 @@
 	desc = "The Ranger Sequoia is a popular model of double action revolver in the wasteland, albeit with expensive decorations compared to other guns. This one appears quite different from the standard model in the fact that it's stainless steel rather than blued, and may have a twin judging by the strange serial number."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	item_state = "liquidsequoia"
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
 	can_suppress = 0
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
@@ -857,7 +854,7 @@
 	wielded_icon = "rifle308-wielded"
 	desc = "A semi-automatic battle rifle manufactured as a prototype in the West. Chambered in 308. rounds."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m308
 	can_suppress = 1
 	casing_ejector = 1
@@ -875,7 +872,7 @@
 	wielded_icon = "mp40_weilded"
 	desc = "An smg manufactured greatly in ww2. Chambered in 9x19 parabellum."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/mp40
 	can_suppress = 1
 	casing_ejector = 1
@@ -892,7 +889,7 @@
 	item_state = "garand"
 	desc = "The M1 Garand is a semi-automatic rifle that was the standard U.S. service rifle during World War II and the Korean War and also saw limited service during the Vietnam War. This particular model features a post-war conversion that allows it to fire more readily available .308 Winchester ammunition."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/garand
 	can_suppress = 0
 	casing_ejector = 1
@@ -912,7 +909,7 @@
 	item_state = "thismachine"
 	desc = "A unique variant of the standard M1 Garand rifle, bearing primitively carved text on either side of the receiver that reads ''WELL THIS MACHINE KILLS COMMIES''. Chambers .308 Winchester ammunition."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/garand
 	can_suppress = 0
 	casing_ejector = 1
@@ -930,9 +927,9 @@
 	name = "FN FAL"
 	icon_state = "fnfal"
 	item_state = "fnfal"
-	desc = "The FN FAL is a battle rifle designed by Belgian small arms designers Dieudonné Saive and Ernest Vervier and manufactured by FN Herstal. During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. This particular model sports wooden furniture and an aftermarket conversion that allows it to fire more readily available .308 Winchester ammunition, which is very similar in size to the 7.62×51mm NATO it was originally chambered in."
+	desc = "The FN FAL is a battle rifle designed by Belgian small arms designers DieudonnÃ© Saive and Ernest Vervier and manufactured by FN Herstal. During the Cold War the FAL was adopted by many countries of the North Atlantic Treaty Organization (NATO), with the notable exception of the United States. It is one of the most widely used rifles in history, having been used by more than 90 countries. This particular model sports wooden furniture and an aftermarket conversion that allows it to fire more readily available .308 Winchester ammunition, which is very similar in size to the 7.62Ã—51mm NATO it was originally chambered in."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/falmag
 	can_suppress = 0
 	casing_ejector = 1
@@ -952,7 +949,7 @@
 	icon_state = "rifle"
 	item_state = "rifle"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/m308
 	can_suppress = 1
 	casing_ejector = 0
@@ -969,7 +966,7 @@
 	icon_state = "patience"
 	item_state = "patience"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/m308
 	can_suppress = 0
 	casing_ejector = 0
@@ -999,7 +996,7 @@
 	icon_state = "assault-rifle"
 	item_state = "assault"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m556
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_suppress = 0
@@ -1018,7 +1015,7 @@
 	icon_state = "allamerican"
 	item_state = "assault"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m556
 	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'
 	can_suppress = 0
@@ -1040,7 +1037,7 @@
 	icon_state = "smg10mm"
 	item_state = "smg10mm"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m10mm_auto
 	fire_sound = "10mmfire"
 	can_suppress = 0
@@ -1054,7 +1051,7 @@
 	icon_state = "smg9mm"
 	item_state = "smg9mm"
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/smg9mm
 	fire_sound = "sound/weapons/smithfire.ogg"
 	can_suppress = 0
@@ -1068,7 +1065,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "pipe-gun"
 	item_state = "shotgun"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/pipe
 	casing_ejector = 1
 	weapon_weight = WEAPON_LIGHT
@@ -1080,7 +1077,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "maverick"
 	item_state = "maverick"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	casing_ejector = 1
 	weapon_weight = WEAPON_LIGHT
@@ -1093,7 +1090,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "coachgun"
 	item_state = "coachgun"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/madmax
 	casing_ejector = 0
 	weapon_weight = WEAPON_LIGHT
@@ -1107,7 +1104,7 @@
 	item_state = "carbine"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/carbine
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1117,12 +1114,12 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
 	icon_state = "ak74"
 	item_state = "ak74"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/akmag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1137,7 +1134,7 @@
 	item_state = "val"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/akmag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1147,12 +1144,12 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74green
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
 	icon_state = "ak74green"
 	item_state = "ak74green"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/akmag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1162,12 +1159,12 @@
 
 /obj/item/weapon/gun/ballistic/automatic/ak74m
 	name = "AK-74"
-	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features black synthetic furniture."
+	desc = "The AK-74 is an assault rifle developed in the early 1970s by Russian designer Mikhail Kalashnikov as the replacement for the earlier AKM (itself a refined version of the AK-47). It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features black synthetic furniture."
 	icon_state = "ak74m"
 	item_state = "ak74m"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/akmag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1177,12 +1174,12 @@
 
 /obj/item/weapon/gun/ballistic/automatic/aksu74
 	name = "AKS-74U"
-	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
+	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features wooden furniture."
 	icon_state = "aksu74"
 	item_state = "aksu74"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/aksumag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1192,12 +1189,12 @@
 
 /obj/item/weapon/gun/ballistic/automatic/aksu74green
 	name = "AKS-74U"
-	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62×39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
+	desc = "The shorter, carbine-like cousin of the full sized AK-74. It has been rechambered to take the 5.56mm cartridge, replacing the 7.62Ã—39mm chambering of earlier Kalashnikov-pattern weapons. This one features OD-green furniture."
 	icon_state = "aksu74green"
 	item_state = "aksu74green"
 	slot_flags = SLOT_BACK
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=6;engineering=4"
+
 	mag_type = /obj/item/ammo_box/magazine/aksumag
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
 	can_suppress = 0
@@ -1211,7 +1208,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "trail-carbine"
 	item_state = "shotgun"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	weapon_weight = WEAPON_MEDIUM
 	casing_ejector = 1
@@ -1225,7 +1222,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "terminator"
 	item_state = "terminator"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/terminator
 	weapon_weight = WEAPON_MEDIUM
 	casing_ejector = 1
@@ -1240,7 +1237,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "winchester"
 	item_state = "winchester"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/winchester30
 	weapon_weight = WEAPON_MEDIUM
 	casing_ejector = 1
@@ -1255,7 +1252,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "dinnerbell"
 	item_state = "dinnerbell"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	weapon_weight = WEAPON_MEDIUM
 	casing_ejector = 1
@@ -1270,7 +1267,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "huntingshotgun"
 	item_state = "huntingshotgun"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal/trail
 	weapon_weight = WEAPON_MEDIUM
 	casing_ejector = 1
@@ -1285,7 +1282,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "medicine"
 	item_state = "medicine"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/henry
 	weapon_weight = WEAPON_LIGHT
 	casing_ejector = 1
@@ -1300,7 +1297,7 @@
     icon = 'icons/fallout/objects/guns/ballistic.dmi'
     icon_state = "henry"
     item_state = "henry"
-    origin_tech = "combat=1;materials=1"
+
     mag_type = /obj/item/ammo_box/magazine/internal/shot/henry
     weapon_weight = WEAPON_LIGHT
     casing_ejector = 1
@@ -1315,7 +1312,7 @@
     icon = 'icons/fallout/objects/guns/ballistic.dmi'
     icon_state = "henrytwo"
     item_state = "henrytwo"
-    origin_tech = "combat=1;materials=1"
+
     mag_type = /obj/item/ammo_box/magazine/internal/shot/henrytwo
     weapon_weight = WEAPON_LIGHT
     casing_ejector = 1
@@ -1342,7 +1339,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	icon_state = "huntsman"
 	item_state = "huntsman"
-	origin_tech = "combat=1;materials=1"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/medicine
 	weapon_weight = WEAPON_LIGHT
 	casing_ejector = 1
@@ -1361,7 +1358,7 @@
 	icon_state = "bozar"
 	item_state = "arg" //Looks like bozar
 	slot_flags = SLOT_BACK
-	origin_tech = "combat=6;engineering=3;"
+
 	mag_type = /obj/item/ammo_box/magazine/m223
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/Gunshot_smg.ogg'
@@ -1374,7 +1371,7 @@
 	w_class = WEIGHT_CLASS_HUGE
 	recoil = 3
 	scopetype = /obj/screen/fullscreen/scope/long
-	
+
 /obj/item/weapon/gun/ballistic/automatic/m72gauss
 	name = "M72 Gauss Rifle"
 	icon_state = "gaussf2"
@@ -1382,7 +1379,7 @@
 	wielded_icon = "m72gaussrifle2h"
 	desc = "A Gauss Rifle of German design, a favourite of Enclave Secret Service agents. It accelerates 2mm ferromagnetic slugs to just shy of mach 4 before firing them at a target. There's pretty much no suit of armour that will give this weapon much trouble, though it has low stopping power so multiple shots are almost always required."
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	origin_tech = "combat=3;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/m72mag
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_NORMAL
