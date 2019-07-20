@@ -255,13 +255,13 @@
 	. = isabductor(user)
 
 /obj/item/weapon/gun/energy/alien
-	name = "alien pistol"
-	desc = "A complicated gun that fires bursts of high-intensity radiation."
-	ammo_type = list(/obj/item/ammo_casing/energy/declone)
-	pin = /obj/item/device/firing_pin/abductor
-	icon_state = "alienpistol"
-	item_state = "alienpistol"
-	origin_tech = "combat=4;magnets=7;powerstorage=3;abductor=3"
+	name = "alien blaster"
+	desc = "An impossibly complex pistol that fires bursts of high-intensity radiation. Odd. It seems to accept the use of Microfusion cells to power the weapon..."
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/laer)
+	pin = /obj/item/device/firing_pin
+	icon_state = "alien"
+	item_state = "disabler"
+	origin_tech = "abductor=6"
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 
 /obj/item/weapon/paper/abductor
