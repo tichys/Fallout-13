@@ -164,8 +164,8 @@ obj/structure/ladder/vent/update_icon()
 	resistance_flags = INDESTRUCTIBLE
 	var/id = null
 	var/height = 0							//the 'height' of the ladder. higher numbers are considered physically higher
-	var/obj/structure/ladder/down = null	//the ladder below this one
-	var/obj/structure/ladder/up = null		//the ladder above this one
+	var/obj/structure/roadtravel/down = null	//the ladder below this one
+	var/obj/structure/roadtravel/up = null		//the ladder above this one
 
 /obj/structure/roadtravel/initialize()
 	spawn(1200)
