@@ -3,7 +3,6 @@
 	desc = "A suspicious revolver. Uses .357 ammo." //usually used by syndicates
 	icon_state = "revolver"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder
-	origin_tech = "combat=3;materials=2"
 	mag_load_sound = 'sound/effects/wep_magazines/bullet_insert.ogg'
 	casing_ejector = 0
 
@@ -161,19 +160,19 @@
 
 /obj/item/weapon/gun/ballistic/revolver/nagant
 	name = "Nagant M1895"
-	desc = "A gas-seal revolver designed and produced by Belgian industrialist Léon Nagant for the Russian Empire in 1895. Uses 7.62x38mmR ammo."
+	desc = "A gas-seal revolver designed and produced by Belgian industrialist LÃ©on Nagant for the Russian Empire in 1895. Uses 7.62x38mmR ammo."
 	icon_state = "nagant"
 	item_state = "nagant"
-	origin_tech = "combat=3"
+	
 	can_suppress = 1
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
 
 /obj/item/weapon/gun/ballistic/revolver/thatgun
-	name = "That Gun"
-	desc = "What seems to be a 5.56mm revolving rifle cut down to a handgun-sized format. The grips read ''Deckard'' in very faded etching."
+	name = ".223 Pistol"
+	desc = "A .223 rifle modified and cut down to a pistol. This is a unique firearm, obviously made for important individuals."
 	icon_state = "thatgun"
 	item_state = "thatgun"
-	origin_tech = "combat=3"
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 
 /obj/item/weapon/gun/ballistic/revolver/lucky
@@ -181,7 +180,7 @@
 	desc = "What looks to be a .500 S&W Magnum revolver in the platform of a single action army. Yikes."
 	icon_state = "lucky"
 	item_state = "lucky"
-	origin_tech = "combat=3"
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/magnum
 
 /obj/item/weapon/gun/ballistic/revolver/coltsaa
@@ -190,7 +189,7 @@
 	icon_state = "coltsaa"
 	item_state = "coltsaa"
 	fire_sound = 'sound/f13weapons/357fire.ogg'
-	origin_tech = "combat=3"
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/coltsaa
 
 /obj/item/weapon/gun/ballistic/revolver/coltsaashort
@@ -199,7 +198,7 @@
 	icon_state = "coltsaashort"
 	item_state = "coltsaashort"
 	fire_sound = 'sound/f13weapons/357fire.ogg'
-	origin_tech = "combat=3"
+	
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/coltsaa
 
@@ -208,7 +207,7 @@
 	desc = "The Smith & Wesson Model 15 is a classic revolver built on a K-Frame and chambered in .38 Special, originally known as the 'K-38 Combat Masterpiece'. Popular with law enforcement and psychiatrists hunting escaped mental patients everywhere before the nuclear fallout."
 	icon_state = "model15"
 	item_state = "model15"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
@@ -218,7 +217,7 @@
 	desc = "The Smith & Wesson Model 29 is a six-shot, double action revolver built on an N-Frame and chambered for the .44 Remington Magnum cartridge and manufactured by the United States company Smith & Wesson since 1955. This particular model sports a six-inch barrel and factory wooden grips. Do you feel lucky? Well do ya', punk?"
 	icon_state = "model29"
 	item_state = "model29"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
@@ -228,7 +227,7 @@
 	desc = "The Smith & Wesson Model 629 is a six-shot, double action revolver built on an N-Frame and chambered for the .44 Remington Magnum cartridge and manufactured by the United States company Smith & Wesson since 1978. This particular model sports a six-inch barrel and factory rubber grips. Dynamite, dynamite!"
 	icon_state = "model629"
 	item_state = "model629"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/m44
@@ -238,7 +237,7 @@
 	desc = "The Smith & Wesson Model 1917 was a six-shot double action revolver first produced in 1917 and chambered for the .45 ACP cartridge. Being that the .45 ACP was a rimless round that required half or full moon clips to load the cartridges, this particular model has had extensive work done to allow the rimless rounds to be extracted and loaded without moonclips, making reloading much less of a hassle."
 	icon_state = "m1917"
 	item_state = "m1917"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model1917
@@ -248,7 +247,7 @@
 	desc = "The Smith & Wesson Model 1917 was a six-shot double action revolver first produced in 1917 and chambered for the .45 ACP cartridge. Being that the .45 ACP was a rimless round that required half or full moon clips to load the cartridges, this particular model has had extensive work done to allow the rimless rounds to be extracted and loaded without moonclips, making reloading much less of a hassle. This gun's factory wooden grips appear to have been replaced with pristine ones fashioned from mother of pearl, indiciating it may be a long-time personal weapon."
 	icon_state = "stoker1917"
 	item_state = "stoker1917"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model1917
@@ -258,7 +257,7 @@
 	desc = "A classic Webley Mk IV revolver dating back to 1894. The finish seems to be mostly worn off leaving the gun's bare steel exposed, and the weapon itself is fitted with hard black plastic composite grips. This particular model is chambered in .455 Webley and sports a 4-inch barrel."
 	icon_state = "webley"
 	item_state = "webley"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/webley
@@ -268,7 +267,7 @@
 	desc = "The Colt New Service was a six-shot double action revolver first produced in 1898 and chambered in a variety of popular calibers, being manufactured for several years up until 1946. This particular model is chambered in .357 Magnum and seems to have had most of it's original blue finish worn off due to age, leaving the metal looking rather bare. The wooden grips are similarly weathered with age but effectively retain most of their checkering."
 	icon_state = "policepistol"
 	item_state = "policepistol"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/policepistol.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/newservice
@@ -278,7 +277,7 @@
 	desc = "The Charter Arms Bulldog is a traditional double action revolver chambered in .44 S&W Special designed by Doug McClenahan and produced by Charter Arms starting in 1973. The gun features a solid matte black finish and somewhat oversized wooden grips to make shooting more comfortable on the user's hands. It also sports a 3-inch barrel making it easier to conceal, and has a cylinder capacity of five rounds."
 	icon_state = "charterbulldog"
 	item_state = "charterbulldog"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/bulldog
@@ -288,7 +287,7 @@
 	desc = "The Charter Arms Bulldog is a traditional double action revolver chambered in .44 S&W Special designed by Doug McClenahan and produced by Charter Arms starting in 1973. The gun features a polished stainless steel finish and somewhat oversized rubber grips to make shooting more comfortable on the user's hands. It also sports a 3-inch barrel making it easier to conceal, and has a cylinder capacity of five rounds."
 	icon_state = "charterbulldogstainless"
 	item_state = "charterbulldogstainless"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/bulldog
@@ -298,7 +297,7 @@
 	desc = "A classic Webley Mk IV revolver dating back to 1894. The finish seems to be mostly worn off leaving the gun's bare steel exposed, and the weapon itself is fitted with hard black plastic composite grips. This particular model is chambered in .455 Webley and sports a 2-inch barrel, small enough to fit into your shoes or pockets."
 	icon_state = "webleysnub"
 	item_state = "webleysnub"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/webley
@@ -308,7 +307,7 @@
 	desc = "A classic Webley Mk IV revolver dating back to 1894. The finish seems to be matte black oxide over steel, and the weapon itself is fitted with mahogany wood grips. This particular model is chambered in .455 Webley and sports a 2-inch barrel, small enough to fit into your shoes or pockets."
 	icon_state = "stokerwebley"
 	item_state = "stokerwebley"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/webley
@@ -318,7 +317,7 @@
 	desc = "A classic Webley Mk IV revolver dating back to 1894. The finish seems to be quite intact and made from fine nickel, and is fitted with hard black plastic composite grips. This particular model is chambered in .455 Webley and sports a 2-inch barrel, small enough to fit into your shoes or pockets."
 	icon_state = "webleynickel"
 	item_state = "webleynickel"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/coltfire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/webley
@@ -328,7 +327,7 @@
 	desc = "The Smith & Wesson Model 10 is a classic revolver built on a K-Frame and chambered in .38 Special, originally known as the 'Smith & Wesson .38 Hand Ejector' or 'Smith & Wesson Military & Police'. Popular with law enforcement, militaries, and civillians worldwide before the nuclear fallout."
 	icon_state = "model10"
 	item_state = "model10"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
@@ -338,7 +337,7 @@
 	desc = "The Smith & Wesson Model 10 is a classic revolver built on a K-Frame and chambered in .38 Special, originally known as the 'Smith & Wesson .38 Hand Ejector' or 'Smith & Wesson Military & Police'. Popular with law enforcement, militaries, and civillians worldwide before the nuclear fallout. This one appears to have a 2-inch barrel and very well polished ivory grips, small enough to fit into your shoes or pockets."
 	icon_state = "model10snub"
 	item_state = "model10snub"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
@@ -348,7 +347,7 @@
 	desc = "The Smith & Wesson Model 66 is a stainless steel .357 Magnum revolver introduced in 1972 and built on a K-Frame. Popular with law enforcement, militaries, and civillians worldwide before the nuclear fallout. This one appears to have a 2-inch barrel and factory wooden grips, small enough to fit into your shoes or pockets."
 	icon_state = "model66"
 	item_state = "model66"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model66
@@ -358,7 +357,7 @@
 	desc = "The Smith & Wesson Model 19 is a blued .357 Magnum revolver introduced in 1957 and built on a K-Frame. Popular with law enforcement, militaries, and civillians worldwide before the nuclear fallout. This one appears to have a 2-inch barrel and factory wooden grips, small enough to fit into your shoes or pockets."
 	icon_state = "model19"
 	item_state = "model19"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model66
@@ -368,7 +367,7 @@
 	desc = " The Ruger SP101 is a double-action revolver produced by the American company Sturm, Ruger. They remain popular for their small frame and all steel construction, and the gun itself features a five round cylinder capacity alongside synthetic rubber grips and a brushed stainless finish."
 	icon_state = "sp101"
 	item_state = "sp101"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/sp101
@@ -378,7 +377,7 @@
 	desc = " The Ruger SP101 is a double-action revolver produced by the American company Sturm, Ruger. They remain popular for their small frame and all steel construction, and the gun itself features a five round cylinder capacity alongside a brushed stainless finish. It appears to have been fitted with custom stag horn grips, indicating it may be a long-time personal weapon."
 	icon_state = "stokersp101"
 	item_state = "stokersp101"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/sp101
@@ -388,7 +387,7 @@
 	desc = "The Smith & Wesson Model 460 is a large bore double-action revolver produced by Smith & Wesson and chambered for the massive .460 S&W Magnum cartridge. It was designed as a hunting and dangerous game firearm for use in Africa and Alaska. The revolver is built on the company's largest and strongest frame, the X-Frame. This particular model bears the ''ES'' designation, standing for Emergency Survival, and sports the smallest barrel length of the line at two inches."
 	icon_state = "model460"
 	item_state = "model460"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model460
@@ -399,7 +398,7 @@
 	icon_state = "handcannon"
 	item_state = "handcannon"
 	icon = 'icons/fallout/objects/guns/handcannon.dmi'
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/handcannon.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model500
@@ -409,7 +408,7 @@
 	desc = "The Cobra Derringer was originally released as the Davis Derringer in 1982. When the Davis company went bankrupt in 1998 the designs and tooling for the pistol were bought by Cobra Firearms, who have produced various versions of the pistol ever since. This particular model is known as part of the ''big bore'' series of Derringers, due to being chambered in.357 Magnum. It appears to be a personal weapon, due to the extensive gold decorations on it's controls and classy mother of pearl grips fitted onto it. Small enough to fit into your shoes or pockets."
 	icon_state = "derringer"
 	item_state = "derringer"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/derringer
@@ -419,7 +418,7 @@
 	desc = "The Colt Python is a revolver formerly manufactured by Colt's Manufacturing Company of Hartford Connecticut, chambered in .357 Magnum. It was first introduced in 1955 and formally discontinued in 2005, making it highly sought after. This particular model is made from stainless steel and sports a full 6-inch barrel with factory wooden grips."
 	icon_state = "python"
 	item_state = "python"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/python
@@ -429,7 +428,7 @@
 	desc = "The Colt Anaconda is a revolver formerly manufactured by Colt's Manufacturing Company of Hartford Connecticut, chambered in .44 Remington Magnum. It was first introduced in 1990 and formally discontinued in 2003, making it highly sought after. This particular model is made from stainless steel and sports a full 6-inch barrel with custom walnut grips bearing a strange umbrella-like medallion in the center of them."
 	icon_state = "anaconda"
 	item_state = "anaconda"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/dirtyharrygunshot.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/anaconda
@@ -439,7 +438,7 @@
 	desc = "The Colt Python is a revolver formerly manufactured by Colt's Manufacturing Company of Hartford Connecticut, chambered in .357 Magnum. It was first introduced in 1955 and formally discontinued in 2005, making it highly sought after. This particular model has been refinished in blue-grey nitride and fitted with stag horn grips, it's previous owner presumably not considering the value of the gun before desecrating it so terribly."
 	icon_state = "johnpython"
 	item_state = "johnpython"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/python
@@ -449,7 +448,7 @@
 	desc = "The Colt Python is a revolver formerly manufactured by Colt's Manufacturing Company of Hartford Connecticut, chambered in .357 Magnum. It was first introduced in 1955 and formally discontinued in 2005, making it highly sought after. This particular model is made from stainless steel and sports a 4-inch barrel with custom mother of pearl grips, indicating it must be a personal sidearm."
 	icon_state = "brinerpython"
 	item_state = "brinerpython"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/357fire.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/python
@@ -459,7 +458,7 @@
 	desc = "The Smith & Wesson Model 36 is a classic revolver built on a J-Frame and chambered in .38 Special, sometimes known as the 'Chief's Special' due to it's introduction at the International Association of Chiefs of Police (IACP) convention in 1950. Popular with law enforcement and civillians worldwide before the nuclear fallout. Small enough to fit into your shoes or pockets."
 	icon_state = "model36"
 	item_state = "model36"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/model36
@@ -469,7 +468,7 @@
 	desc = "A classic Smith & Wesson .500 Magnum revolver, heavily weathered from both use and surviving the initial nuclear fallout. In very faded lettering you can make out ''Luke'' scratched into either side of the barrel, presumably with a knife or other crude instrument."
 	icon_state = "luke"
 	item_state = "luke"
-	origin_tech = "combat=3"
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/luke
 
 /obj/item/weapon/gun/ballistic/revolver/excalibur
@@ -477,7 +476,7 @@
 	desc = "Rumored to be one of the many guns melted down from the blade of Arthur Eld himself, this one seems to be chambered for .45 Colt or ''Long Colt'' as it is so often dubbed, fitted with sandalwood grips; and heavily engraved with a creed written in High Speech."
 	icon_state = "excalibur"
 	item_state = "excalibur"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/excalibur
 	scopetype = /obj/screen/fullscreen/scope/long
@@ -487,7 +486,7 @@
 	desc = "A firearm blacksmithed from the legendary sword of Arthur Eld himself and passed down only to Gunslingers bearing his very blood, this one seems to be chambered for .45 Colt or ''Long Colt'' as it is so often dubbed, fitted with sandalwood grips; and radiating to it's very touch with a mysterious otherworldly vibe."
 	icon_state = "highexcalibur"
 	item_state = "highexcalibur"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/excalibur
 	scopetype = /obj/screen/fullscreen/scope/long
@@ -497,7 +496,7 @@
 	desc = "A firearm blacksmithed from the legendary sword of Arthur Eld himself and passed down only to Gunslingers bearing his very blood, this one seems to be chambered for .45 Colt or ''Long Colt'' as it is so often dubbed, fitted with sandalwood grips; and seems to lack the fancy engraving or chromed finish of other Excalibur firearms so as to indicate it belongs to a master Gunslinger."
 	icon_state = "elderexcalibur"
 	item_state = "elderexcalibur"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/excalibur
 	scopetype = /obj/screen/fullscreen/scope/long
@@ -507,7 +506,7 @@
 	desc = "Being an entirely different beast from all of the ''Excalibur'' revolvers, there are only two of these weapons (that we know of) in existence. The sandalwood grips of the gun have never lost their fragrance and near the muzzle of each gun can be seen scroll work which translates to ''White'', which was Arthur's dinh mark. They were presumably made using the melted down blue-grey steel of the aforementioned sword, Excalibur, and have the rose, the sign of the Eld, engraved in the side. A firearm lost to the ages of Mid-World, it appears to heavily resemble a Colt Walker but has been converted to fire metalic .45 Colt cartridges, and seems to have had it's cylinder modified to be removable for fast reloading with a spare one, similarly to a Remington 1858."
 	icon_state = "sandalwood"
 	item_state = "sandalwood"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/sandalwood
 	scopetype = /obj/screen/fullscreen/scope/long
@@ -519,7 +518,7 @@
 	desc = "A classic civil war firearm that has been heavily modified, most notably in the fact that it is no longer able to fire using percussion caps, rather it has been converted to fire modern .38 Special cartridges and the cylinder is interchangeable for fast reloading - similarly to the Remington 1858."
 	icon_state = "navy"
 	item_state = "navy"
-	origin_tech = "combat=3"
+	
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/navy
 
@@ -528,7 +527,7 @@
 	desc = "The Colt 1849 Pocket Model was a smaller version of the 1851 Navy, with about 340,000 produced between 1850 and 1873, more 1849 Pocket revolvers were manufactured than any other Colt percussion firearm. Made in a variety of barrel lengths, the 4-inch barreled version was the most popular with those wanting a concealable revolver. This one has been heavily modified, most notably in the fact that it is no longer able to fire using percussion caps, rather it has been converted to fire modern .38 Special cartridges and the cylinder is interchangeable for fast reloading - similarly to the Remington 1858. The gun itself appears to have strengthened metallurgy in order to handle the modern cartridge pressures, and features a sleek nickel finish."
 	icon_state = "m1849"
 	item_state = "m1849"
-	origin_tech = "combat=3"
+	
 	w_class = WEIGHT_CLASS_SMALL
 	fire_sound = 'sound/weapons/loomisgun.ogg'
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/navy
@@ -539,7 +538,7 @@
 	icon_state = "walker"
 	item_state = "walker"
 	fire_sound = 'sound/f13weapons/rolandgunshot.ogg'
-	origin_tech = "combat=3"
+	
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/walker
 
 // A gun to play Russian Roulette!
@@ -548,7 +547,7 @@
 /obj/item/weapon/gun/ballistic/revolver/russian
 	name = "\improper russian revolver"
 	desc = "A Russian-made revolver for drinking games. Uses .357 ammo, and has a mechanism requiring you to spin the chamber before each trigger pull."
-	origin_tech = "combat=2;materials=2"
+
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rus357
 	var/spun = FALSE
 
