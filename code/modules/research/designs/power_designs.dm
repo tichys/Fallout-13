@@ -17,7 +17,7 @@
 	name = "Improved Capacity Microfusion Cell"
 	desc = "An improved capacity Microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
-	req_tech = list("powerstorage" = 3, "materials" = 2, "engineering" = 2)
+	req_tech = list("powerstorage" = 6, "materials" = 5, "engineering" = 6)
 	build_type = PROTOLATHE
 	materials = list(MAT_SILVER = 20000, MAT_GOLD = 34000, MAT_DIAMOND = 32000, MAT_URANIUM = 36000)
 	construction_time=30
@@ -28,7 +28,7 @@
 	name = "Super-Capacity Microfusion Cell"
 	desc = "A significantly improved capacity Microfusion cell that holds 4000 units of energy."
 	id = "super_cell"
-	req_tech = list("powerstorage" = 5, "materials" = 2, "engineering" = 2)
+	req_tech = list("powerstorage" = 8, "materials" = 8, "engineering" = 6)
 	build_type = PROTOLATHE
 	materials = list(MAT_SILVER = 24000, MAT_GOLD = 36000, MAT_DIAMOND = 38000, MAT_URANIUM = 40000)
 	construction_time=30
@@ -39,7 +39,7 @@
 	name = "Hyper-Capacity Microfusion Cell"
 	desc = "An even more significantly improved capacity Microfusion cell that holds 6000 units of energy."
 	id = "hyper_cell"
-	req_tech = list("powerstorage" = 6, "materials" = 2, "engineering" = 2)
+	req_tech = list("powerstorage" = 11, "materials" = 12, "engineering" = 10)
 	build_type = PROTOLATHE
 	materials = list(MAT_SILVER = 28000, MAT_GOLD = 44000, MAT_DIAMOND = 46000, MAT_URANIUM = 50000)
 	construction_time=30
@@ -50,7 +50,7 @@
 	name = "Quantum Microfusion Cell"
 	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works. It holds functionally infinite energy. Shame they didn't have this back in 2077."
 	id = "bluespace_cell"
-	req_tech = list("powerstorage" = 8, "materials" = 2, "engineering" = 2)
+	req_tech = list("powerstorage" = 14, "materials" = 14, "engineering" = 12)
 	build_type = PROTOLATHE
 	materials = list(MAT_SILVER = 50000, MAT_GOLD = 50000, MAT_DIAMOND = 80000, MAT_URANIUM = 100000)
 	construction_time=30
