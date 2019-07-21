@@ -1,7 +1,7 @@
 //Fallout 13 Brotherhood of Steel faction roles
 
 /datum/job/elder
-	title = "Elder"
+	title = "Brotherhood Elder"
 	desc = "A mentor, the source of wisdom.<br>You are the one who shall fulfill destiny."
 	flag = ELDER
 	department_head = list("Brotherhood of Steel High Command")
@@ -43,7 +43,7 @@
 	access = list(69)
 
 /datum/outfit/job/elder
-	name = "Elder"
+	name = "Brotherhood Elder"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
@@ -62,7 +62,7 @@
 	//Brotherhood Head Paladin
 
 /datum/job/hpaladin
-	title = "Head Paladin"
+	title = "Brotherhood Head Paladin"
 	desc = "The means of protecting technology goes above and beyond the value of anything else but your brothers and sisters,harness it."
 	flag = HEADPALADIN
 	department_head = list("elder")
@@ -104,7 +104,7 @@
 	access = list(69)
 
 /datum/outfit/job/hpaladin
-	name = "Head Paladin"
+	name = "Brotherhood Head Paladin"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
@@ -123,7 +123,7 @@
 //Head Scribe
 
 /datum/job/hscribe
-	title = "Head Scribe"
+	title = "Brotherhood Head Scribe"
 	desc = "The studious..<br>Guide the Scribes and show the Knights and Paladins that knowledge is your best weapon."
 	flag = HEADSCRIBE
 	department_head = list("elder")
@@ -164,7 +164,7 @@
 	access = list(69)
 
 /datum/outfit/job/hscribe
-	name = "Head Scribe"
+	name = "Brotherhood Head Scribe"
 	backpack = null
 	satchel = null
 	gloves = /obj/item/clothing/gloves/f13/military
@@ -183,7 +183,7 @@
 //Brotherhood Paladin
 
 /datum/job/paladin
-	title = "Paladin"
+	title = "Brotherhood Paladin"
 	desc = "A guardian, the bringer of light.<br>You are the one who shall protect others."
 	flag = PALADIN
 	department_head = list("elder")
@@ -224,7 +224,7 @@
 	access = list(69)
 
 /datum/outfit/job/paladin
-	name = "Paladin"
+	name = "Brotherhood Paladin"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
@@ -242,7 +242,7 @@
 //Brotherhood Knight
 
 /datum/job/knight
-	title = "Knight"
+	title = "Brotherhood Knight"
 	desc = "A warrior, the keeper of peace.<br>You are the one who shall bring justice."
 	flag = KNIGHT
 	department_head = list("elder", "headpaladin", "paladin")
@@ -283,7 +283,7 @@
 	access = list(69)
 
 /datum/outfit/job/knight
-	name = "Knight"
+	name = "Brotherhood Knight"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
@@ -302,7 +302,7 @@
 //Scribes!!
 
 /datum/job/scribe
-	title = "Scribe"
+	title = "Brotherhood Scribe"
 	desc = "The studious..<br>Your knowledge and expertise guide your brothers to glory."
 	flag = SCRIBE
 	department_head = list("elder", "headpaladin", "paladin")
@@ -343,7 +343,7 @@
 	access = list(69)
 
 /datum/outfit/job/scribe
-	name = "Scribe"
+	name = "Brotherhood Scribe"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/recon
