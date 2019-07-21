@@ -513,8 +513,7 @@
 	zoom_amt = 7
 	w_class = WEIGHT_CLASS_NORMAL
 	self_weight = 0.85
-	recoil = 2
-	scopetype = /obj/screen/fullscreen/scope/short
+	recoil = 1
 
 /obj/item/weapon/gun/ballistic/revolver/mysterious
 	name = "Mysterious Magnum"
