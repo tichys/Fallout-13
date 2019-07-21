@@ -147,7 +147,7 @@
 	name = ".223 cylinder"
 	ammo_type = /obj/item/ammo_casing/a223
 	icon_state = "drum45"
-	caliber = "a556"
+	caliber = "a223"
 	max_ammo = 6
 
 /obj/item/ammo_box/magazine/internal/cylinder/magnum
