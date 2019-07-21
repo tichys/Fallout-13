@@ -116,7 +116,7 @@
 	access = list(71)
 
 /datum/outfit/job/ncr_sergeant
-	name = "Sergeant"
+	name = "NCR Sergeant"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -243,7 +243,7 @@
 	access = list(71)
 
 /datum/outfit/job/ncr_ranger
-	name = "Staff Sergeant"
+	name = "NCR Patrol Ranger"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -267,8 +267,8 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "trooper"
-	total_positions = 30
-	spawn_positions = 30
+	total_positions = 26
+	spawn_positions = 26
 	supervisors = "the Captain"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
@@ -301,7 +301,7 @@
 	access = list(71)
 
 /datum/outfit/job/trooper
-	name = "Trooper"
+	name = "NCR Trooper"
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
