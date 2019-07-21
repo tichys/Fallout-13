@@ -4,9 +4,11 @@
 	icon_state = "intercom"
 	anchored = 1
 	w_class = WEIGHT_CLASS_BULKY
-	canhear_range = 2
+	canhear_range = 5
 	var/number = 0
 	var/anyai = 1
+	key = 9999
+	frequency = 1442
 	var/mob/living/silicon/ai/ai = list()
 	var/last_tick //used to delay the powercheck
 	dog_fashion = null
