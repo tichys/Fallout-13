@@ -1,5 +1,5 @@
 /obj/item/weapon/storage/internal/implant
-	name = "bluespace pocket"
+	name = "internal pocket"
 	max_w_class = WEIGHT_CLASS_NORMAL
 	max_combined_w_class = 6
 	cant_hold = list(/obj/item/weapon/disk/nuclear)
@@ -8,9 +8,9 @@
 
 /obj/item/weapon/implant/storage
 	name = "storage implant"
-	desc = "Stores up to two big items in a bluespace pocket."
+	desc = "Stores up to two items in a cavity within your torso."
 	icon_state = "storage"
-	origin_tech = "materials=2;magnets=4;bluespace=5;syndicate=4"
+	origin_tech = "biotech=2"
 	item_color = "r"
 	var/obj/item/weapon/storage/internal/implant/storage
 
