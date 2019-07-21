@@ -509,8 +509,6 @@
 	fire_sound = 'sound/f13weapons/magnum_fire.ogg'
 	burst_size = 1
 	casing_ejector = 0
-	zoomable = TRUE
-	zoom_amt = 7
 	w_class = WEIGHT_CLASS_NORMAL
 	self_weight = 0.85
 	recoil = 1
