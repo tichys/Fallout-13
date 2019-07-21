@@ -243,7 +243,7 @@
 //Legion Prime
 
 /datum/job/prime
-	title = "Prime Legionary"
+	title = "Legion Prime"
 	desc = "Victory favors bravery.<br>The Prime is a servant of Caesar!<br>Ad victoriam!"
 	flag = PRIME
 	department_head = list("Centurion")
@@ -286,7 +286,7 @@
 	access = list(72)
 
 /datum/outfit/job/prime
-	name = "Prime Legionary"
+	name = "Legion Prime"
 	uniform = /obj/item/clothing/under/pants/f13/cloth
 	shoes = /obj/item/clothing/shoes/f13/military/legionleather
 	gloves = /obj/item/clothing/gloves/f13/leather
@@ -304,7 +304,7 @@
 // legion recruit
 
 /datum/job/recruit
-	title = "Recruit Legionary"
+	title = "Legion Recruit"
 	desc = "Victory favors the bold."
 	flag = RECRUIT
 	department_head = list("Centurion")
@@ -347,7 +347,7 @@
 	access = list(72)
 
 /datum/outfit/job/recruit
-	name = "Recruit Legionary"
+	name = "Legion Recruit"
 	uniform = /obj/item/clothing/under/pants/f13/cloth
 	shoes = /obj/item/clothing/shoes/f13/military/legionleather
 	gloves = /obj/item/clothing/gloves/f13/leather
@@ -363,7 +363,7 @@
 	/obj/item/weapon/storage/wallet=1,/obj/item/weapon/reagent_containers/pill/patch/healingpowder)
 
 /datum/job/camp
-	title = "Camp Follower"
+	title = "Legion Camp Follower"
 	desc = "Victory favors the bold."
 	flag = CAMPFOLLOWER
 	department_head = list("Centurion")
@@ -397,7 +397,7 @@
 	outfit = /datum/outfit/job/campfollower
 
 /datum/outfit/job/campfollower
-	name = "Camp Follower"
+	name = "Legion Camp Follower"
 	uniform = /obj/item/clothing/under/f13/female/tribal
 	shoes = /obj/item/clothing/shoes/f13/military/legionleather
 	gloves = /obj/item/clothing/gloves/f13/leather
