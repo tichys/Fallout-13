@@ -15,15 +15,15 @@
 	stamina = 80
 	dismemberment = 0
 
-/obj/item/projectile/bullet/weakbullet2 //removing weaken from this as bullets causing instant knockdown is pretty heinous.
-	damage = 26
-	stamina = 50
+/obj/item/projectile/bullet/weakbullet2 //used by .308
+	damage = 24
+	armour_penetration = 10
 	dismemberment = 0
 
 /obj/item/projectile/bullet/weakbullet3 // lowering damage on tihs one slightly, used by 9mms.
 	damage = 22
 	dismemberment = 0
-	
+
 /obj/item/projectile/bullet/weakbullet3/ap // ap service rifle ammo, low damage for the benefit of AP to deal with power armor
 	damage = 9
 	dismemberment = 0
@@ -152,12 +152,12 @@
 	damage = 40
 	armour_penetration = 15
 	dismemberment = 1
-	
+
 /obj/item/projectile/bullet/midbullet3/apm72gauss
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE //velocity of proj means nothing can really stop it, should be firing through glass.
-	damage = 27.5
-	armour_penetration = 75
-	
+	damage = 35
+	armour_penetration = 50
+
 /obj/item/projectile/bullet/midbullet3cyborg3dprinted
 	damage = 12
 	armour_penetration = 15
@@ -327,10 +327,10 @@
 
 /obj/item/projectile/bullet/sniper
 	speed = 0		//360 alwaysscope.
-	damage = 60
-	stamina = 60 //will now cause a stun after 2 hits on the same target, lasts for roughly 7 seconds if they dont have stamina regenerating chems in hte bloodstream
+	damage = 50
+	stamina = 80 //will now cause a stun after 2 hits on the same target, lasts for roughly 7 seconds if they dont have stamina regenerating chems in hte bloodstream
 	dismemberment = 2
-	armour_penetration = 55 //higher ap value
+	armour_penetration = 50 //higher ap value
 	var/breakthings = FALSE
 
 /obj/item/projectile/bullet/sniper/on_hit(atom/target, blocked = 0)
@@ -353,8 +353,8 @@
 
 
 /obj/item/projectile/bullet/sniper/haemorrhage
-	armour_penetration = 15
-	damage = 75
+	armour_penetration = -35
+	damage = 90
 	dismemberment = 1
 	breakthings = FALSE
 
