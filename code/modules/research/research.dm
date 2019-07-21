@@ -277,11 +277,32 @@ research holder datum.
 	desc = "A pre-war technology disk. Issued to all vaults by VaultTec. This one is indicated as a burner disk, meaning that it must be integrated via destructive analyzer rather than downloading of the disk's contents."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=3;engineering=3;powerstorage=3;biotech=3"
+	origin_tech = "materials=5;engineering=6;powerstorage=6;biotech=3"
 
 /obj/item/weapon/disk/tech_disk/vaulttecold
 	name = "VaultTec 2075 technology disk"
 	desc = "An old pre-war technology disk. This one is a little out of date but is sure to fetch a decent sum from the right buyer. A label on the side indicates that this is a burner disk, meaning it must be integrated via destructive analyzer."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=3;engineering=3;powerstorage=2;biotech=3"
+	origin_tech = "materials=4;engineering=5;powerstorage=4;biotech=2"
+	
+/obj/item/weapon/disk/tech_disk/generalatomicsresearch
+	name = "General Atomics 2077 technology disk"
+	desc = "An old pre-war technology disk. This one has the stamp of General Atomics, a few notices about confidentiality and a date of February 21st, 2077. It probably has quite a bit of information on power generation. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
+	materials = list()
+	max_tech_stored = 0
+	origin_tech = "materials=7;engineering=7;powerstorage=8"
+	
+/obj/item/weapon/disk/tech_disk/westtekbiotech
+	name = "West Tek 2074 technology disk"
+	desc = "An old pre-war technology disk. This one has the stamp of West Tek, a few notices about confidentiality and a date of January 11th, 2074. It probably has quite a bit of information on West Tek's latest research. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
+	materials = list()
+	max_tech_stored = 0
+	origin_tech = "materials=12;engineering=14;powerstorage=6;biotech=9"
+	
+/obj/item/weapon/disk/tech_disk/bigmt //need to put together a new dungeon to house this one, this is the 'ultimate' tech disk. has all the tech available but should be very difficult to get
+	name = "Big MT. 2145 technology disk"
+	desc = "An old technology disk. This one has the stamp of Big MT, a few notices about confidentiality and a date of March 17th, 2145. It probably has quite a bit of cutting edge research documentation from Big MT. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
+	materials = list()
+	max_tech_stored = 0
+	origin_tech = "materials=18;engineering=16;powerstorage=14;biotech=18"
