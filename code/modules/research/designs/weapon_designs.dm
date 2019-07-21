@@ -3,7 +3,7 @@
 /////////////////////////////////////////
 
 /datum/design/pin_firing
-	name = "firing pin"
+	name = "Firing Pin"
 	desc = "A firing pin, inserted into a protolathe-constructed weapon to allow its use."
 	id = "pin_testing"
 	req_tech = list("materials" = 3)
