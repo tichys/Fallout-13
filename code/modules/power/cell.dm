@@ -198,7 +198,7 @@
 
 /obj/item/weapon/stock_parts/cell/high
 	name = "high-capacity Microfusion cell"
-	origin_tech = "powerstorage=3;materials=2;engineering=2"
+	origin_tech = "powerstorage=6;materials=5;engineering=6"
 	icon_state = "hcell"
 	maxcharge = 2250
 	materials = list(MAT_SILVER = 8000, MAT_GOLD = 10000, MAT_DIAMOND = 6000, MAT_URANIUM = 4000)
@@ -220,7 +220,7 @@
 
 /obj/item/weapon/stock_parts/cell/super
 	name = "super-capacity Microfusion cell"
-	origin_tech = "powerstorage=5;materials=2;engineering=2"
+	origin_tech = "powerstorage=8;materials=8;engineering=6"
 	icon_state = "scell"
 	maxcharge = 4000
 	materials = list(MAT_SILVER = 10000, MAT_GOLD = 12000, MAT_DIAMOND = 8000, MAT_URANIUM = 6000)
@@ -233,7 +233,7 @@
 
 /obj/item/weapon/stock_parts/cell/hyper
 	name = "hyper-capacity Microfusion cell"
-	origin_tech = "powerstorage=6;materials=2;engineering=2"
+	origin_tech = "powerstorage=11;materials=12;engineering=10"
 	icon_state = "hpcell"
 	maxcharge = 6000
 	materials = list(MAT_SILVER = 12000, MAT_GOLD = 16000, MAT_DIAMOND = 14000, MAT_URANIUM = 20000)
@@ -247,7 +247,7 @@
 /obj/item/weapon/stock_parts/cell/bluespace
 	name = "quantum Microfusion cell"
 	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works but it generates power equivalent to multiple 100MT nuclear detonations simultaneously."
-	origin_tech = "powerstorage=8;materials=2;engineering=2"
+	origin_tech = "powerstorage=14;materials=14;engineering=12"
 	icon_state = "bscell"
 	maxcharge = 12500
 	materials = list(MAT_SILVER = 18000, MAT_GOLD = 24000, MAT_DIAMOND = 18000, MAT_URANIUM = 40000)
@@ -262,7 +262,7 @@
 /obj/item/weapon/stock_parts/cell/infinite
 	name = "badmin infinite power cell!"
 	icon_state = "icell"
-	origin_tech =  "powerstorage=1"
+	origin_tech =  "powerstorage=20"
 	maxcharge = 30000
 	materials = list(MAT_GLASS=1000)
 	rating = 6
@@ -276,7 +276,7 @@
 	desc = "An alien power core plucked from the crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "cell"
-	origin_tech =  "abductor=20;powerstorage=15;engineering=12"
+	origin_tech =  "abductor=20;powerstorage=20;engineering=16"
 	maxcharge = 50000
 	rating = 12
 	ratingdesc = FALSE
