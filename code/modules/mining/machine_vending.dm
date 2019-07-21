@@ -9,19 +9,19 @@
     anchored = 1
     var/obj/item/weapon/card/id/inserted_id
     var/list/prize_list = list( //if you add something to this, please, for the love of god, use tabs and not spaces.
-        new /datum/data/mining_equipment("Stimpak",				/obj/item/weapon/reagent_containers/pill/patch/stimpak,400),
-        new /datum/data/mining_equipment("Super Stimpak",		/obj/item/weapon/reagent_containers/pill/patch/supstimpak,600),
-        new /datum/data/mining_equipment("RadX",				/obj/item/weapon/reagent_containers/pill/patch/radx,800),
-        new /datum/data/mining_equipment("Whiskey",             /obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,400),
-        new /datum/data/mining_equipment("Absinthe",            /obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/premium,600),
-        new /datum/data/mining_equipment("Point Transfer Card", /obj/item/weapon/card/mining_point_card,500),
-        new /datum/data/mining_equipment("Colt 1911 Magazine",  /obj/item/ammo_box/magazine/m45,800),
-        new /datum/data/mining_equipment("800 caps",            /obj/item/stack/caps/minerpayment,1000),
-       	new /datum/data/mining_equipment("Brute First-Aid Kit", /obj/item/weapon/storage/firstaid/brute,2000),
-       	new /datum/data/mining_equipment("Decorated Colt 1911", /obj/item/weapon/gun/ballistic/automatic/pistol/coltofficer,3000),
-        new /datum/data/mining_equipment("Jump Boots",          /obj/item/clothing/shoes/bhop,7000),
-        new /datum/data/mining_equipment("Super Sledge",  		/obj/item/weapon/twohanded/superhammer,8000),
-        new /datum/data/mining_equipment("Missile Launcher",    /obj/item/weapon/gun/ballistic/automatic/atlauncher,18000),
+        new /datum/data/mining_equipment("Stimpak",					/obj/item/weapon/reagent_containers/pill/patch/stimpak,400),
+        new /datum/data/mining_equipment("Super Stimpak",			/obj/item/weapon/reagent_containers/pill/patch/supstimpak,600),
+        new /datum/data/mining_equipment("RadX",					/obj/item/weapon/reagent_containers/pill/patch/radx,800),
+        new /datum/data/mining_equipment("Whiskey",            		/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey,400),
+        new /datum/data/mining_equipment("Absinthe",           		/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe/premium,600),
+        new /datum/data/mining_equipment("Point Transfer Card", 	/obj/item/weapon/card/mining_point_card,500),
+        new /datum/data/mining_equipment("Colt 1911 Magazine",  	/obj/item/ammo_box/magazine/m45,800),
+        new /datum/data/mining_equipment("800 caps",            	/obj/item/stack/caps/minerpayment,1000),
+       	new /datum/data/mining_equipment("Brute First-Aid Kit", 	/obj/item/weapon/storage/firstaid/brute,2000),
+       	new /datum/data/mining_equipment("Decorative Colt 1911",	/obj/item/weapon/gun/ballistic/automatic/pistol/coltofficer,4000),
+        new /datum/data/mining_equipment("Jump Boots",          	/obj/item/clothing/shoes/bhop,9000),
+        new /datum/data/mining_equipment("Super Sledge",  			/obj/item/weapon/twohanded/superhammer,15000),
+        new /datum/data/mining_equipment("Missile Launcher",    	/obj/item/weapon/gun/ballistic/automatic/atlauncher,18000),
         )
 
 /datum/data/mining_equipment
