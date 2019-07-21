@@ -1,7 +1,7 @@
 //Fallout 13 City faction roles
 
 /datum/job/mayor
-	title = "Mayor"
+	title = "New Alamo Mayor"
 	desc = "A trustworthy authority.<br>You were chosen to guide them, now you have to choose: carrot or stick."
 	flag = MAYOR
 	department_flag = WASTELAND
@@ -9,7 +9,7 @@
 	status = "mayor"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "nobody"
+	supervisors = "the people of New Alamo"
 	selection_color = "#804B00"
 	access = list()
 	minimal_access = list()
@@ -59,19 +59,17 @@
 	)
 
 /datum/outfit/job/mayor
-	name = "Mayor"
-	backpack = null
-	satchel = null
+	name = "New Alamo Mayor"
+	belt = /obj/item/weapon/storage/belt/cruzholster
 	uniform = /obj/item/clothing/under/f13/formal
 	shoes = /obj/item/clothing/shoes/laceup
-	suit = null
 	id = /obj/item/weapon/card/id/newalamo
 	head = /obj/item/clothing/head/f13/beaver
 
 //Sheriff
 
 /datum/job/sheriff
-	title = "Sheriff"
+	title = "New Alamo Sheriff"
 	desc = "A fearless lawkeeper.<br>You were chosen to protect them, now you have to choose: word or sword."
 	flag = SHERIFF
 	department_flag = WASTELAND
@@ -79,7 +77,7 @@
 	status = "sheriff"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Mayor"
+	supervisors = "the Mayor"
 	selection_color = "#804B00"
 	access = list()
 	minimal_access = list()
@@ -125,11 +123,12 @@
 	)
 
 /datum/outfit/job/sheriff
-	name = "Sheriff"
+	name = "New Alamo Sheriff"
 	uniform = /obj/item/clothing/under/f13/cowboyb
 	shoes = /obj/item/clothing/shoes/f13/cowboy
 	suit = /obj/item/clothing/suit/f13/sheriff
 	head = /obj/item/clothing/head/f13/cowboy
+	belt = /obj/item/weapon/storage/belt/holster
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
 	l_pocket = /obj/item/ammo_box/henry44
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -139,7 +138,7 @@
 //Citizen
 
 /datum/job/citizen
-	title = "Citizen"
+	title = "New Alamo Citizen"
 	flag = CITIZEN
 	department_flag = ENGSEC
 	desc = "A City dweller.<br>You live a better life than most Wastelanders will ever have."
@@ -147,7 +146,7 @@
 	status = "member"
 	total_positions = 16
 	spawn_positions = 10
-	supervisors = "none"
+	supervisors = "the Sherrif of New Alamo"
 	selection_color = "#ece19d"
 	access = list()
 	minimal_access = list()
@@ -179,9 +178,8 @@
 	)
 
 /datum/outfit/job/citizen
-	name = "Citizen"
-	backpack = null
-	satchel = null
+	name = "New Alamo Citizen"
+	belt = /obj/item/weapon/storage/belt/cruzholster/full
 	id = /obj/item/weapon/card/id/newalamo
 	uniform = /obj/item/clothing/under/f13/cowboyt
 	shoes = /obj/item/clothing/shoes/f13/brownie
