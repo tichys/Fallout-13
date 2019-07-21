@@ -139,10 +139,10 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_box/thatgun
-	name = "stripper clip (5.56mm)"
-	desc = "A stripper clip."
-	icon_state = "556"
-	ammo_type = /obj/item/ammo_casing/a556
+	name = ".223 cylinder"
+	desc = "Designed to quickly reload revolvers."
+	icon_state = "357"
+	ammo_type = /obj/item/ammo_casing/a223
 	max_ammo = 6
 	multiple_sprites = 2
 
