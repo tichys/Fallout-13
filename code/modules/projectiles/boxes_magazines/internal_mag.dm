@@ -144,8 +144,8 @@
 	max_ammo = 7
 
 /obj/item/ammo_box/magazine/internal/cylinder/thatgun
-	name = "That Gun's cylinder"
-	ammo_type = /obj/item/ammo_casing/a556
+	name = ".223 cylinder"
+	ammo_type = /obj/item/ammo_casing/a223
 	caliber = "a556"
 	max_ammo = 6
 
