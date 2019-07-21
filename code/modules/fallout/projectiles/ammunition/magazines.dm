@@ -236,7 +236,7 @@
 	desc = "A .308 bullet casing."
 	caliber = "308mm"
 	icon_state = "762-casing"
-	projectile_type = /obj/item/projectile/bullet/midbullet3/ap
+	projectile_type = /obj/item/projectile/bullet/weakbullet2
 	randomspread = 1
 	variance = 2
 	materials = list(MAT_METAL = 500)
