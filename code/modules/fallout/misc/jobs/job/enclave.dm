@@ -1,7 +1,7 @@
 //Fallout 13 Enclave faction roles
 
 /datum/job/colonel
-	title = "Colonel"
+	title = "Enclave Colonel"
 	desc = "An actual American patriot.<br>You live by the principle that the Main Goal is more important than the means of achieving it."
 	flag = COLONEL
 	department_head = list("Enclave Central Command")
@@ -42,7 +42,7 @@
 	access = list(70, 63, 20, 12)
 
 /datum/outfit/job/colonel
-	name = "Colonel"
+	name = "Enclave Colonel"
 	backpack = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/enclave_officer
@@ -59,7 +59,7 @@
 //Enclave Lieutenant
 
 /datum/job/enclave_lieutenant
-	title = "Lieutenant"
+	title = "Enclave Lieutenant"
 	desc = "A loyal soldier.<br>You trust your commander and orders from above - it's just about time to make America great again!"
 	flag = ENCLAVE_LIEUTENANT
 	department_head = list("colonel")
@@ -117,7 +117,7 @@
 //Enclave Private
 
 /datum/job/enclave_private
-	title = "Private"
+	title = "Enclave Private"
 	desc = "Enlist today."
 	flag = ENCLAVE_PRIVATE
 	department_head = list("colonel", "lieutenant")
@@ -175,7 +175,7 @@
 	//Enclave Scientist
 
 /datum/job/enclave_scientist
-	title = "Scientist"
+	title = "Enclave Scientist"
 	desc = "Experimenting on the Un-American since 1943."
 	flag = ENCLAVE_SCIENTIST
 	department_head = list("colonel", "lieutenant")
@@ -224,7 +224,7 @@
 	//Enclave Recruit
 
 /datum/job/enclave_recruit
-	title = "Recruit"
+	title = "Enclave Recruit"
 	desc = "In Training!."
 	flag = ENCLAVE_RECRUIT
 	department_head = list("colonel", "lieutenant")
