@@ -1,7 +1,7 @@
 //I'm warning you - this code section is under construction. Ceiling, walls, and floor are unstable.
 
 /datum/job/overseer
-	title = "Overseer"
+	title = "Vault Overseer"
 	flag = OVERSEER
 	department_head = list("Overseer")
 	department_flag = ENGSEC
@@ -20,7 +20,7 @@
 
 
 /datum/outfit/job/overseer
-	name = "Overseer"
+	name = "Vault Overseer"
 
 	id = /obj/item/weapon/card/id/vault
 	belt = /obj/item/device/pda/captain
@@ -59,9 +59,8 @@
 /datum/outfit/job/vlt_engineer
 	name = "Vault Engineer"
 
-	uniform = /obj/item/clothing/under/bespinsuit
-	shoes = /obj/item/clothing/shoes/bespinboots
-	suit = /obj/item/clothing/suit/bespinjacket
+	uniform = /obj/item/clothing/under/f13/vault/v113
+	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/weapon/storage/backpack/industrial
 	box = /obj/item/weapon/storage/box/engineer
 	id = /obj/item/weapon/card/id/vault
