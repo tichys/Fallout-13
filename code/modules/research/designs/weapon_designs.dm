@@ -16,7 +16,7 @@
 	name = "Cryo Gun"
 	desc = "A prototype less than lethal rifle, it operates by drastically cooling an affected target area, ideally an individual, to the point that movement becomes difficult and they can be subdued easily."
 	id = "temp_gun"
-	req_tech = list("materials" = 5, "powerstorage" = 5, "engineering" = 5)
+	req_tech = list("materials" = 9, "powerstorage" = 6, "engineering" = 11)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 50000, MAT_GLASS = 20000, MAT_SILVER = 60000, MAT_GOLD = 20000, MAT_DIAMOND = 6000)
 	build_path = /obj/item/weapon/gun/energy/temperature
@@ -26,7 +26,7 @@
 	name = "Tesla-Ion Carbine"
 	desc = "A carbine designed to defeat robotics and opponents reliant on energy weapons, this weapon causes a localized EMP on affected targets which rapidly drains the power level of affected Microfusion cells, including those loaded in weapons, and any electronic equipment they may be carrying."
 	id = "ioncarbine"
-	req_tech = list("materials" = 3, "powerstorage" = 4, "engineering" = 3)
+	req_tech = list("materials" = 3, "powerstorage" = 7, "engineering" = 5)
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 80000, MAT_GLASS = 36000, MAT_SILVER = 80000, MAT_GOLD = 24000, MAT_DIAMOND = 12000, MAT_URANIUM = 8000)
 	build_path = /obj/item/weapon/gun/energy/ionrifle/carbine
