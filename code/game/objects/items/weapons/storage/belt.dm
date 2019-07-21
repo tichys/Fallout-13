@@ -512,7 +512,25 @@
 	max_w_class = WEIGHT_CLASS_HUGE
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
-		/obj/item/weapon/gun/ballistic/revolver,
+		/obj/item/weapon/gun/ballistic/revolver/,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/coltnavy,
+		/obj/item/weapon/gun/ballistic/revolver/coltsaa,
+		/obj/item/weapon/gun/ballistic/revolver/mateba,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/model15,
+		/obj/item/weapon/gun/ballistic/revolver/model19,
+		/obj/item/weapon/gun/ballistic/revolver/model29,
+		/obj/item/weapon/gun/ballistic/revolver/model36,
+		/obj/item/weapon/gun/ballistic/revolver/model629,
+		/obj/item/weapon/gun/ballistic/revolver/model66,
+		/obj/item/weapon/gun/ballistic/revolver/policepistol,
+		/obj/item/weapon/gun/ballistic/revolver/nagant,
+		/obj/item/weapon/gun/ballistic/revolver/python,
+		/obj/item/weapon/gun/ballistic/revolver/sequoia,
+		/obj/item/weapon/gun/ballistic/revolver/thatgun,
+		/obj/item/weapon/gun/ballistic/revolver/webley,
+		/obj/item/weapon/gun/ballistic/revolver/model500,
 		/obj/item/ammo_box,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
