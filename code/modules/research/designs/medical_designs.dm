@@ -100,7 +100,7 @@
 	id = "implant_storage"
 	req_tech = list("biotech" = 11)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 1000, MAT_GLASS = 500, MAT_GOLD = 500, MAT_URANIUM = 600, MAT_DIAMOND = 600)
+	materials = list(MAT_METAL = 10000, MAT_GLASS = 5000, MAT_GOLD = 65000, MAT_URANIUM = 18000, MAT_DIAMOND = 69500)
 	build_path = /obj/item/weapon/implanter/adrenalin
 	category = list("Augmentation")
 
@@ -110,16 +110,6 @@
 	id = "implanter"
 	req_tech = list("biotech" = 2)
 	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 600, MAT_GLASS = 200)
+	materials = list(MAT_METAL = 600, MAT_GLASS = 200, MAT_URANIUM = 600)
 	build_path = /obj/item/weapon/implanter/storage
-	category = list("Augmentation")
-	
-/datum/design/implanter_storage
-	name = "Explosive Implanter"
-	desc = "A sterile automatic implant injector. This one is loaded with a miniature explosive which a user can activate at will. Either used for controlling the unruly of society, as incoming fire can easily trigger the explosive, or for the purposes of dispatching suicide bombers."
-	id = "implanter"
-	req_tech = list("biotech" = 7)
-	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 600, MAT_GLASS = 500, MAT_URANIUM = 300, MAT_SILVER = 200)
-	build_path = /obj/item/weapon/implanter/explosive
 	category = list("Augmentation")
