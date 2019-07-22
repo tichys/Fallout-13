@@ -39,10 +39,8 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	//smooth = SMOOTH_MORE|SMOOTH_BORDER
 	canSmoothWith
 	baseturf = /turf/open/indestructible/ground/mountain
-	initial_gas_mix = "TEMP=2.7"
 	opacity = 1
 	density = 1
-	blocks_air = 1
 	layer = TURF_LAYER + 0.1
 	temperature = TCMB
 	var/environment_type = "asteroid"
@@ -261,7 +259,6 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	defer_change = 1
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 35, /turf/closed/mineral/diamond/volcanic = 30, /turf/closed/mineral/gold/volcanic = 45, /turf/closed/mineral/titanium/volcanic = 45,
@@ -282,7 +279,6 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	defer_change = 1
 
 	mineralChance = 10
@@ -304,7 +300,6 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	defer_change = 1
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 2, /turf/closed/mineral/diamond/volcanic = 1, /turf/closed/mineral/gold/volcanic = 3, /turf/closed/mineral/titanium/volcanic = 4,
@@ -316,8 +311,6 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	icon_state = "rock_Iron"
 	mineralType = /obj/item/weapon/ore/iron
 	mineraltype ="iron"
-	spreadChance = 20
-	spread = 1
 	scan_state = "rock_Iron"
 	New()
 
@@ -326,105 +319,77 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/uranium
 	mineralType = /obj/item/weapon/ore/uranium
 	mineraltype ="uranium"
-	spreadChance = 5
-	spread = 1
 	scan_state = "rock_Uranium"
 
 /turf/closed/mineral/uranium/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/diamond
 	mineralType = /obj/item/weapon/ore/diamond
 	mineraltype ="diamond"
-	spreadChance = 0
-	spread = 1
 	scan_state = "rock_Diamond"
 
 /turf/closed/mineral/diamond/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/gold
 	mineralType = /obj/item/weapon/ore/gold
 	mineraltype ="gold"
-	spreadChance = 5
-	spread = 1
 	scan_state = "rock_Gold"
 
 /turf/closed/mineral/gold/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/silver
 	mineralType = /obj/item/weapon/ore/silver
 	mineraltype ="silver"
-	spreadChance = 5
-	spread = 1
 	scan_state = "rock_Silver"
 
 /turf/closed/mineral/silver/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/titanium
 	mineralType = /obj/item/weapon/ore/titanium
-	spreadChance = 5
-	spread = 1
 	scan_state = "rock_Titanium"
 
 /turf/closed/mineral/titanium/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/plasma
 	mineralType = /obj/item/weapon/ore/plasma
 	mineraltype ="plasma"
-	spreadChance = 8
-	spread = 1
 	scan_state = "rock_Plasma"
 
 /turf/closed/mineral/plasma/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/clown
 	mineralType = /obj/item/weapon/ore/bananium
 	mineraltype ="bananium"
 	mineralAmt = 3
-	spreadChance = 0
-	spread = 0
 	scan_state = "rock_Clown"
 
 
@@ -432,29 +397,23 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	mineralType = /obj/item/weapon/ore/bluespace_crystal
 	mineraltype ="bscrystal"
 	mineralAmt = 1
-	spreadChance = 0
-	spread = 0
 	scan_state = "rock_BScrystal"
 
 /turf/closed/mineral/bscrystal/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
-	defer_change = 1
 
 
 /turf/closed/mineral/volcanic
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt
 	baseturf = /turf/open/floor/plating/asteroid/basalt
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 
 /turf/closed/mineral/volcanic/lava_land_surface
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/lava/smooth/lava_land_surface
-	defer_change = 1
 
 /turf/closed/mineral/ash_rock //wall piece
 	name = "rock"
@@ -464,11 +423,8 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	smooth = SMOOTH_MORE|SMOOTH_BORDER
 	canSmoothWith = list (/turf/closed)
 	baseturf = /turf/open/floor/plating/ashplanet/wateryrock
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	environment_type = "waste"
 	turf_type = /turf/open/floor/plating/ashplanet/rocky
-	defer_change = 1
-
 
 //GIBTONITE
 
@@ -570,5 +526,4 @@ turf/closed/mineral/proc/randomizerock(mineraltype)
 	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturf = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
-	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	defer_change = 1
