@@ -331,8 +331,10 @@ update_label("John Doe", "Clowny")
 	name = "New Alamo Citizenship Card"
 	desc = "A card certifying citizenship to the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
 	icon_state = "fingerprint1"
+	access = list(54)
 
 /obj/item/weapon/card/id/newalamoworker
 	name = "New Alamo Worker's Permit"
 	desc = "A card certifying the right to work in the quarry beneath the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
 	icon_state = "fingerprint1"
+	access = list(54)
