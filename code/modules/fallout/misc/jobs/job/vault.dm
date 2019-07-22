@@ -1,7 +1,7 @@
 //I'm warning you - this code section is under construction. Ceiling, walls, and floor are unstable.
 
 /datum/job/overseer
-	title = "Overseer"
+	title = "Vault Overseer"
 	flag = OVERSEER
 	department_head = list("Overseer")
 	department_flag = ENGSEC
@@ -9,7 +9,7 @@
 	status = "Overseer"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Vault-tec"
+	supervisors = "Vault-Tec"
 	selection_color = "#005A20"
 
 
@@ -20,7 +20,7 @@
 
 
 /datum/outfit/job/overseer
-	name = "Overseer"
+	name = "Vault Overseer"
 
 	id = /obj/item/weapon/card/id/vault
 	belt = /obj/item/device/pda/captain
@@ -59,9 +59,8 @@
 /datum/outfit/job/vlt_engineer
 	name = "Vault Engineer"
 
-	uniform = /obj/item/clothing/under/bespinsuit
-	shoes = /obj/item/clothing/shoes/bespinboots
-	suit = /obj/item/clothing/suit/bespinjacket
+	uniform = /obj/item/clothing/under/f13/vault/v113
+	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/weapon/storage/backpack/industrial
 	box = /obj/item/weapon/storage/box/engineer
 	id = /obj/item/weapon/card/id/vault
@@ -78,7 +77,7 @@
 	status = "vaultmember"
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the chief medical officer"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 
 	outfit = /datum/outfit/job/vlt_doctor
@@ -137,7 +136,7 @@
 	status = "vaultmember"
 	total_positions = 6 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 6 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
-	supervisors = "the head of security, and the head of your assigned department (if applicable)"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 
 
@@ -177,7 +176,7 @@
 	status = "vaultmember"
 	total_positions = -1
 	spawn_positions = -1
-	supervisors = "overseer"
+	supervisors = "the Overseer"
 	selection_color = "#005A20"
 	access = list(access_maint_tunnels)
 	minimal_access = list()

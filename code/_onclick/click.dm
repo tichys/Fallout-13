@@ -137,7 +137,7 @@
 				if(ismob(A))
 					changeNext_move(CLICK_CD_MELEE)
 				UnarmedAttack(A, 1)
-				
+
 			trigger_aiming(TARGET_CAN_CLICK)
 			return
 		else // non-adjacent click

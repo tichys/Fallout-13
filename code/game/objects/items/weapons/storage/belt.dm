@@ -287,6 +287,7 @@
 	desc = "A belt used by military forces."
 	icon_state = "grenadebeltold"
 	item_state = "security"
+	storage_slots = 9
 
 /obj/item/weapon/storage/belt/military/assault
 	name = "ranger's chestrig"
@@ -493,11 +494,29 @@
 	desc = "A holster to carry a handgun and ammo. WARNING: Badasses only."
 	icon_state = "holster"
 	item_state = "holster"
-	storage_slots = 3
+	storage_slots = 2
 	max_w_class = WEIGHT_CLASS_NORMAL
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
-		/obj/item/weapon/gun/ballistic/revolver,
+		/obj/item/weapon/gun/ballistic/revolver/,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/coltnavy,
+		/obj/item/weapon/gun/ballistic/revolver/coltsaa,
+		/obj/item/weapon/gun/ballistic/revolver/mateba,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/model15,
+		/obj/item/weapon/gun/ballistic/revolver/model19,
+		/obj/item/weapon/gun/ballistic/revolver/model29,
+		/obj/item/weapon/gun/ballistic/revolver/model36,
+		/obj/item/weapon/gun/ballistic/revolver/model629,
+		/obj/item/weapon/gun/ballistic/revolver/model66,
+		/obj/item/weapon/gun/ballistic/revolver/policepistol,
+		/obj/item/weapon/gun/ballistic/revolver/nagant,
+		/obj/item/weapon/gun/ballistic/revolver/python,
+		/obj/item/weapon/gun/ballistic/revolver/sequoia,
+		/obj/item/weapon/gun/ballistic/revolver/thatgun,
+		/obj/item/weapon/gun/ballistic/revolver/webley,
+		/obj/item/weapon/gun/ballistic/revolver/model500,
 		/obj/item/ammo_box,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
@@ -511,7 +530,25 @@
 	max_w_class = WEIGHT_CLASS_HUGE
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
-		/obj/item/weapon/gun/ballistic/revolver,
+		/obj/item/weapon/gun/ballistic/revolver/,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/coltnavy,
+		/obj/item/weapon/gun/ballistic/revolver/coltsaa,
+		/obj/item/weapon/gun/ballistic/revolver/mateba,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/model15,
+		/obj/item/weapon/gun/ballistic/revolver/model19,
+		/obj/item/weapon/gun/ballistic/revolver/model29,
+		/obj/item/weapon/gun/ballistic/revolver/model36,
+		/obj/item/weapon/gun/ballistic/revolver/model629,
+		/obj/item/weapon/gun/ballistic/revolver/model66,
+		/obj/item/weapon/gun/ballistic/revolver/policepistol,
+		/obj/item/weapon/gun/ballistic/revolver/nagant,
+		/obj/item/weapon/gun/ballistic/revolver/python,
+		/obj/item/weapon/gun/ballistic/revolver/sequoia,
+		/obj/item/weapon/gun/ballistic/revolver/thatgun,
+		/obj/item/weapon/gun/ballistic/revolver/webley,
+		/obj/item/weapon/gun/ballistic/revolver/model500,
 		/obj/item/ammo_box,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER

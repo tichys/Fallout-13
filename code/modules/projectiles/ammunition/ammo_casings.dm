@@ -176,6 +176,18 @@
 	caliber = "a556"
 	projectile_type = /obj/item/projectile/bullet/weakbullet3
 	materials = list(MAT_METAL=100)
+	
+/obj/item/ammo_casing/a223
+	desc = "A .223 bullet casing."
+	caliber = "a223"
+	projectile_type = /obj/item/projectile/bullet/deagle/two
+	materials = list(MAT_METAL=100)
+
+/obj/item/ammo_casing/a556/armourpiercing
+	desc = "A 5.56mm bullet casing. This one is tipped with depleted uranium. It's designed to pierce power armour."
+	caliber = "a556"
+	projectile_type = /obj/item/projectile/bullet/weakbullet3/ap
+	materials = list(MAT_METAL=100)
 
 /obj/item/ammo_casing/a40mm
 	name = "40mm HE shell"

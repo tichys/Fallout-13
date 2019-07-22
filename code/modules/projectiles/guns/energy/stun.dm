@@ -8,15 +8,14 @@
 	ammo_x_offset = 3
 
 /obj/item/weapon/gun/energy/tesla_revolver
-	name = "tesla gun"
-	desc = "An experimental gun based on an experimental engine, it's about as likely to kill its operator as it is the target."
+	name = "tesla carbine"
+	desc = "A high power tesla weapon, desinged to fire arcing energy blasts to disable opponents, even those in heavy armour."
 	icon_state = "tesla"
 	item_state = "tesla"
 	ammo_type = list(/obj/item/ammo_casing/energy/tesla_revolver)
-	origin_tech = "combat=4;materials=4;powerstorage=4"
+	origin_tech = "materials=6;powerstorage=3,engineering=5"
 	can_flashlight = 0
 	pin = null
-	shaded_charge = 1
 
 /obj/item/weapon/gun/energy/e_gun/advtaser
 	name = "hybrid taser"

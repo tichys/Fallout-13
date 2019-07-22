@@ -77,14 +77,14 @@
 // -----------------------------
 
 /obj/item/weapon/storage/bag/ore
-	name = "mining satchel"
-	desc = "This little bugger can be used to store and transport ores."
+	name = "manual collection mining satchel"
+	desc = "This little bugger can be used to store and transport ores. Unfortunately, it doesn't have a quick release flap, making collecting of ores a painful task involving taking the satchel off, using it to collect the ores, and then putting it back on. On the plus side, it can carry double the amount of a regular satchel."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "satchel"
 	origin_tech = "engineering=2"
-	slot_flags = SLOT_BELT | SLOT_POCKET
+	slot_flags = SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
-	storage_slots = 50
+	storage_slots = 100
 	max_combined_w_class = 200 //Doesn't matter what this is, so long as it's more or equal to storage_slots * ore.w_class
 	max_w_class = WEIGHT_CLASS_NORMAL
 	can_hold = list(/obj/item/weapon/ore)

@@ -201,10 +201,14 @@
 
 
 /obj/machinery/door/airlock/wood
-	name = "wooden airlock"
+	name = "reinforced door"
 	icon = 'icons/obj/doors/airlocks/station/wood.dmi'
 	var/mineral = "wood"
 	assemblytype = /obj/structure/door_assembly/door_assembly_wood
+	overlays_file = 'icons/obj/doors/airlocks/shuttle/overlays.dmi'
+	normal_integrity = 220
+	glass = 1
+	opacity = 0
 
 /obj/machinery/door/airlock/titanium
 	name = "shuttle airlock"

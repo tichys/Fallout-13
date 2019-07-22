@@ -57,12 +57,6 @@ proc/cone(atom/center = usr, dir = NORTH, list/list = oview(center))
 			list -= A
 	return list
 */
-// And from now on, in "cone" we will only hide LIVING MOBS
-proc/cone(atom/center = usr, dir = NORTH, list/list = oview(center))
-	for(var/mob/living/A in list)
-		if(!A.InCone(center, dir))
-			list -= A
-	return list
 
 mob/proc/update_vision_cone()
 	return
@@ -87,24 +81,6 @@ mob/living/carbon/human/update_vision_cone()
 		src.client.hidden_atoms = list()
 		src.client.hidden_mobs = list()
 		src.fov.dir = src.dir
-		if(fov.alpha != 0)
-			var/mob/living/M
-			for(M in cone(src, OPPOSITE_DIR(src.dir), view(10, src)))
-				I = image("split", M)
-				I.override = 1
-				src.client.images += I
-				src.client.hidden_atoms += I
-				src.client.hidden_mobs += M
-				if(src.pulling == M)//If we're pulling them we don't want them to be invisible, too hard to play like that.
-					I.override = 0
-
-			//Optional items can be made invisible too. Uncomment this part if you wish to items to be invisible. Potentially cpu intensive.
-			//var/obj/item/O
-			//for(O in cone(src, OPPOSITE_DIR(src.dir), oview(src)))
-			//	I = image("split", O)
-			//	I.override = 1
-			//	src.client.images += I
-			//	src.client.hidden_atoms += I
 
 	else
 		return
@@ -118,7 +94,7 @@ mob/proc/rest_cone_act()//For showing and hiding the cone when you rest or lie d
 //Making these generic procs so you can call them anywhere.
 mob/proc/show_cone()
 	if(src.fov)
-		src.fov.alpha = 255
+		src.fov.alpha = 0
 
 mob/proc/hide_cone()
 	if(src.fov)

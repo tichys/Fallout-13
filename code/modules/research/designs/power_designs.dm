@@ -7,55 +7,55 @@
 	desc = "A Microfusion power cell that holds 1000 units of energy."
 	id = "basic_cell"
 	req_tech = list("powerstorage" = 1)
-	build_type = PROTOLATHE | AUTOLATHE |MECHFAB
-	materials = list(MAT_METAL = 1500, MAT_GLASS = 1500)
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 20000, MAT_GOLD = 30000, MAT_DIAMOND = 30000, MAT_URANIUM = 30000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell
-	category = list("Misc","Power Designs","Machinery","initial")
+	category = list("Microfusion Cells","initial")
 
 /datum/design/high_cell
 	name = "Improved Capacity Microfusion Cell"
 	desc = "An improved capacity Microfusion power cell that holds 2250 units of energy."
 	id = "high_cell"
-	req_tech = list("powerstorage" = 2, "materials" = 2, "engineering" = 1)
-	build_type = PROTOLATHE | AUTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 30000, MAT_GLASS = 30000)
+	req_tech = list("powerstorage" = 6, "materials" = 5, "engineering" = 6)
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 20000, MAT_GOLD = 34000, MAT_DIAMOND = 32000, MAT_URANIUM = 36000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/high
-	category = list("Misc","Power Designs","Machinery")
+	category = list("Microfusion Cells")
 
 /datum/design/super_cell
 	name = "Super-Capacity Microfusion Cell"
-	desc = "A significantly improved capacity Microfusion cell that holds 5000 units of energy."
+	desc = "A significantly improved capacity Microfusion cell that holds 4000 units of energy."
 	id = "super_cell"
-	req_tech = list("powerstorage" = 3, "materials" = 3, "engineering" = 2)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 15000, MAT_GLASS = 15000, MAT_GOLD = 1000, MAT_SILVER = 1000, MAT_URANIUM = 500)
+	req_tech = list("powerstorage" = 8, "materials" = 8, "engineering" = 6)
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 24000, MAT_GOLD = 36000, MAT_DIAMOND = 38000, MAT_URANIUM = 40000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/super
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 /datum/design/hyper_cell
 	name = "Hyper-Capacity Microfusion Cell"
-	desc = "An even more improved Microfusion cell, using further miniaturization technology and improving the output of the cell through increased conductive materials."
+	desc = "An even more significantly improved capacity Microfusion cell that holds 6000 units of energy."
 	id = "hyper_cell"
-	req_tech = list("powerstorage" = 4, "materials" = 4, "engineering" = 4)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 10000, MAT_GOLD = 10000, MAT_SILVER = 10000, MAT_URANIUM = 4000)
+	req_tech = list("powerstorage" = 11, "materials" = 12, "engineering" = 10)
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 28000, MAT_GOLD = 44000, MAT_DIAMOND = 46000, MAT_URANIUM = 50000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/hyper
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 /datum/design/bluespace_cell
-	name = "Bluespace Microfusion Cell"
-	desc = "A miniature fusion reaction contained within a quantum bubble known as bluespace, you don't understand how it works. It holds 12500 units of power and seems to recharge passively"
+	name = "Quantum Microfusion Cell"
+	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works. It holds functionally infinite energy. Shame they didn't have this back in 2077."
 	id = "bluespace_cell"
-	req_tech = list("powerstorage" = 5, "materials" = 5, "engineering" = 5, "bluespace" = 1)
-	build_type = PROTOLATHE | MECHFAB
-	materials = list(MAT_METAL = 2000, MAT_GLASS = 2000, MAT_SILVER = 30000, MAT_GOLD = 30000, MAT_DIAMOND = 10000, MAT_URANIUM = 20000)
+	req_tech = list("powerstorage" = 14, "materials" = 14, "engineering" = 12)
+	build_type = PROTOLATHE
+	materials = list(MAT_SILVER = 50000, MAT_GOLD = 50000, MAT_DIAMOND = 80000, MAT_URANIUM = 100000)
 	construction_time=30
 	build_path = /obj/item/weapon/stock_parts/cell/bluespace
-	category = list("Misc","Power Designs")
+	category = list("Microfusion Cells")
 
 
 /datum/design/light_replacer

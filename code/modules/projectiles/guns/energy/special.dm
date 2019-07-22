@@ -3,7 +3,7 @@
 	desc = "A man-portable anti-armor weapon designed to disable mechanical threats at range."
 	icon_state = "ionrifle"
 	item_state = null	//so the human update icon uses the icon_state instead.
-	origin_tech = "combat=4;magnets=4"
+	origin_tech = "materials=5;powerstorage=7;engineering=5"
 	can_flashlight = 1
 	w_class = WEIGHT_CLASS_HUGE
 	flags =  CONDUCT
@@ -17,9 +17,10 @@
 	return
 
 /obj/item/weapon/gun/energy/ionrifle/carbine
-	name = "ion carbine"
-	desc = "The MK.II Prototype Ion Projector is a lightweight carbine version of the larger ion rifle, built to be ergonomic and efficient."
-	icon_state = "ioncarbine"
+	name = "Tesla-Ion Carbine"
+	desc = "A carbine designed to defeat robots and opponents reliant on energy weapons, this weapon causes a localized EMP on affected targets which rapidly drains the power level of affected Microfusion cells, including those loaded in weapons, and any electronic equipment they may be carrying."
+	icon_state = "ioncarb"
+	item_state = "ioncarb"
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = SLOT_BELT
 	pin = null
@@ -281,18 +282,18 @@
 
 
 /obj/item/weapon/gun/energy/temperature
-	name = "temperature gun"
+	name = "Cryo Gun"
 	icon_state = "freezegun"
-	desc = "A gun that changes temperatures."
-	origin_tech = "combat=4;materials=4;powerstorage=3;magnets=2"
-	ammo_type = list(/obj/item/ammo_casing/energy/temp, /obj/item/ammo_casing/energy/temp/hot)
+	desc = "A pre-war prototype riot suppression rifle, fires energised liquid nitrogen packets which cause a drastic drop in temperature against anything they hit, slowing targets so they may be easily subdued."
+	origin_tech = "powerstorage=3;materials=2;engineering=2"
+	ammo_type = list(/obj/item/ammo_casing/energy/temp)
 	cell_type = "/obj/item/weapon/stock_parts/cell/high"
 	pin = null
 
 /obj/item/weapon/gun/energy/temperature/security
 	name = "security temperature gun"
 	desc = "A weapon that can only be used to its full potential by the truly robust."
-	origin_tech = "combat=2;materials=2;powerstorage=1;magnets=1"
+	origin_tech = "powerstorage=3;materials=2;engineering=2"
 	pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/energy/laser/instakill

@@ -87,17 +87,10 @@
 
 /datum/bounty_quest/faction/wasteland/qst_7
 	employer = "New California Republic, Department of War"
-	need_message = "Legion slavers have been spotted in the area. They are a nasty bunch, raping and pillaging what they don't just kill. We're looking to thin their numbers a bit before the mainstay of the NCR army arrives and are enlisting locals to help. Bring us three of their unique belts and we'll pay a bounty of 800 caps"
+	need_message = "Legion slavers have been spotted in the area. They are a nasty bunch, raping and pillaging what they don't just kill. We're looking to thin their numbers a bit before the mainstay of the NCR army arrives and are enlisting locals to help. Bring us three of Marks of Caesar from dead Legionnaires and we'll pay a bounty of 800 caps"
 	end_message = "You have the personal thanks of a great deal of fallen NCR soldiers for what you have done here today, thank you"
-	target_items = list(/obj/item/weapon/storage/belt/legionbelt/ = 3)
+	target_items = list(/obj/item/weapon/card/id/legion = 3)
 	caps_reward = 800
-
-/datum/bounty_quest/faction/wasteland/qst_8
-	employer = "New Alamo"
-	need_message = "We've got three Deathclaws in the mine next to our town to the north west, we're looking to enlist locals to help us clear this out before they ransack the town. We are offering a bounty of 3000 caps - it's all we can afford. Bring their right-paw large talons to us as proof, three total"
-	end_message = "Thank you so much! Caps are in the slot below"
-	target_items = list(/obj/item/trash/f13/deathclawtalon = 3)
-	caps_reward = 3000
 
 /datum/bounty_quest/faction/wasteland/qst_9
 	employer = "Texas Wastes Bounty Board Management"
@@ -175,7 +168,7 @@
 	end_message = "The republic thanks you for your service"
 	target_items = list(/mob/living/simple_animal/hostile/rad_scorpion/black = 1)
 	caps_reward = 500
-	
+
 /datum/bounty_quest/faction/wasteland/qst_20
 	employer = "New California Republic, Department of Wasteland Anatomy"
 	need_message = "We're looking to see if there's any difference between Texan deathclaws and the deathclaws back west, we'd like to dissect a body. Bring us a deathclaw corpse intact and we'll pay you 1200 caps"
@@ -189,25 +182,25 @@
 
 /datum/bounty_quest/faction/NCR/qst_01
 	employer = "The Captain: Outstanding Objective #1"
-	need_message = "As part of our expansion into Texas, we've made contact with Caesar's Legion, an aggressive group of slavers. We've got outstanding orders to kill as many as we can before the mainstay of the NCR army arrives to reinforce us. There's a bounty of 400 caps out for each Legion Belt you can claim from a kill. Just bring them back to the pod here for safeekeping and collect your bounty"
+	need_message = "As part of our expansion into Texas, we've made contact with Caesar's Legion, an aggressive group of slavers. We've got outstanding orders to kill as many as we can before the mainstay of the NCR army arrives to reinforce us. There's a bounty of 400 caps out for each Mark of Caesar you can claim from a dead legionnaire. Just bring them back to the pod here for safeekeping and collect your bounty"
 	end_message = "Good job, trooper. Keep this up and we'll have the Legion turning tail in no time"
-	target_items = list(/obj/item/weapon/storage/belt/legionbelt/ = 1)
+	target_items = list(/obj/item/weapon/card/id/legion = 1)
 	caps_reward = 400
-	
+
 /datum/bounty_quest/faction/NCR/qst_02
 	employer = "The Captain: Outstanding Objective #2"
 	need_message = "As part of our expansion into Texas, we've had reported sightings of Brotherhood members in power armour. They're an enemy of the republic which means they're an enemy of yours. The expeditionary force has a bounty out for any Brotherhood holotags you can claim from their dead. 1100 caps per tag. Get on it trooper"
 	end_message = "Great job, trooper. Those brotherhood cowards don't stand a chance"
 	target_items = list(/obj/item/weapon/card/id/bos = 1)
 	caps_reward = 1100
-	
+
 /datum/bounty_quest/faction/NCR/qst_03
 	employer = "The Captain: Outstanding Objective #3"
-	need_message = "As part of our expansion into Texas, we've had reported sightings of Enclave war criminals. They are an enemy of all mankind, every single member of their heinous group is wanted for attempted genocide and many unspeakable crimes against humanity. The president himself has weighed in on this and while any Enclave personnel spotted should be brought in if possible for trial and execution, that is not always possible. As such there is now a bounty out for Advanced Power Armor suits. Kill or incapacitate the monster wearing them and bring the suits back here for disassembly. All mankind is hoping to hear the good news, trooper. Bring me some Enclave corpses to satisfy them. You'll get 2800 caps per standard suit of Enclave power armour"
+	need_message = "As part of our expansion into Texas, we've had reported sightings of Enclave war criminals. They are an enemy of all mankind, every single member of their heinous group is wanted for attempted genocide and many unspeakable crimes against humanity. The president himself has weighed in on this and while any Enclave personnel spotted should be brought in if possible for trial and execution, that is not alway possible. As such there is now a bounty out for Advanced Power Armor suits. Kill or incapacitate the monster wearing them and bring the suits back here for disassembly. All mankind is hoping to hear the good news, trooper. Bring me some Enclave corpses to satisfy them. You'll get 2800 caps per standard suit of Enclave power armour"
 	end_message = "Superb job, trooper. You'll get a commendation for this for sure. That's one less genocidal war criminal left to plague the world"
 	target_items = list(/obj/item/clothing/suit/armor/f13/power_armor/advanced = 1)
 	caps_reward = 2800
-	
+
 //////////////////////////////////////////
 //////////LEGION QUESTS BELOW/////////////
 //////////////////////////////////////////
@@ -218,14 +211,14 @@
 	end_message = "You serve Caesar well, Legionaire"
 	target_items = list(/obj/item/weapon/gun/ballistic/revolver/sequoia = 1)
 	caps_reward = 1600
-	
+
 /datum/bounty_quest/faction/LEGION/qst_02
 	employer = "The Legate: Outstanding Objective #2"
 	need_message = "Every day, more dogs of the NCR arrive in Texas. We will stem the flow by sowing terror among their ranks. Headhunt NCR troopers and bring me their dogtags, you'll receive 500 caps per dogtag and soon we'll ward off any reinforcements with a mountain of bodies and NCR tags that will instill dread into even the dumbest rancher from California"
 	end_message = "You serve the legion well. Carry on"
 	target_items = list(/obj/item/weapon/card/id/ncr = 1)
 	caps_reward = 500
-	
+
 datum/bounty_quest/faction/LEGION/qst_03
 	employer = "The Legate: Outstanding Objective #3"
 	need_message = "The camp requires food, you are to hunt wasteland creatures and return their meat here to sustain our encampment and the war effort. 200 caps per meat item you return"

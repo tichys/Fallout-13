@@ -44,8 +44,7 @@
 
 	outfit = /datum/outfit/job/captain
 
-	access = list(access_ncr)
-	minimal_access = list()
+	access = list(71)
 
 /datum/outfit/job/captain
 	name = "NCR Captain"
@@ -62,7 +61,7 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
-	
+
 /datum/job/captain/after_spawn(mob/living/carbon/human/H)
 	. = ..()
 	add_servant_of_ratvar(H)
@@ -115,10 +114,9 @@
 	outfit = /datum/outfit/job/ncr_sergeant
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_sergeant
-	name = "Sergeant"
+	name = "NCR Sergeant"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -151,7 +149,6 @@
 	outfit = /datum/outfit/job/vranger
 
 	access = list(71)
-	minimal_access = list()
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
@@ -244,10 +241,9 @@
 	outfit = /datum/outfit/job/ncr_ranger
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_ranger
-	name = "Staff Sergeant"
+	name = "NCR Patrol Ranger"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -271,8 +267,8 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "trooper"
-	total_positions = 30
-	spawn_positions = 30
+	total_positions = 26
+	spawn_positions = 26
 	supervisors = "the Captain"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
@@ -303,10 +299,9 @@
 	outfit = /datum/outfit/job/trooper
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/trooper
-	name = "Trooper"
+	name = "NCR Trooper"
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr

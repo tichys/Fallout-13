@@ -115,7 +115,7 @@ update_label("John Doe", "Clowny")
 		name = "[(!newname)	? "identification card"	: "[newname]'s Tags"][(!newjob) ? "" : " ([newjob])"]"
 		return
 
-	name = "[(!registered_name)	? "identification card"	: "[registered_name]'s ID Card"][(!assignment) ? "" : " ([assignment])"]"
+	name = "[(!registered_name)	? "identification card"	: "[registered_name]"][(!assignment) ? "" : " ([assignment])"]"
 
 /obj/item/weapon/card/id/silver
 	name = "silver identification card"
@@ -301,26 +301,38 @@ update_label("John Doe", "Clowny")
 	name = "NCR Dogtags"
 	desc = "A pair of standard issue NCR dogtags issued to all servicemen."
 	icon_state = "ncrtags"
-	item_state = "silver_id"
 	access = list(71)
 
 /obj/item/weapon/card/id/enclave
 	name = "Enclave Holotags"
 	desc = "A pair of Enclave holotags."
 	icon_state = "enclavetags"
-	item_state = "gold_id"
 	access = list(70)
 
 /obj/item/weapon/card/id/bos
 	name = "Brotherhood Holotags"
 	desc = "A pair of Brotherhood of Steel holotags."
 	icon_state = "bostags"
-	item_state = "gold_id"
 	access = list(69)
 
 /obj/item/weapon/card/id/vault
-	name = "Pip-Boy Holotape"
+	name = "Pip-Boy Holo-ID"
 	desc = "A holotape meant to be installed into a Pip-Boy 3000, this downloads all of the user's data into the device for use with access."
 	icon_state = "vaulttape"
-	item_state = "silver_id"
 	access = list(52)
+
+/obj/item/weapon/card/id/legion
+	name = "Mark of Caesar"
+	desc = "A mark of service within Caesar's Legion."
+	icon_state = "markofcaesar"
+	access = list(71)
+	
+/obj/item/weapon/card/id/newalamo
+	name = "New Alamo Citizenship Card"
+	desc = "A card certifying citizenship to the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
+	icon_state = "fingerprint1"
+
+/obj/item/weapon/card/id/newalamoworker
+	name = "New Alamo Worker's Permit"
+	desc = "A card certifying the right to work in the quarry beneath the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
+	icon_state = "fingerprint1"
