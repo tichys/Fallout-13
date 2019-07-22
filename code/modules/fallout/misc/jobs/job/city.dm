@@ -130,7 +130,6 @@
 	head = /obj/item/clothing/head/f13/cowboy
 	belt = /obj/item/weapon/storage/belt/holster
 	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
-	l_pocket = /obj/item/ammo_box/henry44
 	glasses = /obj/item/clothing/glasses/sunglasses
 	id = /obj/item/weapon/card/id/newalamo
 	back = /obj/item/weapon/gun/ballistic/shotgun
