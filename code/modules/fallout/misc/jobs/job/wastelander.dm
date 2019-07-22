@@ -21,6 +21,7 @@
 	uniform = /obj/item/clothing/under/f13/settler
 	shoes = /obj/item/clothing/shoes/f13/rag
 	belt = /obj/item/weapon/storage/belt/cruzholster/full
+	id = /obj/item/weapon/card/id/newalamoworker
 
 //Adventurer
 
@@ -98,3 +99,4 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/veteran
 	belt = /obj/item/weapon/storage/belt/cruzholster/full
+	id = /obj/item/weapon/card/id/newalamoworker
