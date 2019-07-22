@@ -16,8 +16,8 @@
 	anchored = 1
 	use_power = 1
 	var/disabled = 0
-	idle_power_usage = 10
-	active_power_usage = 100
+	idle_power_usage = -10
+	active_power_usage = -100
 	var/busy = 0
 	var/prod_coeff = 1
 
@@ -29,9 +29,6 @@
 
 	var/list/categories = list(
 							"human",
-							"lizard",
-							"plasmaman",
-							"special"
 							)
 
 /obj/machinery/limbgrower/New()
@@ -44,7 +41,7 @@
 /obj/item/weapon/circuitboard/machine/limbgrower
 	name = "Limb Grower (Machine Board)"
 	build_path = /obj/machinery/limbgrower
-	origin_tech = "programming=2;biotech=2"
+	origin_tech = "engineering=8;biotech=12"
 	req_components = list(
 							/obj/item/weapon/stock_parts/manipulator = 1,
 							/obj/item/weapon/reagent_containers/glass/beaker = 2,

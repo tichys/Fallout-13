@@ -152,3 +152,91 @@ obj/structure/ladder/vent/update_icon()
 
 	else	//wtf make your ladders properly assholes
 		icon_state = "ventblue"
+
+
+
+/obj/structure/roadtravel
+	name = "highway travel route"
+	desc = "A travel route via the blasted remnants of America's highways."
+	icon = 'icons/fallout/objects/structures/stationary.dmi'
+	icon_state = "verticalroadup"
+	anchored = 1
+	resistance_flags = INDESTRUCTIBLE
+	var/id = null
+	var/height = 0							//the 'height' of the ladder. higher numbers are considered physically higher
+	var/obj/structure/roadtravel/down = null	//the ladder below this one
+	var/obj/structure/roadtravel/up = null		//the ladder above this one
+
+/obj/structure/roadtravel/initialize()
+	spawn(1200)
+		for(var/obj/structure/roadtravel/RT in world)
+			if(RT.id == id)
+				if(RT.height == (height - 1))
+					down = RT
+					continue
+				if(RT.height == (height + 1))
+					up = RT
+					continue
+
+			if(up && down)	//if both our connections are filled
+				break
+		update_icon()
+
+/obj/structure/roadtravel/proc/go_up(mob/user,is_ghost)
+	if(!is_ghost)
+		show_fluff_message(1,user)
+		up.add_fingerprint(user)
+	user.forceMove(get_turf(up))
+
+/obj/structure/roadtravel/proc/go_down(mob/user,is_ghost)
+	if(!is_ghost)
+		show_fluff_message(0,user)
+		down.add_fingerprint(user)
+	user.forceMove(get_turf(down))
+
+/obj/structure/roadtravel/proc/use(mob/user,is_ghost=0)
+	if(up && down)
+		switch( alert("Travel along the highway route?", "Highway Travel Route", "Yes", "No", "Cancel") )
+			if("Up")
+				go_up(user,is_ghost)
+			if("Down")
+				go_down(user,is_ghost)
+			if("Cancel")
+				return
+	else if(up)
+		go_up(user,is_ghost)
+	else if(down)
+		go_down(user,is_ghost)
+	else
+		to_chat(user, "<span class='warning'>[src] doesn't seem to lead anywhere!</span>")
+
+	if(!is_ghost)
+		add_fingerprint(user)
+
+/obj/structure/roadtravel/attack_hand(mob/user)
+	if(can_use(user))
+		use(user)
+
+/obj/structure/roadtravel/attack_paw(mob/user)
+	return attack_hand(user)
+
+/obj/structure/roadtravel/attackby(obj/item/weapon/W, mob/user, params)
+	return attack_hand(user)
+
+/obj/structure/roadtravel/attack_ghost(mob/dead/observer/user)
+	use(user,1)
+
+/obj/structure/roadtravel/proc/show_fluff_message(up,mob/user)
+	if(up)
+		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
+	else
+		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
+
+/obj/structure/roadtravel/proc/can_use(mob/user)
+	return 1
+
+/obj/structure/roadtravel/unbreakable/Destroy(force)
+	if(force)
+		. = ..()
+	else
+		return QDEL_HINT_LETMELIVE

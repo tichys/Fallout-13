@@ -274,3 +274,11 @@ var/record_id_num = 1001
 	var/datum/job/J = SSjob.GetJob(H.mind.assigned_role)
 	var/datum/preferences/P = H.client.prefs
 	return get_flat_human_icon(null,J.outfit,P)
+
+
+/datum/datacore/proc/get_record_by_name(username)
+	for(var/i in general)
+		var/datum/data/record/to_check = i
+		if(username != to_check.fields["name"])
+			continue
+		return to_check

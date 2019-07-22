@@ -334,12 +334,14 @@
 	material = "glass"
 
 /obj/structure/door_assembly/door_assembly_wood
-	name = "wooden airlock assembly"
+	name = "reinforced fence"
 	icon = 'icons/obj/doors/airlocks/station/wood.dmi'
 	airlock_type = /obj/machinery/door/airlock/wood
 	anchored = 1
 	state = 1
-	mineral = "wood"
+	heat_proof_finished = 1
+	mineral = "glass"
+	material = "glass"
 
 /obj/structure/door_assembly/door_assembly_viro
 	name = "virology airlock assembly"

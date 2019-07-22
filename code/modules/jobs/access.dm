@@ -69,6 +69,7 @@
 /var/const/access_brotherhood = 69
 /var/const/access_enclave = 70
 /var/const/access_ncr = 71
+/var/const/access_legion = 72
 
 	//BEGIN CENTCOM ACCESS
 	/*Should leave plenty of room if we need to add more access levels.

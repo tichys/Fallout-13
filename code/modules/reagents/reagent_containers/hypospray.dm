@@ -56,7 +56,7 @@
 	icon_state = "combat_hypo"
 	volume = 600
 	ignore_flags = 1 // So they can heal their comrades.
-	list_reagents = list("musclestimulant" = 140, "psychocorazine" = 140, "epinephrine" = 140, "mannitol" = 60, "oculine" = 60, "inacusiate" = 60)
+	list_reagents = list("musclestimulant" = 200, "psychocorazine" = 60, "epinephrine" = 175, "mannitol" = 55, "oculine" = 55, "inacusiate" = 55)
 
 /obj/item/weapon/reagent_containers/hypospray/combat/nanites
 	desc = "A modified air-needle autoinjector for use in combat situations. Prefilled with expensive medical nanites for rapid healing."

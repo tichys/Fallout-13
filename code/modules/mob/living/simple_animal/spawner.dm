@@ -5,8 +5,8 @@
 	maxHealth = 100
 	gender = NEUTER
 	var/list/spawned_mobs = list()
-	var/max_mobs = 5
-	var/spawn_delay = 50
+	var/max_mobs = 1
+	var/spawn_delay = 150
 	var/spawn_time = 400 //40 seconds default
 	var/mob_type = /mob/living/simple_animal/hostile/carp
 	var/spawn_text = "emerges from"
@@ -62,9 +62,9 @@
 	icon_state = "hole"
 	icon_living = "hole"
 	icon = 'icons/mob/nest.dmi'
-	health = 150
-	maxHealth = 150
-	max_mobs = 10
+	health = 200
+	maxHealth = 200
+	max_mobs = 1
 	spawn_time = 600
 	mob_type = /mob/living/simple_animal/hostile/skeleton
 	spawn_text = "climbs out of"
@@ -77,10 +77,10 @@
 	icon_state = "hole"
 	icon_living = "hole"
 	icon = 'icons/mob/nest.dmi'
-	health = 1000
-	maxHealth = 1000
-	max_mobs = 5
-	spawn_time = 250
+	health = 200
+	maxHealth = 200
+	max_mobs = 1
+	spawn_time = 300
 	mob_type = /mob/living/simple_animal/hostile/ghoul
 	faction = list("ghoul")
 
@@ -90,10 +90,10 @@
 	icon_state = "hole"
 	icon_living ="hole"
 	icon = 'icons/mob/nest.dmi'
-	health = 1000
-	maxHealth = 1000
-	max_mobs = 2
-	spawn_time = 300
+	health = 200
+	maxHealth = 200
+	max_mobs = 1
+	spawn_time = 900
 	mob_type = /mob/living/simple_animal/hostile/deathclaw
 	faction = list("deathclaw")
 
@@ -103,10 +103,10 @@
 	icon_state = "hole"
 	icon_living = "hole"
 	icon = 'icons/mob/nest.dmi'
-	health = 1000
-	maxHealth = 1000
+	health = 200
+	maxHealth = 200
 	max_mobs = 2
-	spawn_time = 300
+	spawn_time = 400
 	mob_type = /mob/living/simple_animal/hostile/rad_scorpion
 	faction = list("scorpion")
 
@@ -116,10 +116,10 @@
 	icon_state = "hole"
 	icon_living = "hole"
 	icon = 'icons/mob/nest.dmi'
-	health = 1000
-	maxHealth = 1000
-	max_mobs = 1
-	spawn_time = 80
+	health = 200
+	maxHealth = 200
+	max_mobs = 2
+	spawn_time = 240
 	mob_type = /mob/living/simple_animal/hostile/radroach
 	faction = list("radroach")
 

@@ -20,7 +20,7 @@
 	maxHealth = 400
 	health = 400
 	self_weight = 500
-	damage_coeff = list(BRUTE = 0.25, BURN = 0.75, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
+	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 
 	faction = list("hostile", "deathclaw")
 

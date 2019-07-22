@@ -258,7 +258,6 @@
 		/obj/item/clothing/head/soft/black,
 		/obj/item/clothing/under/f13/batter,
 		/obj/item/weapon/twohanded/baseball,
-		/obj/item/clothing/gloves/f13/baseball,
 		/obj/item/clothing/shoes/f13/fancy
 		)
 	price = -0

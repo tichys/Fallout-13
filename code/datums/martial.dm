@@ -107,7 +107,7 @@
 
 	var/atk_verb = pick("left hook","right hook","straight punch")
 
-	var/damage = rand(5, 8) + A.dna.species.punchdamagelow
+	var/damage = rand(18, 26) + A.dna.species.punchdamagelow
 	if(!damage)
 		playsound(D.loc, A.dna.species.miss_sound, 25, 1, -1)
 		D.visible_message("<span class='warning'>[A] has attempted to [atk_verb] [D]!</span>", \
@@ -127,7 +127,7 @@
 	D.apply_damage(damage, STAMINA, affecting, armor_block)
 	add_logs(A, D, "punched (boxing) ")
 	if(D.getStaminaLoss() > 50)
-		var/knockout_prob = D.getStaminaLoss() + rand(-15,15)
+		var/knockout_prob = D.getStaminaLoss() + rand(-25,25)
 		if((D.stat != DEAD) && prob(knockout_prob))
 			D.visible_message("<span class='danger'>[A] has knocked [D] out with a haymaker!</span>", \
 								"<span class='userdanger'>[A] has knocked [D] out with a haymaker!</span>")
