@@ -168,7 +168,14 @@
 				/obj/item/weapon/grenade/syndieminibomb/concussion = 3000,
 				/obj/item/weapon/gun/ballistic/automatic/sniper_rifle = 50000,
 				/obj/item/ammo_box/magazine/sniper_rounds = 9000,
-						)
+				/obj/item/clothing/suit/armor/f13/ncr/patriot = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/soldier = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/commie = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/preacher = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/lover = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/stalker = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/punisher = 600,
+					)
 					
 					
 /* LEGION QUARTERMASTERBOT */
