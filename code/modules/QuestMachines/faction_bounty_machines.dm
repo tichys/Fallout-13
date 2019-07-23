@@ -175,7 +175,7 @@
 				/obj/item/clothing/suit/armor/f13/ncr/lover = 600,
 				/obj/item/clothing/suit/armor/f13/ncr/stalker = 600,
 				/obj/item/clothing/suit/armor/f13/ncr/punisher = 600,
-				)
+					)
 					
 					
 /* LEGION QUARTERMASTERBOT */
