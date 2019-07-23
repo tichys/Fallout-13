@@ -61,24 +61,24 @@ var/list/vault_occupations = list(
 	"Vault Medical Doctor",
 	"Vault Security Officer",
 	"Vault Engineer",
-	"Overseer"
+	"Vault Overseer"
 )
 
 var/list/brotherhood_occupations = list(
-	"Elder",
-	"Head Paladin",
-	"Head Scribe",
-	"Paladin",
-	"Knight",
-	"Scribe"
+	"Brotherhood Elder",
+	"Brotherhood Head Paladin",
+	"Brotherhood Head Scribe",
+	"Brotherhood Paladin",
+	"Brotherhood Knight",
+	"Brotherhood Scribe"
 )
 
 var/list/enclave_occupations = list(
-	"Colonel",
-	"Lieutenant",
-	"Private",
-	"Scientist",
-	"Recruit"
+	"Enclave Colonel",
+	"Enclave Lieutenant",
+	"Enclave Private",
+	"Enclave Scientist",
+	"Enclave Recruit"
 )
 
 var/list/legion_occupations = list(
@@ -86,9 +86,9 @@ var/list/legion_occupations = list(
 	"Legion Centurion",
 	"Legion Vexillarius",
 	"Legion Decanus",
-	"Prime Legionary",
-	"Recruit Legionary",
-	"Camp Follower"
+	"Legion Prime",
+	"Legion Recruit",
+	"Legion Camp Follower"
 )
 
 var/list/ncr_occupations = list(
@@ -100,20 +100,17 @@ var/list/ncr_occupations = list(
 )
 
 var/list/city_occupations = list(
-	"Mayor",
-	"Sheriff",
-	"Citizen"
+	"New Alamo Mayor",
+	"New Alamo Sheriff",
+	"New Alamo Citizen"
 )
 
 var/list/freelance_occupations = list(
-	"Mercenary",
-	"Adventurer",
-	"Wastelander",
-	"Settler"
+	"Wasteland Adventurer",
+	"Wasteland Settler"
 )
 
 var/list/raider_occupations = list(
-	"Gang Leader",
-	"Raider",
-	"Wastelander"
+	"Raider Gang Leader",
+	"Raider Gang Member"
 )
