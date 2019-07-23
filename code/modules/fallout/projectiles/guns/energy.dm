@@ -100,6 +100,7 @@
 	fire_delay = 3
 	w_class = 4
 	burst_size = 1
+	force = 20
 
 ///////LASERS//////
 
@@ -116,6 +117,7 @@
 	fire_delay = 0.5
 	w_class = 4
 	burst_size = 10
+	force = 15
 
 /obj/item/weapon/gun/energy/laser/rcw
 	name ="laser RCW"
