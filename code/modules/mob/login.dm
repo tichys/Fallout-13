@@ -26,6 +26,9 @@
 						log_access("Notice: [key_name(src)] has the same [matches] as [key_name(M)] (no longer logged in).")
 
 /mob/Login()
+	if(istype(src, /mob/living/carbon/human))
+		human_list += src
+
 	player_list |= src
 	update_Login_details()
 	world.update_status()
