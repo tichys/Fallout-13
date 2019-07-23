@@ -453,8 +453,8 @@
 /obj/item/clothing/head/helmet/power_armor/superadvanced
 	name = "advanced power armor Mk. II helmet"
 	desc = "An improved model of the standard advanced power armor helmet used exclusively by Enclave military forces, developed after the Great War.<br>It looks rather threatening."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
 	armor = list(melee = 125, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
@@ -533,8 +533,8 @@
 /obj/item/clothing/head/helmet/power_armor/advanced
 	name = "advanced power armor Mk. I helmet"
 	desc = "A helmet typically used by Enclave regular troops.<br>It looks somewhat threatening."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
 	armor = list(melee = 120, bullet = 95, laser = 75, energy = 75, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
