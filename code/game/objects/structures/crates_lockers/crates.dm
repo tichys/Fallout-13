@@ -77,6 +77,12 @@
 	name = "medical crate"
 	icon_state = "medicalcrate"
 
+/obj/structure/closet/crate/footlocker
+	desc = "A footlocker used for storing smaller items."
+	name = "footlocker"
+	icon_state = "footlocker"
+	anchored = 1
+
 /obj/structure/closet/crate/freezer/blood
 	name = "blood freezer"
 	desc = "A freezer containing packs of blood."
