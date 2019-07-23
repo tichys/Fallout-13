@@ -191,7 +191,7 @@ mob/proc/set_faction(var/faction)
 	return 1
 
 /datum/f13_faction/neutral
-	name = "Neutral"
+	name = "Wastelanders"
 	full_name = "Independent Wastelanders"
 	description = "<b>Alignment: True Neutral</b><br>Wastelanders - A catch-all term for anyone living in the wasteland who are not affiliated with any other groups.<br>They make a subsistence living off the land, trade with local settlements, and try not to be ravaged by the abundant (and usually hostile) wildlife, or bands of roaming raider gangs and slavers.<br><i>Home, home on the wastes...</i>"
 	id = "none"
