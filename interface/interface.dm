@@ -26,7 +26,7 @@
 	if(config.rulesurl)
 		if(alert("This will open the rules document in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link("https://docs.google.com/document/d/1TfsJ7hx6Lh8r4EjFIaEo23GPtdEedvtYmOnNGtwZR-8/edit")
+		src << link("https://falloutanewdawn.ga/forums/viewtopic.php?f=4&p=2&sid=b2a92ace2d6f8733bad69651aabac916")
 	return
 
 /client/verb/github()
