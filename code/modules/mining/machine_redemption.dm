@@ -6,22 +6,21 @@
 	desc = "A machine that accepts ore and instantly transforms it into workable material sheets. Points for ore are generated based on type and can be redeemed at a mining equipment vendor."
 	icon = 'icons/obj/machines/mining_machines.dmi'
 	icon_state = "ore_redemption"
+	resistance_flags = INDESTRUCTIBLE
 	density = 1
 	anchored = 1
 	input_dir = NORTH
 	output_dir = SOUTH
-	req_access = list(access_mineral_storeroom)
 	var/stk_types = list()
 	var/stk_amt   = list()
 	var/stack_list[0] //Key: Type.  Value: Instance of type.
 	var/obj/item/weapon/card/id/inserted_id
 	var/points = 0
-	var/ore_pickup_rate = 15
+	var/ore_pickup_rate = 5
 	var/sheet_per_ore = 1
 	var/point_upgrade = 1
-	var/list/ore_values = list(("sand" = 1), ("iron" = 1), ("plasma" = 15), ("silver" = 16), ("gold" = 18), ("titanium" = 30), ("uranium" = 30), ("diamond" = 50), ("bluespace crystal" = 50), ("bananium" = 60))
+	var/list/ore_values = list(("sand" = 1), ("iron" = 1), ("plasma" = 1), ("silver" = 15), ("gold" = 20), ("titanium" = 10), ("uranium" = 40), ("diamond" = 30), ("bluespace crystal" = 1), ("bananium" = 1))
 	speed_process = 1
-
 /obj/machinery/mineral/ore_redemption/New()
 	..()
 	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/ore_redemption(null)
@@ -30,7 +29,7 @@
 /obj/item/weapon/circuitboard/machine/ore_redemption
 	name = "Ore Redemption (Machine Board)"
 	build_path = /obj/machinery/mineral/ore_redemption
-	origin_tech = "programming=1;engineering=2"
+	origin_tech = "engineering=2"
 	req_components = list(
 							/obj/item/weapon/stock_parts/console_screen = 1,
 							/obj/item/weapon/stock_parts/matter_bin = 1,
@@ -203,7 +202,7 @@
 				inserted_id.verb_pickup()
 				inserted_id = null
 			if(href_list["choice"] == "claim")
-				if(access_mining_station in inserted_id.access)
+				if(48 in inserted_id.access)
 					inserted_id.mining_points += points
 					points = 0
 				else

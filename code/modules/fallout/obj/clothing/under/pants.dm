@@ -38,7 +38,7 @@
 	item_color = "madmax"
 	flags = THICKMATERIAL
 	body_parts_covered = LEGS
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 30, rad = 30, fire = 30, acid = 30)
+	armor = list(melee = 25, bullet = 20, laser = 15, energy = 10, bomb = 10, bio = 30, rad = 30, fire = 30, acid = 30)
 
 /obj/item/clothing/under/pants/f13/johnclothes
 	name = "bedraggled ranger wear"

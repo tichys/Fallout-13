@@ -243,7 +243,6 @@ mob/proc/set_faction(var/faction)
 	flags = HAVE_FREQ
 	area = /area/f13/brotherhood
 	verbs = list(/mob/proc/begin_head_voting)
-	var/martial_art/patraining = 1
 
 /datum/f13_faction/enclave
 	name = "Enclave"
@@ -256,7 +255,6 @@ mob/proc/set_faction(var/faction)
 	flags = HAVE_FREQ
 	area = /area/f13/enclave
 	verbs = list(/mob/proc/begin_head_voting)
-	var/martial_art/patraining = 1
 
 /datum/f13_faction/ahs
 	name = "Hubologists"

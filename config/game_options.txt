@@ -17,7 +17,7 @@ REVIVAL_BRAIN_LIFE -1
 ### RENAMING ###
 
 #Uncomment to allow cyborgs to rename themselves at roundstart.  Has no effect on roboticists renaming cyborgs the normal way.
-#RENAME_CYBORG
+RENAME_CYBORG
 
 ### OOC DURING ROUND ###
 #Comment this out if you want OOC to be automatically disabled during the round, it will be enabled during the lobby and after the round end results.
@@ -41,8 +41,8 @@ RUN_DELAY 1.5
 WALK_DELAY 5
 
 ## The variables below affect the movement of specific mob types.
-HUMAN_DELAY 0
-ROBOT_DELAY 0
+HUMAN_DELAY 0.35
+ROBOT_DELAY 2
 MONKEY_DELAY 0
 ALIEN_DELAY 0
 SLIME_DELAY 0

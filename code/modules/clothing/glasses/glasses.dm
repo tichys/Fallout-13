@@ -154,6 +154,13 @@
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/gray
 	dog_fashion = /datum/dog_fashion/head
+	
+/obj/item/clothing/glasses/sunglassespaop
+	desc = "Mil-spec combat shades, capable of blocking out extremely bright flashes of light without impacting general visiblity."
+	name = "combat shades"
+	icon_state = "sun"
+	item_state = "sunglasses"
+	flash_protect = 2
 
 /obj/item/clothing/glasses/sunglasses/reagent
 	name = "beer goggles"

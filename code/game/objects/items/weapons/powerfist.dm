@@ -5,7 +5,7 @@
 	item_state = "powerfist"
 	flags = CONDUCT
 	attack_verb = list("whacked", "fisted", "power-punched")
-	force = 20
+	force = 35
 	throwforce = 10
 	throw_range = 7
 	w_class = WEIGHT_CLASS_NORMAL

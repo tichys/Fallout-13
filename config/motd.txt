@@ -1,13 +1,6 @@
 <!-- Most valid html will work in here, excluding images. -->
-
 <h1>Welcome to Fallout 13 Roleplay!</h1>
-
-<b>Rules: https://docs.google.com/document/d/1TfsJ7hx6Lh8r4EjFIaEo23GPtdEedvtYmOnNGtwZR-8/edit?usp=sharing<b>
-
-<b>Discord: https://discord.gg/Sx3CrbG<b>
-
-<b>Wiki: https://outcaststhirteen.wikia.com/wiki/Outcasts_Thirteen<b>
-
+<b>Rules: https://falloutanewdawn.ga/forums/viewtopic.php?f=4&p=2&sid=b2a92ace2d6f8733bad69651aabac916<b>
 <i>This server is a Medium-RP setting, please read through the rules and affiliate yourself on what is and is not to be expected of you as you play.<i>
 
-<i> IMPORTANT: The server currently runs on the stable version of BYOND. If you updated to the beta branch and are experiencing issues please ensure you are on the most up to date version of the stable branch. <i>
+<i><b>If this is your first time playing, please take a moment to go through the character setup menu. Select each role at least once to equip a default loadout or take a moment to customise your roles to your liking with the clothing options available. This is important as otherwise your character will spawn without equipment.<i><b>

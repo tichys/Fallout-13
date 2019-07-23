@@ -438,24 +438,24 @@ var/const/INJECT = 5 //injection
 				check_gofast(my_atom)
 				check_goreallyfast(my_atom)
 	return 1
-
+	
 /datum/reagents/proc/check_ignoreslow(mob/M)
 	if(istype(M, /mob))
-		if(M.reagents.has_reagent("morphine")||M.reagents.has_reagent("ephedrine"))
+		if(M.reagents.has_reagent("morphine")||M.reagents.has_reagent("ephedrine")||M.reagents.has_reagent("musclestimulant")||M.reagents.has_reagent("psychocorazine"))
 			return 1
 		else
 			M.status_flags &= ~IGNORESLOWDOWN
 
 /datum/reagents/proc/check_gofast(mob/M)
 	if(istype(M, /mob))
-		if(M.reagents.has_reagent("unholywater")||M.reagents.has_reagent("nuka_cola")||M.reagents.has_reagent("stimulants"))
+		if(M.reagents.has_reagent("unholywater")||M.reagents.has_reagent("nuka_cola")||M.reagents.has_reagent("stimulants")||M.reagents.has_reagent("methamphetamine")||M.reagents.has_reagent("hyperepinephrine"))
 			return 1
 		else
 			M.status_flags &= ~GOTTAGOFAST
 
 /datum/reagents/proc/check_goreallyfast(mob/M)
 	if(istype(M, /mob))
-		if(M.reagents.has_reagent("methamphetamine"))
+		if(M.reagents.has_reagent("PLACEHOLDER")) // no chems use this flag at the moment, because it's too fast.
 			return 1
 		else
 			M.status_flags &= ~GOTTAGOREALLYFAST

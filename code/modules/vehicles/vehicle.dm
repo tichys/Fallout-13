@@ -64,7 +64,6 @@
 /obj/vehicle/relaymove(mob/user, direction)
 	if(riding_datum)
 		riding_datum.handle_ride(user, direction, engine_on)
-	user.update_vision_cone()
 
 
 /obj/vehicle/Move(NewLoc,Dir=0,step_x=0,step_y=0)

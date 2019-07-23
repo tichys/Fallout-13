@@ -113,9 +113,12 @@
 
 /obj/item/weapon/storage/backpack/explorer
 	name = "explorer bag"
-	desc = "A robust backpack for stashing your loot."
-	icon_state = "explorerpack"
-	item_state = "explorerpack"
+	desc = "A robust bag for stashing your loot."
+	max_w_class = WEIGHT_CLASS_GIGANTIC
+	max_combined_w_class = 28
+	resistance_flags = FIRE_PROOF
+	icon_state = "satchel-explorer"
+	item_state = "wanderer"
 
 /obj/item/weapon/storage/backpack/mime
 	name = "Parcel Parceaux"

@@ -24,39 +24,39 @@
 /*  CITY */
 /obj/machinery/bounty_machine/faction/city
 	name = "City CentrComm Terminal"
-	desc = "Ýòîò òåðìèíàë èñïîëüçóåò ìýð, ÷òî áû ïîääåðæèâàòü ñâÿçü ñ âíåøíèì ìèðîì."
+	desc = "High quality goods, weapons, equipment and implants for city dwellers."
+	resistance_flags = INDESTRUCTIBLE
 	icon_state = "terminal"
 	faction_id = "city"
-	quest_type = /datum/bounty_quest/faction/city
 	price_list = list(
-					/obj/item/stack/sheet/metal/ = 150,
-					/obj/item/stack/sheet/rglass = 200,
-					/obj/item/stack/sheet/glass = 150,
-					/obj/item/clothing/glasses/hud/health = 500,
-					/obj/item/weapon/gun/ballistic/automatic/wt550 = 2000,
-					/obj/item/weapon/gun/ballistic/shotgun/automatic/dual_tube = 5000,
-					/obj/item/seeds/tomato/blood = 1000,
-					/obj/item/seeds/tomato/killer = 1500,
-					/obj/item/seeds/potato/sweet = 800,
-					/obj/item/seeds/banana = 900,
-					/obj/item/seeds/tobacco = 1200,
-					/obj/item/seeds/grass = 1000,
-					/obj/item/seeds/grape = 1200,
-					/obj/item/seeds/ambrosia = 1400,
-					/obj/item/weapon/implanter/adrenalin = 2500,
-					/obj/item/weapon/implanter/storage = 5000,
-					/obj/item/seeds/cannabis = 2000,
-					/obj/structure/reagent_dispensers/barrel/explosive = 700,
-					/obj/item/weapon/surgical_drapes = 300,
-					/obj/item/weapon/reagent_containers/glass/beaker/bluespace = 1500,
-					/obj/item/weapon/implantcase = 800,
-					/obj/item/organ/cyberimp/eyes/xray = 7000,
-					/obj/item/organ/cyberimp/eyes/thermals = 8000,
-					/obj/item/organ/cyberimp/chest/reviver = 10000,
-					/obj/item/weapon/implanter/ = 1000,
-					/obj/item/weapon/storage/backpack/holding = 9000,
-					/obj/item/clothing/glasses/hud/health/night = 8000,
-					/obj/item/weapon/storage/bag/plants/portaseeder = 10000
+				/obj/item/stack/sheet/metal/ = 150,
+				/obj/item/stack/sheet/rglass = 200,
+				/obj/item/stack/sheet/glass = 150,
+				/obj/item/clothing/glasses/hud/health = 2500,
+				/obj/item/weapon/gun/ballistic/automatic/wt550 = 1100,
+				/obj/item/weapon/gun/ballistic/shotgun/automatic/dual_tube = 2700,
+				/obj/item/seeds/tomato/blood = 1000,
+				/obj/item/seeds/tomato/killer = 1200,
+				/obj/item/seeds/potato/sweet = 800,
+				/obj/item/seeds/banana = 900,
+				/obj/item/seeds/tobacco = 600,
+				/obj/item/seeds/grass = 1000,
+				/obj/item/seeds/grape = 1200,
+				/obj/item/seeds/ambrosia = 1100,
+				/obj/item/weapon/implanter/adrenalin = 4500,
+				/obj/item/weapon/implanter/storage = 8000,
+				/obj/item/seeds/cannabis = 1800,
+				/obj/structure/reagent_dispensers/barrel/explosive = 700,
+				/obj/item/weapon/surgical_drapes = 300,
+				/obj/item/weapon/reagent_containers/glass/beaker/bluespace = 1100,
+				/obj/item/organ/cyberimp/eyes/xray = 20000,
+				/obj/item/organ/cyberimp/eyes/thermals = 27500,
+				/obj/item/organ/cyberimp/chest/reviver = 14000,
+				/obj/item/weapon/storage/backpack/explorer = 9000,
+				/obj/item/clothing/glasses/hud/health/night = 14000,
+				/obj/item/weapon/storage/bag/plants/portaseeder = 12000,
+				/obj/item/clothing/mask/gas/syndicate = 4500,
+				/obj/item/weapon/tank/internals/emergency_oxygen/double = 1800
 					)
 
 
@@ -65,6 +65,7 @@
 /obj/machinery/bounty_machine/faction/guntrader
 	name = "Gun Trader"
 	desc = "A vending machine of sorts, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Astounding!"
+	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "weapon_idle"
 	free_access = 1
@@ -72,50 +73,44 @@
 	density = 1
 
 	price_list = list(
-	                /obj/item/weapon/gun/ballistic/automatic/smg9mm = 3500,
-	                /obj/item/weapon/gun/ballistic/automatic/pistol/mp443 = 2500,
-					/obj/item/weapon/gun/ballistic/automatic/pistol/p226 = 2000,
-					/obj/item/weapon/gun/ballistic/automatic/pistol/taurus = 2000,
-					/obj/item/weapon/gun/ballistic/automatic/pistol/browning = 1500,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/model6906 = 1200,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/model639 = 1000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/p38 = 1000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/p38snub = 1200,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/coltclone = 2750,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/p220 = 2750,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/coltofficer = 3000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/glock = 3700,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/n99 = 1300,
-                    /obj/item/weapon/gun/ballistic/automatic/smg10mm = 3800,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/deagle = 7500,
-                    /obj/item/weapon/gun/ballistic/revolver/model10 = 1800,
-                    /obj/item/weapon/gun/ballistic/revolver/model10snub = 2000,
-                    /obj/item/weapon/gun/ballistic/revolver/model629 = 7000,
-                    /obj/item/weapon/gun/ballistic/shotgun/henrytwo = 7500,
-                    /obj/item/weapon/gun/ballistic/revolver/model66 = 6500,
-                    /obj/item/weapon/gun/ballistic/revolver/model19 = 6500,
-                    /obj/item/weapon/gun/ballistic/revolver/sp101 = 6000,
-                    /obj/item/weapon/gun/ballistic/revolver/derringer = 4000,
-                    /obj/item/weapon/gun/ballistic/revolver/doublerifle = 8000,
-                    /obj/item/weapon/gun/ballistic/revolver/model460 = 9500,
-                    /obj/item/weapon/gun/ballistic/revolver/bulldog = 7000,
-                    /obj/item/weapon/gun/ballistic/revolver/bulldogstainless = 7000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/glock42 = 1000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/ppk = 1000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/model1908 = 1300,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/model1934 = 1300,
-                    /obj/item/weapon/gun/ballistic/revolver/thatgun = 5500,
-                    /obj/item/weapon/gun/ballistic/automatic/carbine = 7000,
-                    /obj/item/weapon/gun/ballistic/automatic/fnfal = 8500,
-                    /obj/item/weapon/gun/ballistic/automatic/garand = 8000,
-                    /obj/item/weapon/gun/ballistic/shotgun/patience = 7500,
-                    /obj/item/weapon/gun/ballistic/shotgun/huntingshotgun = 3500,
-                    /obj/item/weapon/gun/ballistic/shotgun = 3000,
-                    /obj/item/weapon/gun/ballistic/revolver/coachgun = 3000,
-                    /obj/item/weapon/gun/ballistic/revolver/madmax = 2500,
-                    /obj/item/weapon/gun/energy/laser/pistol = 7000,
-                    /obj/item/weapon/gun/energy/laser/rifle = 10000,
-					/obj/item/weapon/gun/energy/laser/rcw = 12500,
+	            /obj/item/weapon/gun/ballistic/automatic/smg9mm = 900,
+	            /obj/item/weapon/gun/ballistic/automatic/pistol/mp443 = 1300,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/p226 = 1450,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/taurus = 1900,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/browning = 3100,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/model6906 = 1500,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/model639 = 1450,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/p38 = 2150,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/p38snub = 1125,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/coltclone = 1500,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/p220 = 1450,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/coltofficer = 1850,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/glock = 1400,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/n99 = 1700,
+				/obj/item/weapon/gun/ballistic/automatic/smg10mm = 1850,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/deagle = 3400,
+				/obj/item/weapon/gun/ballistic/revolver/model10 = 1900,
+				/obj/item/weapon/gun/ballistic/revolver/model10snub = 1800,
+				/obj/item/weapon/gun/ballistic/revolver/model629 = 2000,
+				/obj/item/weapon/gun/ballistic/shotgun/henrytwo = 4200,
+				/obj/item/weapon/gun/ballistic/revolver/model66 = 2650,
+				/obj/item/weapon/gun/ballistic/revolver/model19 = 2900,
+				/obj/item/weapon/gun/ballistic/revolver/sp101 = 1800,
+				/obj/item/weapon/gun/ballistic/revolver/derringer = 400,
+				/obj/item/weapon/gun/ballistic/revolver/doublerifle = 3250,
+				/obj/item/weapon/gun/ballistic/revolver/model460 = 2300,
+				/obj/item/weapon/gun/ballistic/revolver/bulldog = 2500,
+				/obj/item/weapon/gun/ballistic/revolver/bulldogstainless = 3600,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/glock42 = 1700,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/ppk = 1600,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/model1908 = 2700,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/model1934 = 1800,
+				/obj/item/weapon/gun/ballistic/automatic/carbine = 1300,
+				/obj/item/weapon/gun/ballistic/shotgun/patience = 1750,
+				/obj/item/weapon/gun/ballistic/shotgun/huntingshotgun = 1600,
+				/obj/item/weapon/gun/ballistic/shotgun = 1850,
+				/obj/item/weapon/gun/ballistic/revolver/coachgun = 1450,
+				/obj/item/weapon/gun/ballistic/revolver/madmax = 3050,
 					)
 
 /* MIKEBOT */
@@ -123,6 +118,7 @@
 /obj/machinery/bounty_machine/faction/mikebot
 	name = "Mikebot 9000"
 	desc = "A heavily modified vendortron that sells an extensive inventory of antiquated or otherwise difficult to find firearms, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Does purchasing any of it's stock constitute potential war crimes? LOL naw"
+	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "mikebot"
 	free_access = 1
@@ -130,26 +126,115 @@
 	density = 1
 
 	price_list = list(
-	                /obj/item/weapon/gun/ballistic/automatic/pistol/maria = 3000,
-	                /obj/item/weapon/gun/ballistic/automatic/pistol/samuraiedge = 3700,
-	                /obj/item/weapon/gun/ballistic/automatic/pistol/shiningdarkness = 6000,
-					/obj/item/weapon/gun/ballistic/automatic/pistol/mike1911 = 3500,
-					/obj/item/weapon/gun/ballistic/automatic/pistol/redeagle= 7500,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/redeagletwo = 9500,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/longslide = 3600,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/automag = 9000,
-                    /obj/item/ammo_box/magazine/automag = 3000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/lugerzim = 5000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/killerseven = 12000,
-                    /obj/item/weapon/gun/ballistic/revolver/m1917 = 5500,
-                    /obj/item/weapon/gun/ballistic/revolver/policepistol = 7000,
-                    /obj/item/weapon/gun/ballistic/revolver/webleynickel = 8500,
-                    /obj/item/weapon/gun/ballistic/automatic/thismachine = 9000,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/silverghost = 5700,
-                    /obj/item/weapon/gun/ballistic/automatic/pistol/sm1912 = 20000,
-                    /obj/item/ammo_box/magazine/steyrmag = 1000,
-                    /obj/item/weapon/gun/energy/laser/laer = 30000,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/maria = 3600,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/samuraiedge = 4850,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/shiningdarkness = 6300,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/mike1911 = 5200,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/redeagle= 8500,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/redeagletwo = 6650,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/longslide = 5800,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/automag = 5150,
+				/obj/item/ammo_box/magazine/automag = 850,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/lugerzim = 4200,
+				/obj/item/weapon/gun/ballistic/revolver/m1917 = 3700,
+				/obj/item/weapon/gun/ballistic/revolver/policepistol = 1800,
+				/obj/item/weapon/gun/ballistic/revolver/webleynickel = 2200,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/silverghost = 2500,
+				/obj/item/weapon/gun/ballistic/automatic/pistol/sm1912 = 2750,
+				/obj/item/ammo_box/magazine/steyrmag = 1200,
 					)
+					
+/* NCR QUARTERMASTER BOT */
+
+/obj/machinery/bounty_machine/faction/ncrmikebot
+	name = "NCR Quartermaster 3000"
+	desc = "A heavily modified vendortron, functions as a quartermaster. This one is painted beige-brown, with NCR iconography."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/gun/ballistic/automatic/pistol/browning = 800,
+				/obj/item/weapon/gun/ballistic/automatic/assault_rifle = 2000,
+				/obj/item/ammo_box/magazine/browning = 500,
+				/obj/item/ammo_box/magazine/m556 = 900,
+				/obj/item/ammo_box/magazine/m556/ap = 1600,
+				/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 200,
+				/obj/item/weapon/reagent_containers/pill/patch/stimpak = 500,
+				/obj/item/weapon/grenade/flashbang = 2400,
+				/obj/item/weapon/grenade/syndieminibomb/concussion = 3000,
+				/obj/item/weapon/gun/ballistic/automatic/sniper_rifle = 50000,
+				/obj/item/ammo_box/magazine/sniper_rounds = 9000,
+				/obj/item/clothing/suit/armor/f13/ncr/patriot = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/soldier = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/commie = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/preacher = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/lover = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/stalker = 600,
+				/obj/item/clothing/suit/armor/f13/ncr/punisher = 600,
+					)
+					
+					
+/* LEGION QUARTERMASTERBOT */
+
+/obj/machinery/bounty_machine/faction/legmikebot
+	name = "Legion Quartermaster 3000"
+	desc = "A heavily modified vendortron, functions as a quartermaster. This one is painted in red and black, with Legion iconography."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/gun/ballistic/revolver/coltwalker = 1800,
+				/obj/item/weapon/gun/ballistic/shotgun/rifle = 1400,
+				/obj/item/ammo_box/magazine/internal/cylinder/walker = 1200,
+				/obj/item/ammo_box/m308 = 1100,
+				/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 200,
+				/obj/item/weapon/reagent_containers/pill/patch/healingpowder = 300,
+				/obj/item/weapon/grenade/chem_grenade/teargas = 2500,
+				/obj/item/weapon/storage/box/zipties = 1200,
+						)					
+
+
+
+/* RAIDER CHEM BOT */
+
+/obj/machinery/bounty_machine/faction/raiderdrugbot
+	name = "Raider Chems Dispensery"
+	desc = "A heavily modified vendortron. This one sells chems obtained by the raider gangs at a discounted rate - great for stocking up to sell on to wasters, or to get a quick fix."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/reagent_containers/pill/patch/stimpak = 100,
+				/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 180,
+				/obj/item/weapon/reagent_containers/pill/patch/medx = 250,
+				/obj/item/weapon/reagent_containers/pill/patch/radaway = 300,
+				/obj/item/weapon/reagent_containers/pill/patch/radx = 325,
+				/obj/item/weapon/reagent_containers/pill/patch/jet = 350,
+				/obj/item/weapon/reagent_containers/pill/patch/psycho = 400,
+				/obj/item/weapon/reagent_containers/pill/patch/turbo = 500,
+						)
+
+
+
+
+
+
+
+
+
+
 
 /* AMMO TRADER */
 
@@ -158,6 +243,7 @@
 /obj/machinery/bounty_machine/faction/ammotrader
 	name = "Ammo Trader"
 	desc = "A vending machine of sorts, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Astounding!"
+	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "ammo_idle"
 	free_access = 1
@@ -165,56 +251,56 @@
 	density = 1
 
 	price_list = list(
-	                /obj/item/ammo_box/magazine/luger = 250,
-	                /obj/item/ammo_box/magazine/smith = 250,
-	                /obj/item/ammo_box/magazine/norinco = 250,
-	                /obj/item/ammo_box/magazine/mauser = 350,
-	                /obj/item/ammo_box/magazine/smithmagsmall = 390,
-					/obj/item/ammo_box/magazine/browning = 450,
-					/obj/item/ammo_box/magazine/ninepistol = 500,
-					/obj/item/ammo_box/magazine/vp70 = 650,
-					/obj/item/ammo_box/magazine/mp443 = 650,
-					/obj/item/ammo_box/magazine/silverghostmag = 850,
-					/obj/item/ammo_box/magazine/smg9mm = 1000,
-					/obj/item/ammo_box/c9mm = 950,
-					/obj/item/ammo_box/magazine/m45 = 450,
-					/obj/item/ammo_box/magazine/glock = 850,
-					/obj/item/ammo_box/magazine/springfield = 850,
-					/obj/item/ammo_box/magazine/tommygunm45 = 2500,
-					/obj/item/ammo_box/c45 = 2000,
-					/obj/item/ammo_box/magazine/m50 = 1000,
-					/obj/item/ammo_box/magazine/c380small = 250,
-					/obj/item/ammo_box/magazine/c380 = 350,
-					/obj/item/ammo_box/c380 = 750,
-					/obj/item/ammo_box/magazine/m10mm_adv = 650,
-					/obj/item/ammo_box/magazine/m10mm_auto = 2000,
-					/obj/item/ammo_box/c10mm = 1500,
-					/obj/item/ammo_box/trenchgun = 1000,
-					/obj/item/ammo_box/c38 = 450,
-					/obj/item/ammo_box/a357 = 850,
-					/obj/item/ammo_box/n762 = 900,
-					/obj/item/ammo_box/thatgun = 500,
-					/obj/item/ammo_box/colt357 = 3000,
-					/obj/item/ammo_box/m44 = 1000,
-					/obj/item/ammo_box/henry44 = 5000,
-					/obj/item/ammo_box/a44spl = 6000,
-					/obj/item/ammo_box/c455 = 7000,
-					/obj/item/ammo_box/magazine/m440 = 6500,
-					/obj/item/ammo_box/magazine/m440/bleed = 7000,
-					/obj/item/ammo_box/magazine/killersevenmag = 1000,
-					/obj/item/ammo_box/model460 = 1500,
-					/obj/item/ammo_box/model500 = 2500,
-					/obj/item/ammo_box/magazine/m223 = 2000,
-					/obj/item/ammo_box/m223 = 4000,
-					/obj/item/ammo_box/magazine/internal/shot/garand = 1000,
-					/obj/item/ammo_box/magazine/falmag = 1600,
-					/obj/item/ammo_box/magazine/m308 = 1800,
-					/obj/item/ammo_box/m308 = 3000,
-					/obj/item/ammo_box/magazine/m556 = 1000,
-					/obj/item/ammo_box/magazine/aksumag = 1500,
-					/obj/item/ammo_box/magazine/akmag = 2000,
-					/obj/item/ammo_box/magazine/carbine = 2000,
-					/obj/item/ammo_box/magazine/sniper_rounds = 4000,
+				/obj/item/ammo_box/magazine/luger = 150,
+				/obj/item/ammo_box/magazine/smith = 800,
+				/obj/item/ammo_box/magazine/norinco = 150,
+				/obj/item/ammo_box/magazine/mauser = 150,
+				/obj/item/ammo_box/magazine/smithmagsmall = 460,
+				/obj/item/ammo_box/magazine/browning = 550,
+				/obj/item/ammo_box/magazine/ninepistol = 200,
+				/obj/item/ammo_box/magazine/vp70 = 180,
+				/obj/item/ammo_box/magazine/mp443 = 320,
+				/obj/item/ammo_box/magazine/silverghostmag = 950,
+				/obj/item/ammo_box/magazine/smg9mm = 600,
+				/obj/item/ammo_box/c9mm = 550,
+				/obj/item/ammo_box/magazine/m45 = 750,
+				/obj/item/ammo_box/magazine/glock = 450,
+				/obj/item/ammo_box/magazine/springfield = 1200,
+				/obj/item/ammo_box/magazine/tommygunm45 = 1200,
+				/obj/item/ammo_box/c45 = 2500,
+				/obj/item/ammo_box/magazine/m50 = 1750,
+				/obj/item/ammo_box/magazine/c380small = 1250,
+				/obj/item/ammo_box/magazine/c380 = 1350,
+				/obj/item/ammo_box/c380 = 1750,
+				/obj/item/ammo_box/magazine/m10mm_adv = 650,
+				/obj/item/ammo_box/magazine/m10mm_auto = 800,
+				/obj/item/ammo_box/c10mm = 700,
+				/obj/item/ammo_box/trenchgun = 1000,
+				/obj/item/ammo_box/c38 = 450,
+				/obj/item/ammo_box/a357 = 850,
+				/obj/item/ammo_box/n762 = 900,
+				/obj/item/ammo_box/thatgun = 500,
+				/obj/item/ammo_box/colt357 = 1200,
+				/obj/item/ammo_box/m44 = 1000,
+				/obj/item/ammo_box/henry44 = 2100,
+				/obj/item/ammo_box/a44spl = 3500,
+				/obj/item/ammo_box/c455 = 2800,
+				/obj/item/ammo_box/magazine/m440 = 1850,
+				/obj/item/ammo_box/magazine/m440/bleed = 3750,
+				/obj/item/ammo_box/magazine/killersevenmag = 800,
+				/obj/item/ammo_box/model460 = 1500,
+				/obj/item/ammo_box/model500 = 2500,
+				/obj/item/ammo_box/magazine/m223 = 2000,
+				/obj/item/ammo_box/m223 = 3350,
+				/obj/item/ammo_box/magazine/internal/shot/garand = 1000,
+				/obj/item/ammo_box/magazine/falmag = 1600,
+				/obj/item/ammo_box/magazine/m308 = 1800,
+				/obj/item/ammo_box/m308 = 2750,
+				/obj/item/ammo_box/magazine/m556 = 800,
+				/obj/item/ammo_box/magazine/aksumag = 1600,
+				/obj/item/ammo_box/magazine/akmag = 1750,
+				/obj/item/ammo_box/magazine/carbine = 1500,
+				/obj/item/ammo_box/magazine/sniper_rounds = 2750,
 					)
 
 /* MEDICAL TRADER */
@@ -222,6 +308,7 @@
 /obj/machinery/bounty_machine/faction/medtrader
 	name = "Medical Trader"
 	desc = "A vending machine of sorts, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Astounding!"
+	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "med_idle"
 	free_access = 1
@@ -229,11 +316,11 @@
 	density = 1
 
 	price_list = list(
-					/obj/item/weapon/reagent_containers/pill/patch/stimpak = 750,
-					/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 1250,
-					/obj/item/weapon/reagent_containers/pill/patch/medx = 1500,
-					/obj/item/weapon/reagent_containers/pill/patch/radaway = 2000,
-					/obj/item/weapon/reagent_containers/pill/patch/radx = 1500,
+				/obj/item/weapon/reagent_containers/pill/patch/stimpak = 400,
+				/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 900,
+				/obj/item/weapon/reagent_containers/pill/patch/medx = 600,
+				/obj/item/weapon/reagent_containers/pill/patch/radaway = 1400,
+				/obj/item/weapon/reagent_containers/pill/patch/radx = 2100,
 					)
 
 /* CHEM TRADER */
@@ -241,6 +328,7 @@
 /obj/machinery/bounty_machine/faction/chemtrader
 	name = "Chem Trader"
 	desc = "A vending machine of sorts, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Astounding! This one seems to have been vandalised and repurposed a bit..."
+	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "chems"
 	free_access = 1
@@ -248,10 +336,10 @@
 	density = 1
 
 	price_list = list(
-					/obj/item/weapon/reagent_containers/pill/patch/jet = 750,
-					/obj/item/weapon/reagent_containers/pill/patch/psycho = 1500,
-					/obj/item/weapon/reagent_containers/pill/patch/turbo = 2500,
-					/obj/item/weapon/reagent_containers/pill/patch/medx = 1500,
+				/obj/item/weapon/reagent_containers/pill/patch/jet = 400,
+				/obj/item/weapon/reagent_containers/pill/patch/psycho = 1200,
+				/obj/item/weapon/reagent_containers/pill/patch/turbo = 1600,
+				/obj/item/weapon/reagent_containers/pill/patch/medx = 750,
 					)
 
 
@@ -387,7 +475,7 @@
 	else
 		dat = GetQuestUI()
 
-	var/datum/browser/popup = new(usr, "bounty", "Wasteland Faction Contracts Database", 640, 400) // Set up the popup browser window
+	var/datum/browser/popup = new(usr, "bounty", "Vendomat Display", 640, 400) // Set up the popup browser window
 	popup.set_content(dat)
 	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()

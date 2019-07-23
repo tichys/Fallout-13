@@ -44,15 +44,14 @@
 
 	outfit = /datum/outfit/job/captain
 
-	access = list(access_ncr)
-	minimal_access = list()
+	access = list(71)
 
 /datum/outfit/job/captain
 	name = "NCR Captain"
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/general
 	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/armor/f13/power_armor/sierra
+	suit = null
 	belt = /obj/item/weapon/storage/belt/military/army
 	head = /obj/item/clothing/head/f13/ncr_captain
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
@@ -62,6 +61,11 @@
 		/obj/item/device/radio = 1, \
 		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
+
+/datum/job/captain/after_spawn(mob/living/carbon/human/H)
+	. = ..()
+	add_servant_of_ratvar(H)
+
 
 //NCR Sergeant
 
@@ -110,10 +114,9 @@
 	outfit = /datum/outfit/job/ncr_sergeant
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_sergeant
-	name = "Sergeant"
+	name = "NCR Sergeant"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -146,14 +149,15 @@
 	outfit = /datum/outfit/job/vranger
 
 	access = list(71)
-	minimal_access = list()
 
 	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
 	/obj/item/weapon/kitchen/knife/combat,
-	/obj/item/weapon/lighter/engraved
+	/obj/item/weapon/lighter/engraved,
+	/obj/item/clothing/suit/armor/ranger/eliteriotgear, //adding this here so vet rangers have a choice between light weight, low protective gear or high weight, high protective gear.
+	/obj/item/clothing/head/helmet/ranger/eliteriot,
 	)
 
 	denied_items = list(
@@ -179,10 +183,11 @@
 	uniform = /obj/item/clothing/under/f13/mechanic
 	shoes = /obj/item/clothing/shoes/f13/military/light
 	suit = /obj/item/clothing/suit/armor/ranger
+	suit_store = /obj/item/weapon/gun/ballistic/revolver/sequoia
 	head = /obj/item/clothing/head/helmet/ranger
 	belt = /obj/item/weapon/storage/belt/military/assault
 	back = /obj/item/weapon/gun/ballistic/automatic/sniper_rifle
-	weapon = /obj/item/weapon/gun/ballistic/revolver/sequoia
+	weapon = /obj/item/weapon/cqc_manual //adding this to NCR vet rangers, given their hand 2 hand proficiency.
 	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1, \
 		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
 		/obj/item/ammo_box/m44 = 3, \
@@ -236,10 +241,9 @@
 	outfit = /datum/outfit/job/ncr_ranger
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/ncr_ranger
-	name = "Staff Sergeant"
+	name = "NCR Patrol Ranger"
 	id = null
 	gloves = /obj/item/clothing/gloves/f13/military
 	uniform = /obj/item/clothing/under/f13/ncr_officer
@@ -263,8 +267,8 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "trooper"
-	total_positions = 30
-	spawn_positions = 30
+	total_positions = 26
+	spawn_positions = 26
 	supervisors = "the Captain"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
@@ -295,15 +299,14 @@
 	outfit = /datum/outfit/job/trooper
 
 	access = list(71)
-	minimal_access = list()
 
 /datum/outfit/job/trooper
-	name = "Trooper"
+	name = "NCR Trooper"
 	gloves = /obj/item/clothing/gloves/f13/ncr
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
-	head = /obj/item/clothing/head/helmet/ncr/trooper
+	head = /obj/item/clothing/head/helmet/f13/trooper
 	glasses = /obj/item/clothing/glasses/f13/biker
 	belt = /obj/item/weapon/storage/belt/military/army
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle

@@ -30,7 +30,7 @@
 	open_space = 1
 	blob_allowed = 0
 	environment = 19
-	grow_chance = 45
+	grow_chance = 5
 
 /area/f13/forest
 	name = "Forest"
@@ -89,7 +89,7 @@
 	open_space = 1
 	blob_allowed = 0
 	environment = 15
-	grow_chance = 50
+	grow_chance = 35
 
 /area/f13/tribe
 	name = "Tribe"
@@ -163,7 +163,7 @@
 	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_hub.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg')
 	environment = 8
-	grow_chance = 25
+	grow_chance = 5
 
 /area/f13/chapel
 	name = "Chapel"
@@ -239,7 +239,7 @@
 	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
 	environment = 21
-	grow_chance = 25
+	grow_chance = 5
 
 /area/f13/sewer
 	name = "Sewer"
@@ -248,7 +248,7 @@
 	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
 	environment = 21
-	grow_chance = 50
+	grow_chance = 5
 
 /area/f13/caves
 	name = "Caves"
@@ -257,7 +257,7 @@
 	ambientmusic = list('sound/f13music/fo2_caves.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_necropolis.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/ambigen_17.ogg','sound/f13ambience/ambigen_18.ogg','sound/f13ambience/ambigen_19.ogg')
 	environment = 8
-	grow_chance = 75
+	grow_chance = 5
 
 /area/f13/subway
 	name = "Subway"
@@ -266,7 +266,7 @@
 	ambientmusic = list('sound/f13music/fo2_tunnels.ogg','sound/f13music/fo2_caves.ogg','sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg')
 	environment = 21
-	grow_chance = 25
+	grow_chance = 5
 
 /area/f13/secret
 	name = "Secret"
@@ -296,8 +296,6 @@
 	ambientmusic = list('sound/f13music/fo2_raider.ogg','sound/f13music/fo2_raiders.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg', \
 	'sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg')
-	outdoors = 1
-	open_space = 1
 	blob_allowed = 0
 	environment = 6
 	grow_chance = 5
@@ -353,6 +351,8 @@
 	ambientmusic = list('sound/f13music/fo2_city.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_5.ogg','sound/f13ambience/ambigen_6.ogg','sound/f13ambience/ambigen_7.ogg', \
 	'sound/f13ambience/ambigen_8.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg')
+	outdoors = 1
+	open_space = 1
 	blob_allowed = 0
 	environment = 4
 	grow_chance = 5
@@ -364,9 +364,11 @@
 	ambientmusic = list('sound/f13music/fo2_hub.ogg','sound/f13music/fo2_outpost.ogg','sound/misc/null.ogg')
 	ambientsounds = list('sound/f13ambience/ambigen_3.ogg','sound/f13ambience/ambigen_4.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg', \
 	'sound/f13ambience/dog_distant_1.ogg','sound/f13ambience/dog_distant_2.ogg','sound/f13ambience/dog_distant_3.ogg')
+	outdoors = 1
+	open_space = 1
 	blob_allowed = 0
 	environment = 4
-	grow_chance = 5
+	grow_chance = 10
 
 /area/f13/followers
 	name = "Followers of the Apocalypse"

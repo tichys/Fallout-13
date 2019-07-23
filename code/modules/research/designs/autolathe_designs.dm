@@ -33,6 +33,14 @@
 	materials = list(MAT_METAL = 90)
 	build_path = /obj/item/weapon/extinguisher
 	category = list("initial","Tools")
+	
+/datum/design/pocketextinguisher
+	name = "Pocket fire extinguisher"
+	id = "pocketextinguisher"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 45)
+	build_path = /obj/item/weapon/extinguisher/mini
+	category = list("initial","Tools")
 
 /datum/design/multitool
 	name = "Multitool"
@@ -177,6 +185,14 @@
 	build_type = AUTOLATHE
 	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
 	build_path = /obj/item/clothing/ears/earmuffs
+	category = list("initial", "Misc")
+	
+/datum/design/sunglassespaop
+	name = "Combat Shades"
+	id = "sunglassespaop"
+	build_type = AUTOLATHE
+	materials = list(MAT_METAL = 500, MAT_GLASS = 1500)
+	build_path = /obj/item/clothing/glasses/sunglassespaop
 	category = list("initial", "Misc")
 
 /datum/design/pipe_painter

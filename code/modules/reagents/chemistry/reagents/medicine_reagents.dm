@@ -113,6 +113,7 @@
 	id = "inacusiate"
 	description = "Instantly restores all hearing to the patient, but does not cure deafness."
 	color = "#6600FF" // rgb: 100, 165, 255
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/inacusiate/on_mob_life(mob/living/M)
 	M.setEarDamage(0,0)
@@ -263,7 +264,7 @@
 	description = "Has a 33% chance per metabolism cycle to heal brute and burn damage.  Can be used as a blood substitute on an IV drip."
 	reagent_state = LIQUID
 	color = "#DCDCDC"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolization_rate = 0.15 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/salglu_solution/on_mob_life(mob/living/M)
 	if(prob(33))
@@ -496,7 +497,7 @@
 	description = "Increases stun resistance and movement speed. Overdose deals toxin damage and inhibits breathing."
 	reagent_state = LIQUID
 	color = "#D2FFFA"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM // upped drain slightly
 	overdose_threshold = 45
 	addiction_threshold = 30
 
@@ -565,7 +566,7 @@
 	description = "A painkiller that allows the patient to move at full speed even in bulky objects. Causes drowsiness and eventually unconsciousness in high doses. Overdose will cause a variety of effects, ranging from minor to lethal."
 	reagent_state = LIQUID
 	color = "#A9FBFB"
-	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	metabolization_rate = 0.55
 	overdose_threshold = 30
 	addiction_threshold = 25
 
@@ -639,7 +640,7 @@
 	description = "Quickly restores eye damage, cures nearsightedness, and has a chance to restore vision to the blind."
 	reagent_state = LIQUID
 	color = "#FFFFFF"
-	metabolization_rate = 0.25 * REAGENTS_METABOLISM
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/oculine/on_mob_life(mob/living/M)
 	if(M.disabilities & BLIND)
@@ -696,8 +697,8 @@
 	description = "Minor boost to stun resistance. Slowly heals damage if a patient is in critical condition, as well as regulating oxygen loss. Overdose causes weakness and toxin damage."
 	reagent_state = LIQUID
 	color = "#D2FFFA"
-	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	overdose_threshold = 30
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
+	overdose_threshold = 50
 
 /datum/reagent/medicine/epinephrine/on_mob_life(mob/living/M)
 	if(M.health < 0)
@@ -766,6 +767,7 @@
 	id = "mannitol"
 	description = "Efficiently restores brain damage."
 	color = "#DCDCFF"
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/mannitol/on_mob_life(mob/living/M)
 	M.adjustBrainLoss(-3*REM)
@@ -1014,6 +1016,36 @@
 	M.adjustCloneLoss(-3*REM, 0)
 	..()
 	. = 1
+	
+/datum/reagent/medicine/tricordrazine/overdose_process(mob/living/M)
+	M.adjustToxLoss(2*REM, 0)
+	M.adjustOxyLoss(2*REM, 0)
+	M.adjustBruteLoss(2*REM, 0)
+	M.adjustFireLoss(2*REM, 0)
+	..()
+	. = 1
+
+/datum/reagent/medicine/psychocorazine
+	name = "Psychocorazine"
+	id = "psychocorazine"
+	description = "The active chemical in psycho, significantly boosts the user's tolerance for pain and overall endurance."
+	reagent_state = SOLID
+	color = "#555555"
+	metabolization_rate = 0.6
+
+/datum/reagent/medicine/psychocorazine/on_mob_life(mob/living/M)
+	M.adjustBruteLoss(-0.5*REM, 0)
+	M.adjustFireLoss(-0.5*REM, 0)
+	M.adjustOxyLoss(-7, 0)
+	M.adjustBrainLoss(-7*REM)
+	M.adjustToxLoss(-0.5*REM, 0)
+	M.AdjustParalysis(-3, 0)
+	M.AdjustStunned(-3, 0)
+	M.AdjustWeakened(-3, 0)
+	M.adjustStaminaLoss(-5*REM, 0)
+	M.status_flags |= IGNORESLOWDOWN
+	..()
+	. = 1
 
 /datum/reagent/medicine/earthsblood //Created by ambrosia gaia plants
 	name = "Earthsblood"
@@ -1084,35 +1116,55 @@
 	. = 1
 
 //used for changeling's adrenaline power
-/datum/reagent/medicine/changelingAdrenaline
-	name = "Adrenaline"
-	id = "changelingAdrenaline"
+/datum/reagent/medicine/adrenaline_cocktail
+	name = "Adrenaline Cocktail"
+	id = "adrenaline_cocktail"
 	description = "Reduces stun times. Also deals toxin damage at high amounts."
 	color = "#C8A5DC"
 	overdose_threshold = 30
 
-/datum/reagent/medicine/changelingAdrenaline/on_mob_life(mob/living/M as mob)
-	M.AdjustParalysis(-1, 0)
-	M.AdjustStunned(-1, 0)
-	M.AdjustWeakened(-1, 0)
-	M.adjustStaminaLoss(-1, 0)
+/datum/reagent/medicine/adrenaline_cocktail/on_mob_life(mob/living/M as mob)
+	M.AdjustParalysis(-2, 0)
+	M.AdjustStunned(-2, 0)
+	M.AdjustWeakened(-2, 0)
+	M.adjustStaminaLoss(-2, 0)
 	. = 1
 	..()
 
-/datum/reagent/medicine/changelingAdrenaline/overdose_process(mob/living/M as mob)
+/datum/reagent/medicine/adrenaline_cocktail/overdose_process(mob/living/M as mob)
 	M.adjustToxLoss(1, 0)
 	. = 1
 	..()
 
-/datum/reagent/medicine/changelingAdrenaline2
-	name = "Adrenaline"
-	id = "changelingAdrenaline2"
-	description = "Drastically increases movement speed."
+/datum/reagent/medicine/hyperepinephrine
+	name = "Hyperepinephrine Solution"
+	id = "hyperepinephrine"
+	description = "Drastically increases oxygen and blood movement through the body, allowing increased movement speeds without fatigue."
 	color = "#C8A5DC"
-	metabolization_rate = 1
+	metabolization_rate = 0.7
 
-/datum/reagent/medicine/changelingAdrenaline2/on_mob_life(mob/living/M as mob)
-	M.status_flags |= GOTTAGOREALLYFAST
-	M.adjustToxLoss(2, 0)
+/datum/reagent/medicine/hyperepinephrine/on_mob_life(mob/living/M as mob)
+	M.status_flags |= GOTTAGOFAST
+	M.adjustToxLoss(0.5, 0)
+	. = 1
+	..()
+	
+/datum/reagent/medicine/musclestimulant
+	name = "Muscle Stimulant"
+	id = "musclestimulant"
+	description = "A cocktail of stimulants targeted at the cardiovascular system, allowing for significantly improved pain endurance and recovery from fatigue."
+	reagent_state = LIQUID
+	color = "#A9FBFB"
+	metabolization_rate = 0.2
+
+/datum/reagent/medicine/musclestimulant/on_mob_life(mob/living/M)
+	M.status_flags |= IGNORESLOWDOWN
+	M.adjustBruteLoss(0.2*REM, 0)
+	M.adjustFireLoss(0.2*REM, 0)
+	M.adjustToxLoss(0.2*REM, 0)
+	M.AdjustParalysis(-3, 0)
+	M.AdjustStunned(-3, 0)
+	M.AdjustWeakened(-3, 0)
+	M.adjustStaminaLoss(-2.5*REM, 0)
 	. = 1
 	..()

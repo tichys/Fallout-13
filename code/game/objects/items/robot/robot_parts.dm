@@ -36,7 +36,7 @@
 	head.flash2 = new(head)
 	chest = new(src)
 	chest.wired = TRUE
-	chest.cell = new /obj/item/weapon/stock_parts/cell/high/plus(chest)
+	chest.cell = new /obj/item/weapon/stock_parts/cell(chest)
 	..()
 
 /obj/item/robot_suit/proc/updateicon()
@@ -306,4 +306,3 @@
 
 	add_fingerprint(usr)
 	Interact(usr)
-

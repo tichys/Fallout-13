@@ -1,6 +1,6 @@
 /obj/item/weapon/stock_parts/cell
-	name = "power cell"
-	desc = "A rechargable electrochemical power cell."
+	name = "Microfusion cell"
+	desc = "A rechargable miniature fusion reaction contained within a compact power cell, roughly the size of a golf ball. Some power cells, especially advanced models with higher capacity, may be worth a lot for the research potential behind their construction, they may be valuable items to the right buyer or a critical resource to develop cutting edge technologies."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "cell"
 	item_state = "cell"
@@ -12,9 +12,9 @@
 	w_class = WEIGHT_CLASS_SMALL
 	var/charge = 0	// note %age conveted to actual charge in New
 	var/maxcharge = 1000
-	materials = list(MAT_METAL=700, MAT_GLASS=50)
+	materials = list(MAT_SILVER = 6000, MAT_GOLD = 8000, MAT_DIAMOND = 4000, MAT_URANIUM = 2000)
 	var/rigged = 0		// true if rigged to explode
-	var/chargerate = 100 //how much power is given every tick in a recharger
+	var/chargerate = 150 //how much power is given every tick in a recharger
 	var/self_recharge = 0 //does it self recharge, over time, or not?
 	var/ratingdesc = TRUE
 	var/grown_battery = FALSE // If it's a grown that acts as a battery, add a wire overlay to it.
@@ -161,8 +161,8 @@
 
 /* Cell variants*/
 /obj/item/weapon/stock_parts/cell/crap
-	name = "\improper Nanotrasen brand rechargable AA battery"
-	desc = "You can't top the plasma top." //TOTALLY TRADEMARK INFRINGEMENT
+	name = "\improper Microfusion cell"
+	desc = "A very shoddily put together cell, you're not sure it won't just explode." //TOTALLY TRADEMARK INFRINGEMENT
 	maxcharge = 500
 	materials = list(MAT_GLASS=40)
 	rating = 2
@@ -172,7 +172,7 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/secborg
-	name = "security borg rechargable D battery"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION SECBORG"
 	origin_tech = null
 	maxcharge = 600	//600 max charge / 100 charge per shot = six shots
 	materials = list(MAT_GLASS=40)
@@ -183,83 +183,86 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/pulse //200 pulse shots
-	name = "pulse rifle power cell"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION PULSE"
 	maxcharge = 40000
 	rating = 3
-	chargerate = 1500
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/pulse/carbine //25 pulse shots
-	name = "pulse carbine power cell"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION PCARBINE"
 	maxcharge = 5000
 
 /obj/item/weapon/stock_parts/cell/pulse/pistol //10 pulse shots
-	name = "pulse pistol power cell"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION PPISTOL"
 	maxcharge = 2000
 
 /obj/item/weapon/stock_parts/cell/high
-	name = "high-capacity power cell"
-	origin_tech = "powerstorage=2"
+	name = "high-capacity Microfusion cell"
+	origin_tech = "powerstorage=6;materials=5;engineering=6"
 	icon_state = "hcell"
-	maxcharge = 10000
-	materials = list(MAT_GLASS=60)
+	maxcharge = 2250
+	materials = list(MAT_SILVER = 8000, MAT_GOLD = 10000, MAT_DIAMOND = 6000, MAT_URANIUM = 4000)
 	rating = 3
-	chargerate = 1500
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/high/plus
-	name = "high-capacity power cell+"
-	desc = "Where did these come from?"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION HIGHPLUS"
+	origin_tech = "materials=5;engineering=5;powerstorage=4"
+	desc = "A microfusion cell straight out of Big MT. The technology behind how it works isn't really known by anyone outside of Big MT, but it can recharge itself without need of a charging station. Functionally this is an unlimited power source for all but the most energy intensive purposes. The future, today."
 	icon_state = "h+cell"
-	maxcharge = 15000
-	chargerate = 2250
+	maxcharge = 12500
+	materials = list(MAT_METAL = 100000, MAT_GLASS = 100000, MAT_GOLD = 200, MAT_SILVER = 200, MAT_URANIUM = 100)
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/high/empty/New()
 	..()
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/super
-	name = "super-capacity power cell"
-	origin_tech = "powerstorage=3;materials=3"
+	name = "super-capacity Microfusion cell"
+	origin_tech = "powerstorage=8;materials=8;engineering=6"
 	icon_state = "scell"
-	maxcharge = 20000
-	materials = list(MAT_GLASS=300)
+	maxcharge = 4000
+	materials = list(MAT_SILVER = 10000, MAT_GOLD = 12000, MAT_DIAMOND = 8000, MAT_URANIUM = 6000)
 	rating = 4
-	chargerate = 2000
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/super/empty/New()
 	..()
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/hyper
-	name = "hyper-capacity power cell"
-	origin_tech = "powerstorage=4;engineering=4;materials=4"
+	name = "hyper-capacity Microfusion cell"
+	origin_tech = "powerstorage=11;materials=12;engineering=10"
 	icon_state = "hpcell"
-	maxcharge = 30000
-	materials = list(MAT_GLASS=400)
+	maxcharge = 6000
+	materials = list(MAT_SILVER = 12000, MAT_GOLD = 16000, MAT_DIAMOND = 14000, MAT_URANIUM = 20000)
 	rating = 5
-	chargerate = 3000
+	chargerate = 150
 
 /obj/item/weapon/stock_parts/cell/hyper/empty/New()
 	..()
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/bluespace
-	name = "bluespace power cell"
-	desc = "A rechargable transdimensional power cell."
-	origin_tech = "powerstorage=5;bluespace=4;materials=4;engineering=4"
+	name = "quantum Microfusion cell"
+	desc = "A self-sustaining microfusion reaction contained within a quantum bubble, you don't understand how it works but it generates power equivalent to multiple 100MT nuclear detonations simultaneously."
+	origin_tech = "powerstorage=14;materials=14;engineering=12"
 	icon_state = "bscell"
-	maxcharge = 40000
-	materials = list(MAT_GLASS=600)
+	maxcharge = 12500
+	materials = list(MAT_SILVER = 18000, MAT_GOLD = 24000, MAT_DIAMOND = 18000, MAT_URANIUM = 40000)
 	rating = 6
-	chargerate = 4000
+	chargerate = 1250
+	self_recharge = 1
 
 /obj/item/weapon/stock_parts/cell/bluespace/empty/New()
 	..()
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/infinite
-	name = "infinite-capacity power cell!"
+	name = "badmin infinite power cell!"
 	icon_state = "icell"
-	origin_tech =  "powerstorage=7"
+	origin_tech =  "powerstorage=20"
 	maxcharge = 30000
 	materials = list(MAT_GLASS=1000)
 	rating = 6
@@ -270,20 +273,22 @@
 
 /obj/item/weapon/stock_parts/cell/infinite/abductor
 	name = "void core"
-	desc = "An alien power cell that produces energy seemingly out of nowhere."
+	desc = "An alien power core plucked from the crashed UFO. It seems to fit into any position a Microfusion cell would... what a coincidence."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "cell"
-	origin_tech =  "abductor=5;powerstorage=8;engineering=6"
+	origin_tech =  "abductor=20;powerstorage=20;engineering=16"
 	maxcharge = 50000
 	rating = 12
 	ratingdesc = FALSE
+	chargerate = 50000
+	self_recharge = 1
 
 /obj/item/weapon/stock_parts/cell/infinite/abductor/update_icon()
 	return
 
 
 /obj/item/weapon/stock_parts/cell/potato
-	name = "potato battery"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION POTATOCELL"
 	desc = "A rechargable starch based power cell."
 	icon = 'icons/obj/hydroponics/harvest.dmi'
 	icon_state = "potato"
@@ -295,7 +300,7 @@
 	grown_battery = TRUE //it has the overlays for wires
 
 /obj/item/weapon/stock_parts/cell/high/slime
-	name = "charged slime core"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION SLIMECELL"
 	desc = "A yellow slime core infused with plasma, it crackles with power."
 	origin_tech = "powerstorage=5;biotech=4"
 	icon = 'icons/mob/slimes.dmi'
@@ -304,7 +309,7 @@
 	self_recharge = 1 // Infused slime cores self-recharge, over time
 
 /obj/item/weapon/stock_parts/cell/emproof
-	name = "\improper EMP-proof cell"
+	name = "THIS CELL SHOULD NOT BE SPAWNING PLEASE REPORT THIS TO AN ADMIN MENTION EMPCELL"
 	desc = "An EMP-proof cell."
 	maxcharge = 500
 	rating = 2

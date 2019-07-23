@@ -76,13 +76,14 @@
 
 /datum/datacore/proc/get_manifest(monochrome, OOC)
 	var/list/heads = list()
-	var/list/sec = list()
-	var/list/eng = list()
-	var/list/med = list()
-	var/list/sci = list()
-	var/list/sup = list()
-	var/list/civ = list()
-	var/list/bot = list()
+	var/list/vault = list()
+	var/list/brotherhood = list()
+	var/list/enclave = list()
+	var/list/legion = list()
+	var/list/ncr = list()
+	var/list/city = list()
+	var/list/freelance = list()
+	var/list/raider = list()
 	var/list/misc = list()
 	var/dat = {"
 	<head><style>
@@ -105,26 +106,29 @@
 		if(rank in command_positions)
 			heads[name] = rank
 			department = 1
-		if(rank in security_positions)
-			sec[name] = rank
+		if(rank in vault_occupations)
+			vault[name] = rank
 			department = 1
-		if(rank in engineering_positions)
-			eng[name] = rank
+		if(rank in brotherhood_occupations)
+			brotherhood[name] = rank
 			department = 1
-		if(rank in medical_positions)
-			med[name] = rank
+		if(rank in enclave_occupations)
+			enclave[name] = rank
 			department = 1
-		if(rank in science_positions)
-			sci[name] = rank
+		if(rank in legion_occupations)
+			legion[name] = rank
 			department = 1
-		if(rank in supply_positions)
-			sup[name] = rank
+		if(rank in ncr_occupations)
+			ncr[name] = rank
 			department = 1
-		if(rank in civilian_positions)
-			civ[name] = rank
+		if(rank in city_occupations)
+			city[name] = rank
 			department = 1
-		if(rank in nonhuman_positions)
-			bot[name] = rank
+		if(rank in freelance_occupations)
+			freelance[name] = rank
+			department = 1
+		if(rank in raider_occupations)
+			raider[name] = rank
 			department = 1
 		if(!department && !(name in heads))
 			misc[name] = rank
@@ -133,41 +137,45 @@
 		for(var/name in heads)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[heads[name]]</td></tr>"
 			even = !even
-	if(sec.len > 0)
-		dat += "<tr><th colspan=3>Security</th></tr>"
-		for(var/name in sec)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sec[name]]</td></tr>"
+	if(vault.len > 0)
+		dat += "<tr><th colspan=3>Vault 113</th></tr>"
+		for(var/name in vault)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[vault[name]]</td></tr>"
 			even = !even
-	if(eng.len > 0)
-		dat += "<tr><th colspan=3>Engineering</th></tr>"
-		for(var/name in eng)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[eng[name]]</td></tr>"
+	if(city.len > 0)
+		dat += "<tr><th colspan=3>New Alamo</th></tr>"
+		for(var/name in city)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[city[name]]</td></tr>"
 			even = !even
-	if(med.len > 0)
-		dat += "<tr><th colspan=3>Medical</th></tr>"
-		for(var/name in med)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[med[name]]</td></tr>"
+	if(freelance.len > 0)
+		dat += "<tr><th colspan=3>Freelancers</th></tr>"
+		for(var/name in freelance)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[freelance[name]]</td></tr>"
 			even = !even
-	if(sci.len > 0)
-		dat += "<tr><th colspan=3>Science</th></tr>"
-		for(var/name in sci)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sci[name]]</td></tr>"
+	if(raider.len > 0)
+		dat += "<tr><th colspan=3>Raiders</th></tr>"
+		for(var/name in raider)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[raider[name]]</td></tr>"
 			even = !even
-	if(sup.len > 0)
-		dat += "<tr><th colspan=3>Supply</th></tr>"
-		for(var/name in sup)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sup[name]]</td></tr>"
+	if(ncr.len > 0)
+		dat += "<tr><th colspan=3>New California Republic</th></tr>"
+		for(var/name in ncr)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[ncr[name]]</td></tr>"
 			even = !even
-	if(civ.len > 0)
-		dat += "<tr><th colspan=3>Civilian</th></tr>"
-		for(var/name in civ)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[civ[name]]</td></tr>"
+	if(legion.len > 0)
+		dat += "<tr><th colspan=3>Caesar's Legion</th></tr>"
+		for(var/name in legion)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[legion[name]]</td></tr>"
 			even = !even
-	// in case somebody is insane and added them to the manifest, why not
-	if(bot.len > 0)
-		dat += "<tr><th colspan=3>Silicon</th></tr>"
-		for(var/name in bot)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bot[name]]</td></tr>"
+	if(brotherhood.len > 0)
+		dat += "<tr><th colspan=3>Texas Chapter</th></tr>"
+		for(var/name in brotherhood)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[brotherhood[name]]</td></tr>"
+			even = !even
+	if(enclave.len > 0)
+		dat += "<tr><th colspan=3>105th Special Defense Battalion</th></tr>"
+		for(var/name in enclave)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[enclave[name]]</td></tr>"
 			even = !even
 	// misc guys
 	if(misc.len > 0)
@@ -266,3 +274,11 @@ var/record_id_num = 1001
 	var/datum/job/J = SSjob.GetJob(H.mind.assigned_role)
 	var/datum/preferences/P = H.client.prefs
 	return get_flat_human_icon(null,J.outfit,P)
+
+
+/datum/datacore/proc/get_record_by_name(username)
+	for(var/i in general)
+		var/datum/data/record/to_check = i
+		if(username != to_check.fields["name"])
+			continue
+		return to_check

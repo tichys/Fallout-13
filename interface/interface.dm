@@ -6,9 +6,7 @@
 	if(config.wikiurl)
 		if(alert("This will open the wiki in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link(config.wikiurl)
-	else
-		to_chat(src, "<span class='danger'>The wiki URL is not set in the server configuration.</span>")
+		src << link("http://falloutanewdawn.ga/wiki/index.php/Main_Page")
 	return
 
 /client/verb/forum()
@@ -18,33 +16,27 @@
 	if(config.forumurl)
 		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link(config.forumurl)
-	else
-		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
+		src << link("https://falloutanewdawn.ga/forums/")
 	return
 
 /client/verb/rules()
 	set name = "rules"
-	set desc = "Show Server Rules."
+	set desc = "Show server rules."
 	set hidden = 1
 	if(config.rulesurl)
-		if(alert("This will open the rules in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open the rules document in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link(config.rulesurl)
-	else
-		to_chat(src, "<span class='danger'>The rules URL is not set in the server configuration.</span>")
+		src << link("https://falloutanewdawn.ga/forums/viewtopic.php?f=4&p=2&sid=b2a92ace2d6f8733bad69651aabac916")
 	return
 
 /client/verb/github()
 	set name = "discord"
-	set desc = "Join to discord"
+	set desc = "Join the discord"
 	set hidden = 1
 	if(config.discord)
-		if(alert("This will open discord invite in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open a discord invite in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link(config.discord)
-	else
-		to_chat(src, "<span class='danger'>Discord invite URL is not set in the server configuration.</span>")
+		src << link("https://discord.gg/6WvdqMF")
 	return
 
 /client/verb/reportissue()
@@ -52,11 +44,9 @@
 	set desc = "Report an issue"
 	set hidden = 1
 	if(config.bitbucket)
-		if(alert("This will open Github in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open the Github in your browser. Are you sure?",,"Yes","No")=="No")
 			return
-		src << link(config.bitbucket)
-	else
-		to_chat(src, "<span class='danger'>Github URL is not set in the server configuration.</span>")
+		src << link("https://github.com/tichys/Fallout-13/issues")
 	return
 
 /client/verb/hotkeys_help()

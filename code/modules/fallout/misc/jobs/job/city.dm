@@ -1,7 +1,7 @@
 //Fallout 13 City faction roles
 
 /datum/job/mayor
-	title = "Mayor"
+	title = "New Alamo Mayor"
 	desc = "A trustworthy authority.<br>You were chosen to guide them, now you have to choose: carrot or stick."
 	flag = MAYOR
 	department_flag = WASTELAND
@@ -9,10 +9,9 @@
 	status = "mayor"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "nobody"
+	supervisors = "the people of New Alamo"
 	selection_color = "#804B00"
-	access = list()
-	minimal_access = list()
+	access = list(48)
 	outfit = /datum/outfit/job/mayor
 	whitelist_on = 0
 
@@ -59,18 +58,17 @@
 	)
 
 /datum/outfit/job/mayor
-	name = "Mayor"
-	backpack = null
-	satchel = null
+	name = "New Alamo Mayor"
+	belt = /obj/item/weapon/storage/belt/cruzholster/full
 	uniform = /obj/item/clothing/under/f13/formal
 	shoes = /obj/item/clothing/shoes/laceup
-	suit = null
+	id = /obj/item/weapon/card/id/newalamo
 	head = /obj/item/clothing/head/f13/beaver
 
 //Sheriff
 
 /datum/job/sheriff
-	title = "Sheriff"
+	title = "New Alamo Sheriff"
 	desc = "A fearless lawkeeper.<br>You were chosen to protect them, now you have to choose: word or sword."
 	flag = SHERIFF
 	department_flag = WASTELAND
@@ -78,10 +76,9 @@
 	status = "sheriff"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Mayor"
+	supervisors = "the Mayor"
 	selection_color = "#804B00"
-	access = list()
-	minimal_access = list()
+	access = list(48)
 	outfit = /datum/outfit/job/sheriff
 
 	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre")
@@ -93,8 +90,17 @@
 	/obj/item/clothing/suit/f13/cowboybvest,
 	/obj/item/clothing/suit/f13/duster,
 	/obj/item/clothing/glasses/eyepatch,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/leonjacket,
+	/obj/item/clothing/suit/poncho,
+	/obj/item/clothing/under/leonclothes,
+	/obj/item/clothing/under/liquidsuit,
+	/obj/item/clothing/suit/poncho/green,
+	/obj/item/clothing/suit/poncho/red,
+	/obj/item/clothing/head/sombrero,
+	/obj/item/clothing/head/sombrero/green,
 	/obj/item/weapon/kitchen/knife/combat,
-	/obj/item/ammo_box/magazine/internal/cylinder/m44
 	)
 
 	denied_items = list(
@@ -114,30 +120,31 @@
 	)
 
 /datum/outfit/job/sheriff
-	name = "Sheriff"
-	uniform = /obj/item/clothing/under/f13/cowboyb
-	shoes = /obj/item/clothing/shoes/f13/cowboy
-	suit = /obj/item/clothing/suit/f13/sheriff
-	head = /obj/item/clothing/head/f13/cowboy
-	weapon = /obj/item/weapon/gun/ballistic/revolver/magnum
+	name = "New Alamo Sheriff"
+	uniform = /obj/item/clothing/under/f13/mechanic
+	shoes = /obj/item/clothing/shoes/f13/military/light
+	gloves = /obj/item/clothing/gloves/f13/military
+	suit = /obj/item/clothing/suit/armor/ranger/old
+	head = /obj/item/clothing/head/helmet/ranger/old
+	belt = /obj/item/weapon/storage/belt/stokerholster/full
 	glasses = /obj/item/clothing/glasses/sunglasses
+	id = /obj/item/weapon/card/id/newalamo
 	back = /obj/item/weapon/gun/ballistic/shotgun
 
 //Citizen
 
 /datum/job/citizen
-	title = "Citizen"
+	title = "New Alamo Citizen"
 	flag = CITIZEN
 	department_flag = ENGSEC
 	desc = "A City dweller.<br>You live a better life than most Wastelanders will ever have."
 	faction = "city"
 	status = "member"
-	total_positions = 10
+	total_positions = 16
 	spawn_positions = 10
-	supervisors = "none"
+	supervisors = "the Sherrif of New Alamo"
 	selection_color = "#ece19d"
-	access = list()
-	minimal_access = list()
+	access = list(48)
 	outfit = /datum/outfit/job/citizen
 
 	allowed_packs = list("starter", "cigarettes", "team_fortress", "wardrobe", "vault13", "bard", "khan", "super_ten", "punk", "off", "madmax", "doom","adminpack", "holsters", "terminator", "residentevil", "sierramadre")
@@ -149,6 +156,9 @@
 	/obj/item/clothing/under/f13/cowboyb,
 	/obj/item/clothing/suit/f13/cowboygvest,
 	/obj/item/clothing/suit/f13/cowboybvest,
+	/obj/item/clothing/suit/hunterjacket,
+	/obj/item/clothing/suit/mikecoat,
+	/obj/item/clothing/suit/leonjacket,
 	/obj/item/clothing/under/f13/female/flapper
 	)
 
@@ -163,8 +173,8 @@
 	)
 
 /datum/outfit/job/citizen
-	name = "Citizen"
-	backpack = null
-	satchel = null
+	name = "New Alamo Citizen"
+	belt = /obj/item/weapon/storage/belt/cruzholster/full
+	id = /obj/item/weapon/card/id/newalamo
 	uniform = /obj/item/clothing/under/f13/cowboyt
 	shoes = /obj/item/clothing/shoes/f13/brownie

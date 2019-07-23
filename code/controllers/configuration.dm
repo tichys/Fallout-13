@@ -743,7 +743,6 @@
 				else
 					diary << "Unknown setting in configuration: '[name]'"
 
-	whitelist = load_whitelist()
 
 	fps = round(fps)
 	if(fps <= 0)

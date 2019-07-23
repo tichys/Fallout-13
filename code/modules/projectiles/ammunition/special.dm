@@ -66,9 +66,42 @@
 	..()
 
 
+
+
+
+/////////////////////////////
 /obj/item/ammo_casing/energy/c3dbullet
-	projectile_type = /obj/item/projectile/bullet/midbullet3
+	projectile_type = /obj/item/projectile/bullet/midbullet3cyborg3dprinted
 	select_name = "spraydown"
 	fire_sound = 'sound/weapons/gunshot_smg.ogg'
-	e_cost = 20
+	e_cost = 18.75
 	firing_effect_type = /obj/effect/overlay/temp/dir_setting/firing_effect
+/////////////////////////////
+
+
+
+
+
+/////////////////////////////
+/obj/item/ammo_casing/energy/c3dgrenade
+	projectile_type = /obj/item/projectile/bullet/a40mm
+	select_name = "spraydown"
+	fire_sound = 'sound/weapons/grenadelaunch.ogg'
+	e_cost = 350
+	firing_effect_type = /obj/effect/overlay/temp/dir_setting/firing_effect
+/////////////////////////////
+
+
+
+
+/////////////////////////////
+/obj/item/ammo_casing/energy/c3dgatlinglaser
+	projectile_type = /obj/item/projectile/beam/laser/gatlingforrobots
+	e_cost = 37.5
+	delay = 1
+	randomspread = 1
+	variance = 5
+	select_name = "spraydown"
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	firing_effect_type = /obj/effect/overlay/temp/dir_setting/firing_effect
+/////////////////////////////

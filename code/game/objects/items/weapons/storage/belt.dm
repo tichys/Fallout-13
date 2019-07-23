@@ -287,14 +287,14 @@
 	desc = "A belt used by military forces."
 	icon_state = "grenadebeltold"
 	item_state = "security"
+	storage_slots = 9
 
 /obj/item/weapon/storage/belt/military/assault
-	name = "assault belt"
-	desc = "A tactical assault belt."
-	icon_state = "assaultbelt"
-	item_state = "security"
-	storage_slots = 6
-	self_weight = 0.3
+	name = "ranger's chestrig"
+	desc = "A worn chestrig, there are several pouches pockets. The insignia of the NCR Rangers is embroidered into the rig."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 14
 
 /obj/item/weapon/storage/belt/grenade
 	name = "grenadier belt"
@@ -494,11 +494,29 @@
 	desc = "A holster to carry a handgun and ammo. WARNING: Badasses only."
 	icon_state = "holster"
 	item_state = "holster"
-	storage_slots = 3
+	storage_slots = 2
 	max_w_class = WEIGHT_CLASS_NORMAL
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
-		/obj/item/weapon/gun/ballistic/revolver,
+		/obj/item/weapon/gun/ballistic/revolver/,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/coltnavy,
+		/obj/item/weapon/gun/ballistic/revolver/coltsaa,
+		/obj/item/weapon/gun/ballistic/revolver/mateba,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/model15,
+		/obj/item/weapon/gun/ballistic/revolver/model19,
+		/obj/item/weapon/gun/ballistic/revolver/model29,
+		/obj/item/weapon/gun/ballistic/revolver/model36,
+		/obj/item/weapon/gun/ballistic/revolver/model629,
+		/obj/item/weapon/gun/ballistic/revolver/model66,
+		/obj/item/weapon/gun/ballistic/revolver/policepistol,
+		/obj/item/weapon/gun/ballistic/revolver/nagant,
+		/obj/item/weapon/gun/ballistic/revolver/python,
+		/obj/item/weapon/gun/ballistic/revolver/sequoia,
+		/obj/item/weapon/gun/ballistic/revolver/thatgun,
+		/obj/item/weapon/gun/ballistic/revolver/webley,
+		/obj/item/weapon/gun/ballistic/revolver/model500,
 		/obj/item/ammo_box,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
@@ -512,7 +530,25 @@
 	max_w_class = WEIGHT_CLASS_HUGE
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
-		/obj/item/weapon/gun/ballistic/revolver,
+		/obj/item/weapon/gun/ballistic/revolver/,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/coltnavy,
+		/obj/item/weapon/gun/ballistic/revolver/coltsaa,
+		/obj/item/weapon/gun/ballistic/revolver/mateba,
+		/obj/item/weapon/gun/ballistic/revolver/magnum,
+		/obj/item/weapon/gun/ballistic/revolver/model15,
+		/obj/item/weapon/gun/ballistic/revolver/model19,
+		/obj/item/weapon/gun/ballistic/revolver/model29,
+		/obj/item/weapon/gun/ballistic/revolver/model36,
+		/obj/item/weapon/gun/ballistic/revolver/model629,
+		/obj/item/weapon/gun/ballistic/revolver/model66,
+		/obj/item/weapon/gun/ballistic/revolver/policepistol,
+		/obj/item/weapon/gun/ballistic/revolver/nagant,
+		/obj/item/weapon/gun/ballistic/revolver/python,
+		/obj/item/weapon/gun/ballistic/revolver/sequoia,
+		/obj/item/weapon/gun/ballistic/revolver/thatgun,
+		/obj/item/weapon/gun/ballistic/revolver/webley,
+		/obj/item/weapon/gun/ballistic/revolver/model500,
 		/obj/item/ammo_box,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
@@ -885,16 +921,18 @@
 	max_combined_w_class = 40
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
+		/obj/item/weapon/gun/ballistic/automatic/pistol/n99,
 		/obj/item/ammo_box,
+		/obj/item/ammo_box/magazine/m10mm_adv,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 
 /obj/item/weapon/storage/belt/cruzholster/full/New()
 	..()
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/weapon/gun/ballistic/automatic/pistol/p38(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/weapon/gun/ballistic/automatic/pistol/n99(src)
 
 /obj/item/weapon/storage/belt/leonholster
 	name = "Shoulder holster"
@@ -918,17 +956,18 @@
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/silverghostscope(src)
 
 /obj/item/weapon/storage/belt/stokerholster
-	name = "Shoulder holster"
-	desc = "A classic shoulder holster meant for carrying a concealed firearm, presumably a semi-automatic pistol judging by the three identical magazine pouches sewn under the right side of it."
+	name = "Large shoulder holster"
+	desc = "A classic shoulder holster meant for carrying a concealed firearm and then some."
 	icon_state = "loomisholster"
 	item_state = "loomisholster"
-	storage_slots = 4
+	storage_slots = 9
 	max_w_class = WEIGHT_CLASS_HUGE
-	max_combined_w_class = 40
+	max_combined_w_class = 60
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
 		/obj/item/weapon/gun/ballistic/revolver,
 		/obj/item/ammo_box,
+		/obj/item/ammo_box/trenchgun,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 
@@ -938,6 +977,10 @@
 	new /obj/item/ammo_box/magazine/browning(src)
 	new /obj/item/ammo_box/magazine/browning(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/stoker9mm(src)
+	new /obj/item/ammo_box/trenchgun(src)
+	new /obj/item/weapon/reknife(src)
+	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
 
 /obj/item/weapon/storage/belt/belmontbelt
 	name = "Belt"
@@ -1061,7 +1104,7 @@
 	storage_slots = 14
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 50
+	max_combined_w_class = 60
 	can_hold = list(
 		/obj/item/weapon/restraints/legcuffs/bola,
 		/obj/item/weapon/restraints/handcuffs,
@@ -1096,6 +1139,46 @@
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
+
+/obj/item/weapon/storage/belt/military/enclavearmy
+	name = "power armor chestrig"
+	desc = "A military chest rig, this one was specifically designed to fit over the top of larger infantry protective gear such as power armour. This one is embroidered with an odd logo, the letter 'E' surrounded by a ring of stars. Strange."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 18
+	w_class = WEIGHT_CLASS_BULKY
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 60
+	self_weight = 5
+
+/obj/item/weapon/storage/belt/military/enclavearmy/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/hypospray/combat(src)
+	new /obj/item/device/radio(src)
+	new /obj/item/weapon/reknife(src)
+	new /obj/item/clothing/glasses/sunglassespaop(src)
+	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
+
+/obj/item/weapon/storage/belt/military/brotherhoodbelt
+	name = "power armour chestrig"
+	desc = "A military chest rig, this one was specifically designed to fit over the top of larger infantry protective gear such as power armour. This one is embroidered with an odd logo. A sword surrounded by a set of wings and set of three interlocking gears in the background. Strange."
+	icon_state = "explorer2"
+	item_state = "explorer2"
+	storage_slots = 21
+	w_class = WEIGHT_CLASS_BULKY
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 80
+	self_weight = 15
+
+/obj/item/weapon/storage/belt/military/brotherhoodbelt/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/pill/patch/supstimpak(src)
+	new /obj/item/device/radio(src)
+	new /obj/item/weapon/kitchen/knife/combat(src)
+	new /obj/item/clothing/glasses/sunglassespaop(src)
+	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
 
 /obj/item/weapon/storage/belt/jakeholster
 	name = "Makeshift holster"

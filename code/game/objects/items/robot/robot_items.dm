@@ -153,6 +153,7 @@
 
 /obj/item/borg/charger
 	name = "power connector"
+	desc = "Can be used to siphon power from power cells found across the wasteland."
 	icon_state = "charger_draw"
 	flags = NOBLUDGEON
 	var/mode = "draw"

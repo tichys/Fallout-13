@@ -7,7 +7,7 @@
 	name = "pistol magazine (10mm)"
 	desc = "A gun magazine."
 	icon_state = "9x19p"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
 	max_ammo = 8
@@ -17,7 +17,7 @@
 	name = "pistol magazine (.32)"
 	desc = "A rather old magazine for a semi-automatic pistol chambered in .32 ACP."
 	icon_state = "32mag"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c32
 	caliber = "32"
 	max_ammo = 7
@@ -27,7 +27,7 @@
 	name = "pistol magazine (.380)"
 	desc = "A magazine for a gun chambered in .380 ACP."
 	icon_state = "32mag"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c380
 	caliber = "380"
 	max_ammo = 7
@@ -37,7 +37,7 @@
 	name = "pistol magazine (.380)"
 	desc = "A compact magazine for a gun chambered in .380 ACP."
 	icon_state = "380mag"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c380
 	caliber = "380"
 	max_ammo = 6
@@ -47,7 +47,7 @@
 	name = "pistol magazine (9mm)"
 	desc = "A rather old magazine for a semi-automatic pistol chambered in 9x19mm."
 	icon_state = "steyrmag"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c9mm
 	caliber = "9mm"
 	max_ammo = 16
@@ -174,7 +174,7 @@
 /obj/item/ammo_box/magazine/smgm45
 	name = "SMG magazine (.45)"
 	icon_state = "c20r45-24"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/c45nostamina
 	caliber = ".45"
 	max_ammo = 24
@@ -193,7 +193,7 @@
 /obj/item/ammo_box/magazine/m50
 	name = "handgun magazine (.50 AE)"
 	icon_state = "50ae"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/a50
 	caliber = ".50"
 	max_ammo = 7
@@ -202,7 +202,7 @@
 /obj/item/ammo_box/magazine/m440/bleed
 	name = "handgun magazine (.440 Cor-Bon Hemorrhaging)"
 	icon_state = "50ae"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/a440/bleed
 	caliber = ".440"
 	max_ammo = 7
@@ -211,7 +211,7 @@
 /obj/item/ammo_box/magazine/m440
 	name = "handgun magazine (.440 Cor-Bon)"
 	icon_state = "50ae"
-	origin_tech = "combat=2"
+
 	ammo_type = /obj/item/ammo_casing/a440
 	caliber = ".440"
 	max_ammo = 7
@@ -229,6 +229,14 @@
 	name = "rifle magazine (5.56mm)"
 	icon_state = "5.56m"
 	ammo_type = /obj/item/ammo_casing/a556
+	caliber = "a556"
+	max_ammo = 20
+	multiple_sprites = 2
+
+/obj/item/ammo_box/magazine/m556/ap
+	name = "rifle magazine (5.56mm armour piercing)"
+	icon_state = "5.56m"
+	ammo_type = /obj/item/ammo_casing/a556/armourpiercing
 	caliber = "a556"
 	max_ammo = 20
 	multiple_sprites = 2
@@ -270,7 +278,6 @@
 	desc = "A drum magazine."
 	icon_state = "m12gs"
 	ammo_type = /obj/item/ammo_casing/shotgun/stunslug
-	origin_tech = "combat=3;syndicate=1"
 	caliber = "shotgun"
 	max_ammo = 8
 
@@ -309,7 +316,6 @@
 /obj/item/ammo_box/magazine/sniper_rounds
 	name = "sniper rounds (.50)"
 	icon_state = ".50mag"
-	origin_tech = "combat=6;syndicate=2"
 	ammo_type = /obj/item/ammo_casing/point50
 	max_ammo = 6
 	caliber = ".50"
@@ -321,16 +327,15 @@
 		icon_state = "[initial(icon_state)]"
 
 /obj/item/ammo_box/magazine/sniper_rounds/soporific
-	name = "sniper rounds (Zzzzz)"
-	desc = "Soporific sniper rounds, designed for happy days and dead quiet nights..."
+	name = "sniper rounds (neurotoxin)"
+	desc = "Sniper rounds tipped with a powerful neurotoxin, designed for happy days and dead quiet nights."
 	icon_state = "soporific"
-	origin_tech = "combat=6;syndicate=3"
 	ammo_type = /obj/item/ammo_casing/soporific
 	max_ammo = 3
 	caliber = ".50"
 
 /obj/item/ammo_box/magazine/sniper_rounds/haemorrhage
-	name = "sniper rounds (Bleed)"
+	name = "sniper rounds (anti-clotting agent)"
 	desc = "Haemorrhage sniper rounds, leaves your target in a pool of crimson pain"
 	icon_state = "haemorrhage"
 	ammo_type = /obj/item/ammo_casing/haemorrhage
@@ -338,10 +343,9 @@
 	caliber = ".50"
 
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator
-	name = "sniper rounds (penetrator)"
-	desc = "An extremely powerful round capable of passing straight through cover and anyone unfortunate enough to be behind it."
+	name = "sniper rounds (depleted uranium penetrator)"
+	desc = "An extremely powerful round capable of passing straight through cover and anyone unfortunate enough to be behind it. It's also damn effective against power armour."
 	ammo_type = /obj/item/ammo_casing/penetrator
-	origin_tech = "combat=6;syndicate=3"
 	max_ammo = 5
 
 
@@ -350,29 +354,24 @@
 /obj/item/ammo_box/magazine/mm556x45
 	name = "box magazine (5.56x45mm)"
 	icon_state = "a762-50"
-	origin_tech = "combat=2"
 	ammo_type = /obj/item/ammo_casing/mm556x45
 	caliber = "mm55645"
 	max_ammo = 50
 
 /obj/item/ammo_box/magazine/mm556x45/bleeding
 	name = "box magazine (Bleeding 5.56x45mm)"
-	origin_tech = "combat=3"
 	ammo_type = /obj/item/ammo_casing/mm556x45/bleeding
 
 /obj/item/ammo_box/magazine/mm556x45/hollow
 	name = "box magazine (Hollow-Point 5.56x45mm)"
-	origin_tech = "combat=3"
 	ammo_type = /obj/item/ammo_casing/mm556x45/hollow
 
 /obj/item/ammo_box/magazine/mm556x45/ap
 	name = "box magazine (Armor Penetrating 5.56x45mm)"
-	origin_tech = "combat=4"
 	ammo_type = /obj/item/ammo_casing/mm556x45/ap
 
 /obj/item/ammo_box/magazine/mm556x45/incen
 	name = "box magazine (Incendiary 5.56x45mm)"
-	origin_tech = "combat=4"
 	ammo_type = /obj/item/ammo_casing/mm556x45/incen
 
 /obj/item/ammo_box/magazine/mm556x45/update_icon()

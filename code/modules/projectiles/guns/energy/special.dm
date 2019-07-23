@@ -3,7 +3,7 @@
 	desc = "A man-portable anti-armor weapon designed to disable mechanical threats at range."
 	icon_state = "ionrifle"
 	item_state = null	//so the human update icon uses the icon_state instead.
-	origin_tech = "combat=4;magnets=4"
+	origin_tech = "materials=5;powerstorage=7;engineering=5"
 	can_flashlight = 1
 	w_class = WEIGHT_CLASS_HUGE
 	flags =  CONDUCT
@@ -17,9 +17,10 @@
 	return
 
 /obj/item/weapon/gun/energy/ionrifle/carbine
-	name = "ion carbine"
-	desc = "The MK.II Prototype Ion Projector is a lightweight carbine version of the larger ion rifle, built to be ergonomic and efficient."
-	icon_state = "ioncarbine"
+	name = "Tesla-Ion Carbine"
+	desc = "A carbine designed to defeat robots and opponents reliant on energy weapons, this weapon causes a localized EMP on affected targets which rapidly drains the power level of affected Microfusion cells, including those loaded in weapons, and any electronic equipment they may be carrying."
+	icon_state = "ioncarb"
+	item_state = "ioncarb"
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = SLOT_BELT
 	pin = null
@@ -212,14 +213,17 @@
 /* 3d printer 'pseudo guns' for borgs */
 
 /obj/item/weapon/gun/energy/printer
-	name = "cyborg lmg"
-	desc = "A machinegun that fires 3d-printed flachettes slowly regenerated using a cyborg's internal power source."
+	name = "light ballistic weapon"
+	desc = "An integrated ballistic arm attachment, firing 5mm rounds from a large internal supply pool, allowing for virtually unlimited ammunition in standard combat environments."
 	icon_state = "l6closed0"
 	icon = 'icons/obj/guns/projectile.dmi'
 	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
 	ammo_type = list(/obj/item/ammo_casing/energy/c3dbullet)
 	can_charge = 0
 	use_cyborg_cell = 1
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 2
 
 /obj/item/weapon/gun/energy/printer/update_icon()
 	return
@@ -227,19 +231,69 @@
 /obj/item/weapon/gun/energy/printer/emp_act()
 	return
 
+
+/* 3d printer 'pseudo nadelauncher' for borgs */
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/
+	name = "integrated grenade launcher"
+	desc = "An integrated grenade launcher. Loaded from an internal supply of several dozen. Reloading additional shots is done via an internal autoloader."
+	icon = 'icons/mecha/mecha_equipment.dmi'
+	icon_state = "mecha_grenadelnchr"
+	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
+	ammo_type = list(/obj/item/ammo_casing/energy/c3dgrenade)
+	can_charge = 0
+	use_cyborg_cell = 1
+	burst_size = 1
+	fire_delay = 150
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/attack_self()
+	return
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/update_icon()
+	return
+
+/obj/item/weapon/gun/energy/printer/grenadelauncher/emp_act()
+	return
+
+/* 3d printer 'gatling laser' for borgs */
+/obj/item/weapon/gun/energy/laser/gatlingrobot
+	name ="gatling laser"
+	desc = "An integrated miniature gatling laser, for when you truly want to kill every organic in the room."
+	icon_state = "gatling"
+	item_state = "gatling"
+	icon = 'icons/fallout/objects/guns/energy.dmi'
+	cell_type = "/obj/item/weapon/stock_parts/cell/secborg"
+	ammo_type = list(/obj/item/ammo_casing/energy/c3dgatlinglaser)
+	can_charge = 0
+	use_cyborg_cell = 1
+	can_suppress = 1
+	burst_size = 4
+	fire_delay = 3
+
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/attack_self()
+	return
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/update_icon()
+	return
+
+/obj/item/weapon/gun/energy/laser/gatlingrobot/emp_act()
+	return
+
+
 /obj/item/weapon/gun/energy/temperature
-	name = "temperature gun"
+	name = "Cryo Gun"
 	icon_state = "freezegun"
-	desc = "A gun that changes temperatures."
-	origin_tech = "combat=4;materials=4;powerstorage=3;magnets=2"
-	ammo_type = list(/obj/item/ammo_casing/energy/temp, /obj/item/ammo_casing/energy/temp/hot)
+	desc = "A pre-war prototype riot suppression rifle, fires energised liquid nitrogen packets which cause a drastic drop in temperature against anything they hit, slowing targets so they may be easily subdued."
+	origin_tech = "powerstorage=3;materials=2;engineering=2"
+	ammo_type = list(/obj/item/ammo_casing/energy/temp)
 	cell_type = "/obj/item/weapon/stock_parts/cell/high"
 	pin = null
 
 /obj/item/weapon/gun/energy/temperature/security
 	name = "security temperature gun"
 	desc = "A weapon that can only be used to its full potential by the truly robust."
-	origin_tech = "combat=2;materials=2;powerstorage=1;magnets=1"
+	origin_tech = "powerstorage=3;materials=2;engineering=2"
 	pin = /obj/item/device/firing_pin
 
 /obj/item/weapon/gun/energy/laser/instakill
