@@ -51,7 +51,6 @@
 	loot = list(
 	/obj/item/weapon/gun/ballistic/revolver/magnum = 1,
 	/obj/item/weapon/gun/energy/laser/rifle/aer13 = 1,
-	/obj/item/weapon/gun/energy/laser/rcw = 1,
 	/obj/item/weapon/gun/ballistic/automatic/assault_rifle = 1)
 
 /obj/effect/spawner/lootdrop/ammo
