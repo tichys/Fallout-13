@@ -299,7 +299,7 @@ update_label("John Doe", "Clowny")
 
 /obj/item/weapon/card/id/ncr
 	name = "NCR Dogtags"
-	desc = "A pair of standard issue NCR dogtags issued to all servicemen."
+	desc = "A pair of standard issue NCR dogtags issued to all active duty soldiers."
 	icon_state = "ncrtags"
 	access = list(71)
 
@@ -331,10 +331,10 @@ update_label("John Doe", "Clowny")
 	name = "New Alamo Citizenship Card"
 	desc = "A card certifying citizenship to the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
 	icon_state = "fingerprint1"
-	access = list(54)
+	access = list(48)
 
 /obj/item/weapon/card/id/newalamoworker
 	name = "New Alamo Worker's Permit"
 	desc = "A card certifying the right to work in the quarry beneath the town of New Alamo. Can be used for financial transactions with town-related infrastructure."
 	icon_state = "fingerprint1"
-	access = list(54)
+	access = list(48)

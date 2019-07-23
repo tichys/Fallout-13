@@ -28,8 +28,8 @@
 
 /obj/item/projectile/beam/laser/laerbolt
 	name = "electric bolt"
-	damage = 20
-	stamina = 20 //has the potential to stun people in power armor with enough hits, anyone in lighter armor ends up dead long before then
+	damage = 40
+	stamina = 30 //has the potential to stun people in power armor with enough hits, anyone in lighter armor ends up dead long before then
 	icon_state = "omnilaser"
 	light_color = LIGHT_COLOR_BLUE
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/blue_laser

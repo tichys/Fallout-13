@@ -113,6 +113,7 @@
 	id = "inacusiate"
 	description = "Instantly restores all hearing to the patient, but does not cure deafness."
 	color = "#6600FF" // rgb: 100, 165, 255
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/inacusiate/on_mob_life(mob/living/M)
 	M.setEarDamage(0,0)
@@ -639,7 +640,7 @@
 	description = "Quickly restores eye damage, cures nearsightedness, and has a chance to restore vision to the blind."
 	reagent_state = LIQUID
 	color = "#FFFFFF"
-	metabolization_rate = 0.25 * REAGENTS_METABOLISM
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/oculine/on_mob_life(mob/living/M)
 	if(M.disabilities & BLIND)
@@ -696,8 +697,8 @@
 	description = "Minor boost to stun resistance. Slowly heals damage if a patient is in critical condition, as well as regulating oxygen loss. Overdose causes weakness and toxin damage."
 	reagent_state = LIQUID
 	color = "#D2FFFA"
-	metabolization_rate = 0.25 * REAGENTS_METABOLISM
-	overdose_threshold = 30
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
+	overdose_threshold = 50
 
 /datum/reagent/medicine/epinephrine/on_mob_life(mob/living/M)
 	if(M.health < 0)
@@ -766,6 +767,7 @@
 	id = "mannitol"
 	description = "Efficiently restores brain damage."
 	color = "#DCDCFF"
+	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/mannitol/on_mob_life(mob/living/M)
 	M.adjustBrainLoss(-3*REM)
@@ -1153,10 +1155,13 @@
 	description = "A cocktail of stimulants targeted at the cardiovascular system, allowing for significantly improved pain endurance and recovery from fatigue."
 	reagent_state = LIQUID
 	color = "#A9FBFB"
-	metabolization_rate = 0.18
+	metabolization_rate = 0.2
 
 /datum/reagent/medicine/musclestimulant/on_mob_life(mob/living/M)
 	M.status_flags |= IGNORESLOWDOWN
+	M.adjustBruteLoss(0.2*REM, 0)
+	M.adjustFireLoss(0.2*REM, 0)
+	M.adjustToxLoss(0.2*REM, 0)
 	M.AdjustParalysis(-3, 0)
 	M.AdjustStunned(-3, 0)
 	M.AdjustWeakened(-3, 0)

@@ -195,6 +195,40 @@
 						)					
 
 
+
+/* RAIDER CHEM BOT */
+
+/obj/machinery/bounty_machine/faction/raiderdrugbot
+	name = "Raider Chems Dispensery"
+	desc = "A heavily modified vendortron. This one sells chems obtained by the raider gangs at a discounted rate - great for stocking up to sell on to wasters, or to get a quick fix."
+	resistance_flags = INDESTRUCTIBLE
+	icon = 'icons/WVM/machines.dmi'
+	icon_state = "qmmikebot"
+	free_access = 1
+	vend_mode = 1
+	density = 1
+
+	price_list = list(
+				/obj/item/weapon/reagent_containers/pill/patch/stimpak = 100,
+				/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 180,
+				/obj/item/weapon/reagent_containers/pill/patch/medx = 250,
+				/obj/item/weapon/reagent_containers/pill/patch/radaway = 300,
+				/obj/item/weapon/reagent_containers/pill/patch/radx = 325,
+				/obj/item/weapon/reagent_containers/pill/patch/jet = 350,
+				/obj/item/weapon/reagent_containers/pill/patch/psycho = 400,
+				/obj/item/weapon/reagent_containers/pill/patch/turbo = 500,
+						)
+
+
+
+
+
+
+
+
+
+
+
 /* AMMO TRADER */
 
 

@@ -377,7 +377,7 @@
 		A.UpdateButtonIcon()
 
 /obj/item/clothing/head/helmet/ranger/old
-	name = "old ranger helmet"
+	name = "old desert ranger helmet"
 	desc = "An old military helmet, commonly worn by Desert Rangers, that went through the fire and the flames, saving a single life amongst heavy bloodshed.<br>This particular helmet has a \"Forgive me mama\" inscription on the side."
 	icon_state = "old_rangerhelmet"
 	item_state = "old_rangerhelmet"

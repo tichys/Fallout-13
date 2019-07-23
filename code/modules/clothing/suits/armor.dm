@@ -504,11 +504,11 @@
 	allowed = list(/obj/item/weapon/gun/ballistic/revolver)
 
 /obj/item/clothing/suit/armor/ranger/old
-	name = "Worn Veteran Ranger Combat Armor"
+	name = "worn desert ranger combat trenchcoat"
 	desc = "A unique armor, that has been in countless battles and caused much bloodshed."
 	icon_state = "old_ranger"
 	item_state = "old_ranger"
-	armor = list(melee = 20, bullet = 35, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 15, fire = 25, acid = 0)
+	armor = list(melee = 55, bullet = 35, laser = 15, energy = 15, bomb = 20, bio = 0, rad = 15, fire = 25, acid = 0)
 	self_weight = 2
 
 /obj/item/clothing/suit/armor/ranger/eliteriotgear

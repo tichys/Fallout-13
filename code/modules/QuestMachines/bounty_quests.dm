@@ -182,7 +182,7 @@
 
 /datum/bounty_quest/faction/NCR/qst_01
 	employer = "The Captain: Outstanding Objective #1"
-	need_message = "As part of our expansion into Texas, we've made contact with Caesar's Legion, an aggressive group of slavers. We've got outstanding orders to kill as many as we can before the mainstay of the NCR army arrives to reinforce us. There's a bounty of 400 caps out for each Mark of Caesar you can claim from a dead legionnaire. Just bring them back to the pod here for safeekeping and collect your bounty"
+	need_message = "As part of our expansion into Texas, we've made contact with Caesar's Legion, an aggressive group of slavers. We've got outstanding orders to kill as many as we can before the mainstay of the NCR army arrives to reinforce us. There's a bounty of 400 caps out for each Mark of Caesar you can claim from a dead legionnaire. Just bring them back to the pod here for safekeeping and collect your bounty"
 	end_message = "Good job, trooper. Keep this up and we'll have the Legion turning tail in no time"
 	target_items = list(/obj/item/weapon/card/id/legion = 1)
 	caps_reward = 400

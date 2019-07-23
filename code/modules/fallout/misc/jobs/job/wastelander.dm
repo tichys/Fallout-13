@@ -21,7 +21,6 @@
 	uniform = /obj/item/clothing/under/f13/settler
 	shoes = /obj/item/clothing/shoes/f13/rag
 	belt = /obj/item/weapon/storage/belt/cruzholster/full
-	id = /obj/item/weapon/card/id/newalamoworker
 
 //Adventurer
 
@@ -75,8 +74,7 @@
 	/obj/item/clothing/head/helmet/f13/marine,
 	/obj/item/clothing/glasses/eyepatch,
 	/obj/item/clothing/glasses/sunglasses,
-	/obj/item/weapon/kitchen/knife/combat,
-	/obj/item/weapon/lighter/detonator
+	/obj/item/weapon/kitchen/knife/combat
 	)
 
 	denied_items = list(
@@ -99,4 +97,3 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/veteran
 	belt = /obj/item/weapon/storage/belt/cruzholster/full
-	id = /obj/item/weapon/card/id/newalamoworker

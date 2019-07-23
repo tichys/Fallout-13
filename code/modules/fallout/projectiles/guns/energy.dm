@@ -37,7 +37,7 @@
 	fire_sound = 'sound/f13weapons/plasmarifle.ogg'
 	burst_size = 1
 	shaded_charge = 1
-	fire_delay = 5
+	fire_delay = 9
 
 /obj/item/weapon/gun/energy/plasma/glock
 	name ="glock 86"
@@ -49,7 +49,7 @@
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	burst_size = 1
-	fire_delay = 5
+	fire_delay = 9
 
 /obj/item/weapon/gun/energy/plasma/gutsy
 	name ="robot arm mounted plasma rifle"
@@ -60,7 +60,7 @@
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	burst_size = 1
-	fire_delay = 5
+	fire_delay = 9
 	selfcharge = 1
 
 /obj/item/weapon/gun/energy/plasma/pistol
@@ -73,7 +73,7 @@
 	weapon_weight = WEAPON_LIGHT
 	w_class = WEIGHT_CLASS_NORMAL
 	burst_size = 1
-	fire_delay = 5
+	fire_delay = 9
 
 /obj/item/weapon/gun/energy/plasma/tri
 	name ="multiplas"
@@ -83,7 +83,7 @@
 	origin_tech = "materials=5;engineering=5;powerstorage=2"
 	ammo_type = list(/obj/item/ammo_casing/energy/f13plasma/tri)
 	w_class = WEIGHT_CLASS_BULKY
-	fire_delay = 10
+	fire_delay = 16
 	burst_size = 1
 	w_class = 3
 
@@ -97,7 +97,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/f13plasma/turbo)
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_HUGE
-	fire_delay = 0.65
+	fire_delay = 3
 	w_class = 4
 	burst_size = 1
 

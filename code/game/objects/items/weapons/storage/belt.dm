@@ -921,16 +921,18 @@
 	max_combined_w_class = 40
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
+		/obj/item/weapon/gun/ballistic/automatic/pistol/n99,
 		/obj/item/ammo_box,
+		/obj/item/ammo_box/magazine/m10mm_adv,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 
 /obj/item/weapon/storage/belt/cruzholster/full/New()
 	..()
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/ammo_box/magazine/luger(src)
-	new /obj/item/weapon/gun/ballistic/automatic/pistol/p38(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/ammo_box/magazine/m10mm_adv(src)
+	new /obj/item/weapon/gun/ballistic/automatic/pistol/n99(src)
 
 /obj/item/weapon/storage/belt/leonholster
 	name = "Shoulder holster"
@@ -954,17 +956,18 @@
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/silverghostscope(src)
 
 /obj/item/weapon/storage/belt/stokerholster
-	name = "Shoulder holster"
-	desc = "A classic shoulder holster meant for carrying a concealed firearm, presumably a semi-automatic pistol judging by the three identical magazine pouches sewn under the right side of it."
+	name = "Large shoulder holster"
+	desc = "A classic shoulder holster meant for carrying a concealed firearm and then some."
 	icon_state = "loomisholster"
 	item_state = "loomisholster"
-	storage_slots = 4
+	storage_slots = 9
 	max_w_class = WEIGHT_CLASS_HUGE
-	max_combined_w_class = 40
+	max_combined_w_class = 60
 	can_hold = list(
 		/obj/item/weapon/gun/ballistic/automatic/pistol,
 		/obj/item/weapon/gun/ballistic/revolver,
 		/obj/item/ammo_box,
+		/obj/item/ammo_box/trenchgun,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 
@@ -974,6 +977,10 @@
 	new /obj/item/ammo_box/magazine/browning(src)
 	new /obj/item/ammo_box/magazine/browning(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/stoker9mm(src)
+	new /obj/item/ammo_box/trenchgun(src)
+	new /obj/item/weapon/reknife(src)
+	new /obj/item/clothing/ears/earmuffs(src)
+	new /obj/item/device/healthanalyzer(src)
 
 /obj/item/weapon/storage/belt/belmontbelt
 	name = "Belt"
@@ -1134,15 +1141,15 @@
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
 
 /obj/item/weapon/storage/belt/military/enclavearmy
-	name = "power armour chestrig"
+	name = "power armor chestrig"
 	desc = "A military chest rig, this one was specifically designed to fit over the top of larger infantry protective gear such as power armour. This one is embroidered with an odd logo, the letter 'E' surrounded by a ring of stars. Strange."
 	icon_state = "explorer2"
 	item_state = "explorer2"
-	storage_slots = 21
+	storage_slots = 18
 	w_class = WEIGHT_CLASS_BULKY
 	max_w_class = WEIGHT_CLASS_BULKY
-	max_combined_w_class = 80
-	self_weight = 15
+	max_combined_w_class = 60
+	self_weight = 5
 
 /obj/item/weapon/storage/belt/military/enclavearmy/full/New()
 	..()
