@@ -17,10 +17,6 @@
 /obj/item/weapon/gun/attackby(obj/item/weapon/W, mob/living/carbon/human/user, params)
 	..()
 
-	if(user.special.getPoint("i") + user.skills.getPoint("repair") <= 12)
-		to_chat(user, "You too dumb or have not enough repair skills for this upgrade")
-		return
-
 	if(istype(W, /obj/item/kit))
 		W:install(src)
 
