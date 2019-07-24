@@ -71,8 +71,8 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "centurion"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Legate"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -131,8 +131,8 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "vexillarius"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 8
+	spawn_positions = 8
 	supervisors = "the Legate"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -190,8 +190,8 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "decanus"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 10
+	spawn_positions = 10
 	supervisors = "the Centurion"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
@@ -311,8 +311,8 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "recruit"
-	total_positions = 25
-	spawn_positions = 25
+	total_positions = 60
+	spawn_positions = 60
 	supervisors = "the Centurion"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 0
