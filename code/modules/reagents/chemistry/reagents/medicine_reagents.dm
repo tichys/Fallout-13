@@ -1159,9 +1159,9 @@
 
 /datum/reagent/medicine/musclestimulant/on_mob_life(mob/living/M)
 	M.status_flags |= IGNORESLOWDOWN
-	M.adjustBruteLoss(0.2*REM, 0)
-	M.adjustFireLoss(0.2*REM, 0)
-	M.adjustToxLoss(0.2*REM, 0)
+	M.adjustBruteLoss(-0.4, 0)
+	M.adjustFireLoss(-0.4, 0)
+	M.adjustToxLoss(-0.4, 0)
 	M.AdjustParalysis(-3, 0)
 	M.AdjustStunned(-3, 0)
 	M.AdjustWeakened(-3, 0)
