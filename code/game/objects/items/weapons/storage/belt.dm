@@ -1156,7 +1156,7 @@
 	new /obj/item/weapon/reagent_containers/hypospray/combat(src)
 	new /obj/item/device/radio(src)
 	new /obj/item/weapon/reknife(src)
-	new /obj/item/clothing/glasses/sunglassespaop(src)
+	new /obj/item/device/flashlight/seclite(src)
 	new /obj/item/clothing/ears/earmuffs(src)
 	new /obj/item/device/healthanalyzer(src)
 
