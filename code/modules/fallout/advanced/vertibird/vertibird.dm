@@ -33,10 +33,10 @@
 /obj/vertibird/proc/toggleLock(var/mob/user)
 	if(locked)
 		locked = FALSE
-		to_chat(user, "You unlock vertibird.")
+		to_chat(user, "You unlock the vertibird.")
 	else
 		locked = TRUE
-		to_chat(user, "You lock vertibird.")
+		to_chat(user, "You lock the vertibird.")
 
 /obj/vertibird/attackby(obj/item/weapon/W, mob/user, params)
 	if(istype(W, /obj/item/key/vertibird))
@@ -50,7 +50,7 @@
 	moveIn(O)
 
 /obj/vertibird/proc/getIn(mob/U)
-	src.visible_message("[U] enter vertibird.")
+	src.visible_message("[U] enters the vertibird.")
 	U.forceMove(vertibirdEnterZone)
 
 /obj/vertibird/proc/moveIn(obj/O)
