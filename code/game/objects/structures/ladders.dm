@@ -1,3 +1,11 @@
+//LADDER DRAGGING OF PLAYERS HAS BEEN SETUP
+//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN
+//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT MULTI LEVEL. BREAK THEM UP WITH NEW LADDERS.
+//SEE ENCLAVE SUBLEVELS BASE IN z2.dmm FOR EXAMPLE
+//RATHER THAN HAVING ONE LADDER WITH 2-3 LEVELS.
+
+
+
 /obj/structure/ladder
 	name = "ladder"
 	desc = "A sturdy metal ladder."
@@ -77,6 +85,17 @@
 /obj/structure/ladder/attack_hand(mob/user)
 	if(can_use(user))
 		use(user)
+
+
+//////////////////////////////DRAGGING PEOPLE VIA LADDERS//////////////////////////////
+/obj/structure/ladder/MouseDrop_T(obj/O, mob/user, /obj/structure/ladder/L)
+	for(var/obj/structure/ladder/L in world)
+		if(L.height == (height - 1))
+			go_down(O)
+		else
+			go_up(O)
+//////////////////////////////DRAGGING PEOPLE VIA LADDERS//////////////////////////////
+
 
 /obj/structure/ladder/attack_paw(mob/user)
 	return attack_hand(user)
@@ -240,3 +259,13 @@ obj/structure/ladder/vent/update_icon()
 		. = ..()
 	else
 		return QDEL_HINT_LETMELIVE
+
+
+//////////////////////////////DRAGGING PEOPLE VIA ROADS//////////////////////////////
+/obj/structure/roadtravel/MouseDrop_T(obj/O, mob/user, /obj/structure/roadtravel/R)
+	for(var/obj/structure/roadtravel/R in world)
+		if(R.height == (height - 1))
+			go_down(O)
+		else
+			go_up(O)
+//////////////////////////////DRAGGING PEOPLE VIA ROADS//////////////////////////////
