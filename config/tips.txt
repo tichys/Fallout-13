@@ -16,5 +16,5 @@ Beware! Factions can be infiltrated by wasters or even your enemy! If you see so
 The Legate's armor is very resilient, you will likely want to be firing AP ammo his way.
 On most advanced armor, the helmet has more damage resistance than the actual armor, sometimes it is useful to aim for the limbs.
 Armor piercing rounds will deal some damage to power armor. Useful if you have no specialised tools to deal with tin cans.
-Dynamite requires you to use a ignition tool on it to activate it. ( Torch / Zippo / Lighter / Welder )
+Dynamite requires you to use a ignition tool on it to activate it. ( Torch / Zippo / Lighter / Welder / Flare )
 The wasteland has many hidden surprises, be sure to look closely when on your next scouting run.
