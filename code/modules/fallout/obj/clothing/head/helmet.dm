@@ -390,9 +390,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/badmin/New()
@@ -430,9 +429,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/shocktrooper/New()
@@ -470,9 +468,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/superadvanced/New()
@@ -510,9 +507,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/tesla/New()
@@ -550,9 +546,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/advanced/New()
