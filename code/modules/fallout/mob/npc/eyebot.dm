@@ -44,6 +44,7 @@
 	harm_intent_damage = 10
 	melee_damage_lower = 2
 	melee_damage_upper = 3
+	move_to_delay = 6
 	minimum_distance = 6
 	retreat_distance = 14
 	attacktext = "punches"
