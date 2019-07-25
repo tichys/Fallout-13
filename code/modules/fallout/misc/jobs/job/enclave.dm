@@ -15,10 +15,9 @@
 	minimal_player_age = 7
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
-	/obj/item/weapon/cqc_manual
+	/obj/item/weapon/cqc_manual,
+	/obj/item/key/vertibird
 	)
 
 	denied_items = list(
@@ -49,7 +48,6 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/f13/autumn
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = null
 	id = /obj/item/weapon/card/id/enclave
 
 /datum/job/colonel/after_spawn(mob/living/carbon/human/H)
@@ -72,10 +70,9 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
-	/obj/item/weapon/cqc_manual
+	/obj/item/weapon/cqc_manual,
+	/obj/item/key/vertibird
 	)
 
 	denied_items = list(
@@ -107,9 +104,7 @@
 	suit = null
 	head = /obj/item/clothing/head/soft/f13/enclave
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
-	weapon = null
 	id = /obj/item/weapon/card/id/enclave
-	l_pocket = /obj/item/key/vertibird
 
 /datum/job/enclave_lieutenant/after_spawn(mob/living/carbon/human/H)
 	. = ..()
@@ -130,8 +125,6 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/head/helmet/f13/combat_mk2,
@@ -183,13 +176,11 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "scientist"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/head/bio_hood/science,
@@ -237,8 +228,6 @@
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/suit/armor/f13/combat_mk2,
