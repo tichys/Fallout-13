@@ -11,7 +11,7 @@
 	name = "ladder"
 	desc = "A sturdy metal ladder."
 	icon = 'icons/fallout/objects/structures/stationary.dmi'
-	icon_state = "ladder_middle"
+	icon_state = "ladder_top"
 	anchored = 1
 	resistance_flags = INDESTRUCTIBLE
 	var/id = null
