@@ -183,8 +183,8 @@
 	department_flag = MEDSCI
 	faction = "enclave"
 	status = "scientist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "The Colonel"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
