@@ -1,7 +1,7 @@
 /obj/item/kit/damage
 	name = "Extended Barrel"
 	desc = "An increase in barrel length results in increased projectile velocity, dealing 15% more damage."
-	prefix = "extended"
+	prefix = "enhanced"
 
 /obj/item/kit/recoil
 	name = "Heavy Frame"
