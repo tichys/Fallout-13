@@ -19,6 +19,6 @@
 	sufix = "with bayonet"
 
 /obj/item/kit/scope
-	name = "4x Scope"
+	name = "Scope"
 	desc = "A scope with 4x magnification for combat at extended distances."
 	prefix = "scoped"
