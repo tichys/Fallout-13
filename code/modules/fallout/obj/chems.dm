@@ -56,8 +56,8 @@
 
 /obj/item/weapon/reagent_containers/pill/patch/psycho
 	name = "psycho"
-	desc = "Psycho boosts pain tolerance and strength to incredible levels, preventing wounds from slowing down the user. It also provides a mixture of stimulants which promote rapid wound healing."
-	list_reagents = list("epinephrine" = 9, "inacusiate" = 8, "oculine" = 8, "psychocorazine" = 25)
+	desc = "Psycho boosts pain tolerance and strength to incredible levels, preventing wounds from slowing down the user. It also provides a mixture of stimulants which promote rapid wound healing. Overdose will rapidly result in death, it is recommended to take Psycho with extreme caution."
+	list_reagents = list("epinephrine" = 9, "inacusiate" = 8, "oculine" = 8, "psychocorazine" = 14)
 	icon = 'icons/fallout/objects/medicine/syringe.dmi'
 	icon_state = "psycho"
 	item_state = "syringe_15"
