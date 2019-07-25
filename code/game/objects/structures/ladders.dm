@@ -1,8 +1,7 @@
 //LADDER DRAGGING OF PLAYERS HAS BEEN SETUP
-//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN
-//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT MULTI LEVEL. BREAK THEM UP WITH NEW LADDERS.
+//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN. ALL EXISTING LADDERS HAVE BEEN ADJUSTED FOR THIS.
+//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT ABLE TO CONNECT TO MORE THAN 1 LADDER. LADDER_MIDDLE IS NOW AN ERROR SPECIFICALLY SO YOU SPOT THIS AND REMEMBER TO FIX IT.
 //SEE ENCLAVE SUBLEVELS BASE IN z2.dmm FOR EXAMPLE
-//RATHER THAN HAVING ONE LADDER WITH 2-3 LEVELS.
 
 
 
@@ -53,13 +52,11 @@
 
 /obj/structure/ladder/proc/go_up(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(1,user)
 		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
 /obj/structure/ladder/proc/go_down(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(0,user)
 		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
 
@@ -105,12 +102,6 @@
 
 /obj/structure/ladder/attack_ghost(mob/dead/observer/user)
 	use(user,1)
-
-/obj/structure/ladder/proc/show_fluff_message(up,mob/user)
-	if(up)
-		user.visible_message("[user] climbs up \the [src].","<span class='notice'>You climb up \the [src].</span>")
-	else
-		user.visible_message("[user] climbs down \the [src].","<span class='notice'>You climb down \the [src].</span>")
 
 /obj/structure/ladder/proc/can_use(mob/user)
 	return 1
@@ -203,13 +194,11 @@ obj/structure/ladder/vent/update_icon()
 
 /obj/structure/roadtravel/proc/go_up(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(1,user)
 		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
 /obj/structure/roadtravel/proc/go_down(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(0,user)
 		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
 
@@ -244,12 +233,6 @@ obj/structure/ladder/vent/update_icon()
 
 /obj/structure/roadtravel/attack_ghost(mob/dead/observer/user)
 	use(user,1)
-
-/obj/structure/roadtravel/proc/show_fluff_message(up,mob/user)
-	if(up)
-		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
-	else
-		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
 
 /obj/structure/roadtravel/proc/can_use(mob/user)
 	return 1
