@@ -15,8 +15,6 @@
 	minimal_player_age = 7
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/clothing/under/f13/combat,
 	/obj/item/clothing/head/soft/f13/utility/navy
@@ -74,8 +72,6 @@
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	outfit = /datum/outfit/job/hpaladin
 
@@ -136,8 +132,6 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	outfit = /datum/outfit/job/scribe
 
 	required_items = list(
@@ -196,8 +190,6 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	outfit = /datum/outfit/job/paladin
 
 	required_items = list(
@@ -254,8 +246,6 @@
 	supervisors = "Elder, Paladin, Head Paladin"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/under/f13/recon
@@ -314,8 +304,6 @@
 	supervisors = "the Elder"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	outfit = /datum/outfit/job/scribe
 
