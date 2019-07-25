@@ -698,7 +698,6 @@
 	reagent_state = LIQUID
 	color = "#D2FFFA"
 	metabolization_rate = 0.05 * REAGENTS_METABOLISM
-	overdose_threshold = 50
 
 /datum/reagent/medicine/epinephrine/on_mob_life(mob/living/M)
 	if(M.health < 0)
@@ -717,14 +716,6 @@
 		M.AdjustParalysis(-1, 0)
 		M.AdjustStunned(-1, 0)
 		M.AdjustWeakened(-1, 0)
-	..()
-
-/datum/reagent/medicine/epinephrine/overdose_process(mob/living/M)
-	if(prob(33))
-		M.adjustStaminaLoss(2.5*REM, 0)
-		M.adjustToxLoss(1*REM, 0)
-		M.losebreath++
-		. = 1
 	..()
 
 /datum/reagent/medicine/strange_reagent
@@ -1016,7 +1007,7 @@
 	M.adjustCloneLoss(-3*REM, 0)
 	..()
 	. = 1
-	
+
 /datum/reagent/medicine/tricordrazine/overdose_process(mob/living/M)
 	M.adjustToxLoss(2*REM, 0)
 	M.adjustOxyLoss(2*REM, 0)
@@ -1148,7 +1139,7 @@
 	M.adjustToxLoss(0.5, 0)
 	. = 1
 	..()
-	
+
 /datum/reagent/medicine/musclestimulant
 	name = "Muscle Stimulant"
 	id = "musclestimulant"
@@ -1162,9 +1153,9 @@
 	M.adjustBruteLoss(-0.4, 0)
 	M.adjustFireLoss(-0.4, 0)
 	M.adjustToxLoss(-0.4, 0)
+	M.adjustStaminaLoss(-0.8, 0)
 	M.AdjustParalysis(-3, 0)
 	M.AdjustStunned(-3, 0)
 	M.AdjustWeakened(-3, 0)
-	M.adjustStaminaLoss(-2.5*REM, 0)
 	. = 1
 	..()
