@@ -15,7 +15,7 @@
 	minimal_player_age = 7
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
@@ -84,7 +84,7 @@
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor","heavy_trooper", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor","heavy_trooper")
 
 	required_items = list(
 	/obj/item/clothing/head/f13/ncr_officer,
@@ -152,7 +152,7 @@
 
 	access = list(71)
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
@@ -213,7 +213,7 @@
 	supervisors = "Veteran Ranger"
 	minimal_player_age = 5
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/head/f13/ncr_officer,
@@ -276,10 +276,9 @@
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor")
 
 	required_items = list(
-	/obj/item/clothing/suit/armor/f13/ncr/facewrap,
 	/obj/item/weapon/kitchen/knife/combat
 	)
 
@@ -309,6 +308,7 @@
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
+	mask = /obj/item/clothing/mask/bandana/f13/facewrap
 	head = /obj/item/clothing/head/helmet/f13/trooper
 	glasses = /obj/item/clothing/glasses/f13/biker
 	belt = /obj/item/weapon/storage/belt/military/army
