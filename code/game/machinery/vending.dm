@@ -1054,7 +1054,7 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	products = list(/obj/item/weapon/gun/energy/laser/rifle/tri = 1,/obj/item/weapon/gun/energy/plasma = 2,/obj/item/weapon/gun/energy/plasma/pistol = 3,/obj/item/weapon/gun/energy/laser/gatling = 1,/obj/item/weapon/gun/energy/laser/rcw = 2,/obj/item/weapon/gun/energy/laser/pistol = 8,/obj/item/weapon/gun/energy/laser/rifle = 8,/obj/item/weapon/gun/energy/laser/rifle/aer13 = 2,/obj/item/weapon/grenade/syndieminibomb/concussion/frag = 12,/obj/item/weapon/grenade/syndieminibomb/concussion = 12,/obj/item/weapon/grenade/empgrenade = 12,/obj/item/weapon/grenade/flashbang = 12,/obj/item/weapon/grenade/smokebomb = 12,/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 20,/obj/item/weapon/reagent_containers/pill/patch/medx = 20,/obj/item/weapon/reagent_containers/pill/patch/radaway = 20,/obj/item/weapon/reagent_containers/pill/patch/radx = 20,/obj/item/weapon/reagent_containers/pill/patch/psycho = 10,/obj/item/stack/sheet/metal/fifty = 50,/obj/item/stack/sheet/glass/fifty = 50,/obj/item/weapon/storage/box = 50,/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 100,/obj/item/weapon/pa_manual = 5,/obj/item/clothing/mask/gas/syndicate = 30,/obj/item/weapon/tank/internals/emergency_oxygen/double = 60,/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 20)
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
 	resistance_flags = INDESTRUCTIBLE
-	
+
 /obj/machinery/vending/trader/enclavesupplies
 	name = "Enclave Automated Quartermaster & Secure Storage System"
 	desc = "An advanced pre-war storage system for military equipment, designed around a conveyor to bring items up from underground storage containers, to ensure the safety of the equipment contained within."
@@ -1063,6 +1063,16 @@ IF YOU MODIFY THE PRODUCTS LIST OF A MACHINE, MAKE SURE TO UPDATE ITS RESUPPLY C
 	icon_state = "h_lathe"
 	icon_deny = "h_lathe_leave"
 	products = list(/obj/item/weapon/gun/energy/plasma = 8,/obj/item/weapon/gun/energy/plasma/pistol = 8, /obj/item/weapon/gun/energy/laser/gatling = 2,/obj/item/weapon/gun/energy/plasma/turbo = 2,/obj/item/weapon/gun/energy/plasma/tri = 1,/obj/item/weapon/gun/ballistic/automatic/m72gauss = 2,/obj/item/ammo_box/magazine/m72mag = 30,/obj/item/ammo_box/thatgun = 24,/obj/item/weapon/grenade/syndieminibomb/concussion/frag = 12,/obj/item/weapon/grenade/syndieminibomb/concussion = 12,/obj/item/weapon/grenade/empgrenade = 12,/obj/item/weapon/grenade/flashbang = 12,/obj/item/weapon/grenade/smokebomb = 12,/obj/item/weapon/reagent_containers/hypospray/combat = 4,/obj/item/weapon/reagent_containers/pill/patch/supstimpak = 20,/obj/item/weapon/reagent_containers/pill/patch/medx = 20,/obj/item/weapon/reagent_containers/pill/patch/radaway = 20,/obj/item/weapon/reagent_containers/pill/patch/radx = 20,/obj/item/weapon/reagent_containers/pill/patch/psycho = 10,/obj/item/stack/sheet/metal/fifty = 50,/obj/item/stack/sheet/glass/fifty = 50,/obj/item/weapon/storage/box = 50,/obj/item/weapon/reagent_containers/food/snacks/f13/mre = 100,/obj/item/clothing/mask/gas/syndicate = 30,/obj/item/weapon/tank/internals/emergency_oxygen/double = 60,/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 20)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
+	resistance_flags = INDESTRUCTIBLE
+	
+/obj/machinery/vending/trader/frontiervendor
+	name = "Frontier Vendomats"
+	desc = "A vending machine designed by an unknown third party. It provides building material, free of charge! Get out there, and claim that wasteland frontier!"
+	icon = 'icons/obj/vending.dmi'
+	icon_state = "liberationstation"
+	icon_deny = "liberationstation_off"
+	products = list(/obj/item/stack/sheet/metal/fifty = 5,/obj/item/stack/sheet/glass/fifty = 5,/obj/item/stack/sheet/cardboard/fifty = 5,/obj/item/stack/sheet/mineral/wood/fifty = 5)
 	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
 	resistance_flags = INDESTRUCTIBLE
 
