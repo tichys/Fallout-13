@@ -381,7 +381,7 @@
 /obj/item/clothing/suit/armor/f13/power_armor
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE | THICKMATERIAL 
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
@@ -402,9 +402,9 @@
 	if(slot == slot_wear_suit && !is_servant_of_ratvar(user))
 		if(iscarbon(user))
 			to_chat(user, "<span class='heavy_brass'>You lack the training to use power armour!</span>")
-		addtimer(CALLBACK(user, /mob/living.proc/unEquip, src, 1), 1)	
+		addtimer(CALLBACK(user, /mob/living.proc/unEquip, src, 1), 1)
 
-/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////	
+/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////
 
 
 
@@ -419,6 +419,9 @@
 	item_state = "t45dpowerarmor"
 	armor = list(melee = 85, bullet = 85, laser = 45, energy = 45, bomb = 55, bio =100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
@@ -427,6 +430,9 @@
 	item_state = "t51bpowerarmor"
 	armor = list(melee = 85, bullet = 90, laser = 50, energy = 50, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 28
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60 power armor"
@@ -435,6 +441,9 @@
 	item_state = "t60powerarmor"
 	armor = list(melee = 85, bullet = 95, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 30
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 // enclave armors
 
@@ -445,6 +454,9 @@
 	item_state = "superadvanced"
 	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
 	name = "advanced power armor Mk. II 'Bugman'"
@@ -453,6 +465,9 @@
 	item_state = "superadvanced"
 	armor = list(melee = 98, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 22
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/shocktrooper
 	name = "advanced power armor Mk. III 'Black Devil'" //for the sake of lore consistency, taking both bethesda and black isle/interplays versions and just saying the one in fo3 is the mark 3, with mark 2 being last of the first apa iterations. also fixed the name because hellfire is the one from broken steel, this one is the black devil/standard apa from fo3. Nicknames have also been added to the armors.
@@ -461,6 +476,9 @@
 	item_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
 	armor = list(melee = 105, bullet = 105, laser = 85, energy = 85, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 24
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	name = "advanced tesla power armor Mk. I 'Glow Worm'"
@@ -469,6 +487,9 @@
 	item_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
 	armor = list(melee = 65, bullet = 65, laser = 98, energy = 98, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/badmin
 	name = "advanced power armor Mk. IV 'Hellfire'"
@@ -477,6 +498,9 @@
 	item_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
 	armor = list(melee = 105, bullet = 105, laser = 200, energy = 200, bomb = 75, bio = 100, rad = 100, fire = 100, acid = 100) //Burn baby, burn!
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 //Knights of the Apocalypse
 
