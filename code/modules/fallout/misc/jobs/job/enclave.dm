@@ -109,6 +109,7 @@
 	belt = /obj/item/weapon/storage/belt/military/enclavearmy/full
 	weapon = null
 	id = /obj/item/weapon/card/id/enclave
+	l_pocket = /obj/item/key/vertibird
 
 /datum/job/enclave_lieutenant/after_spawn(mob/living/carbon/human/H)
 	. = ..()
