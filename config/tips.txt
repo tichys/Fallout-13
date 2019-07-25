@@ -18,3 +18,4 @@ On most advanced armor, the helmet has more damage resistance than the actual ar
 Armor piercing rounds will deal some damage to power armor. Useful if you have no specialised tools to deal with tin cans.
 Dynamite requires you to use a ignition tool on it to activate it. ( Torch / Zippo / Lighter / Welder / Flare )
 The wasteland has many hidden surprises, be sure to look closely when on your next scouting run.
+If you want to drag someone along a highway or up/down a ladder, click and drag them onto it and they will travel the ladder even if they are restrained.
