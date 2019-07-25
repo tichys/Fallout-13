@@ -448,7 +448,7 @@
 // enclave armors
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
-	name = "advanced power armor Mk. I 'Bugman'"
+	name = "advanced power armor Mk. I 'Beetle'"
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "superadvanced"
 	item_state = "superadvanced"
@@ -459,7 +459,7 @@
 	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
-	name = "advanced power armor Mk. II 'Bugman'"
+	name = "advanced power armor Mk. II 'Beetle'"
 	desc = "An improved model of advanced power armor used exclusively by the Enclave military forces, developed after the Great War.<br>Like its older brother, the standard advanced power armor, it's matte black with a menacing appearance, but with a few significant differences - it appears to be composed entirely of lightweight ceramic composites rather than the usual combination of metal and ceramic plates.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
 	icon_state = "superadvanced"
 	item_state = "superadvanced"
