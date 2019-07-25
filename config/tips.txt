@@ -19,3 +19,4 @@ Armor piercing rounds will deal some damage to power armor. Useful if you have n
 Dynamite requires you to use a ignition tool on it to activate it. ( Torch / Zippo / Lighter / Welder / Flare )
 The wasteland has many hidden surprises, be sure to look closely when on your next scouting run.
 If you want to drag someone along a highway or up/down a ladder, click and drag them onto it and they will travel the ladder even if they are restrained.
+Non-controllable objects and characters such as Deathclaws, Eyebots, etc. can also climb ladders in player hands. While this is rare enough, should an event place you in control of one of these - click and drag yourself onto the ladder or the highway connection to traverse through it.
