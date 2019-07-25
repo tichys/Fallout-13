@@ -9,8 +9,8 @@
 	icon_dead = "eyebot_d"
 	icon_gib = "eyebot_d"
 	speak_chance = 0
-	move_to_delay = 8
-	turns_per_move = 8
+	move_to_delay = 14
+	turns_per_move = 14
 	environment_smash = 0
 	response_help = "touches"
 	response_disarm = "shoves"
