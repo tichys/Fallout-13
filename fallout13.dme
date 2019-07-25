@@ -15,6 +15,7 @@
 // BEGIN_INCLUDE
 #include "_maps\__MAP_DEFINES.dm"
 #include "_maps\texas.dm"
+#include "_maps\map_files\TexasWasteland\industrialheart.dmm"
 #include "_maps\map_files\TexasWasteland\NCR Remap.dmm"
 #include "_maps\map_files\TexasWasteland\texas_wasteland.dmm"
 #include "_maps\map_files\TexasWasteland\z2.dmm"
@@ -1220,7 +1221,6 @@
 #include "code\modules\events\wizard\summons.dm"
 #include "code\modules\fallout\advanced\flag.dm"
 #include "code\modules\fallout\advanced\hrange.dm"
-#include "code\modules\fallout\advanced\trading.dm"
 #include "code\modules\fallout\advanced\eye\console.dm"
 #include "code\modules\fallout\advanced\eye\defines.dm"
 #include "code\modules\fallout\advanced\eye\virtual.dm"
