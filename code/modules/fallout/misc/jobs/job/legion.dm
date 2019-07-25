@@ -17,8 +17,6 @@
 
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -78,8 +76,6 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -138,8 +134,6 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -196,8 +190,6 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/head/helmet/f13/legdecan/alt,
@@ -257,8 +249,6 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -317,8 +307,6 @@
 	selection_color = "#ec9d9d"
 	minimal_player_age = 0
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/weapon/machete,
