@@ -54,8 +54,8 @@
 #define THIRST_LEVEL_FULL 500
 #define THIRST_LEVEL_LIGHT 300
 #define THIRST_LEVEL_MIDDLE 100
-#define THIRST_LEVEL_HARD 70
-#define THIRST_LEVEL_DEADLY 30
+#define THIRST_LEVEL_HARD 80
+#define THIRST_LEVEL_DEADLY 50
 
 //Slime evolution threshold. Controls how fast slimes can split/grow
 #define SLIME_EVOLUTION_THRESHOLD 10
