@@ -117,7 +117,7 @@
 
 /obj/machinery/bounty_machine/faction/mikebot
 	name = "Mikebot 9000"
-	desc = "A heavily modified vendortron that sells an extensive inventory of antiquated or otherwise difficult to find firearms, hooked up to what can only be described as a matter printer that creates the requested item upon payment. Does purchasing any of it's stock constitute potential war crimes? LOL naw"
+	desc = "A heavily modified vendortron that sells an extensive inventory of antiquated or otherwise difficult to find firearms, hooked up to what can only be described as a matter printer that creates the requested item upon payment."
 	resistance_flags = INDESTRUCTIBLE
 	icon = 'icons/WVM/machines.dmi'
 	icon_state = "mikebot"
@@ -142,6 +142,11 @@
 				/obj/item/weapon/gun/ballistic/automatic/pistol/silverghost = 2500,
 				/obj/item/weapon/gun/ballistic/automatic/pistol/sm1912 = 2750,
 				/obj/item/ammo_box/magazine/steyrmag = 1200,
+				/obj/item/kit/damage = 8500,
+				/obj/item/kit/recoil = 4500,
+				/obj/item/kit/burst = 8500,
+				/obj/item/kit/bayonet = 3000,
+				/obj/item/kit/scope = 6000
 					)
 					
 /* NCR QUARTERMASTER BOT */
