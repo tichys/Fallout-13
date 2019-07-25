@@ -15,7 +15,7 @@
 	maxHealth = 50
 	health = 50
 	self_weight = 35
-	loot = list(/obj/item/stack/caps/random)
+	loot = list(/obj/item/stack/caps/random, /obj/effect/decal/cleanable/blood/innards)
 
 	faction = list("hostile", "gecko")
 
