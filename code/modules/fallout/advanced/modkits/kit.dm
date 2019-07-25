@@ -1,6 +1,6 @@
 /obj/item/kit
 	name = "Modification Kit"
-	desc = "This one is useless."
+	desc = "This one is useless and probably shouldn't have spawned. Yell at an admin.."
 	icon = 'icons/fallout/advanced/modkits.dmi'
 	icon_state = "wmk"
 	var/type_deserved = /obj/item/weapon/gun
@@ -9,14 +9,14 @@
 
 /obj/item/kit/proc/install(var/obj/item/I)
 	if(type in I:modifications)
-		to_chat(usr, "Оружие уже имеет данный тип модификации.")
+		to_chat(usr, "You install the weapon modification kit.")
 		return
 
 	if(!istype(I, type_deserved))
-		to_chat(usr, "Что ты творишь?")
+		to_chat(usr, "This weapon modification kit is not compatible with this item.")
 		return
 
-	if(!do_mob(usr, usr, 20))
+	if(!do_mob(usr, usr, 30))
 		return
 
 	I:modifications += type
@@ -35,17 +35,15 @@
 
 	if(istype(src, /obj/item/kit/burst))
 		I:burst_size = 2
-
-	if(istype(src, /obj/item/kit/delay))
-		I:fire_delay *= 0.5
+		I:fire_delay = 3
 
 	if(istype(src, /obj/item/kit/bayonet))
 		I:force *= 2
 
 	if(istype(src, /obj/item/kit/scope))
 		W.zoomable = TRUE
-		W.zoom_amt = 3
-		W.scopetype = /obj/screen/fullscreen/scope/tech
+		W.zoom_amt = 6
+		W.scopetype = /obj/screen/fullscreen/scope/short
 		W.azoom = new()
 		W.azoom.gun = W
 
