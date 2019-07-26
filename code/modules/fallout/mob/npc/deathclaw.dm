@@ -19,8 +19,8 @@
 				/obj/effect/decal/cleanable/blood/splatter
 				)
 				
-	maxHealth = 400
-	health = 400
+	maxHealth = 650
+	health = 650
 	self_weight = 500
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 
