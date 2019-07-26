@@ -158,7 +158,7 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 35, bullet = 30, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 55, bullet = 35, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -169,7 +169,7 @@
 	icon_state = "legrecruit"
 	item_state = "legrecruit"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 45, bullet = 35, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 60, bullet = 40, laser = 10, energy = 10, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 4
@@ -180,7 +180,7 @@
 	icon_state = "legvexil"
 	item_state = "legvexil"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 60, bullet = 35, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 65, bullet = 45, laser = 20, energy = 15, bomb = 5, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -191,7 +191,7 @@
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 45, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
+	armor = list(melee = 70, bullet = 50, laser = 25, energy = 15, bomb = 10, bio = 15, rad = 10, fire = 10, acid = 10)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 8
@@ -202,7 +202,7 @@
 	icon_state = "legcenturion"
 	item_state = "legcenturion"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 75, bullet = 55, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 80, bullet = 60, laser = 25, energy = 25, bomb = 10, bio = 15, rad = 20, fire = 20, acid = 20)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 10
@@ -213,7 +213,7 @@
 	icon_state = "leglegate"
 	item_state = "leglegate"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 95, bullet = 65, laser = 25, energy = 25, bomb = 35, bio = 35, rad = 20, fire = 20, acid = 20)
+	armor = list(melee = 98, bullet = 70, laser = 35, energy = 35, bomb = 70, bio = 50, rad = 60, fire = 80, acid = 80)
 	put_on_delay = 60
 	strip_delay = 60
 	resistance_flags = FIRE_PROOF | ACID_PROOF
@@ -227,7 +227,7 @@
 	icon_state = "combat_mk1"
 	item_state = "combat_mk1"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 55, bullet = 60, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 55, bullet = 80, laser = 20, energy = 10, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 5
@@ -238,7 +238,7 @@
 	icon_state = "combat_mk2"
 	item_state = "combat_mk2"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET
-	armor = list(melee = 70, bullet = 70, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
+	armor = list(melee = 70, bullet = 85, laser = 20, energy = 15, bomb = 45, bio = 35, rad = 25, fire = 25, acid = 25)
 	put_on_delay = 60
 	strip_delay = 60
 	self_weight = 2
@@ -251,7 +251,7 @@
 	icon_state = "ncr_armor1"
 	item_state = "ncr_armor1"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
-	armor = list(melee = 15, bullet = 45, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0, fire = 10, acid = 0)
+	armor = list(melee = 25, bullet = 50, laser = 15, energy = 10, bomb = 10, bio = 30, rad = 45, fire = 30, acid = 10)
 	put_on_delay = 50
 	strip_delay = 50
 	resistance_flags = FIRE_PROOF
@@ -305,22 +305,13 @@
 	icon_state = "ncr_armor8"
 	item_state = "ncr_armor8"
 
-/obj/item/clothing/suit/armor/f13/ncr/facewrap
-	name = "NCR face wrap armor"
-	desc = "A set of NCR armor that consists of an armored breastplate, metal pauldrons and gauntlets, worn by NCR scouts in combat environments.<br>This one has the facewrap, designed to be pulled over the user's face to protect oneself from dust particles and other mainly radioactive elements."
-	icon_state = "ncr_armor9"
-	item_state = "ncr_armor9"
-	self_weight = 6
-	armor = list(melee = 10, bullet = 30, laser = 5, energy = 0, bomb = 0, bio = 15, rad = 15, fire = 15, acid = 0) //Better radiation protection, thank the facewrap bro!
-	flags_inv = HIDEFACE|HIDEFACIALHAIR
-
 /obj/item/clothing/suit/armor/f13/sergeant
 	name = "NCR patrol ranger armor"
 	desc = "Military-grade combat armor designed to protect key sections of the human body from ballistic trauma with hard armored plates made from complex polymers and ceramics, with a flexible body suit interwoven with thermal-dissipative membranes and bulletproof material.<br>It has a matte-finish olive drab coloring by default, making it suitable for woodland and/or urban camouflage."
 	icon_state = "sergeant"
 	item_state = "sergeant"
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	armor = list(melee = 20, bullet = 35, laser = 15, energy = 5, bomb = 15, bio = 5, rad = 5, fire = 15, acid = 5)
+	armor = list(melee = 75, bullet = 65, laser = 25, energy = 25, bomb = 25, bio = 30, rad = 45, fire = 30, acid = 10)
 	put_on_delay = 40
 	strip_delay = 40
 	resistance_flags = FIRE_PROOF
@@ -338,8 +329,8 @@
 	put_on_delay = 150
 	strip_delay = 150
 	self_weight = 60
-	slowdown = 2
-	armor = list(melee = 90, bullet = 90, laser = 35, energy = 35, bomb = 5, bio = 100, rad = 100, fire = 100, acid = 100) //These changes aren't necessarily realistic as no servomotors = less effective at disappating oncoming force but should serve to give NCR heavy troopers an actual role in combat. Should be far better suited towards a defensive playstyle against ballistic weapons.
+	slowdown = 3
+	armor = list(melee = 75, bullet = 75, laser = 15, energy = 15, bomb = 5, bio = 5, rad = 70, fire = 60, acid = 20)
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 /obj/item/clothing/suit/armor/f13/power_armor/sierra
@@ -347,8 +338,8 @@
 	desc = "A set of repurposed T-45d Power Armor, with a bears head mounted onto the shoulder and secured with a strap with a large gold medallion clip holding it snug. It holds a rack of cooling fans and a stream lined set of hydraulic actuators. It appears to have once been lined with a gold trim. It also appears to have a scorched layer of soot burned into it."
 	icon_state = "sierra"
 	item_state = "sierra"
-	armor = list(melee = 85, bullet = 85, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
-	self_weight = 26 //weight adjusted and general behaviour put more in line with regular power armour since sierra power armour is meant to have its servomotors still installed and used by captains that have been trained to use power armour
+	armor = list(melee = 95, bullet = 90, laser = 45, energy = 45, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
+	self_weight = 26
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
 // ncr armor end
@@ -381,15 +372,16 @@
 /obj/item/clothing/suit/armor/f13/power_armor
 	w_class = WEIGHT_CLASS_HUGE
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS
-	flags = STOPSPRESSUREDMAGE | THICKMATERIAL 
+	flags = STOPSPRESSUREDMAGE | THICKMATERIAL
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	put_on_delay = 300
-	strip_delay = 300
+	put_on_delay = 600
+	strip_delay = 600
+	slowdown = 1
 	special_defence = PREVENTDISMEMBER
 
 
@@ -402,9 +394,9 @@
 	if(slot == slot_wear_suit && !is_servant_of_ratvar(user))
 		if(iscarbon(user))
 			to_chat(user, "<span class='heavy_brass'>You lack the training to use power armour!</span>")
-		addtimer(CALLBACK(user, /mob/living.proc/unEquip, src, 1), 1)	
+		addtimer(CALLBACK(user, /mob/living.proc/unEquip, src, 1), 1)
 
-/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////	
+/////////////////////////POWER ARMOR USABILITY CHECK/////////////////////////
 
 
 
@@ -419,6 +411,9 @@
 	item_state = "t45dpowerarmor"
 	armor = list(melee = 85, bullet = 85, laser = 45, energy = 45, bomb = 55, bio =100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/t51b
 	name = "T-51b power armor"
@@ -427,6 +422,9 @@
 	item_state = "t51bpowerarmor"
 	armor = list(melee = 85, bullet = 90, laser = 50, energy = 50, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 28
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60
 	name = "T-60 power armor"
@@ -435,24 +433,33 @@
 	item_state = "t60powerarmor"
 	armor = list(melee = 85, bullet = 95, laser = 55, energy = 55, bomb = 45, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 30
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 // enclave armors
 
 /obj/item/clothing/suit/armor/f13/power_armor/advanced
-	name = "advanced power armor Mk. I 'Bugman'"
+	name = "advanced power armor Mk. I 'Beetle'"
 	desc = "An advanced suit of armor typically used by the Enclave.<br>It is composed of lightweight metal alloys, reinforced with ceramic castings at key stress points.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	armor = list(melee = 95, bullet = 95, laser = 70, energy = 70, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/superadvanced
-	name = "advanced power armor Mk. II 'Bugman'"
+	name = "advanced power armor Mk. II 'Beetle'"
 	desc = "An improved model of advanced power armor used exclusively by the Enclave military forces, developed after the Great War.<br>Like its older brother, the standard advanced power armor, it's matte black with a menacing appearance, but with a few significant differences - it appears to be composed entirely of lightweight ceramic composites rather than the usual combination of metal and ceramic plates.<br>Additionally, like the T-51b power armor, it includes a recycling system that can convert human waste into drinkable water, and an air conditioning system for it's user's comfort."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	armor = list(melee = 98, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 22
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/shocktrooper
 	name = "advanced power armor Mk. III 'Black Devil'" //for the sake of lore consistency, taking both bethesda and black isle/interplays versions and just saying the one in fo3 is the mark 3, with mark 2 being last of the first apa iterations. also fixed the name because hellfire is the one from broken steel, this one is the black devil/standard apa from fo3. Nicknames have also been added to the armors.
@@ -461,6 +468,9 @@
 	item_state = "shocktrooper" //probably need a new sprite of this to fit with the higher detail style of the new APA
 	armor = list(melee = 105, bullet = 105, laser = 85, energy = 85, bomb = 60, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 24
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/tesla
 	name = "advanced tesla power armor Mk. I 'Glow Worm'"
@@ -469,6 +479,9 @@
 	item_state = "tesla" //placeholder will use tesla sprite for now, needs a tesla version of the new APA though.
 	armor = list(melee = 65, bullet = 65, laser = 98, energy = 98, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/suit/armor/f13/power_armor/badmin
 	name = "advanced power armor Mk. IV 'Hellfire'"
@@ -477,6 +490,9 @@
 	item_state = "PLACEHOLDERFORHELLFIRESPRITE!!!" //replacing with error for now since its unsuable anyway, would love a hellfire sprite...
 	armor = list(melee = 105, bullet = 105, laser = 200, energy = 200, bomb = 75, bio = 100, rad = 100, fire = 100, acid = 100) //Burn baby, burn!
 	self_weight = 26
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 //Knights of the Apocalypse
 

@@ -350,6 +350,9 @@
 	light_color = LIGHT_COLOR_YELLOW
 	icon = 'icons/fallout/clothing/hats.dmi'
 	flash_protect = 2
+	obj_integrity = 600
+	max_integrity = 600
+	integrity_failure = 100
 
 /obj/item/clothing/head/helmet/power_armor/proc/toogle_light(mob/user)
 	on = !on
@@ -390,9 +393,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/badmin/New()
@@ -430,9 +432,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/shocktrooper/New()
@@ -453,8 +454,8 @@
 /obj/item/clothing/head/helmet/power_armor/superadvanced
 	name = "advanced power armor Mk. II helmet"
 	desc = "An improved model of the standard advanced power armor helmet used exclusively by Enclave military forces, developed after the Great War.<br>It looks rather threatening."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
 	armor = list(melee = 125, bullet = 98, laser = 80, energy = 80, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
@@ -470,9 +471,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/superadvanced/New()
@@ -510,9 +510,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/tesla/New()
@@ -533,8 +532,8 @@
 /obj/item/clothing/head/helmet/power_armor/advanced
 	name = "advanced power armor Mk. I helmet"
 	desc = "A helmet typically used by Enclave regular troops.<br>It looks somewhat threatening."
-	icon_state = "advanced"
-	item_state = "advanced"
+	icon_state = "superadvanced"
+	item_state = "superadvanced"
 	flags = HEADCOVERSEYES | HEADCOVERSMOUTH | STOPSPRESSUREDMAGE | BLOCK_GAS_SMOKE_EFFECT
 	armor = list(melee = 120, bullet = 95, laser = 75, energy = 75, bomb = 55, bio = 100, rad = 100, fire = 100, acid = 100)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
@@ -550,9 +549,8 @@
 
 	darkness_view = 8
 	invis_view = SEE_INVISIBLE_MINIMUM
-	glass_colour_type = /datum/client_colour/glass_colour/yellow
 	actions_types = list(/datum/action/item_action/toggle)
-	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW
+	visor_vars_to_toggle = VISOR_DARKNESSVIEW | VISOR_INVISVIEW | VISOR_FLASHPROTECT
 	can_toggle = 1
 
 /obj/item/clothing/head/helmet/power_armor/advanced/New()

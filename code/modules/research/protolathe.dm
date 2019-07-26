@@ -12,6 +12,7 @@ Note: Must be placed west/left of and R&D console to function.
 	desc = "Converts raw materials into useful objects."
 	icon_state = "protolathe"
 	container_type = OPENCONTAINER
+	resistance_flags = INDESTRUCTIBLE
 
 	var/datum/material_container/materials
 	var/efficiency_coeff

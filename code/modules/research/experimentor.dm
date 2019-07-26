@@ -19,6 +19,7 @@
 	name = "E.X.P.E.R.I-MENTOR"
 	icon = 'icons/obj/machines/heavy_lathe.dmi'
 	icon_state = "h_lathe"
+	resistance_flags = INDESTRUCTIBLE
 	density = 1
 	anchored = 1
 	use_power = 1

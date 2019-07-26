@@ -7,6 +7,7 @@
         #include "map_files\TexasWasteland\texas_wasteland.dmm"
         #include "map_files\TexasWasteland\NCR Remap.dmm"
         #include "map_files\TexasWasteland\z2.dmm"
+        #include "map_files\TexasWasteland\industrialheart.dmm"
 
 		#define MAP_PATH "map_files/TexasWasteland"
         #define MAP_FILE "texas_wasteland.dmm"
@@ -20,4 +21,3 @@
 	#warn a map has already been included, ignoring wasteland debug.
 
 #endif
-

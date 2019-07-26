@@ -291,18 +291,25 @@ research holder datum.
 	desc = "An old pre-war technology disk. This one has the stamp of General Atomics, a few notices about confidentiality and a date of February 21st, 2077. It probably has quite a bit of information on power generation. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=7;engineering=7;powerstorage=8"
+	origin_tech = "materials=2;engineering=7;powerstorage=7"
 
 /obj/item/weapon/disk/tech_disk/westtekbiotech
 	name = "West Tek 2074 technology disk"
 	desc = "An old pre-war technology disk. This one has the stamp of West Tek, a few notices about confidentiality and a date of January 11th, 2074. It probably has quite a bit of information on West Tek's latest research. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=12;engineering=14;powerstorage=6;biotech=9"
+	origin_tech = "materials=3;engineering=12;powerstorage=6;biotech=9"
 
 /obj/item/weapon/disk/tech_disk/bigmt //need to put together a new dungeon to house this one, this is the 'ultimate' tech disk. has all the tech available but should be very difficult to get
 	name = "Big MT. 2145 technology disk"
 	desc = "An old technology disk. This one has the stamp of Big MT, a few notices about confidentiality and a date of March 17th, 2145. It probably has quite a bit of cutting edge research documentation from Big MT. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=18;engineering=16;powerstorage=14;biotech=18"
+	origin_tech = "materials=14;engineering=16;powerstorage=16;biotech=18"
+
+/obj/item/weapon/disk/tech_disk/volkswagen
+	name = "Volkswagen 2077 technology disk"
+	desc = "An old pre-war technology disk. This one has the stamp of Volkswagen, a pre-war automobile manufacturer. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
+	materials = list()
+	max_tech_stored = 0
+	origin_tech = "materials=8;engineering=5;powerstorage=4;biotech=5"

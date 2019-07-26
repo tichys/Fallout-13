@@ -11,6 +11,7 @@
 	var/server_id = 0
 	var/heat_gen = 100
 	var/heating_power = 40000
+	resistance_flags = INDESTRUCTIBLE
 	var/delay = 10
 	req_access = list(access_rd) //Only the R&D can change server settings.
 

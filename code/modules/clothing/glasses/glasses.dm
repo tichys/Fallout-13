@@ -249,8 +249,7 @@
 	origin_tech = "magnets=3"
 	vision_flags = SEE_MOBS
 	invis_view = 2
-	flash_protect = 0
-	glass_colour_type = /datum/client_colour/glass_colour/lightblue
+	flash_protect = 2
 
 /obj/item/clothing/glasses/thermal/emp_act(severity)
 	thermal_overload()

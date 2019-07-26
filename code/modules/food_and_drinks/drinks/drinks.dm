@@ -186,8 +186,8 @@
 		icon_state = "tea_empty"
 
 /obj/item/weapon/reagent_containers/food/drinks/mug/tea
-	name = "Duke Purple Tea"
-	desc = "An insult to Duke Purple is an insult to the Space Queen! Any proper gentleman will fight you, if you sully this tea."
+	name = "Green Tea"
+	desc = "A herbal tea that calms the mind."
 	list_reagents = list("tea" = 30)
 
 /obj/item/weapon/reagent_containers/food/drinks/mug/coco

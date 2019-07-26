@@ -2,7 +2,7 @@
 
 /obj/item/device/mmi
 	name = "Man-Machine Interface"
-	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity, that nevertheless has become standard-issue on Nanotrasen stations."
+	desc = "A pre-war prototype, capable of installing a human brain into most main-line robotics to improve their efficiency by several hundred percent. The ethical concerns held the design back somewhat before the war, but now..."
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "mmi_empty"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -209,7 +209,7 @@
 
 /obj/item/device/mmi/syndie
 	name = "Syndicate Man-Machine Interface"
-	desc = "Syndicate's own brand of MMI. It enforces laws designed to help Syndicate agents achieve their goals upon cyborgs and AIs created with it."
+	desc = "A pre-war prototype, capable of installing a human brain into most main-line robotics to improve their efficiency by several hundred percent. The ethical concerns held the design back somewhat before the war, but now..."
 	origin_tech = "biotech=4;programming=4;syndicate=2"
 
 /obj/item/device/mmi/syndie/New()

@@ -299,9 +299,6 @@
 /obj/structure/ladder/unbreakable/rune/update_icon()
 	return
 
-/obj/structure/ladder/unbreakable/rune/show_fluff_message(up,mob/user)
-	user.visible_message("[user] activates \the [src].","<span class='notice'>You activate \the [src].</span>")
-
 /obj/structure/ladder/can_use(mob/user)
 	if(user.mind in ticker.mode.wizards)
 		return 0

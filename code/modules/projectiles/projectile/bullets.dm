@@ -130,10 +130,8 @@
  	..()
 
 /obj/item/projectile/bullet/midbullet
-	damage = 35
-	stamina = 65 //two round bursts from the c20r knocks people down
+	damage = 14
 	dismemberment = 0.4
-
 
 /obj/item/projectile/bullet/midbullet2
 	damage = 26

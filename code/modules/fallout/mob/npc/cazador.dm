@@ -25,7 +25,7 @@
 	movement_type = FLYING
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	self_weight = 40
-	loot = list(/obj/item/stack/caps/random)
+	loot = list(/obj/item/stack/caps/random, /obj/effect/decal/cleanable/blood/splatter)
 
 	faction = list("hostile", "cazador")
 

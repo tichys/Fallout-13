@@ -1,8 +1,17 @@
+//LADDER DRAGGING OF PLAYERS HAS BEEN SETUP
+//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN. 
+//ALL EXISTING LADDERS HAVE BEEN ADJUSTED FOR THIS.
+//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT ABLE TO CONNECT TO MORE THAN 1 LADDER. 
+//LADDER_MIDDLE IS NOW AN ERROR SPECIFICALLY SO YOU SPOT THIS AND REMEMBER TO FIX IT.
+//SEE ENCLAVE SUBLEVELS BASE IN z2.dmm FOR EXAMPLE
+
+
+
 /obj/structure/ladder
 	name = "ladder"
 	desc = "A sturdy metal ladder."
 	icon = 'icons/fallout/objects/structures/stationary.dmi'
-	icon_state = "ladder_middle"
+	icon_state = "ladder_top"
 	anchored = 1
 	resistance_flags = INDESTRUCTIBLE
 	var/id = null
@@ -45,13 +54,11 @@
 
 /obj/structure/ladder/proc/go_up(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(1,user)
 		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
 /obj/structure/ladder/proc/go_down(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(0,user)
 		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
 
@@ -78,6 +85,17 @@
 	if(can_use(user))
 		use(user)
 
+
+//////////////////////////////DRAGGING PEOPLE VIA LADDERS//////////////////////////////
+/obj/structure/ladder/MouseDrop_T(obj/O, mob/user, /obj/structure/ladder/L)
+	for(var/obj/structure/ladder/L in world)
+		if(L.height == (height - 1))
+			go_down(O)
+		else
+			go_up(O)
+//////////////////////////////DRAGGING PEOPLE VIA LADDERS//////////////////////////////
+
+
 /obj/structure/ladder/attack_paw(mob/user)
 	return attack_hand(user)
 
@@ -86,12 +104,6 @@
 
 /obj/structure/ladder/attack_ghost(mob/dead/observer/user)
 	use(user,1)
-
-/obj/structure/ladder/proc/show_fluff_message(up,mob/user)
-	if(up)
-		user.visible_message("[user] climbs up \the [src].","<span class='notice'>You climb up \the [src].</span>")
-	else
-		user.visible_message("[user] climbs down \the [src].","<span class='notice'>You climb down \the [src].</span>")
 
 /obj/structure/ladder/proc/can_use(mob/user)
 	return 1
@@ -184,13 +196,11 @@ obj/structure/ladder/vent/update_icon()
 
 /obj/structure/roadtravel/proc/go_up(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(1,user)
 		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
 /obj/structure/roadtravel/proc/go_down(mob/user,is_ghost)
 	if(!is_ghost)
-		show_fluff_message(0,user)
 		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
 
@@ -226,12 +236,6 @@ obj/structure/ladder/vent/update_icon()
 /obj/structure/roadtravel/attack_ghost(mob/dead/observer/user)
 	use(user,1)
 
-/obj/structure/roadtravel/proc/show_fluff_message(up,mob/user)
-	if(up)
-		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
-	else
-		user.visible_message("[user] travels along \the [src].","<span class='notice'>You travel along \the [src].</span>")
-
 /obj/structure/roadtravel/proc/can_use(mob/user)
 	return 1
 
@@ -240,3 +244,13 @@ obj/structure/ladder/vent/update_icon()
 		. = ..()
 	else
 		return QDEL_HINT_LETMELIVE
+
+
+//////////////////////////////DRAGGING PEOPLE VIA ROADS//////////////////////////////
+/obj/structure/roadtravel/MouseDrop_T(obj/O, mob/user, /obj/structure/roadtravel/R)
+	for(var/obj/structure/roadtravel/R in world)
+		if(R.height == (height - 1))
+			go_down(O)
+		else
+			go_up(O)
+//////////////////////////////DRAGGING PEOPLE VIA ROADS//////////////////////////////
