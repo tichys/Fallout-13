@@ -204,7 +204,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/gauss2mm)
 	zoomable = TRUE
 	zoom_amt = 22
-	fire_delay = 175
+	fire_delay = 200
 	slot_flags = SLOT_BACK
 	weapon_weight = WEAPON_HEAVY
 	w_class = WEIGHT_CLASS_HUGE
