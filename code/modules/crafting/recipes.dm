@@ -8,7 +8,7 @@
 	var/parts[] = list() //type paths of items that will be placed in the result
 	var/chem_catalysts[] = list() //like tools but for reagents
 	var/category = CAT_NONE //where it shows up in the crafting UI
-/*
+
 
 /datum/crafting_recipe/pin_removal
 	name = "Pin Removal"
@@ -115,47 +115,6 @@
 				/obj/item/device/assembly/prox_sensor = 1)
 	tools = list(/obj/item/weapon/weldingtool, /obj/item/weapon/screwdriver)
 	time = 60
-	category = CAT_ROBOT
-
-/datum/crafting_recipe/secbot
-	name = "Secbot"
-	result = /mob/living/simple_animal/bot/secbot
-	reqs = list(/obj/item/device/assembly/signaler = 1,
-				/obj/item/clothing/head/helmet/sec = 1,
-				/obj/item/weapon/melee/baton = 1,
-				/obj/item/device/assembly/prox_sensor = 1,
-				/obj/item/bodypart/r_arm/robot = 1)
-	tools = list(/obj/item/weapon/weldingtool)
-	time = 60
-	category = CAT_ROBOT
-
-/datum/crafting_recipe/cleanbot
-	name = "Cleanbot"
-	result = /mob/living/simple_animal/bot/cleanbot
-	reqs = list(/obj/item/weapon/reagent_containers/glass/bucket = 1,
-				/obj/item/device/assembly/prox_sensor = 1,
-				/obj/item/bodypart/r_arm/robot = 1)
-	time = 40
-	category = CAT_ROBOT
-
-/datum/crafting_recipe/floorbot
-	name = "Floorbot"
-	result = /mob/living/simple_animal/bot/floorbot
-	reqs = list(/obj/item/weapon/storage/toolbox/mechanical = 1,
-				/obj/item/stack/tile/plasteel = 1,
-				/obj/item/device/assembly/prox_sensor = 1,
-				/obj/item/bodypart/r_arm/robot = 1)
-	time = 40
-	category = CAT_ROBOT
-
-/datum/crafting_recipe/medbot
-	name = "Medbot"
-	result = /mob/living/simple_animal/bot/medbot
-	reqs = list(/obj/item/device/healthanalyzer = 1,
-				/obj/item/weapon/storage/firstaid = 1,
-				/obj/item/device/assembly/prox_sensor = 1,
-				/obj/item/bodypart/r_arm/robot = 1)
-	time = 40
 	category = CAT_ROBOT
 
 /datum/crafting_recipe/flamethrower
@@ -289,20 +248,6 @@
 	parts = list(/obj/item/device/camera = 1)
 	category = CAT_MISC
 
-/datum/crafting_recipe/lizardhat
-	name = "Lizard Cloche Hat"
-	result = /obj/item/clothing/head/lizard
-	time = 10
-	reqs = list(/obj/item/severedtail = 1)
-	category = CAT_MISC
-
-/datum/crafting_recipe/lizardhat_alternate
-	name = "Lizard Cloche Hat"
-	result = /obj/item/clothing/head/lizard
-	time = 10
-	reqs = list(/obj/item/stack/sheet/animalhide/lizard = 1)
-	category = CAT_MISC
-
 /datum/crafting_recipe/skateboard
 	name = "Skateboard"
 	result = /obj/vehicle/scooter/skateboard
@@ -381,15 +326,6 @@
 	reqs = list(/obj/item/stack/sheet/bone = 4)
 	category = CAT_PRIMAL
 
-/datum/crafting_recipe/drakecloak
-	name = "Ash Drake Armour"
-	result = /obj/item/clothing/suit/hooded/cloak/drake
-	time = 60
-	reqs = list(/obj/item/stack/sheet/bone = 10,
-				/obj/item/stack/sheet/sinew = 2,
-				/obj/item/stack/sheet/animalhide/ashdrake = 5)
-	category = CAT_PRIMAL
-
 /datum/crafting_recipe/gold_horn
 	name = "Golden bike horn"
 	result = /obj/item/weapon/bikehorn/golden
@@ -434,4 +370,3 @@
 	time = 10
 	reqs = list(/obj/item/stack/sheet/cardboard = 1)
 	category = CAT_MISC
-*/
