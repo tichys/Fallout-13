@@ -8,7 +8,7 @@
 	name = "baseball cap"
 	desc = "A type of soft cap with a rounded crown and a stiff peak projecting out the front."
 	icon_state = "baseball"
-	item_color = "baseball_flipped"
+	item_color = "baseball"
 	flags_inv = HIDEHAIR
 
 /obj/item/clothing/head/soft/f13/enclave
@@ -22,20 +22,20 @@
 	name = "grey utility cover"
 	desc = "An eight-pointed hat, with a visor similar to a baseball cap, known as utility cover, also called the utility cap or eight-pointed cover."
 	icon_state = "utility_g"
-	item_color = "utility_g_flipped"
+	item_color = "utility_g"
 	flags_inv = null
 
 /obj/item/clothing/head/soft/f13/utility/navy
 	name = "navy utility cover"
 	icon_state = "utility_n"
-	item_color = "utility_n_flipped"
+	item_color = "utility_n"
 
 /obj/item/clothing/head/soft/f13/utility/olive
 	name = "olive utility cover"
 	icon_state = "utility_o"
-	item_color = "utility_o_flipped"
+	item_color = "utility_o"
 
 /obj/item/clothing/head/soft/f13/utility/tan
 	name = "tan utility cover"
 	icon_state = "utility_t"
-	item_color = "utility_t_flipped"
+	item_color = "utility_t"
