@@ -5,7 +5,7 @@
 	icon_state = "bandaid"
 	item_state = "bandaid"
 	possible_transfer_amounts = list()
-	volume = 40
+	volume = 80 //upping the maximum possible for the sake of chems in FO, since they really ought to be a bit more powerufl.
 	apply_type = PATCH
 	apply_method = "apply"
 	self_delay = 30		// three seconds
