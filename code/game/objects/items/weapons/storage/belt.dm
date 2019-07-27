@@ -289,12 +289,35 @@
 	item_state = "security"
 	storage_slots = 9
 
+/obj/item/weapon/storage/belt/military/army/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/pill/patch/stimpak(src)
+	new /obj/item/weapon/reagent_containers/pill/patch/stimpak(src)
+	new /obj/item/ammo_box/magazine/m556(src)
+	new /obj/item/ammo_box/magazine/m556(src)
+	new /obj/item/ammo_box/magazine/m556(src)
+	new /obj/item/stack/caps(src,300)
+
 /obj/item/weapon/storage/belt/military/assault
 	name = "ranger's chestrig"
 	desc = "A worn chestrig, there are several pouches pockets. The insignia of the NCR Rangers is embroidered into the rig."
 	icon_state = "explorer2"
 	item_state = "explorer2"
 	storage_slots = 14
+
+/obj/item/weapon/storage/belt/military/assault/full/New()
+	..()
+	new /obj/item/weapon/restraints/handcuffs(src)
+	new /obj/item/weapon/reagent_containers/pill/patch/stimpak(src)
+	new /obj/item/weapon/reagent_containers/pill/patch/stimpak(src)
+	new /obj/item/ammo_box/m44(src)
+	new /obj/item/ammo_box/m44(src)
+	new /obj/item/ammo_box/m44(src)
+	new /obj/item/ammo_box/m44(src)
+	new /obj/item/ammo_box/m44(src)
+	new /obj/item/ammo_box/magazine/sniper_rounds(src)
+	new /obj/item/ammo_box/magazine/sniper_rounds(src)
+	new /obj/item/stack/caps(src, 550)
 
 /obj/item/weapon/storage/belt/grenade
 	name = "grenadier belt"
@@ -1121,6 +1144,7 @@
 		/obj/item/weapon/trench,
 		/obj/item/weapon/reknife,
 		/obj/item/weapon/bumpersword,
+		/obj/item/stack/caps
 		)
 
 /obj/item/weapon/storage/belt/legionbelt/full/New()
@@ -1138,6 +1162,7 @@
 	new /obj/item/device/flashlight/torch(src)
 	new /obj/item/ammo_box/magazine/luger(src)
 	new /obj/item/ammo_box/magazine/luger(src)
+	new /obj/item/stack/caps(src, 300)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/luger(src)
 
 /obj/item/weapon/storage/belt/military/enclavearmy
