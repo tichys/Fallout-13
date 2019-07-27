@@ -4,8 +4,8 @@
 	base_state = "lamppost"
 	icon = 'icons/fallout/machines/64x96.dmi'
 	fitting = "lamp post"
-	brightness = 6
-	active_power_usage = 100
+	brightness = 16
+	active_power_usage = -100
 	density = 1
 	appearance_flags = 0
 	flags = NODECONSTRUCT
