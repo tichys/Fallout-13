@@ -15,10 +15,12 @@
 	response_harm = "hits the deathclaw right in its large"
 	butcher_results = list(/obj/item/weapon/reagent_containers/food/snacks/meat/slab/deathclaw = 5, /obj/item/stack/sheet/animalhide/deathclaw=3)
 	loot = list(
-				/obj/item/trash/f13/deathclawtalon = 1
+				/obj/item/trash/f13/deathclawtalon = 1,
+				/obj/effect/decal/cleanable/blood/splatter
 				)
-	maxHealth = 400
-	health = 400
+				
+	maxHealth = 650
+	health = 650
 	self_weight = 500
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 

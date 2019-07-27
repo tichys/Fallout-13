@@ -12,6 +12,8 @@ Note: Must be placed within 3 tiles of the R&D Console
 	desc = "Learn science by destroying things!"
 	icon_state = "d_analyzer"
 	var/decon_mod = 0
+	resistance_flags = INDESTRUCTIBLE
+
 
 /obj/machinery/r_n_d/destructive_analyzer/New()
 	..()

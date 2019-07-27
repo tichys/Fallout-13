@@ -9,7 +9,7 @@
 	if(modificationsNames.len == 0)
 		return
 
-	to_chat(user, "WMK installed:")
+	to_chat(user, "Modification kit installed:")
 
 	for(var/S in modificationsNames)
 		to_chat(user, S)

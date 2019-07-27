@@ -13,17 +13,17 @@
 		return
 
 	if(src.z != 1)
-		src.visible_message("Can't call vertibird here!")
+		src.visible_message("A vertibird can't land here!")
 		return
 
 	var/turf/turf = locs[1]
 
 	if(!isarea(turf.loc))
-		src.visible_message("No location!")
+		src.visible_message("Your location isn't visible on GPS!")
 		return
 
 	if(!istype(turf.loc, /area/f13/wasteland))
-		src.visible_message("Wrong location!")
+		src.visible_message("Unable to land, find a clear LZ!")
 		return
 
 	vertibird:fly(src.x, src.y)

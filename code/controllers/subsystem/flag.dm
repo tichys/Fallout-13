@@ -10,7 +10,7 @@ var/datum/subsystem/flag/SSflag
 	display_order = 1
 	wait = 5
 
-	var/list/war_factions = list("bs", "ncr", "legion")
+	var/list/war_factions = list("ncr", "legion")
 	var/list/processing = list()
 
 /datum/subsystem/flag/New()

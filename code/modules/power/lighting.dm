@@ -149,15 +149,15 @@
 	layer = WALL_OBJ_LAYER
 	obj_integrity = 100
 	max_integrity = 100
-	use_power = 2
-	idle_power_usage = 2
-	active_power_usage = 20
+	use_power = 0
+	idle_power_usage = -20
+	active_power_usage = -40
 	power_channel = LIGHT //Lights are calc'd via area so they dont need to be in the machine list
 	light_color = LIGHT_COLOR_HALOGEN
 	var/on = 0					// 1 if on, 0 if off
 	var/on_gs = 0
 	var/static_power_used = 0
-	var/brightness = 8			// luminosity when on, also used in power calculation
+	var/brightness = 12			// luminosity when on, also used in power calculation
 	var/status = LIGHT_OK		// LIGHT_OK, _EMPTY, _BURNED or _BROKEN
 	var/flickering = 0
 	var/light_type = /obj/item/weapon/light/tube		// the type of light item
@@ -173,7 +173,7 @@
 	icon_state = "bulb1"
 	base_state = "bulb"
 	fitting = "bulb"
-	brightness = 4
+	brightness = 8
 	desc = "A small lighting fixture."
 	light_type = /obj/item/weapon/light/bulb
 	light_color = LIGHT_COLOR_YELLOW
@@ -252,17 +252,14 @@
 			if(rigged)
 				if(status == LIGHT_OK && trigger)
 					explode()
-			else if( prob( min(60, switchcount*switchcount*0.01) ) && fitting != "lamp post")
-				if(trigger)
-					burn_out()
 			else
-				use_power = 2
+				use_power = 0
 				set_light(brightness)
 	else
-		use_power = 1
+		use_power = 0
 		set_light(0)
 
-	active_power_usage = (brightness * 10)
+	active_power_usage = (brightness - 10)
 	if(on != on_gs)
 		on_gs = on
 		if(on)
@@ -272,15 +269,6 @@
 			removeStaticPower(static_power_used, STATIC_LIGHT)
 
 
-/obj/machinery/light/proc/burn_out()
-	if(status == LIGHT_OK)
-		status = LIGHT_BURNED
-		icon_state = "[base_state]-burned"
-		on = 0
-		set_light(0)
-
-// attempt to set the light's on/off status
-// will not switch on if broken/burned/empty
 /obj/machinery/light/proc/seton(s)
 	on = (s && status == LIGHT_OK)
 	update()

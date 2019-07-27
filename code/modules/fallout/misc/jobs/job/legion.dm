@@ -17,17 +17,13 @@
 
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
 	/obj/item/weapon/spear,
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
-	/obj/item/weapon/lighter/gold,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak,
-	/obj/item/weapon/reagent_containers/pill/patch/supstimpak
+	/obj/item/weapon/lighter/gold
 	)
 
 	denied_items = list(
@@ -71,14 +67,12 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "centurion"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Legate"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/weapon/machete,
@@ -86,8 +80,7 @@
 	/obj/item/weapon/spear,
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
-	/obj/item/weapon/lighter/engraved,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak
+	/obj/item/weapon/lighter/engraved
 	)
 
 	denied_items = list(
@@ -131,14 +124,12 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "vexillarius"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 8
+	spawn_positions = 8
 	supervisors = "the Legate"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/weapon/machete,
@@ -146,8 +137,7 @@
 	/obj/item/weapon/spear,
 	/obj/item/weapon/harpoon,
 	/obj/item/device/radio,
-	/obj/item/weapon/lighter/engraved,
-	/obj/item/weapon/reagent_containers/pill/patch/stimpak
+	/obj/item/weapon/lighter/engraved
 	)
 
 	denied_items = list(
@@ -190,14 +180,12 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "decanus"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 10
+	spawn_positions = 10
 	supervisors = "the Centurion"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/clothing/head/helmet/f13/legdecan/alt,
@@ -257,8 +245,6 @@
 	minimal_player_age = 7
 	disallowed_gender = FEMALE
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
-
 	required_items = list(
 	/obj/item/weapon/machete,
 	/obj/item/weapon/kitchen/knife/combat,
@@ -311,14 +297,12 @@
 	department_flag = WASTELAND
 	faction = "legion"
 	status = "recruit"
-	total_positions = 25
-	spawn_positions = 25
+	total_positions = 60
+	spawn_positions = 60
 	supervisors = "the Centurion"
 	selection_color = "#ec9d9d"
 	minimal_player_age = 0
 	disallowed_gender = FEMALE
-
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
 
 	required_items = list(
 	/obj/item/weapon/machete,

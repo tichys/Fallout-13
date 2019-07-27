@@ -528,6 +528,8 @@
 	mode = TURRET_LETHAL
 	faction = "bs"
 	emagged = TRUE
+	scan_range = 11
+	emp_vunerable = 0
 	installation = /obj/item/weapon/gun/energy/laser
 
 
@@ -536,7 +538,7 @@
 	always_up = 1
 	use_power = 0
 	has_cover = 0
-	scan_range = 9
+	scan_range = 12
 	stun_projectile = /obj/item/projectile/bullet
 	lethal_projectile = /obj/item/projectile/bullet
 	lethal_projectile_sound = 'sound/weapons/Gunshot.ogg'
@@ -771,7 +773,7 @@
 	.["stun_projectile"] = /obj/item/projectile/beam/lasertag/bluetag
 	.["lethal_projectile"] = /obj/item/projectile/beam/lasertag/bluetag
 	.["base_icon_state"] = "blue"
-	.["shot_delay"] = 30
+	.["shot_delay"] = 15
 	.["team_color"] = "blue"
 
 /obj/item/weapon/gun/energy/laser/redtag/get_turret_properties()

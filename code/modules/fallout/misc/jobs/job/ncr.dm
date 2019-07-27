@@ -15,7 +15,7 @@
 	minimal_player_age = 7
 	whitelist_on = 0
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
@@ -52,14 +52,9 @@
 	uniform = /obj/item/clothing/under/f13/general
 	shoes = /obj/item/clothing/shoes/laceup
 	suit = null
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/full
 	head = /obj/item/clothing/head/f13/ncr_captain
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
-		/obj/item/device/radio = 1, \
-		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/captain/after_spawn(mob/living/carbon/human/H)
@@ -77,13 +72,13 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "ncr_sergeant"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Captain"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor","heavy_trooper", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor","heavy_trooper")
 
 	required_items = list(
 	/obj/item/clothing/head/f13/ncr_officer,
@@ -123,13 +118,8 @@
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
 	head = /obj/item/clothing/head/f13/ncr_officer
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/full
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
-		/obj/item/device/radio = 1, \
-		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/vranger
@@ -150,7 +140,7 @@
 
 	access = list(71)
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/glasses/sunglasses,
@@ -185,14 +175,9 @@
 	suit = /obj/item/clothing/suit/armor/ranger
 	suit_store = /obj/item/weapon/gun/ballistic/revolver/sequoia
 	head = /obj/item/clothing/head/helmet/ranger
-	belt = /obj/item/weapon/storage/belt/military/assault
+	belt = /obj/item/weapon/storage/belt/military/assault/full
 	back = /obj/item/weapon/gun/ballistic/automatic/sniper_rifle
-	weapon = /obj/item/weapon/cqc_manual //adding this to NCR vet rangers, given their hand 2 hand proficiency.
-	belt_contents = list(/obj/item/weapon/restraints/handcuffs = 1, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-		/obj/item/ammo_box/m44 = 3, \
-		/obj/item/device/radio = 1, \
-		/obj/item/ammo_box/magazine/sniper_rounds = 1)
+	weapon = /obj/item/weapon/cqc_manual
 	id = /obj/item/weapon/card/id/ncr
 
 	//NCR First Recon
@@ -205,12 +190,12 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "ncr_ranger"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "Veteran Ranger"
 	minimal_player_age = 5
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten")
 
 	required_items = list(
 	/obj/item/clothing/head/f13/ncr_officer,
@@ -250,13 +235,8 @@
 	shoes = /obj/item/clothing/shoes/f13/military
 	suit = /obj/item/clothing/suit/armor/f13/sergeant
 	head = /obj/item/clothing/head/f13/sergeant
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/full
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/ammo_box/magazine/m556 = 3, \
-		/obj/item/weapon/reagent_containers/pill/patch/stimpak = 2, \
-		/obj/item/weapon/reagent_containers/food/drinks/flask/survival = 1, \
-		/obj/item/device/radio = 1, \
-		/obj/item/device/flashlight/torch/flare/blue = 1)
 	id = /obj/item/weapon/card/id/ncr
 
 /datum/job/trooper
@@ -267,16 +247,15 @@
 	department_flag = WASTELAND
 	faction = "ncr"
 	status = "trooper"
-	total_positions = 26
-	spawn_positions = 26
+	total_positions = 30
+	spawn_positions = 30
 	supervisors = "the Captain"
 	selection_color = "#9d9fec"
 	minimal_player_age = 7
 
-	allowed_packs = list("starter", "cigarettes", "bard", "super_ten", "trooper_armor", "holsters")
+	allowed_packs = list("starter", "cigarettes", "super_ten", "trooper_armor")
 
 	required_items = list(
-	/obj/item/clothing/suit/armor/f13/ncr/facewrap,
 	/obj/item/weapon/kitchen/knife/combat
 	)
 
@@ -306,10 +285,9 @@
 	uniform = /obj/item/clothing/under/f13/ncr
 	shoes = /obj/item/clothing/shoes/f13/military/ncr
 	suit = /obj/item/clothing/suit/armor/f13/ncr/soldier
+	mask = /obj/item/clothing/mask/bandana/f13/facewrap
 	head = /obj/item/clothing/head/helmet/f13/trooper
 	glasses = /obj/item/clothing/glasses/f13/biker
-	belt = /obj/item/weapon/storage/belt/military/army
+	belt = /obj/item/weapon/storage/belt/military/army/full
 	weapon = /obj/item/weapon/gun/ballistic/automatic/assault_rifle
-	belt_contents = list(/obj/item/weapon/reagent_containers/pill/patch/stimpak = 1, \
-	/obj/item/device/radio = 1, /obj/item/ammo_box/magazine/m556 = 3)
 	id = /obj/item/weapon/card/id/ncr

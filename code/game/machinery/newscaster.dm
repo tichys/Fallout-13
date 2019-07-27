@@ -881,7 +881,7 @@ var/list/obj/machinery/newscaster/allCasters = list()
 
 /obj/item/weapon/newspaper
 	name = "newspaper"
-	desc = "An issue of The Griffon, the newspaper circulating aboard Nanotrasen Space Stations."
+	desc = "An issue of Texas Bugle, an old pre-war newspaper."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "newspaper"
 	w_class = WEIGHT_CLASS_SMALL

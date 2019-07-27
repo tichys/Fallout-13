@@ -18,7 +18,7 @@
 	maxHealth = 70
 	health = 70
 	self_weight = 45
-	loot = list(/obj/item/trash/f13/ghoulface = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/blood/splatter, /obj/item/stack/caps/random)
 
 	faction = list("hostile", "ghoul")
 
@@ -55,7 +55,7 @@
 	maxHealth = 120
 	health = 120
 	self_weight = 45
-	loot = list(/obj/item/trash/f13/ghoulface = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/blood/splatter, /obj/item/stack/caps/random)
 
 	faction = list("hostile", "ghoul")
 
@@ -92,7 +92,7 @@
 	maxHealth = 120
 	health = 120
 	self_weight = 45
-	loot = list(/obj/item/trash/f13/ghoulface = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/blood/splatter, /obj/item/stack/caps/random)
 
 	faction = list("hostile", "ghoul")
 
@@ -129,7 +129,7 @@
 	maxHealth = 150
 	health = 150
 	self_weight = 45
-	loot = list(/obj/item/trash/f13/ghoulface = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/blood/splatter, /obj/item/stack/caps/random)
 
 	faction = list("hostile", "ghoul")
 
@@ -219,7 +219,7 @@
 	aggro_vision_range = 15
 	idle_vision_range = 10
 	attacktext = "chomps"
-	loot = list(/obj/item/trash/f13/ghoulface = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/blood/splatter, /obj/item/stack/caps/random)
 
 /mob/living/simple_animal/hostile/ghoul/glowing
 	name = "glowing feral ghoul"
@@ -232,7 +232,7 @@
 	health = 100
 	melee_damage_lower = 15
 	melee_damage_upper = 25
-	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/waste = 1)
+	loot = list(/obj/item/trash/f13/ghoulface = 1, /obj/effect/decal/cleanable/waste = 1, /obj/item/stack/caps/random)
 	light_color = LIGHT_COLOR_GREEN
 	light_power = 1
 	light_range = 2

@@ -1,34 +1,24 @@
 /obj/item/kit/damage
-	name = "WMK Damage"
-	desc = "Increasing weapon damage by 33%"
-	prefix = "deadly"
+	name = "Extended Barrel"
+	desc = "An increase in barrel length results in increased projectile velocity, dealing 15% more damage."
+	prefix = "enhanced"
 
 /obj/item/kit/recoil
-	name = "WMK Recoil"
-	desc = "Removes weapon recoil."
-	prefix = "calibrated"
+	name = "Heavy Frame"
+	desc = "Increased weight on the frame overall reduces or negates the recoil felt by a user when firing a weapon, but it weighs a significant chunk more."
+	prefix = "heavy"
 
 /obj/item/kit/burst
-	name = "WMK Burst"
-	desc = "Weapon shooting 2 rounds burst."
+	name = "Two-shot Burst Adapter"
+	desc = "Provides a two round burst to any attached firearm. Can be appllied to automatics as well, but is rather much like 'putting a hat on a hat'."
 	prefix = "rapid"
 
-/obj/item/kit/delay
-	name = "WMK Speed"
-	desc = "Weapon shooting 100% faster."
-	prefix = "fast"
-
 /obj/item/kit/bayonet
-	name = "WMK Bayonet"
-	desc = "Increasing meelee damage by 500%."
+	name = "Bayonet"
+	desc = "A bayonet for close combat. Increases weapon melee damage by 200%."
 	sufix = "with bayonet"
 
-/obj/item/kit/condition
-	name = "WMK Durability"
-	desc = "Increasing weapon durability by 33%."
-	prefix = "hardened"
-
 /obj/item/kit/scope
-	name = "WMK Scope"
-	desc = "What it can be used for? :thinking:"
-	prefix = "sniper"
+	name = "Scope"
+	desc = "A scope with 4x magnification for combat at extended distances."
+	prefix = "scoped"

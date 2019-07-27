@@ -27,7 +27,7 @@
 	attacktext = "hits"
 	attack_sound = "punch"
 	self_weight = 250
-	loot = list(/obj/item/stack/caps/random)
+	loot = list(/obj/item/stack/caps/random, /obj/effect/decal/cleanable/blood/splatter)
 
 /mob/living/simple_animal/hostile/supermutant/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'
@@ -52,6 +52,7 @@
 	response_harm   = "punches"
 	attack_sound = 'sound/misc/gameover.ogg'
 	butcher_results = list(/obj/item/weapon/reagent_containers/food/snacks/bearsteak = 3)
+	loot = list(/obj/item/stack/caps/random, /obj/effect/decal/cleanable/blood/splatter)
 
 /mob/living/simple_animal/pet/dog/mutant/death(gibbed)
 	icon = 'icons/fallout/mobs/supermutant_dead.dmi'

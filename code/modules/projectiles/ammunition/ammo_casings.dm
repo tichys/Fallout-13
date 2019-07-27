@@ -90,7 +90,7 @@
 /obj/item/ammo_casing/c10mm
 	desc = "A 10mm bullet casing."
 	caliber = "10mm"
-	projectile_type = /obj/item/projectile/bullet/midbullet3
+	projectile_type = /obj/item/projectile/bullet/midbullet
 	materials = list(MAT_METAL=100)
 
 /obj/item/ammo_casing/c10mm/ap
