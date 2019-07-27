@@ -7,8 +7,8 @@
 	density = 1
 	anchored = 1
 	use_power = 1
-	idle_power_usage = 5
-	active_power_usage = 100
+	idle_power_usage = -5
+	active_power_usage = -50
 	var/operating = 0 // Is it on?
 	var/dirty = 0 // = {0..100} Does it need cleaning?
 	var/broken = 0 // ={0,1,2} How broken is it???
@@ -342,3 +342,13 @@
 		if ("dispose")
 			dispose()
 	updateUsrDialog()
+
+
+
+
+/obj/machinery/microwave/stove
+	name = "stove"
+	desc = "A white stove for cooking."
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "stove"
+	layer = BELOW_OBJ_LAYER
