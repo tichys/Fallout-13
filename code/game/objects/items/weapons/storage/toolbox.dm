@@ -134,3 +134,14 @@
 /obj/item/weapon/storage/toolbox/brass/prefilled/ratvar/admin
 	slab_type = /obj/item/clockwork/slab/debug
 	proselytizer_type = /obj/item/clockwork/clockwork_proselytizer/scarab/debug
+
+/obj/item/weapon/storage/toolbox/mechanical/rusty
+	name = "old toolbox"
+	icon_state = "blue"
+	item_state = "toolbox_blue"
+
+/obj/item/weapon/storage/toolbox/mechanical/rusty/New()
+	..()
+	new /obj/item/weapon/screwdriver(src)
+	new /obj/item/weapon/wrench(src)
+	new /obj/item/weapon/crowbar(src)
