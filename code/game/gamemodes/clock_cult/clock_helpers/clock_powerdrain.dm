@@ -37,8 +37,6 @@
 	if(on)
 		playsound(src, 'sound/effects/light_flicker.ogg', 50, 1)
 		. = 250
-		if(prob(50))
-			burn_out()
 
 /mob/living/silicon/robot/power_drain(clockcult_user)
 	if((!clockcult_user || !is_servant_of_ratvar(src)) && cell && cell.charge)
