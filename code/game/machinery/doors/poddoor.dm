@@ -109,3 +109,48 @@
 	..()
 	for(var/atom/movable/S in opacity_objects)
 		S.set_opacity(1)
+
+
+
+
+
+
+/obj/machinery/door/poddoor/gatesideways
+	name = "city gate"
+	desc = "A heavy duty gates that opens mechanically."
+	icon = 'icons/fallout/objects/structures/city_gatesideways.dmi'
+	icon_state = "closed"
+	id = 334
+	bound_width = 32
+	bound_height = 96
+	var/list/opacity_objects = list() //FUCK BYOND
+
+/obj/machinery/door/poddoor/gatesideways/New()
+	..()
+	var/atom/movable/S = new (locate(x,y+1,z))
+	S.set_opacity(opacity)
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()
+	opacity_objects += S
+	S = new (locate(x,y+2,z))
+	S.set_opacity(opacity)
+	S.anchored = 1
+	S.icon = null
+	S.verbs.Cut()
+	opacity_objects += S
+
+/obj/machinery/door/poddoor/gatesideways/Destroy()
+	for(var/atom/movable/S in opacity_objects)
+		qdel(S)
+	..()
+
+/obj/machinery/door/poddoor/gatesideways/open()
+	for(var/atom/movable/S in opacity_objects)
+		S.set_opacity(0)
+	..()
+
+/obj/machinery/door/poddoor/gatesideways/close()
+	..()
+	for(var/atom/movable/S in opacity_objects)
+		S.set_opacity(1)
