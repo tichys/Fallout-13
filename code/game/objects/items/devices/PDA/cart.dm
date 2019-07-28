@@ -45,73 +45,66 @@
 /obj/item/weapon/cartridge/engineering
 	name = "\improper Power-ON cartridge"
 	icon_state = "cart-e"
-	access_engine = 1
-	access_dronephone = 1
-	bot_access_flags = FLOOR_BOT
+	access_engine = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/atmos
 	name = "\improper BreatheDeep cartridge"
 	icon_state = "cart-a"
-	access_atmos = 1
-	access_dronephone = 1
-	bot_access_flags = FLOOR_BOT
+	access_atmos = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/medical
 	name = "\improper Med-U cartridge"
 	icon_state = "cart-m"
-	access_medical = 1
-	bot_access_flags = MED_BOT
+	access_medical = 0
 
 /obj/item/weapon/cartridge/chemistry
 	name = "\improper ChemWhiz cartridge"
 	icon_state = "cart-chem"
-	access_reagent_scanner = 1
-	bot_access_flags = MED_BOT
+	access_reagent_scanner = 0
 
 /obj/item/weapon/cartridge/security
 	name = "\improper R.O.B.U.S.T. cartridge"
 	icon_state = "cart-s"
-	access_security = 1
-	bot_access_flags = SEC_BOT
+	access_security = 0
 
 /obj/item/weapon/cartridge/detective
 	name = "\improper D.E.T.E.C.T. cartridge"
 	icon_state = "cart-s"
-	access_security = 1
-	access_medical = 1
-	access_manifest = 1
-	bot_access_flags = SEC_BOT
+	access_security = 0
+	access_medical = 0
+	access_manifest = 0
 
 /obj/item/weapon/cartridge/janitor
 	name = "\improper CustodiPRO cartridge"
 	desc = "The ultimate in clean-room design."
 	icon_state = "cart-j"
-	access_janitor = 1
-	access_dronephone = 1
-	bot_access_flags = CLEAN_BOT
+	access_janitor = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/lawyer
 	name = "\improper P.R.O.V.E. cartridge"
 	icon_state = "cart-s"
-	access_security = 1
-	spam_enabled = 1
+	access_security = 0
+	spam_enabled = 0
 
 /obj/item/weapon/cartridge/clown
 	name = "\improper Honkworks 5.0 cartridge"
 	icon_state = "cart-clown"
-	access_clown = 1
-	var/honk_charges = 5
+	access_clown = 0
+	var/honk_charges = 0
 
 /obj/item/weapon/cartridge/mime
 	name = "\improper Gestur-O 1000 cartridge"
 	icon_state = "cart-mi"
-	access_mime = 1
-	var/mime_charges = 5
+	access_mime = 0
+	var/mime_charges = 0
 
 /obj/item/weapon/cartridge/librarian
 	name = "\improper Lib-Tweet cartridge"
 	icon_state = "cart-s"
-	access_newscaster = 1
+	access_newscaster = 0
 
 /*
 /obj/item/weapon/cartridge/botanist
@@ -123,8 +116,7 @@
 /obj/item/weapon/cartridge/roboticist
 	name = "\improper B.O.O.P. Remote Control cartridge"
 	desc = "Packed with heavy duty triple-bot interlink!"
-	bot_access_flags = FLOOR_BOT|CLEAN_BOT|MED_BOT
-	access_dronephone = 1
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/signal
 	name = "generic signaler cartridge"
@@ -134,8 +126,8 @@
 	name = "\improper Signal Ace 2 cartridge"
 	desc = "Complete with integrated radio signaler!"
 	icon_state = "cart-tox"
-	access_reagent_scanner = 1
-	access_atmos = 1
+	access_reagent_scanner = 0
+	access_atmos = 0
 
 /obj/item/weapon/cartridge/signal/New()
 	..()
@@ -147,64 +139,58 @@
 	name = "space parts & space vendors cartridge"
 	desc = "Perfect for the Quartermaster on the go!"
 	icon_state = "cart-q"
-	access_quartermaster = 1
-	bot_access_flags = MULE_BOT
+	access_quartermaster = 0
 
 /obj/item/weapon/cartridge/head
 	name = "\improper Easy-Record DELUXE cartridge"
 	icon_state = "cart-h"
-	access_manifest = 1
-	access_status_display = 1
+	access_manifest = 0
+	access_status_display = 0
 
 /obj/item/weapon/cartridge/hop
 	name = "\improper HumanResources9001 cartridge"
 	icon_state = "cart-h"
-	access_manifest = 1
-	access_status_display = 1
-	bot_access_flags = MULE_BOT|CLEAN_BOT
-	access_janitor = 1
-	access_security = 1
-	access_newscaster = 1
-	access_quartermaster = 1
-	access_dronephone = 1
+	access_manifest = 0
+	access_status_display = 0
+	access_janitor = 0
+	access_security = 0
+	access_newscaster = 0
+	access_quartermaster = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/hos
 	name = "\improper R.O.B.U.S.T. DELUXE cartridge"
 	icon_state = "cart-hos"
-	access_manifest = 1
-	access_status_display = 1
-	access_security = 1
-	bot_access_flags = SEC_BOT
+	access_manifest = 0
+	access_status_display = 0
+	access_security = 0
 
 
 /obj/item/weapon/cartridge/ce
 	name = "\improper Power-On DELUXE cartridge"
 	icon_state = "cart-ce"
-	access_manifest = 1
-	access_status_display = 1
-	access_engine = 1
-	access_atmos = 1
-	access_dronephone = 1
-	bot_access_flags = FLOOR_BOT
+	access_manifest = 0
+	access_status_display = 0
+	access_engine = 0
+	access_atmos = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/cmo
 	name = "\improper Med-U DELUXE cartridge"
 	icon_state = "cart-cmo"
-	access_manifest = 1
-	access_status_display = 1
-	access_reagent_scanner = 1
-	access_medical = 1
-	bot_access_flags = MED_BOT
+	access_manifest = 0
+	access_status_display = 0
+	access_reagent_scanner = 0
+	access_medical = 0
 
 /obj/item/weapon/cartridge/rd
 	name = "\improper Signal Ace DELUXE cartridge"
 	icon_state = "cart-rd"
-	access_manifest = 1
-	access_status_display = 1
-	access_reagent_scanner = 1
-	access_atmos = 1
-	access_dronephone = 1
-	bot_access_flags = FLOOR_BOT|CLEAN_BOT|MED_BOT
+	access_manifest = 0
+	access_status_display = 0
+	access_reagent_scanner = 0
+	access_atmos = 0
+	access_dronephone = 0
 
 /obj/item/weapon/cartridge/rd/New()
 	..()
@@ -214,19 +200,18 @@
 	name = "\improper Value-PAK cartridge"
 	desc = "Now with 350% more value!" //Give the Captain...EVERYTHING! (Except Mime and Clown)
 	icon_state = "cart-c"
-	access_manifest = 1
-	access_engine = 1
-	access_security = 1
-	access_medical = 1
-	access_reagent_scanner = 1
-	access_status_display = 1
-	access_atmos = 1
-	access_newscaster = 1
-	access_quartermaster = 1
-	access_janitor = 1
-	access_dronephone = 1
-	bot_access_flags = SEC_BOT|MULE_BOT|FLOOR_BOT|CLEAN_BOT|MED_BOT
-	spam_enabled = 1
+	access_manifest = 0
+	access_engine = 0
+	access_security = 0
+	access_medical = 0
+	access_reagent_scanner = 0
+	access_status_display = 0
+	access_atmos = 0
+	access_newscaster = 0
+	access_quartermaster = 0
+	access_janitor = 0
+	access_dronephone = 0
+	spam_enabled = 0
 
 /obj/item/weapon/cartridge/captain/New()
 	..()
@@ -235,7 +220,7 @@
 /obj/item/weapon/cartridge/syndicate
 	name = "\improper Detomatix cartridge"
 	icon_state = "cart"
-	access_remote_door = 1
+	access_remote_door = 0
 	remote_door_id = "smindicate" //Make sure this matches the syndicate shuttle's shield/door id!!	//don't ask about the name, testing.
 	var/shock_charges = 4
 
