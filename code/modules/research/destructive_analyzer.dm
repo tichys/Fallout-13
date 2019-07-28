@@ -23,7 +23,7 @@ Note: Must be placed within 3 tiles of the R&D Console
 /obj/item/weapon/circuitboard/machine/destructive_analyzer
 	name = "Destructive Analyzer (Machine Board)"
 	build_path = /obj/machinery/r_n_d/destructive_analyzer
-	origin_tech = "magnets=2;engineering=2;programming=2"
+	origin_tech = "materials=2;engineering=2"
 	req_components = list(
 							/obj/item/weapon/stock_parts/scanning_module = 1,
 							/obj/item/weapon/stock_parts/manipulator = 1,
