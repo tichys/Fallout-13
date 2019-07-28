@@ -64,9 +64,7 @@
 	/obj/item/weapon/gun/ballistic/automatic/bozar = 2,
 	/obj/item/weapon/gun/ballistic/automatic/allamerican = 2,
 	/obj/item/weapon/gun/ballistic/revolver/thatgun = 2,
-	/obj/item/weapon/gun/ballistic/revolver/python = 2,
-	/obj/item/weapon/gun/energy/laser/pistol = 2,
-	/obj/item/weapon/gun/ballistic/revolver/grenadelauncher/unrestricted = 1)
+	/obj/item/weapon/gun/ballistic/revolver/python = 2)
 
 /obj/effect/spawner/lootdrop/ammo
 	color = "#FF00FF"
