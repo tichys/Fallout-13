@@ -12,7 +12,7 @@ You can move an item out of the way by dragging it and then clicking on an adjac
 Crates can be booby-trapped by adding wire, shocking anyone who tries to open them. Fun!
 You can toggle the safety of your almost any firearm by holding alt and clicking on it in your hotbar.
 Shift clicking on a person with a exposed face will show their faction affiliation at the bottom of the examine text.
-Beware! Factions can be infiltrated by wasters or even your enemy! If you see someone running around without a faction appropriate ID on them, you have the right to stop them and demand to see identification or detain them until their identity can be confirmed.
+Beware! Factions can be infiltrated by wasters or even by an opponent of your faction! If you see someone running around without an appropriate ID for your faction on them, you have the right to stop them and demand to see identification or detain them until their identity can be confirmed.
 The Legate's armor is very resilient, you will likely want to be firing AP ammo his way.
 On most advanced armor, the helmet has more damage resistance than the actual armor, sometimes it is useful to aim for the limbs.
 Armor piercing rounds will deal some damage to power armor. Useful if you have no specialised tools to deal with tin cans.
