@@ -41,7 +41,7 @@
 	color = "#0AAAFA"
 	loot = list(
 	/obj/item/weapon/gun/ballistic/shotgun/rifle = 50,
-	/obj/item/weapon/gun/ballistic/shotgun/pipe = 20,
+	/obj/item/weapon/gun/ballistic/revolver/doublebarrel/improvised = 20,
 	/obj/item/weapon/gun/ballistic/shotgun/huntingshotgun = 10
 	/obj/item/weapon/gun/ballistic/revolver/coachgun = 10
 	/obj/item/weapon/gun/ballistic/revolver/madmax = 5,
