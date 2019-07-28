@@ -21,7 +21,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 
 /obj/machinery/r_n_d/circuit_imprinter/New()
 	..()
-	materials = new(src, list(MAT_GLASS, MAT_GOLD, MAT_DIAMOND, MAT_METAL))
+	materials = new(src, list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_URANIUM, MAT_TITANIUM))
 	create_reagents(0)
 	var/obj/item/weapon/circuitboard/machine/B = new /obj/item/weapon/circuitboard/machine/circuit_imprinter(null)
 	B.apply_default_parts(src)
@@ -47,7 +47,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 
 	materials.max_amount = 0
 	for(var/obj/item/weapon/stock_parts/matter_bin/M in component_parts)
-		materials.max_amount += M.rating * 120000
+		materials.max_amount += M.rating * 2000000
 
 	var/T = 0
 	for(var/obj/item/weapon/stock_parts/manipulator/M in component_parts)
