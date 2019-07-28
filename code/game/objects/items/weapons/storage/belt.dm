@@ -936,7 +936,7 @@
 
 /obj/item/weapon/storage/belt/cruzholster
 	name = "Shoulder holster"
-	desc = "A classic shoulder holster meant for carrying a concealed firearm, presumably a semi-automatic pistol judging by the three identical magazine pouches sewn under the right side of it."
+	desc = "A classic shoulder holster meant for carrying a concealed firearm, presumably a semi-automatic pistol judging by the three identical magazine pouches sewn under the right side of it. It also has two smaller pouches sown in, from the looks of it for a radio and a flashlight."
 	icon_state = "loomisholster"
 	item_state = "loomisholster"
 	storage_slots = 4
@@ -947,6 +947,8 @@
 		/obj/item/weapon/gun/ballistic/automatic/pistol/n99,
 		/obj/item/ammo_box,
 		/obj/item/ammo_box/magazine/m10mm_adv,
+		/obj/item/device/radio,
+		/obj/item/device/flashlight/seclite,
 		)
 	alternate_worn_layer = UNDER_SUIT_LAYER
 
@@ -956,6 +958,8 @@
 	new /obj/item/ammo_box/magazine/m10mm_adv(src)
 	new /obj/item/ammo_box/magazine/m10mm_adv(src)
 	new /obj/item/weapon/gun/ballistic/automatic/pistol/n99(src)
+	new /obj/item/device/radio(src)
+	new /obj/item/device/flashlight/seclite(src)
 
 /obj/item/weapon/storage/belt/leonholster
 	name = "Shoulder holster"
