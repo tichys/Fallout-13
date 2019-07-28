@@ -80,6 +80,7 @@
 	name = "Raider Gang Leader"
 	uniform = /obj/item/clothing/under/f13/villain
 	shoes = /obj/item/clothing/shoes/laceup
+	belt = /obj/item/weapon/storage/belt/cruzholster/full
 
 //Basic Raider
 
@@ -155,6 +156,7 @@
 	backpack = null
 	satchel = null
 	uniform = /obj/item/clothing/under/f13/rag
+	belt = /obj/item/weapon/storage/belt/cruzholster/full
 	shoes = /obj/item/clothing/shoes/f13/rag
 	suit = /obj/item/clothing/suit/armor/f13/supafly
 	head = /obj/item/clothing/head/helmet/f13/supaflyhelmet
