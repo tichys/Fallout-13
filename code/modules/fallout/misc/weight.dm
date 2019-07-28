@@ -2,27 +2,27 @@
 
 /atom/movable
 	var/contents_weight = 0
-	var/self_weight
+	var/self_weight = 0
 
 /atom/movable/initialize()
 	..()
 	if(self_weight == null && isitem(src))
 		var/obj/item/I = src
-		switch(I.w_class)
+		switch(I.w_class) //switching this up as the idea really should be to punish gear hoarders, not to make everyone slow. initial one is slow so that there is disparity between no gear and gear, but other than that it only focuses on excessive gear
 			if(0)
 				self_weight = 0
 			if(1)
-				self_weight = 0.500
+				self_weight = 15.000
 			if(2)
-				self_weight = 3.500
+				self_weight = 25.000
 			if(3)
-				self_weight = 6.000
+				self_weight = 80.000
 			if(4)
-				self_weight = 8.000
+				self_weight = 90.000
 			if(5)
-				self_weight = 20.000
+				self_weight = 95.000
 			if(6)
-				self_weight = 30.000
+				self_weight = 100.000
 	if(istype(loc, /atom/movable))
 		var/atom/movable/L = loc
 		L.update_weight(self_weight)
