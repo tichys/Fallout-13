@@ -245,7 +245,7 @@
 	name = "ammo box (.308)"
 	icon_state = "9mmbox"
 	ammo_type = /obj/item/ammo_casing/m308
-	max_ammo = 50
+	max_ammo = 20
 	materials = list(MAT_METAL = 500)
 
 /obj/item/ammo_box/magazine/internal/shot/pipe
