@@ -4,7 +4,7 @@
 
 /obj/machinery/power/port_gen
 	name = "portable generator"
-	desc = "A portable generator used for emergency backup power."
+	desc = "A portable generator used for emergency backup power. Uses refined Uranium for fuel."
 	icon = 'generator.dmi'
 	icon_state = "off"
 	density = 1
