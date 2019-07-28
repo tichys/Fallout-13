@@ -379,9 +379,8 @@
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
-	put_on_delay = 600
-	strip_delay = 600
-	slowdown = 1
+	put_on_delay = 300
+	strip_delay = 300
 	special_defence = PREVENTDISMEMBER
 
 
