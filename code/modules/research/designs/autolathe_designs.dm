@@ -33,7 +33,7 @@
 	materials = list(MAT_METAL = 90)
 	build_path = /obj/item/weapon/extinguisher
 	category = list("initial","Tools")
-	
+
 /datum/design/pocketextinguisher
 	name = "Pocket fire extinguisher"
 	id = "pocketextinguisher"
@@ -118,10 +118,10 @@
 /datum/design/console_screen
 	name = "Console screen"
 	id = "console_screen"
-	build_type = AUTOLATHE
+	build_type = PROTOLATHE | AUTOLATHE
 	materials = list(MAT_GLASS = 200)
 	build_path = /obj/item/weapon/stock_parts/console_screen
-	category = list("initial", "Electronics")
+	category = list("initial", "Electronics", "Stock Parts")
 
 /datum/design/apc_board
 	name = "APC module"
