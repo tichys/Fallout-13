@@ -381,6 +381,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	put_on_delay = 300
 	strip_delay = 300
+	slowdown = 1
 	special_defence = PREVENTDISMEMBER
 
 
