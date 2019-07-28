@@ -16,10 +16,7 @@ using metal and glass, it uses glass and reagents (usually sulfuric acis).
 
 	var/list/categories = list(
 								"Computer Boards",
-								"Medical Machinery",
-								"Research Machinery",
-								"Misc. Machinery",
-								"Computer Parts"
+								"Machinery",
 								)
 
 /obj/machinery/r_n_d/circuit_imprinter/New()
