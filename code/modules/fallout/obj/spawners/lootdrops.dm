@@ -235,3 +235,12 @@
 	/obj/item/clothing/head/helmet/f13/combat_mk2 = 1,
 	/obj/item/clothing/suit/armor/f13/bmetalarmor = 1,
 	/obj/item/clothing/suit/armor/f13/combat_mk2 = 1)
+
+/obj/effect/spawner/lootdrop/grownfoods
+	color = "#FF0000"
+	loot = list(
+	/obj/item/weapon/reagent_containers/food/snacks/grown/broc = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/grown/xander = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/grown/mutfruit = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/grown/ferocactus = 1,
+	/obj/item/weapon/reagent_containers/food/snacks/grown/shroom = 1)
