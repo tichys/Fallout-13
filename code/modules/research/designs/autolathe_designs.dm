@@ -66,22 +66,6 @@
 	build_path = /obj/item/device/t_scanner
 	category = list("initial","Tools")
 
-/datum/design/weldingtool
-	name = "Welding tool"
-	id = "welding_tool"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 70, MAT_GLASS = 20)
-	build_path = /obj/item/weapon/weldingtool
-	category = list("initial","Tools")
-
-/datum/design/mini_weldingtool
-	name = "Emergency welding tool"
-	id = "mini_welding_tool"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 30, MAT_GLASS = 10)
-	build_path = /obj/item/weapon/weldingtool/mini
-	category = list("initial","Tools")
-
 /datum/design/screwdriver
 	name = "Screwdriver"
 	id = "screwdriver"
@@ -163,14 +147,6 @@
 	build_path = /obj/item/weapon/electronics/firelock
 	category = list("initial", "Electronics")
 
-/datum/design/airalarm_electronics
-	name = "Air alarm electronics"
-	id = "airalarm_electronics"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
-	build_path = /obj/item/weapon/electronics/airalarm
-	category = list("initial", "Electronics")
-
 /datum/design/firealarm_electronics
 	name = "Fire alarm electronics"
 	id = "firealarm_electronics"
@@ -178,22 +154,6 @@
 	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
 	build_path = /obj/item/weapon/electronics/firealarm
 	category = list("initial", "Electronics")
-
-/datum/design/earmuffs
-	name = "Earmuffs"
-	id = "earmuffs"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 500, MAT_GLASS = 500)
-	build_path = /obj/item/clothing/ears/earmuffs
-	category = list("initial", "Misc")
-	
-/datum/design/sunglassespaop
-	name = "Combat Shades"
-	id = "sunglassespaop"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 500, MAT_GLASS = 1500)
-	build_path = /obj/item/clothing/glasses/sunglassespaop
-	category = list("initial", "Misc")
 
 /datum/design/pipe_painter
 	name = "Pipe painter"
@@ -471,22 +431,6 @@
 	build_path = /obj/item/device/assembly/signaler
 	category = list("initial", "T-Comm")
 
-/datum/design/radio_headset
-	name = "Radio headset"
-	id = "radio_headset"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 75)
-	build_path = /obj/item/device/radio/headset
-	category = list("initial", "T-Comm")
-
-/datum/design/bounced_radio
-	name = "Station bounced radio"
-	id = "bounced_radio"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 75, MAT_GLASS = 25)
-	build_path = /obj/item/device/radio/off
-	category = list("initial", "T-Comm")
-
 /datum/design/infrared_emitter
 	name = "Infrared emitter"
 	id = "infrared_emitter"
@@ -711,19 +655,3 @@
 	materials = list(MAT_METAL = 450, MAT_GLASS = 190)
 	build_path = /obj/item/conveyor_switch_construct
 	category = list("initial", "Construction")
-
-/datum/design/laptop
-	name = "Laptop Frame"
-	id = "laptop"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 1000)
-	build_path = /obj/item/device/modular_computer/laptop/buildable
-	category = list("initial","Misc")
-
-/datum/design/tablet
-	name = "Tablet Frame"
-	id = "tablet"
-	build_type = AUTOLATHE
-	materials = list(MAT_METAL = 2000, MAT_GLASS = 1000)
-	build_path = /obj/item/device/modular_computer/tablet
-	category = list("initial","Misc")
