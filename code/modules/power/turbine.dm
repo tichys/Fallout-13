@@ -78,9 +78,9 @@
 	inturf = get_step(src, dir)
 
 /obj/item/weapon/circuitboard/machine/power_compressor
-	name = "Power Compressor (Machine Board)"
+	name = "Gas Compressor (Machine Board)"
 	build_path = /obj/machinery/power/compressor
-	origin_tech = "programming=4;powerstorage=4;engineering=4"
+	origin_tech = "powerstorage=4;engineering=4"
 	req_components = list(
 							/obj/item/stack/cable_coil = 5,
 							/obj/item/weapon/stock_parts/manipulator = 6)
@@ -194,9 +194,9 @@
 	outturf = get_step(src, dir)
 
 /obj/item/weapon/circuitboard/machine/power_turbine
-	name = "Power Turbine (Machine Board)"
+	name = "Gas Turbine (Machine Board)"
 	build_path = /obj/machinery/power/turbine
-	origin_tech = "programming=4;powerstorage=4;engineering=4"
+	origin_tech = "powerstorage=4;engineering=4"
 	req_components = list(
 							/obj/item/stack/cable_coil = 5,
 							/obj/item/weapon/stock_parts/capacitor = 6)

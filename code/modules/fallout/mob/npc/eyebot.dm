@@ -15,7 +15,6 @@
 	response_help = "touches"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	move_to_delay = 3
 	stat_attack = 1
 	robust_searching = 1
 	maxHealth = 70
@@ -32,20 +31,14 @@
 
 	faction = list("hostile", "enclave")
 
-	ambient_sound = 'sound/f13npc/eyebot_loop.ogg'
-
-	sound_speak_chance = 5
+	sound_speak_chance = 15
 	sound_speak = list('sound/machines/buzz-sigh.ogg','sound/misc/interference.ogg')
-
 	aggro_sound_chance = 50
 	aggro_sound = 'sound/misc/interference.ogg'
-
 	death_sound = 'sound/f13npc/robot_death.ogg'
-
 	harm_intent_damage = 10
 	melee_damage_lower = 2
 	melee_damage_upper = 3
-	move_to_delay = 6
 	minimum_distance = 6
 	retreat_distance = 14
 	attacktext = "punches"
@@ -72,7 +65,8 @@
 	icon_living = "floatingeye"
 	icon_dead = "floatingeye_d"
 	icon_gib = "floatingeye_d"
-
+	move_to_delay = 14
+	turns_per_move = 14
 	retreat_distance = 4
 	faction = list("hostile", "brotherhood")
 

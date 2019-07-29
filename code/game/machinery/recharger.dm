@@ -2,7 +2,7 @@
 	name = "recharger"
 	icon = 'icons/obj/stationobjs.dmi'
 	icon_state = "recharger0"
-	desc = "A charging dock for energy based weaponry."
+	desc = "A charging dock for energy based weaponry and equipment."
 	anchored = 1
 	use_power = 1
 	idle_power_usage = 4

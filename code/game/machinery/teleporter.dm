@@ -242,11 +242,10 @@
 /obj/item/weapon/circuitboard/machine/teleporter_hub
 	name = "Teleporter Hub (Machine Board)"
 	build_path = /obj/machinery/teleport/hub
-	origin_tech = "programming=3;engineering=4;bluespace=4;materials=4"
+	origin_tech = "engineering=2"
 	req_components = list(
-							/obj/item/weapon/ore/bluespace_crystal = 3,
+							/obj/item/stack/sheet/mineral/diamond = 3,
 							/obj/item/weapon/stock_parts/matter_bin = 1)
-	def_components = list(/obj/item/weapon/ore/bluespace_crystal = /obj/item/weapon/ore/bluespace_crystal/artificial)
 
 /obj/machinery/teleport/hub/initialize()
 	link_power_station()
@@ -334,8 +333,8 @@
 
 
 /obj/machinery/teleport/station
-	name = "station"
-	desc = "The power control station for a bluespace teleporter. Used for toggling power, and can activate a test-fire to prevent malfunctions."
+	name = "control station"
+	desc = "The power control station for a quantum teleporter. Used for toggling power, and can activate a test-fire to prevent malfunctions."
 	icon_state = "controller"
 	var/engaged = 0
 	use_power = 1
@@ -355,12 +354,11 @@
 /obj/item/weapon/circuitboard/machine/teleporter_station
 	name = "Teleporter Station (Machine Board)"
 	build_path = /obj/machinery/teleport/station
-	origin_tech = "programming=4;engineering=4;bluespace=4;plasmatech=3"
+	origin_tech = "engineering=2"
 	req_components = list(
-							/obj/item/weapon/ore/bluespace_crystal = 2,
+							/obj/item/stack/sheet/mineral/diamond = 2,
 							/obj/item/weapon/stock_parts/capacitor = 2,
 							/obj/item/weapon/stock_parts/console_screen = 1)
-	def_components = list(/obj/item/weapon/ore/bluespace_crystal = /obj/item/weapon/ore/bluespace_crystal/artificial)
 
 /obj/machinery/teleport/station/initialize()
 	link_console_and_hub()

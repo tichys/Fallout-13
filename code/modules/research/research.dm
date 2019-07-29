@@ -300,7 +300,7 @@ research holder datum.
 	max_tech_stored = 0
 	origin_tech = "materials=3;engineering=12;powerstorage=6;biotech=9"
 
-/obj/item/weapon/disk/tech_disk/bigmt //need to put together a new dungeon to house this one, this is the 'ultimate' tech disk. has all the tech available but should be very difficult to get
+/obj/item/weapon/disk/tech_disk/bigmt
 	name = "Big MT. 2145 technology disk"
 	desc = "An old technology disk. This one has the stamp of Big MT, a few notices about confidentiality and a date of March 17th, 2145. It probably has quite a bit of cutting edge research documentation from Big MT. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
 	materials = list()
@@ -312,4 +312,4 @@ research holder datum.
 	desc = "An old pre-war technology disk. This one has the stamp of Volkswagen, a pre-war automobile manufacturer. The label on it indicates that this is a burner disk and should be integrated via a destructive analyzer."
 	materials = list()
 	max_tech_stored = 0
-	origin_tech = "materials=8;engineering=5;powerstorage=4;biotech=5"
+	origin_tech = "materials=9;engineering=5;powerstorage=4;biotech=5"

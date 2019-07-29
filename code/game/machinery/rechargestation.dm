@@ -1,12 +1,12 @@
 /obj/machinery/recharge_station
-	name = "cyborg recharging station"
+	name = "robot recharging station"
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "borgcharger0"
 	density = 0
 	anchored = 1
 	use_power = 1
-	idle_power_usage = 5
-	active_power_usage = 1000
+	idle_power_usage = 0
+	active_power_usage = 0
 	req_access = list(access_robotics)
 	var/recharge_speed
 	var/repairs
@@ -19,7 +19,7 @@
 	update_icon()
 
 /obj/item/weapon/circuitboard/machine/cyborgrecharger
-	name = "Cyborg Recharger (Machine Board)"
+	name = "Robot Recharger (Machine Board)"
 	build_path = /obj/machinery/recharge_station
 	origin_tech = "powerstorage=3;engineering=3"
 	req_components = list(

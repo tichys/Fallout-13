@@ -18,4 +18,4 @@
 		else
 			speaker = V.source
 	var/link = FOLLOW_LINK(src, speaker)
-	src << "[link] [message]"
+	to_chat(src, "[link] [message]")

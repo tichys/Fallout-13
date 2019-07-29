@@ -360,9 +360,13 @@
 		"atomicbomb"
 	)
 
-
 /obj/machinery/chem_dispenser/mutagen
 	name = "mutagen dispenser"
 	desc = "Creates and dispenses mutagen."
 	dispensable_reagents = list("mutagen")
 	emagged_reagents = list("plasma")
+
+/obj/machinery/chem_dispenser/sulfuricacid
+	name = "Sulphuric acid dispenser"
+	desc = "Creates and dispenses Sulphuric acid for the purposes of creating complex circuitry."
+	dispensable_reagents = list("sacid")

@@ -90,10 +90,10 @@
 /obj/item/ammo_box/trenchgun
 	name = "ammo box (12 Gauge)"
 	icon_state = "9mmbox"
-	desc = "You've never really seen shotgun shells in a box so neatly packed, but you should be grateful you stupid fuck."
+	desc = "You've never really seen shotgun shells in a box so neatly packed, but you'll take it."
 	
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
-	max_ammo = 30
+	max_ammo = 20
 
 /obj/item/ammo_box/colt357
 	name = "ammo box (.357)"
