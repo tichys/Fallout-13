@@ -133,12 +133,15 @@ obj/flagpolefakelegion/New()
 	item_state = "legionflag"
 	faction = "legion"
 
-/obj/item/flagstructure/attackby(obj/item/I, mob/user, params)
+
+//defining the code so you can add new flags ontop of empty ones
+
+/obj/item/flagstructure/attackby(obj/item/I, mob/living/carbon/human/player, params)
 	if(istype(I, /obj/item/stack/sheet/leather) && item_state == "emptyflag")
-		var/flag = user.faction
+		var/flag = player.social_faction
 		if(flag)
-			visible_message("<span class='notice'>[user] begin to make a flag.</span>")
-			if(do_after(user,20, target = src))
+			visible_message("<span class='notice'>[player] begin to make a flag.</span>")
+			if(do_after(player,20, target = src))
 				var/obj/item/stack/sheet/leather/H = I
 				if(H.use(1))
 					switch(flag)
@@ -156,12 +159,12 @@ obj/flagpolefakelegion/New()
 							faction = "legion"
 					update_icon()
 	else
-		attack_hand(user)
+		attack_hand(player)
 
-/obj/item/flagstructure/attack_hand(mob/user)
-	if(item_state != "emptyflag" && faction != user.faction)
-		visible_message("<span class='notice'>[user] begin to remove a flag.</span>")
-		if(do_after(user,20, target = src) && faction)
+/obj/item/flagstructure/attack_hand(mob/living/carbon/human/player)
+	if(item_state != "emptyflag" && faction != player.social_faction)
+		visible_message("<span class='notice'>[player] begin to remove a flag.</span>")
+		if(do_after(player,20, target = src) && faction)
 			new /obj/item/stack/sheet/leather(loc)
 			name = "empty flag"
 			icon_state = "emptyflag"
@@ -171,7 +174,7 @@ obj/flagpolefakelegion/New()
 	else
 		anchored = 0
 		..()
-/obj/item/flagstructure/dropped(mob/user)
+/obj/item/flagstructure/dropped(mob/living/carbon/human/player)
 	..()
 	anchored = 1
 /obj/item/flagstructure/throw_at(atom/target, range, speed, mob/thrower, spin=1)

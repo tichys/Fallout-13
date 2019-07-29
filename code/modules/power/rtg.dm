@@ -28,7 +28,7 @@
 /obj/item/weapon/circuitboard/machine/rtg
 	name = "RTG (Machine Board)"
 	build_path = /obj/machinery/power/rtg
-	origin_tech = "programming=2;materials=4;powerstorage=3;engineering=2"
+	origin_tech = "materials=7;powerstorage=4;engineering=8"
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
 		/obj/item/weapon/stock_parts/capacitor = 1,
@@ -79,7 +79,7 @@
 /obj/item/weapon/circuitboard/machine/rtg/advanced
 	name = "Advanced RTG (Machine Board)"
 	build_path = /obj/machinery/power/rtg/advanced
-	origin_tech = "programming=3;materials=5;powerstorage=4;engineering=3;plasmatech=3"
+	origin_tech = "materials=7;powerstorage=4;engineering=8"
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
 		/obj/item/weapon/stock_parts/capacitor = 1,

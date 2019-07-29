@@ -715,32 +715,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			client.screen = list()
 			hud_used.show_hud(hud_used.hud_version)
 
-/mob/dead/observer/verb/observe()
-	set name = "Observe"
-	set category = "OOC"
-
-	var/list/creatures = getpois()
-
-	reset_perspective(null)
-
-	var/eye_name = null
-
-	eye_name = input("Please, select a player!", "Observe", null, null) as null|anything in creatures
-
-	if (!eye_name)
-		return
-
-	var/mob/mob_eye = creatures[eye_name]
-	//Istype so we filter out points of interest that are not mobs
-	if(client && mob_eye && istype(mob_eye))
-		client.eye = mob_eye
-		client.screen = list()
-		if(mob_eye.hud_used)
-			LAZYINITLIST(mob_eye.observers)
-			mob_eye.observers |= src
-			mob_eye.hud_used.show_hud(1,src)
-			observetarget = mob_eye
-
 /mob/dead/observer/verb/register_pai_candidate()
 	set category = "Ghost"
 	set name = "pAI Setup"

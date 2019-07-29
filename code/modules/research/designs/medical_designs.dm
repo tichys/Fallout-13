@@ -89,27 +89,3 @@
 	materials = list(MAT_METAL = 2000, MAT_DIAMOND = 2000, MAT_GOLD = 60000, MAT_SILVER = 40000, MAT_URANIUM = 30000)
 	build_path = /obj/item/organ/cyberimp/chest/reviver
 	category = list("Augmentation")
-
-/////////////////////////////////////////
-////////////Regular Implants/////////////
-/////////////////////////////////////////
-
-/datum/design/implanter_adrenaline
-	name = "Adrenaline Implanter"
-	desc = "A glass case containing an implant. This one contains three shots of adrenaline which can be accessed through biting of a specific point on the lower lip."
-	id = "implant_storage"
-	req_tech = list("biotech" = 11)
-	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 10000, MAT_GLASS = 5000, MAT_GOLD = 65000, MAT_URANIUM = 18000, MAT_DIAMOND = 69500)
-	build_path = /obj/item/weapon/implanter/adrenalin
-	category = list("Augmentation")
-
-/datum/design/implanter_storage
-	name = "Cavity Storage Implanter"
-	desc = "A sterile automatic implant injector. This one is loaded with a cavity storage implant, allowing you to store two items in your torso."
-	id = "implanter"
-	req_tech = list("biotech" = 2)
-	build_type = PROTOLATHE
-	materials = list(MAT_METAL = 600, MAT_GLASS = 200, MAT_URANIUM = 600)
-	build_path = /obj/item/weapon/implanter/storage
-	category = list("Augmentation")

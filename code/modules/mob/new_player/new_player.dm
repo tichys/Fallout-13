@@ -38,7 +38,7 @@
 		output += "<p><a href='byond://?src=\ref[src];late_join=1'>Join Game!</A></p>"
 
 		output += "<p><a href='byond://?src=\ref[src];contribute=1'>Contribute</a></p>"
-	
+
 		output += "<p><a href='byond://?src=\ref[src];observe=1'>Observe</A></p>"
 
 	if(!IsGuestKey(src.key))
@@ -121,36 +121,28 @@
 
 	if(href_list["observe"])
 
-		if(!client.holder)
-			return 1
+		var/mob/dead/observer/observer = new()
+		spawning = 1
+		observer.started_as_observer = 1
+		close_spawn_windows()
+		var/obj/O = locate("landmark*Observer-Start")
+		to_chat(src, "<span class='notice'>Now teleporting.</span>")
+		if (O)
+			observer.forceMove(O.loc)
+		else
+			to_chat(src, "<span class='notice'>Teleporting failed. You should be able to use ghost verbs to teleport somewhere useful</span>")
+		observer.key = key
+		observer.client = client
+		observer.set_ghost_appearance()
+		if(observer.client && observer.client.prefs)
+			observer.real_name = observer.client.prefs.real_name
+			observer.name = observer.real_name
+		observer.update_icon()
+		observer.stopLobbySound()
+		qdel(mind)
 
-		if(alert(src,"Are you sure you wish to observe? You will not be able to play this round!","Player Setup","Yes","No") == "Yes")
-			if(!client)
-				return 1
-			var/mob/dead/observer/observer = new()
-
-			spawning = 1
-
-			observer.started_as_observer = 1
-			close_spawn_windows()
-			var/obj/O = locate("landmark*Observer-Start")
-			to_chat(src, "<span class='notice'>Now teleporting.</span>")
-			if (O)
-				observer.forceMove(O.loc)
-			else
-				to_chat(src, "<span class='notice'>Teleporting failed. You should be able to use ghost verbs to teleport somewhere useful</span>")
-			observer.key = key
-			observer.client = client
-			observer.set_ghost_appearance()
-			if(observer.client && observer.client.prefs)
-				observer.real_name = observer.client.prefs.real_name
-				observer.name = observer.real_name
-			observer.update_icon()
-			observer.stopLobbySound()
-			qdel(mind)
-
-			qdel(src)
-			return 1
+		qdel(src)
+		return 1
 
 	if(href_list["late_join"])
 		if(!ticker || ticker.current_state != GAME_STATE_PLAYING)

@@ -44,18 +44,18 @@
 /*see __DEFINES/inventory.dm for bodypart bitflag defines*/
 
 //Nutrition levels for humans
-#define NUTRITION_LEVEL_FAT 350
-#define NUTRITION_LEVEL_FULL 200
-#define NUTRITION_LEVEL_WELL_FED 150
-#define NUTRITION_LEVEL_FED 100
-#define NUTRITION_LEVEL_HUNGRY 80
-#define NUTRITION_LEVEL_STARVING 60
+#define NUTRITION_LEVEL_FAT 600 //bulk up boys
+#define NUTRITION_LEVEL_FULL 300
+#define NUTRITION_LEVEL_WELL_FED 260
+#define NUTRITION_LEVEL_FED 180
+#define NUTRITION_LEVEL_HUNGRY 100
+#define NUTRITION_LEVEL_STARVING 50
 
-#define THIRST_LEVEL_FULL 150
-#define THIRST_LEVEL_LIGHT 125
-#define THIRST_LEVEL_MIDDLE 100
-#define THIRST_LEVEL_HARD 50
-#define THIRST_LEVEL_DEADLY 30
+#define THIRST_LEVEL_FULL 100 //honestly this shit decays so slowly i could probably put max to 10 and deadly to 1 and you'd still only have to drink every 30 minutes.
+#define THIRST_LEVEL_LIGHT 80
+#define THIRST_LEVEL_MIDDLE 60
+#define THIRST_LEVEL_HARD 40
+#define THIRST_LEVEL_DEADLY 20
 
 //Slime evolution threshold. Controls how fast slimes can split/grow
 #define SLIME_EVOLUTION_THRESHOLD 10

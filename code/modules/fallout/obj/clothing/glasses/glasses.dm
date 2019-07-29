@@ -20,7 +20,7 @@
 
 /obj/item/clothing/glasses/sunglasses/f13/legion
 	name = "military goggles"
-	desc = "Flash-resistant goggles commonly worn by Caesar's Legion soldiers."
+	desc = "Flash-resistant goggles."
 	icon_state = "legion"
 	item_state = "legion"
 	flash_protect = 2

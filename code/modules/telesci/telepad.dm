@@ -1,7 +1,7 @@
 ///SCI TELEPAD///
 /obj/machinery/telepad
 	name = "telepad"
-	desc = "A bluespace telepad used for teleporting objects to and from a location."
+	desc = "A quantum-computational telepad used for teleporting objects to and from a location."
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "pad-idle"
 	anchored = 1
@@ -18,13 +18,12 @@
 /obj/item/weapon/circuitboard/machine/telesci_pad
 	name = "Telepad (Machine Board)"
 	build_path = /obj/machinery/telepad
-	origin_tech = "programming=4;engineering=3;plasmatech=4;bluespace=4"
+	origin_tech = "engineering=2"
 	req_components = list(
-							/obj/item/weapon/ore/bluespace_crystal = 2,
+							/obj/item/stack/sheet/mineral/diamond = 2,
 							/obj/item/weapon/stock_parts/capacitor = 1,
 							/obj/item/stack/cable_coil = 1,
 							/obj/item/weapon/stock_parts/console_screen = 1)
-	def_components = list(/obj/item/weapon/ore/bluespace_crystal = /obj/item/weapon/ore/bluespace_crystal/artificial)
 
 /obj/machinery/telepad/RefreshParts()
 	var/E
@@ -104,7 +103,7 @@
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "beacon"
 	item_state = "beacon"
-	origin_tech = "bluespace=3"
+	origin_tech = "engineering=3"
 
 /obj/item/device/telepad_beacon/attack_self(mob/user)
 	if(user)

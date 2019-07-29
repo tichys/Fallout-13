@@ -4,7 +4,7 @@
 
 /obj/machinery/power/port_gen
 	name = "portable generator"
-	desc = "A portable generator used for emergency backup power."
+	desc = "A portable generator used for emergency backup power. Uses refined Uranium for fuel."
 	icon = 'generator.dmi'
 	icon_state = "off"
 	density = 1
@@ -42,7 +42,7 @@ display round(lastgen) and plasmatank amount
 //Baseline portable generator. Has all the default handling. Not intended to be used on it's own (since it generates unlimited power).
 /obj/machinery/power/port_gen
 	name = "portable generator"
-	desc = "A portable generator for emergency backup power."
+	desc = "A portable generator for emergency backup power. Uses refined Uranium for fuel."
 	icon = 'icons/obj/power.dmi'
 	icon_state = "portgen0"
 	density = 1
@@ -93,7 +93,7 @@ display round(lastgen) and plasmatank amount
 	var/sheets = 0
 	var/max_sheets = 100
 	var/sheet_name = ""
-	var/sheet_path = /obj/item/stack/sheet/mineral/plasma
+	var/sheet_path = /obj/item/stack/sheet/mineral/uranium
 	var/board_path = /obj/item/weapon/circuitboard/machine/pacman
 	var/sheet_left = 0 // How much is left of the sheet
 	var/time_per_sheet = 260
@@ -115,7 +115,7 @@ display round(lastgen) and plasmatank amount
 /obj/item/weapon/circuitboard/machine/pacman
 	name = "PACMAN-type Generator (Machine Board)"
 	build_path = /obj/machinery/power/port_gen/pacman
-	origin_tech = "programming=2;powerstorage=3;plasmatech=3;engineering=3"
+	origin_tech = "powerstorage=3;engineering=3"
 	req_components = list(
 							/obj/item/weapon/stock_parts/matter_bin = 1,
 							/obj/item/weapon/stock_parts/micro_laser = 1,
@@ -125,12 +125,12 @@ display round(lastgen) and plasmatank amount
 /obj/item/weapon/circuitboard/machine/pacman/super
 	name = "SUPERPACMAN-type Generator (Machine Board)"
 	build_path = /obj/machinery/power/port_gen/pacman/super
-	origin_tech = "programming=3;powerstorage=4;engineering=4"
+	origin_tech = "powerstorage=8;engineering=8"
 
 /obj/item/weapon/circuitboard/machine/pacman/mrs
 	name = "MRSPACMAN-type Generator (Machine Board)"
 	build_path = "/obj/machinery/power/port_gen/pacman/mrs"
-	origin_tech = "programming=3;powerstorage=4;engineering=4;plasmatech=4"
+	origin_tech = "powerstorage=6;engineering=6"
 
 /obj/machinery/power/port_gen/pacman/Destroy()
 	DropFuel()

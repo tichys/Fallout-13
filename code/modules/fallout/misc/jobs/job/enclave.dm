@@ -16,8 +16,7 @@
 	whitelist_on = 0
 
 	required_items = list(
-	/obj/item/weapon/cqc_manual,
-	/obj/item/key/vertibird
+	/obj/item/weapon/cqc_manual
 	)
 
 	denied_items = list(
@@ -71,8 +70,7 @@
 	minimal_player_age = 7
 
 	required_items = list(
-	/obj/item/weapon/cqc_manual,
-	/obj/item/key/vertibird
+	/obj/item/weapon/cqc_manual
 	)
 
 	denied_items = list(

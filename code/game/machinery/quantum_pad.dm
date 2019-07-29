@@ -1,6 +1,6 @@
 /obj/machinery/quantumpad
 	name = "quantum pad"
-	desc = "A bluespace quantum-linked telepad used for teleporting objects to other quantum pads."
+	desc = "A quantum computational telepad used for teleporting objects to other connected quantum pads."
 	icon = 'icons/obj/telescience.dmi'
 	icon_state = "qpad-idle"
 	anchored = 1
@@ -23,13 +23,12 @@
 /obj/item/weapon/circuitboard/machine/quantumpad
 	name = "Quantum Pad (Machine Board)"
 	build_path = /obj/machinery/quantumpad
-	origin_tech = "programming=3;engineering=3;plasmatech=3;bluespace=4"
+	origin_tech = "programming=3;engineering=3"
 	req_components = list(
-							/obj/item/weapon/ore/bluespace_crystal = 1,
+							/obj/item/stack/sheet/mineral/diamond = 1,
 							/obj/item/weapon/stock_parts/capacitor = 1,
 							/obj/item/weapon/stock_parts/manipulator = 1,
 							/obj/item/stack/cable_coil = 1)
-	def_components = list(/obj/item/weapon/ore/bluespace_crystal = /obj/item/weapon/ore/bluespace_crystal/artificial)
 
 /obj/machinery/quantumpad/RefreshParts()
 	var/E = 0
