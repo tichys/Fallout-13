@@ -76,3 +76,4 @@
 /mob/living/simple_animal/hostile/eyebot/floatingeye/New()
 	..()
 	name = "FEB-[rand(1,99)]"
+

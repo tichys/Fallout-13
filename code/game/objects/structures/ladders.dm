@@ -1,7 +1,7 @@
 //LADDER DRAGGING OF PLAYERS HAS BEEN SETUP
-//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN. 
+//IT CURRENTLY ONLY FUNCTIONS ON LADDERS WHICH CAN ONLY GO UP OR ONLY GO DOWN.
 //ALL EXISTING LADDERS HAVE BEEN ADJUSTED FOR THIS.
-//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT ABLE TO CONNECT TO MORE THAN 1 LADDER. 
+//PLEASE MAKE SURE ANY LADDERS PLACED ARE NOT ABLE TO CONNECT TO MORE THAN 1 LADDER.
 //LADDER_MIDDLE IS NOW AN ERROR SPECIFICALLY SO YOU SPOT THIS AND REMEMBER TO FIX IT.
 //SEE ENCLAVE SUBLEVELS BASE IN z2.dmm FOR EXAMPLE
 
@@ -195,11 +195,15 @@ obj/structure/ladder/vent/update_icon()
 		update_icon()
 
 /obj/structure/roadtravel/proc/go_up(mob/user,is_ghost)
+	if(istype(user, src))
+		return
 	if(!is_ghost)
 		up.add_fingerprint(user)
 	user.forceMove(get_turf(up))
 
 /obj/structure/roadtravel/proc/go_down(mob/user,is_ghost)
+	if(istype(user, src))
+		return
 	if(!is_ghost)
 		down.add_fingerprint(user)
 	user.forceMove(get_turf(down))
