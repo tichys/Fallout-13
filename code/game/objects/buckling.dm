@@ -41,7 +41,7 @@
 /atom/movable/proc/buckle_mob(mob/living/M, force = 0)
 	if(!buckled_mobs)
 		buckled_mobs = list()
-	if((!can_buckle && !force) || !istype(M) || (M.loc != loc) || M.buckled || (buckled_mobs.len >= max_buckled_mobs) || (buckle_requires_restraints && !M.restrained()) || M == src)
+	if((!can_buckle && !force) || !istype(M) || (M.loc != loc) || M.buckled || (buckled_mobs.len >= max_buckled_mobs) || (buckle_requires_restraints && !M.restrained()) || M == src || istype(M, /mob/living/simple_animal) && istype(src, /obj/vehicle/))
 		return 0
 	if(!M.can_buckle() && !force)
 		if(M == usr)

@@ -16,7 +16,7 @@
 // Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.
 /proc/sanitizeSQL(t as text)
 	var/sqltext = dbcon.Quote(t);
-	return copytext(sqltext, 2, lentext(sqltext));//Quote() adds quotes around input, we already do that
+	return copytext(sqltext, 2, length(sqltext));//Quote() adds quotes around input, we already do that
 
 /proc/format_table_name(table as text)
 	return sqlfdbktableprefix + table
@@ -311,9 +311,9 @@ proc/html_encode_ru(var/t)
 //is in the other string at the same spot (assuming it is not a replace char).
 //This is used for fingerprints
 	var/newtext = text
-	if(lentext(text) != lentext(compare))
+	if(length(text) != length(compare))
 		return 0
-	for(var/i = 1, i < lentext(text), i++)
+	for(var/i = 1, i < length(text), i++)
 		var/a = copytext(text,i,i+1)
 		var/b = copytext(compare,i,i+1)
 //if it isn't both the same letter, or if they are both the replacement character
@@ -333,7 +333,7 @@ proc/html_encode_ru(var/t)
 	if(!text || !character)
 		return 0
 	var/count = 0
-	for(var/i = 1, i <= lentext(text), i++)
+	for(var/i = 1, i <= length(text), i++)
 		var/a = copytext(text,i,i+1)
 		if(a == character)
 			count++
@@ -544,8 +544,8 @@ var/list/binary = list("0","1")
 			continue
 		var/buffer = ""
 		var/early_culling = TRUE
-		for(var/pos = 1, pos <= lentext(string), pos++)
-			var/let = copytext(string, pos, (pos + 1) % lentext(string))
+		for(var/pos = 1, pos <= length(string), pos++)
+			var/let = copytext(string, pos, (pos + 1) % length(string))
 			if(early_culling && !findtext(let,alphanumeric))
 				continue
 			early_culling = FALSE
@@ -553,9 +553,9 @@ var/list/binary = list("0","1")
 		if(!findtext(buffer,alphanumeric))
 			continue
 		var/punctbuffer = ""
-		var/cutoff = lentext(buffer)
-		for(var/pos = lentext(buffer), pos >= 0, pos--)
-			var/let = copytext(buffer, pos, (pos + 1) % lentext(buffer))
+		var/cutoff = length(buffer)
+		for(var/pos = length(buffer), pos >= 0, pos--)
+			var/let = copytext(buffer, pos, (pos + 1) % length(buffer))
 			if(findtext(let,alphanumeric))
 				break
 			if(findtext(let,punctuation))
@@ -565,8 +565,8 @@ var/list/binary = list("0","1")
 			var/exclaim = FALSE
 			var/question = FALSE
 			var/periods = 0
-			for(var/pos = lentext(punctbuffer), pos >= 0, pos--)
-				var/punct = copytext(punctbuffer, pos, (pos + 1) % lentext(punctbuffer))
+			for(var/pos = length(punctbuffer), pos >= 0, pos--)
+				var/punct = copytext(punctbuffer, pos, (pos + 1) % length(punctbuffer))
 				if(!exclaim && findtext(punct,"!"))
 					exclaim = TRUE
 				if(!question && findtext(punct,"?"))
@@ -588,7 +588,7 @@ var/list/binary = list("0","1")
 			buffer = copytext(buffer, 1, cutoff) + punctbuffer
 		if(!findtext(buffer,alphanumeric))
 			continue
-		if(!buffer || lentext(buffer) > 140 || lentext(buffer) <= cullshort || buffer in accepted)
+		if(!buffer || length(buffer) > 140 || length(buffer) <= cullshort || buffer in accepted)
 			continue
 
 		accepted += buffer

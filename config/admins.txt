@@ -16,4 +16,4 @@ Comrade Sully = Sentinel
 bonerman1488 = Sentinel
 Kanoha Shinobi = Sentinel
 Andrewciprioni = Sentinel
-Ace_Ciprioni = Sentinel 
+Ace_Ciprioni = Sentinel
